@@ -23,8 +23,11 @@ jobs:
       - name: 安装依赖
         run: pip install requests
 
-      - name: 运行更新脚本
-        run: python update_data.py
+      - name: 设置环境变量
+        run: echo "GITHUB_TOKEN=${{ secrets.GH_TOKEN }}" >> $GITHUB_ENV
+
+      - name: 安装依赖
+        run: pip install requests
 
       - name: 提交并推送
         run: |
