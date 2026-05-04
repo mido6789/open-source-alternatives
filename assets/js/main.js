@@ -4,7 +4,7 @@
 // ============================================
 
 const SITE_CONFIG = {
-  dataUrl: '/assets/js/data.json',
+ dataUrl: '/open-source-alternatives/assets/js/data.json',
   perPage: 12,
 };
 
