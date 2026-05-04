@@ -4,7 +4,7 @@
 // ============================================
 
 const SITE_CONFIG = {
- dataUrl: '/open-source-alternatives/assets/js/data.json',
+  dataUrl: '/open-source-alternatives/assets/js/data.json',
   perPage: 12,
 };
 
@@ -45,7 +45,7 @@ function createProjectCard(project) {
   const catIcon = category ? category.icon : '';
   
   return `
-    <div class="project-card" data-id="${project.id}">
+    <div class="project-card">
       ${project.featured ? '<span class="featured-star" title="精选推荐">⭐</span>' : ''}
       <span class="category-tag">${catIcon} ${catName}</span>
       <h3><a href="/open-source-alternatives/detail.html?id=${project.slug}">${escapeHtml(project.name)}</a></h3>
@@ -113,7 +113,7 @@ function renderUpdateTimeline(data) {
   
   const logs = data.site.update_log || [];
   if (logs.length === 0) {
-    container.innerHTML = '<p style="color:var(--text-secondary);text-align:center;padding:20px;">⏳ 数据更新中，时间线即将呈现...</p>';
+    container.innerHTML = '<p style="color:var(--text-secondary);text-align:center;padding:20px;">⏳ 自动更新后会显示最近动态...</p>';
     return;
   }
   
@@ -145,7 +145,7 @@ async function renderHomePage() {
   document.querySelectorAll('[data-site-name]').forEach(el => {
     el.textContent = data.site.name;
   });
-  document.title = `${data.site.name} - ${data.site.description}`;
+  document.title = data.site.name + ' - ' + data.site.description;
 
   // 渲染分类
   const catGrid = document.getElementById('categoriesGrid');
@@ -165,11 +165,11 @@ async function renderHomePage() {
     if (hotProjects.length > 0) {
       hotGrid.innerHTML = hotProjects.map(createHotProjectCard).join('');
     } else {
-      hotGrid.innerHTML = '<p style="color:var(--text-secondary);text-align:center;padding:20px;">📊 数据收集中，热门项目即将揭晓...</p>';
+      hotGrid.innerHTML = '<p style="color:var(--text-secondary);text-align:center;padding:20px;">📊 数据收集中，明天再来看看...</p>';
     }
   }
 
-  // 渲染精选项目
+  // 渲染精选推荐
   const featuredGrid = document.getElementById('featuredProjects');
   if (featuredGrid) {
     const featured = data.projects.filter(p => p.featured);
@@ -181,7 +181,7 @@ async function renderHomePage() {
   // 渲染更新时间线
   renderUpdateTimeline(data);
 
-  // 渲染最新项目
+  // 渲染最新收录
   const latestGrid = document.getElementById('latestProjects');
   if (latestGrid) {
     const latest = [...data.projects].sort((a, b) => new Date(b.date_added) - new Date(a.date_added)).slice(0, 6);
@@ -194,7 +194,7 @@ async function renderHomePage() {
   generateStructuredData(data);
 }
 
-// ========== 分类页 ==========
+// ========== 分类页渲染 ==========
 async function renderCategoryPage() {
   const data = await loadData();
   if (!data) return;
@@ -208,8 +208,8 @@ async function renderCategoryPage() {
     return;
   }
 
-  document.title = `${category.icon} ${category.name} - ${data.site.name}`;
-  document.getElementById('categoryTitle').textContent = `${category.icon} ${category.name}`;
+  document.title = category.icon + ' ' + category.name + ' - ' + data.site.name;
+  document.getElementById('categoryTitle').textContent = category.icon + ' ' + category.name;
   document.getElementById('categoryDesc').textContent = category.description;
 
   const projects = data.projects
@@ -226,7 +226,7 @@ async function renderCategoryPage() {
   renderAds(data);
 }
 
-// ========== 详情页 ==========
+// ========== 详情页渲染 ==========
 async function renderDetailPage() {
   const data = await loadData();
   if (!data) return;
@@ -240,7 +240,7 @@ async function renderDetailPage() {
     return;
   }
 
-  document.title = `${project.name} - 开源替代 ${project.alternative_to} - ${data.site.name}`;
+  document.title = project.name + ' - 开源替代 ' + project.alternative_to + ' - ' + data.site.name;
   
   const category = data.categories.find(c => c.id === project.category);
   
@@ -298,7 +298,7 @@ function initSearch() {
   function doSearch(input) {
     const query = input?.value.trim();
     if (query) {
-      window.location.href = `/category.html?search=${encodeURIComponent(query)}`;
+      window.location.href = '/open-source-alternatives/category.html?search=' + encodeURIComponent(query);
     }
   }
   
@@ -365,7 +365,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSearch();
 
   const path = window.location.pathname;
-  if (path === '/' || path.endsWith('index.html')) {
+  if (path === '/' || path.endsWith('index.html') || path.endsWith('open-source-alternatives/')) {
     renderHomePage();
   } else if (path.includes('category.html')) {
     renderCategoryPage();
