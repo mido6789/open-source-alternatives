@@ -4,7 +4,7 @@
 // ============================================
 
 const SITE_CONFIG = {
-  dataUrl: '/open-source-alternatives/assets/js/data.json',
+  dataUrl: '/assets/js/data.json',
   perPage: 12,
 };
 
@@ -48,7 +48,7 @@ function createProjectCard(project) {
     <div class="project-card">
       ${project.featured ? '<span class="featured-star" title="精选推荐">⭐</span>' : ''}
       <span class="category-tag">${catIcon} ${catName}</span>
-      <h3><a href="/open-source-alternatives/detail.html?id=${project.slug}">${escapeHtml(project.name)}</a></h3>
+      <h3><a href="/detail.html?id=${project.slug}">${escapeHtml(project.name)}</a></h3>
       <p class="description">${escapeHtml(project.description_zh)}</p>
       <div class="meta">
         <span>⭐ ${getStarDisplay(project.stars)}</span>
@@ -95,7 +95,7 @@ function createHotProjectCard(project) {
     <div class="project-card hot-card">
       ${project.weekly_growth > 500 ? '<span class="hot-badge">🔥 热门</span>' : ''}
       <span class="category-tag">${catIcon} ${catName}</span>
-      <h3><a href="/open-source-alternatives/detail.html?id=${project.slug}">${escapeHtml(project.name)}</a></h3>
+      <h3><a href="/detail.html?id=${project.slug}">${escapeHtml(project.name)}</a></h3>
       <p class="description">${escapeHtml(project.description_zh)}</p>
       <div class="meta">
         <span>⭐ ${getStarDisplay(project.stars)}</span>
@@ -151,7 +151,7 @@ async function renderHomePage() {
   const catGrid = document.getElementById('categoriesGrid');
   if (catGrid) {
     catGrid.innerHTML = data.categories.map(cat => `
-      <a href="/open-source-alternatives/category.html?id=${cat.id}" class="category-card">
+      <a href="/category.html?id=${cat.id}" class="category-card">
         <span class="icon">${cat.icon}</span>
         <span class="name">${cat.name}</span>
       </a>
@@ -298,7 +298,7 @@ function initSearch() {
   function doSearch(input) {
     const query = input?.value.trim();
     if (query) {
-      window.location.href = '/open-source-alternatives/category.html?search=' + encodeURIComponent(query);
+      window.location.href = '/category.html?search=' + encodeURIComponent(query);
     }
   }
   
