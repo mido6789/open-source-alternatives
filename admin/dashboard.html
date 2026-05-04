@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>管理后台 - OpenSourceAlternatives</title>
+  <style>
+    :root {
+      --primary: #6366f1; --primary-dark: #4f46e5; --bg: #f1f5f9; --bg-card: #ffffff;
+      --text: #1e293b; --text-secondary: #64748b; --border: #e2e8f0;
+      --danger: #ef4444; --success: #10b981; --warning: #f59e0b; --radius: 12px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', 'PingFang SC', sans-serif;
+      background: var(--bg); color: var(--text); min-height: 100vh;
+    }
+    .admin-header {
+      background: var(--bg-card); border-bottom: 1px solid var(--border);
+      padding: 0 20px; height: 60px; display: flex; align-items: center; justify-content: space-between;
+      position: sticky; top: 0; z-index: 100;
+    }
+    .admin-header h2 { font-size: 1.15rem; color: var(--primary); }
+    .admin-header .actions { display: flex; gap: 10px; align-items: center; }
+    .btn {
+      padding: 8px 18px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-card);
+      cursor: pointer; font-size: 0.85rem; font-weight: 500; transition: 0.15s; white-space: nowrap;
+    }
+    .btn:hover { border-color: var(--primary); color: var(--primary); }
+    .btn-primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+    .btn-primary:hover { background: var(--primary-dark); color: #fff; }
+    .btn-danger { background: var(--danger); color: #fff; border-color: var(--danger); }
+    .btn-success { background: var(--success); color: #fff; border-color: var(--success); }
+    .btn-sm { padding: 4px 10px; font-size: 0.75rem; }
+    .admin-body { display: flex; }
+    .sidebar {
+      width: 200px; background: var(--bg-card); border-right: 1px solid var(--border);
+      min-height: calc(100vh - 60px); padding: 20px 0;
+    }
+    .sidebar a {
+      display: block; padding: 12px 20px; color: var(--text-secondary); text-decoration: none;
+      font-size: 0.9rem; transition: 0.15s; cursor: pointer;
+    }
+    .sidebar a:hover, .sidebar a.active { color: var(--primary); background: rgba(99,102,241,0.06); font-weight: 600; }
+    .main-content { flex: 1; padding: 24px; overflow-x: auto; }
+    .section { display: none; }
+    .section.active { display: block; }
+    .stats-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; margin-bottom: 24px; }
+    .stat-card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 20px; text-align: center;
+    }
+    .stat-card .value { font-size: 2rem; font-weight: 700; color: var(--primary); }
+    .stat-card .label { color: var(--text-secondary); font-size: 0.85rem; margin-top: 4px; }
+    table {
+      width: 100%; border-collapse: collapse; background: var(--bg-card);
+      border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
+    }
+    th, td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--border); font-size: 0.88rem; }
+    th { background: #f8fafc; font-weight: 600; color: var(--text-secondary); font-size: 0.8rem; text-transform: uppercase; }
+    tr:hover { background: rgba(99,102,241,0.03); }
+    .form-group { margin-bottom: 16px; }
+    .form-group label { display: block; font-weight: 600; margin-bottom: 4px; font-size: 0.85rem; color: var(--text-secondary); }
+    .form-group input, .form-group textarea, .form-group select {
+      width: 100%; padding: 10px 14px; border: 1px solid var(--border); border-radius: 8px;
+      font-size: 0.9rem; font-family: inherit; background: #f8fafc;
+    }
+    .form-group textarea { min-height: 80px; resize: vertical; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .toast {
+      position: fixed; top: 20px; right: 20px; padding: 14px 24px; border-radius: 10px; color: #fff;
+      font-weight: 500; z-index: 9999; animation: slideIn 0.3s ease; box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    }
+    .toast.success { background: var(--success); }
+    .toast.error { background: var(--danger); }
+    @keyframes slideIn { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+    .ad-textarea { min-height: 120px; font-family: monospace; font-size: 0.8rem; }
+    @media (max-width: 768px) {
+      .admin-body { flex-direction: column; }
+      .sidebar { width: 100%; min-height: auto; display: flex; overflow-x: auto; padding: 0; }
+      .sidebar a { padding: 10px 14px; white-space: nowrap; }
+      .main-content { padding: 16px; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="admin-header">
+    <h2>🔄 内容管理系统</h2>
+    <div class="actions">
+      <button class="btn btn-success" onclick="exportJSON()">📦 导出 JSON</button>
+      <button class="btn" onclick="importJSON()">📥 导入 JSON</button>
+      <button class="btn btn-danger" onclick="logout()">退出</button>
+    </div>
+  </div>
+  <div class="admin-body">
+    <div class="sidebar">
+      <a class="active" onclick="showSection('dashboard')">📊 概览</a>
+      <a onclick="showSection('projects')">📋 项目管理</a>
+      <a onclick="showSection('add')">➕ 新增项目</a>
+      <a onclick="showSection('categories')">📂 分类管理</a>
+      <a onclick="showSection('ads')">📢 广告管理</a>
+      <a onclick="showSection('settings')">⚙️ 站点设置</a>
+    </div>
+    <div class="main-content">
+      <div class="section active" id="dashboard">
+        <h3 style="margin-bottom:20px;">📊 站点概览</h3>
+        <div class="stats-row" id="statsRow"></div>
+      </div>
+      <div class="section" id="projects">
+        <h3 style="margin-bottom:20px;">📋 项目管理</h3>
+        <div style="margin-bottom:16px;">
+          <input type="text" id="projectSearch" placeholder="🔍 搜索项目..." style="padding:10px 14px;border:1px solid var(--border);border-radius:8px;width:300px;font-size:0.9rem;">
+        </div>
+        <div style="overflow-x:auto;">
+          <table id="projectsTable">
+            <thead><tr><th>名称</th><th>分类</th><th>替代</th><th>Stars</th><th>精选</th><th>操作</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="section" id="add">
+        <h3 style="margin-bottom:20px;" id="addTitle">➕ 新增项目</h3>
+        <form id="projectForm">
+          <input type="hidden" id="projectId">
+          <div class="form-row">
+            <div class="form-group"><label>项目名称 *</label><input type="text" id="pName" required></div>
+            <div class="form-group"><label>Slug（URL标识）*</label><input type="text" id="pSlug" required></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>所属分类 *</label><select id="pCategory" required></select></div>
+            <div class="form-group"><label>GitHub 地址 *</label><input type="url" id="pGithub" required></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>替代的商用软件 *</label><input type="text" id="pAlternative" required></div>
+            <div class="form-group"><label>许可证</label><input type="text" id="pLicense" placeholder="如 MIT, GPL-3.0"></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Stars</label><input type="number" id="pStars" value="0"></div>
+            <div class="form-group"><label>版本号</label><input type="text" id="pVersion" placeholder="自动更新时会填充"></div>
+          </div>
+          <div class="form-group"><label>中文简介 *</label><textarea id="pDescZh" required></textarea></div>
+          <div class="form-group"><label>英文简介</label><textarea id="pDescEn"></textarea></div>
+          <div class="form-row">
+            <div class="form-group"><label>标签（逗号分隔）</label><input type="text" id="pTags" placeholder="AI, 工具, 自动化"></div>
+            <div class="form-group"><label>网盘下载链接（可选）</label><input type="text" id="pDownload" placeholder="后期配置"></div>
+          </div>
+          <div class="form-group"><label style="display:flex;align-items:center;gap:8px;"><input type="checkbox" id="pFeatured"> 精选推荐</label></div>
+          <div style="display:flex;gap:10px;">
+            <button type="submit" class="btn btn-primary">💾 保存项目</button>
+            <button type="button" class="btn" onclick="resetForm()">🔄 重置</button>
+          </div>
+        </form>
+      </div>
+      <div class="section" id="categories">
+        <h3 style="margin-bottom:20px;">📂 分类管理</h3>
+        <table id="categoriesTable">
+          <thead><tr><th>图标</th><th>ID</th><th>名称</th><th>描述</th><th>操作</th></tr></thead>
+          <tbody></tbody>
+        </table>
+        <div style="margin-top:20px;padding:20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);">
+          <h4>新增分类</h4>
+          <div class="form-row" style="margin-top:12px;">
+            <div class="form-group"><label>图标 Emoji</label><input type="text" id="newCatIcon" placeholder="🤖"></div>
+            <div class="form-group"><label>ID（英文）</label><input type="text" id="newCatId" placeholder="ai-tools"></div>
+            <div class="form-group"><label>名称</label><input type="text" id="newCatName" placeholder="AI工具"></div>
+          </div>
+          <div class="form-group"><label>描述</label><input type="text" id="newCatDesc" placeholder="分类描述"></div>
+          <button class="btn btn-primary" onclick="addCategory()">➕ 添加分类</button>
+        </div>
+      </div>
+      <div class="section" id="ads">
+        <h3 style="margin-bottom:20px;">📢 广告位管理</h3>
+        <p style="color:var(--text-secondary);margin-bottom:20px;">将广告联盟代码粘贴到对应位置。支持 Google AdSense 等任意 JS/HTML。留空则广告位隐藏。</p>
+        <div id="adsForm"></div>
+        <button class="btn btn-primary" onclick="saveAds()" style="margin-top:16px;">💾 保存广告设置</button>
+        <div style="margin-top:30px;padding:16px;background:#fffbeb;border:1px solid #fcd34d;border-radius:8px;color:#92400e;">
+          💡 <strong>提示：</strong>广告代码保存后需导出 JSON 并推送到 GitHub 才能在前台生效。
+        </div>
+      </div>
+      <div class="section" id="settings">
+        <h3 style="margin-bottom:20px;">⚙️ 站点设置</h3>
+        <div class="form-group"><label>站点名称</label><input type="text" id="siteName"></div>
+        <div class="form-group"><label>站点描述</label><textarea id="siteDesc"></textarea></div>
+        <div class="form-group"><label>站点 URL</label><input type="text" id="siteUrl"></div>
+        <div class="form-group"><label>联系邮箱</label><input type="text" id="siteEmail"></div>
+        <button class="btn btn-primary" onclick="saveSettings()">💾 保存设置</button>
+      </div>
+    </div>
+  </div>
+  <div id="toastContainer"></div>
+  <input type="file" id="importFileInput" accept=".json" style="display:none" onchange="handleImport(event)">
+  <script>
+    if (sessionStorage.getItem('admin_authenticated') !== 'true') { window.location.href = 'index.html'; }
+    sessionStorage.setItem('admin_timestamp', Date.now());
+    let siteData = null;
+    function showToast(msg, type = 'success') {
+      const container = document.getElementById('toastContainer');
+      const toast = document.createElement('div');
+      toast.className = `toast ${type}`; toast.textContent = msg;
+      container.appendChild(toast); setTimeout(() => toast.remove(), 3000);
+    }
+    async function loadData() {
+      try { const res = await fetch('/assets/js/data.json'); siteData = await res.json(); return siteData; }
+      catch (e) { showToast('数据加载失败', 'error'); return null; }
+    }
+    function showSection(name) {
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+      document.querySelectorAll('.sidebar a').forEach(a => a.classList.remove('active'));
+      document.getElementById(name).classList.add('active');
+      const sectionNames = ['dashboard', 'projects', 'add', 'categories', 'ads', 'settings'];
+      const idx = sectionNames.indexOf(name);
+      const links = document.querySelectorAll('.sidebar a');
+      if (idx >= 0 && links[idx]) links[idx].classList.add('active');
+      if (name === 'dashboard') renderDashboard();
+      if (name === 'projects') renderProjectsTable();
+      if (name === 'add') renderAddForm();
+      if (name === 'categories') renderCategoriesTable();
+      if (name === 'ads') renderAdsForm();
+      if (name === 'settings') renderSettings();
+    }
+    function renderDashboard() {
+      if (!siteData) return;
+      document.getElementById('statsRow').innerHTML = `
+        <div class="stat-card"><div class="value">${siteData.projects.length}</div><div class="label">收录项目</div></div>
+        <div class="stat-card"><div class="value">${siteData.categories.length}</div><div class="label">分类数量</div></div>
+        <div class="stat-card"><div class="value">${siteData.projects.filter(p => p.featured).length}</div><div class="label">精选项目</div></div>
+        <div class="stat-card"><div class="value">${siteData.pending_projects.length}</div><div class="label">候选项目</div></div>`;
+    }
+    function escapeHtml(str) { if (!str) return ''; const div = document.createElement('div'); div.textContent = str; return div.innerHTML; }
+    function renderProjectsTable(filter = '') {
+      if (!siteData) return;
+      const tbody = document.querySelector('#projectsTable tbody');
+      let projects = siteData.projects;
+      if (filter) { const q = filter.toLowerCase(); projects = projects.filter(p => p.name.toLowerCase().includes(q) || p.description_zh.toLowerCase().includes(q)); }
+      tbody.innerHTML = projects.map(p => `
+        <tr>
+          <td><strong>${escapeHtml(p.name)}</strong></td><td>${escapeHtml(p.category)}</td><td>${escapeHtml(p.alternative_to)}</td>
+          <td>⭐ ${p.stars}</td><td>${p.featured ? '⭐' : '-'}</td>
+          <td>
+            <button class="btn btn-sm" onclick="editProject('${p.id}')">✏️</button>
+            <button class="btn btn-sm btn-danger" onclick="deleteProject('${p.id}')">🗑️</button>
+          </td>
+        </tr>`).join('');
+      document.getElementById('projectSearch').oninput = (e) => renderProjectsTable(e.target.value);
+    }
+    function renderAddForm() {
+      if (!siteData) return;
+      document.getElementById('pCategory').innerHTML = siteData.categories.map(c => `<option value="${c.id}">${c.icon} ${c.name}</option>`).join('');
+      document.getElementById('addTitle').textContent = '➕ 新增项目'; resetForm();
+    }
+    function resetForm() {
+      document.getElementById('projectId').value = '';
+      ['pName','pSlug','pGithub','pAlternative','pLicense','pVersion','pDescZh','pDescEn','pTags','pDownload'].forEach(id => document.getElementById(id).value = '');
+      document.getElementById('pStars').value = '0'; document.getElementById('pFeatured').checked = false;
+    }
+    function editProject(id) {
+      const p = siteData.projects.find(pr => pr.id === id); if (!p) return;
+      document.getElementById('projectId').value = p.id; document.getElementById('pName').value = p.name;
+      document.getElementById('pSlug').value = p.slug; document.getElementById('pCategory').value = p.category;
+      document.getElementById('pGithub').value = p.github_url; document.getElementById('pAlternative').value = p.alternative_to;
+      document.getElementById('pLicense').value = p.license || ''; document.getElementById('pStars').value = p.stars;
+      document.getElementById('pVersion').value = p.version || ''; document.getElementById('pDescZh').value = p.description_zh;
+      document.getElementById('pDescEn').value = p.description_en || ''; document.getElementById('pTags').value = (p.tags || []).join(', ');
+      document.getElementById('pDownload').value = p.download_url || ''; document.getElementById('pFeatured').checked = p.featured;
+      document.getElementById('addTitle').textContent = '✏️ 编辑项目'; showSection('add');
+    }
+    function deleteProject(id) { if (!confirm('确定删除？')) return; siteData.projects = siteData.projects.filter(p => p.id !== id); showToast('已删除'); renderProjectsTable(); renderDashboard(); }
+    document.getElementById('projectForm').addEventListener('submit', (e) => {
+      e.preventDefault(); if (!siteData) return;
+      const id = document.getElementById('projectId').value;
+      const project = {
+        id: id || 'proj-' + Date.now(),
+        name: document.getElementById('pName').value, slug: document.getElementById('pSlug').value,
+        category: document.getElementById('pCategory').value, github_url: document.getElementById('pGithub').value,
+        stars: parseInt(document.getElementById('pStars').value) || 0, version: document.getElementById('pVersion').value,
+        last_updated: '', description_zh: document.getElementById('pDescZh').value,
+        description_en: document.getElementById('pDescEn').value, alternative_to: document.getElementById('pAlternative').value,
+        tags: document.getElementById('pTags').value.split(',').map(t => t.trim()).filter(Boolean),
+        license: document.getElementById('pLicense').value, download_url: document.getElementById('pDownload').value,
+        featured: document.getElementById('pFeatured').checked,
+        date_added: new Date().toISOString().split('T')[0], stars_history: {}
+      };
+      if (id) { const idx = siteData.projects.findIndex(p => p.id === id); if (idx >= 0) { project.date_added = siteData.projects[idx].date_added; siteData.projects[idx] = project; } }
+      else { siteData.projects.unshift(project); }
+      showToast(id ? '已更新' : '已添加'); renderProjectsTable(); renderDashboard(); resetForm(); showSection('projects');
+    });
+    function renderCategoriesTable() {
+      if (!siteData) return;
+      document.querySelector('#categoriesTable tbody').innerHTML = siteData.categories.map(c => `<tr><td>${c.icon}</td><td>${c.id}</td><td>${c.name}</td><td>${c.description}</td><td><button class="btn btn-sm btn-danger" onclick="deleteCategory('${c.id}')">删除</button></td></tr>`).join('');
+    }
+    function addCategory() {
+      const icon = document.getElementById('newCatIcon').value, id = document.getElementById('newCatId').value;
+      const name = document.getElementById('newCatName').value, desc = document.getElementById('newCatDesc').value;
+      if (!id || !name) { showToast('ID和名称不能为空', 'error'); return; }
+      if (siteData.categories.find(c => c.id === id)) { showToast('ID已存在', 'error'); return; }
+      siteData.categories.push({ id, name, icon, description: desc }); showToast('分类已添加'); renderCategoriesTable();
+      ['newCatIcon','newCatId','newCatName','newCatDesc'].forEach(id => document.getElementById(id).value = '');
+    }
+    function deleteCategory(id) { if (!confirm('确定删除？')) return; siteData.categories = siteData.categories.filter(c => c.id !== id); showToast('已删除'); renderCategoriesTable(); }
+    function renderAdsForm() {
+      if (!siteData) return;
+      const ads = siteData.site.ads;
+      const slots = ['sidebar_top', 'sidebar_bottom', 'article_top', 'article_bottom', 'list_item', 'footer'];
+      const labels = { sidebar_top: '侧边栏顶部（首页）', sidebar_bottom: '侧边栏底部（首页）', article_top: '文章页顶部', article_bottom: '文章页底部', list_item: '列表项之间', footer: '页脚区域' };
+      document.getElementById('adsForm').innerHTML = slots.map(s => `<div class="form-group"><label>📢 ${labels[s]} (${s})</label><textarea class="ad-textarea" id="ad_${s}" placeholder="粘贴广告代码...">${escapeHtml(ads[s] || '')}</textarea></div>`).join('');
+    }
+    function saveAds() {
+      ['sidebar_top', 'sidebar_bottom', 'article_top', 'article_bottom', 'list_item', 'footer'].forEach(s => { siteData.site.ads[s] = document.getElementById(`ad_${s}`).value; });
+      showToast('广告设置已保存（导出JSON后部署生效）');
+    }
+    function renderSettings() {
+      if (!siteData) return;
+      document.getElementById('siteName').value = siteData.site.name || '';
+      document.getElementById('siteDesc').value = siteData.site.description || '';
+      document.getElementById('siteUrl').value = siteData.site.url || '';
+      document.getElementById('siteEmail').value = siteData.site.contact_email || '';
+    }
+    function saveSettings() {
+      siteData.site.name = document.getElementById('siteName').value;
+      siteData.site.description = document.getElementById('siteDesc').value;
+      siteData.site.url = document.getElementById('siteUrl').value;
+      siteData.site.contact_email = document.getElementById('siteEmail').value;
+      showToast('设置已保存');
+    }
+    function exportJSON() {
+      if (!siteData) return;
+      const blob = new Blob([JSON.stringify(siteData, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob); const a = document.createElement('a');
+      a.href = url; a.download = 'data.json'; a.click(); URL.revokeObjectURL(url);
+      showToast('✅ data.json 已导出，请替换网站原文件并推送到 GitHub');
+    }
+    function importJSON() { document.getElementById('importFileInput').click(); }
+    function handleImport(event) {
+      const file = event.target.files[0]; if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (e) => { try { siteData = JSON.parse(e.target.result); showToast('已导入'); showSection('dashboard'); } catch (err) { showToast('JSON格式不正确', 'error'); } };
+      reader.readAsText(file); event.target.value = '';
+    }
+    function logout() { sessionStorage.removeItem('admin_authenticated'); sessionStorage.removeItem('admin_timestamp'); window.location.href = 'index.html'; }
+    (async () => { await loadData(); renderDashboard(); })();
+  </script>
+</body>
+</html>

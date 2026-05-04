@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /components/
+
+Sitemap: https://mido6789.github.io/open-source-alternatives/sitemap.xml
