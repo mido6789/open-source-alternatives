@@ -6,10 +6,6 @@
     "contact_email": "mailtomidoo@gmail.com",
     "admin_password_hash": "",
     "update_log": [
-      "2026-05-04 🆕 新增收录：blender（⭐ 18,296）",
-      "2026-05-04 🆕 新增收录：keepassxc（⭐ 26,881）",
-      "2026-05-04 🆕 新增收录：lobe-chat（⭐ 76,014）",
-      "2026-05-04 🆕 新增收录：kdenlive（⭐ 1）",
       "2026-05-04 🆕 新增收录：langchain（⭐ 135,729）",
       "2026-05-04 🆕 新增收录：ComfyUI（⭐ 111,280）",
       "2026-05-04 🆕 新增收录：audacity（⭐ 16,904）",
@@ -25,417 +21,75 @@
     }
   },
   "categories": [
-    {
-      "id": "ai-agent",
-      "name": "AI & Agent",
-      "icon": "🤖",
-      "description": "人工智能与智能代理工具"
-    },
-    {
-      "id": "design-tools",
-      "name": "设计工具",
-      "icon": "🎨",
-      "description": "平面设计、UI/UX、图片处理"
-    },
-    {
-      "id": "office-productivity",
-      "name": "办公效率",
-      "icon": "📊",
-      "description": "文档处理、笔记、项目管理"
-    },
-    {
-      "id": "dev-tools",
-      "name": "开发工具",
-      "icon": "💻",
-      "description": "代码编辑、API管理、数据库"
-    },
-    {
-      "id": "media-video",
-      "name": "影音图像",
-      "icon": "🎬",
-      "description": "视频剪辑、音频处理、动效制作"
-    },
-    {
-      "id": "security-privacy",
-      "name": "安全隐私",
-      "icon": "🔒",
-      "description": "密码管理、加密通讯、隐私保护"
-    },
-    {
-      "id": "system-utils",
-      "name": "系统工具",
-      "icon": "⚙️",
-      "description": "文件管理、备份同步、系统优化"
-    }
+    {"id": "ai-agent", "name": "AI & Agent", "icon": "🤖", "description": "人工智能与智能代理工具"},
+    {"id": "design-tools", "name": "设计工具", "icon": "🎨", "description": "平面设计、UI/UX、图片处理"},
+    {"id": "office-productivity", "name": "办公效率", "icon": "📊", "description": "文档处理、笔记、项目管理"},
+    {"id": "dev-tools", "name": "开发工具", "icon": "💻", "description": "代码编辑、API管理、数据库"},
+    {"id": "media-video", "name": "影音图像", "icon": "🎬", "description": "视频剪辑、音频处理、动效制作"},
+    {"id": "security-privacy", "name": "安全隐私", "icon": "🔒", "description": "密码管理、加密通讯、隐私保护"},
+    {"id": "system-utils", "name": "系统工具", "icon": "⚙️", "description": "文件管理、备份同步、系统优化"}
   ],
   "projects": [
     {
-      "id": "stable-diffusion-webui",
-      "name": "Stable Diffusion WebUI",
-      "slug": "stable-diffusion-webui",
-      "category": "ai-agent",
-      "github_url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
-      "stars": 162715,
-      "version": "",
-      "last_updated": "2026-05-04",
-      "stars_history": {
-        "2026-05-04": 162715
-      },
-      "description_zh": "一个功能强大的 Stable Diffusion 网页界面，支持文生图、图生图、图像修复等多种功能，是目前最流行的 AI 绘画工具之一。",
+      "id": "stable-diffusion-webui", "name": "Stable Diffusion WebUI", "slug": "stable-diffusion-webui",
+      "category": "ai-agent", "github_url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+      "stars": 162714, "version": "", "last_updated": "2026-05-04", "stars_history": {"2026-05-04": 162714},
+      "description_zh": "Stable Diffusion WebUI 是目前最流行的开源 AI 绘画工具，由 AUTOMATIC1111 开发。它提供了直观的网页操作界面，支持文生图、图生图、图像修复、超分辨率放大等多种强大功能。用户可以通过丰富的扩展插件来增强功能，支持多种模型切换，社区活跃，教程丰富。无论是专业画师还是业余爱好者，都能用它创作出令人惊艳的作品。完全免费，无需付费订阅。",
       "description_en": "A web interface for Stable Diffusion with support for txt2img, img2img, inpainting, and more.",
-      "alternative_to": "Midjourney / DALL·E",
-      "tags": [
-        "AI绘画",
-        "图像生成",
-        "Stable Diffusion"
-      ],
-      "license": "AGPL-3.0",
-      "download_url": "",
-      "featured": true,
-      "date_added": "2025-06-01"
+      "alternative_to": "Midjourney / DALL·E", "tags": ["AI绘画", "图像生成", "Stable Diffusion"], "license": "AGPL-3.0",
+      "download_url": "", "featured": true, "date_added": "2025-06-01"
     },
     {
-      "id": "gimp",
-      "name": "GIMP",
-      "slug": "gimp",
-      "category": "design-tools",
-      "github_url": "https://github.com/GNOME/gimp",
-      "stars": 6130,
-      "version": "",
-      "last_updated": "2026-05-04",
-      "stars_history": {
-        "2026-05-04": 6130
-      },
-      "description_zh": "GNU 图像处理程序，功能强大的开源图片编辑软件，支持图层、滤镜、插件扩展，是 Photoshop 的最佳免费替代品。",
-      "description_en": "GNU Image Manipulation Program, a powerful open-source image editor with layers, filters, and plugin support.",
-      "alternative_to": "Adobe Photoshop",
-      "tags": [
-        "图像编辑",
-        "图片处理",
-        "设计"
-      ],
-      "license": "GPL-3.0",
-      "download_url": "",
-      "featured": true,
-      "date_added": "2025-06-01"
+      "id": "gimp", "name": "GIMP", "slug": "gimp",
+      "category": "design-tools", "github_url": "https://github.com/GNOME/gimp",
+      "stars": 6130, "version": "", "last_updated": "2026-05-04", "stars_history": {"2026-05-04": 6130},
+      "description_zh": "GIMP（GNU Image Manipulation Program）是开源社区最知名的图像编辑软件，被誉为免费版的 Photoshop。它支持图层管理、通道操作、蒙版编辑、色彩调整、滤镜特效等专业功能，可以处理各种常见的图片格式。GIMP 拥有可定制的界面和丰富的插件生态，还可以通过 G'MIC 等扩展获得数百种额外滤镜。对于平面设计、照片修图、UI 设计等场景，GIMP 是一个强大且完全免费的替代方案。",
+      "description_en": "GNU Image Manipulation Program, a powerful open-source image editor.",
+      "alternative_to": "Adobe Photoshop", "tags": ["图像编辑", "图片处理", "设计"], "license": "GPL-3.0",
+      "download_url": "", "featured": true, "date_added": "2025-06-01"
     },
     {
-      "id": "libreoffice",
-      "name": "LibreOffice",
-      "slug": "libreoffice",
-      "category": "office-productivity",
-      "github_url": "https://github.com/LibreOffice/core",
-      "stars": 3900,
-      "version": "",
-      "last_updated": "2026-05-04",
-      "stars_history": {
-        "2026-05-04": 3900
-      },
-      "description_zh": "自由开源的办公套件，包含文字处理、电子表格、演示文稿、绘图等组件，全面兼容 Microsoft Office 格式。",
-      "description_en": "A free and open-source office suite with word processor, spreadsheet, presentation, and drawing components.",
-      "alternative_to": "Microsoft Office",
-      "tags": [
-        "办公套件",
-        "文档处理",
-        "电子表格"
-      ],
-      "license": "MPL-2.0",
-      "download_url": "",
-      "featured": true,
-      "date_added": "2025-06-01"
+      "id": "libreoffice", "name": "LibreOffice", "slug": "libreoffice",
+      "category": "office-productivity", "github_url": "https://github.com/LibreOffice/core",
+      "stars": 3900, "version": "", "last_updated": "2026-05-04", "stars_history": {"2026-05-04": 3900},
+      "description_zh": "LibreOffice 是自由开源办公套件的标杆，包含 Writer、Calc、Impress、Draw、Base 和 Math 六大组件。它全面兼容 Microsoft Office 格式，支持 ODF 开放文档标准，可跨平台运行在 Windows、macOS 和 Linux 上。LibreOffice 由全球社区维护，定期更新，是政府、教育机构和注重隐私的用户的首选办公方案。",
+      "description_en": "A free and open-source office suite.", "alternative_to": "Microsoft Office",
+      "tags": ["办公套件", "文档处理", "电子表格"], "license": "MPL-2.0", "download_url": "", "featured": true, "date_added": "2025-06-01"
     },
     {
-      "id": "auto-1777898638-524",
-      "name": "langchain",
-      "slug": "langchain",
-      "category": "ai-agent",
-      "github_url": "https://github.com/langchain-ai/langchain",
-      "stars": 135736,
-      "version": "",
-      "last_updated": "2026-05-04",
-      "stars_history": {
-        "2026-05-04": 135736
-      },
-      "description_zh": "代理工程平台。可在 TypeScript 中使用！",
-      "description_en": "The agent engineering platform. Available in TypeScript!",
-      "alternative_to": "商业 AI 开发平台",
-      "tags": [
-        "AI开发",
-        "LLM",
-        "框架"
-      ],
-      "license": "MIT",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-04"
+      "id": "auto-1777898638-524", "name": "langchain", "slug": "langchain",
+      "category": "ai-agent", "github_url": "https://github.com/langchain-ai/langchain",
+      "stars": 135729, "version": "", "last_updated": "2026-05-04", "stars_history": {"2026-05-04": 135729},
+      "description_zh": "LangChain 是当前最流行的 LLM 应用开发框架，支持 Python 和 JavaScript。它提供了链式调用、智能代理、记忆管理、向量检索等核心模块，让开发者可以快速构建基于 GPT、Claude、Llama 等大模型的应用。拥有庞大的社区和丰富的第三方集成，是 AI 应用开发的事实标准。",
+      "description_en": "Building applications with LLMs through composability.", "alternative_to": "商业 AI 开发平台",
+      "tags": ["AI开发", "LLM", "框架"], "license": "MIT", "download_url": "", "featured": false, "date_added": "2026-05-04"
     },
     {
-      "id": "auto-1777898639-808",
-      "name": "ComfyUI",
-      "slug": "comfyui",
-      "category": "ai-agent",
-      "github_url": "https://github.com/comfyanonymous/ComfyUI",
-      "stars": 111287,
-      "version": "",
-      "last_updated": "2026-05-04",
-      "stars_history": {
-        "2026-05-04": 111287
-      },
-      "description_zh": "基于节点的 Stable Diffusion 工作流工具，灵活高效。",
+      "id": "auto-1777898639-808", "name": "ComfyUI", "slug": "comfyui",
+      "category": "ai-agent", "github_url": "https://github.com/comfyanonymous/ComfyUI",
+      "stars": 111280, "version": "", "last_updated": "2026-05-04", "stars_history": {"2026-05-04": 111280},
+      "description_zh": "ComfyUI 是一款基于节点的 Stable Diffusion 工作流工具，以灵活性和可复现性著称。你可以通过拖拽和连接节点来构建复杂的图像生成流水线，精确控制每一步的处理过程。它支持加载多种模型、LoRA、ControlNet 等，适合需要精细控制生成流程的高级用户和研究用途。",
       "description_en": "A powerful and modular Stable Diffusion GUI with a node-based workflow.",
-      "alternative_to": "ComfyUI 云端服务",
-      "tags": [
-        "AI绘画",
-        "工作流",
-        "Stable Diffusion"
-      ],
-      "license": "GPL-3.0",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-04"
+      "alternative_to": "ComfyUI 云端服务", "tags": ["AI绘画", "工作流", "Stable Diffusion"], "license": "GPL-3.0",
+      "download_url": "", "featured": false, "date_added": "2026-05-04"
     },
     {
-      "id": "auto-1777898640-946",
-      "name": "audacity",
-      "slug": "audacity",
-      "category": "media-video",
-      "github_url": "https://github.com/audacity/audacity",
-      "stars": 16905,
-      "version": "",
-      "last_updated": "2026-05-04",
-      "stars_history": {
-        "2026-05-04": 16905
-      },
-      "description_zh": "音频编辑器",
-      "description_en": "Audio Editor                                     ",
-      "alternative_to": "Adobe Audition",
-      "tags": [
-        "音频",
-        "编辑",
-        "录音"
-      ],
-      "license": "NOASSERTION",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-04"
+      "id": "auto-1777898640-946", "name": "audacity", "slug": "audacity",
+      "category": "media-video", "github_url": "https://github.com/audacity/audacity",
+      "stars": 16904, "version": "", "last_updated": "2026-05-04", "stars_history": {"2026-05-04": 16904},
+      "description_zh": "Audacity 是最知名的开源音频编辑软件，已持续开发超过 20 年。它支持多轨录音和编辑，提供剪切、复制、拼接、混音等基本操作，内置丰富的音效处理功能。支持导入和导出 WAV、MP3、FLAC、OGG 等多种格式，可安装第三方插件扩展功能。无论是播客录制、音乐制作还是简单的音频剪辑都能胜任。",
+      "description_en": "Audacity is an easy-to-use multi-track audio editor and recorder.",
+      "alternative_to": "Adobe Audition", "tags": ["音频", "编辑", "录音"], "license": "GPL-3.0",
+      "download_url": "", "featured": false, "date_added": "2026-05-04"
     },
     {
-      "id": "auto-1777898641-130",
-      "name": "ollama",
-      "slug": "ollama",
-      "category": "ai-agent",
-      "github_url": "https://github.com/ollama/ollama",
-      "stars": 170663,
-      "version": "",
-      "last_updated": "2026-05-04",
-      "stars_history": {
-        "2026-05-04": 170663
-      },
-      "description_zh": "本地运行大语言模型的简易工具，支持 Llama、Mistral 等。",
+      "id": "auto-1777898641-130", "name": "ollama", "slug": "ollama",
+      "category": "ai-agent", "github_url": "https://github.com/ollama/ollama",
+      "stars": 170663, "version": "", "last_updated": "2026-05-04", "stars_history": {"2026-05-04": 170663},
+      "description_zh": "Ollama 是一个让你在本地电脑上轻松运行大语言模型的开源工具。它支持 Llama 3、Mistral、Gemma、Qwen、DeepSeek 等众多主流开源模型，只需一条命令就能下载并启动模型服务。Ollama 提供了兼容 OpenAI API 的接口，数据完全在本地处理，无需联网，保护隐私安全。",
       "description_en": "Get up and running with large language models locally.",
-      "alternative_to": "OpenAI API",
-      "tags": [
-        "本地AI",
-        "LLM",
-        "模型部署"
-      ],
-      "license": "MIT",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-04"
-    },
-    {
-      "id": "auto-1777903715-962",
-      "name": "blender",
-      "slug": "blender",
-      "category": "media-video",
-      "github_url": "https://github.com/blender/blender",
-      "stars": 18296,
-      "version": "",
-      "last_updated": "2026-05-04",
-      "stars_history": {
-        "2026-05-04": 18296
-      },
-      "description_zh": "专业级开源 3D 创作套件，支持建模、渲染、动画、合成全流程。",
-      "description_en": "Blender is the free and open source 3D creation suite.",
-      "alternative_to": "Maya / 3ds Max / Cinema 4D",
-      "tags": [
-        "3D建模",
-        "动画",
-        "渲染"
-      ],
-      "license": "NOASSERTION",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-04"
-    },
-    {
-      "id": "auto-1777903716-969",
-      "name": "keepassxc",
-      "slug": "keepassxc",
-      "category": "security-privacy",
-      "github_url": "https://github.com/keepassxreboot/keepassxc",
-      "stars": 26881,
-      "version": "",
-      "last_updated": "2026-05-04",
-      "stars_history": {
-        "2026-05-04": 26881
-      },
-      "description_zh": "KeePassXC 是 KeePass 的跨平台社区驱动端口。",
-      "description_en": "KeePassXC is a cross-platform community-driven port of KeePass.",
-      "alternative_to": "1Password",
-      "tags": [
-        "密码管理",
-        "离线",
-        "安全"
-      ],
-      "license": "NOASSERTION",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-04"
-    },
-    {
-      "id": "auto-1777903718-946",
-      "name": "lobe-chat",
-      "slug": "lobe-chat",
-      "category": "ai-agent",
-      "github_url": "https://github.com/lobehub/lobe-chat",
-      "stars": 76014,
-      "version": "",
-      "last_updated": "2026-05-04",
-      "stars_history": {
-        "2026-05-04": 76014
-      },
-      "description_zh": "一个开源、现代设计的 ChatGPT/LLM UI/框架。",
-      "description_en": "An open-source, modern-design ChatGPT/LLMs UI/Framework.",
-      "alternative_to": "ChatGPT Plus",
-      "tags": [
-        "AI对话",
-        "多模型",
-        "插件"
-      ],
-      "license": "NOASSERTION",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-04"
-    },
-    {
-      "id": "auto-1777903720-330",
-      "name": "kdenlive",
-      "slug": "kdenlive",
-      "category": "media-video",
-      "github_url": "https://github.com/kdenlive/kdenlive",
-      "stars": 1,
-      "version": "",
-      "last_updated": "2026-05-04",
-      "stars_history": {
-        "2026-05-04": 1
-      },
-      "description_zh": "KDE 非线性视频编辑器。",
-      "description_en": "KDE Non-Linear Video Editor.",
-      "alternative_to": "Adobe Premiere Pro",
-      "tags": [
-        "视频编辑",
-        "剪辑",
-        "非线性编辑"
-      ],
-      "license": "GPL-2.0",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-04"
+      "alternative_to": "OpenAI API", "tags": ["本地AI", "LLM", "模型部署"], "license": "MIT",
+      "download_url": "", "featured": false, "date_added": "2026-05-04"
     }
   ],
   "pending_projects": [
-    {
-      "github_url": "https://github.com/OpenInterpreter/open-interpreter",
-      "category": "ai-agent",
-      "alternative_to": "Copilot / Devin",
-      "description_zh": "本地运行的大模型代码解释器，用自然语言操控电脑。",
-      "description_en": "A natural language computer interface powered by LLMs running locally.",
-      "tags": [
-        "AI助手",
-        "代码解释器",
-        "自动化"
-      ],
-      "license": "AGPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web",
-      "category": "ai-agent",
-      "alternative_to": "ChatGPT 客户端",
-      "description_zh": "精美的 ChatGPT 网页客户端，支持多平台部署。",
-      "description_en": "A well-designed cross-platform ChatGPT web UI.",
-      "tags": [
-        "ChatGPT",
-        "客户端",
-        "AI对话"
-      ],
-      "license": "MIT"
-    },
-    {
-      "github_url": "https://github.com/vscode/vscode",
-      "category": "dev-tools",
-      "alternative_to": "Sublime Text / JetBrains",
-      "description_zh": "微软开源的代码编辑器，拥有最丰富的插件生态。",
-      "description_en": "Visual Studio Code - Open Source code editor.",
-      "tags": [
-        "编辑器",
-        "代码",
-        "IDE"
-      ],
-      "license": "MIT"
-    },
-    {
-      "github_url": "https://github.com/bitwarden/clients",
-      "category": "security-privacy",
-      "alternative_to": "1Password / LastPass",
-      "description_zh": "开源密码管理器，全平台同步，安全性经过独立审计。",
-      "description_en": "Bitwarden client applications.",
-      "tags": [
-        "密码管理",
-        "安全",
-        "跨平台"
-      ],
-      "license": "GPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/obsproject/obs-studio",
-      "category": "media-video",
-      "alternative_to": "XSplit / Wirecast",
-      "description_zh": "最流行的开源直播和录屏软件，支持多场景和插件。",
-      "description_en": "Free and open source software for live streaming and screen recording.",
-      "tags": [
-        "直播",
-        "录屏",
-        "视频"
-      ],
-      "license": "GPL-2.0"
-    },
-    {
-      "github_url": "https://github.com/nextcloud/server",
-      "category": "office-productivity",
-      "alternative_to": "Google Drive / Dropbox",
-      "description_zh": "自建云存储和协作平台，功能全面，数据由你掌控。",
-      "description_en": "A safe home for all your data.",
-      "tags": [
-        "云存储",
-        "协作",
-        "自建"
-      ],
-      "license": "AGPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/inkscape/inkscape",
-      "category": "design-tools",
-      "alternative_to": "Adobe Illustrator",
-      "description_zh": "专业的开源矢量图形编辑器，支持 SVG 标准。",
-      "description_en": "Professional vector graphics editor.",
-      "tags": [
-        "矢量图",
-        "SVG",
-        "设计"
-      ],
-      "license": "GPL-3.0"
-    }
-  ]
-}
