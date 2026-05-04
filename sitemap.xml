@@ -98,25 +98,13 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=blender</loc>
+    <loc>https://kyal.cn/detail.html?id=drawio</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=keepassxc</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://kyal.cn/detail.html?id=lobe-chat</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://kyal.cn/detail.html?id=kdenlive</loc>
+    <loc>https://kyal.cn/detail.html?id=openshot-qt</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
