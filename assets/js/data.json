@@ -167,4 +167,5 @@
     {"github_url": "https://github.com/nicedoc/syncthing", "category": "system-utils", "alternative_to": "Resilio Sync", "description_zh": "开源点对点文件同步，隐私安全。", "description_en": "Open Source Continuous File Synchronization.", "tags": ["文件同步", "P2P"], "license": "MPL-2.0"},
     {"github_url": "https://github.com/nicedoc/ventoy", "category": "system-utils", "alternative_to": "Rufus", "description_zh": "直接复制 ISO 文件制作多合一启动盘。", "description_en": "A new bootable USB solution.", "tags": ["启动盘", "装机"], "license": "GPL-3.0"},
     {"github_url": "https://github.com/nicedoc/tabby", "category": "system-utils", "alternative_to": "Windows Terminal", "description_zh": "超级终端，支持 SSH、SFTP 和各种终端模拟。", "description_en": "A terminal for the modern age.", "tags": ["终端", "SSH"], "license": "MIT"}
-  ]
+    ]
+}
