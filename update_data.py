@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""每日自动更新：更新 Stars/版本 + 随机新增 3-5 个候选项目 + 自动翻译中文简介 + 记录日志 + 生成 sitemap"""
+"""每日自动更新：更新 Stars/版本 + 随机新增 + 自动翻译 + 时间线带简介 + 生成 sitemap"""
 import json, os, random, re, time, requests
 from datetime import datetime, timedelta
 
@@ -10,7 +10,6 @@ HEADERS = {'Accept': 'application/vnd.github.v3+json'}
 if GITHUB_TOKEN:
     HEADERS['Authorization'] = f'token {GITHUB_TOKEN}'
 
-# 自动翻译
 try:
     from deep_translator import GoogleTranslator
     TRANSLATOR_AVAILABLE = True
@@ -24,13 +23,11 @@ def save_data(data):
     with open(DATA_PATH, 'w', encoding='utf-8') as f: json.dump(data, f, ensure_ascii=False, indent=2)
 
 def translate(text):
-    """自动翻译英文到中文，失败时返回原文"""
     if not text or len(text) < 10: return text
     try:
         if TRANSLATOR_AVAILABLE:
             return GoogleTranslator(source='en', target='zh-CN').translate(text[:500])
-    except:
-        pass
+    except: pass
     return text
 
 def get_repo_info(github_url):
@@ -43,8 +40,7 @@ def get_repo_info(github_url):
         if resp.status_code != 200: return None, None, None, None
         d = resp.json()
         return d.get('stargazers_count', 0), (d.get('latest_release') or {}).get('tag_name', ''), (d.get('license') or {}).get('spdx_id', ''), d.get('description', '')
-    except:
-        return None, None, None, None
+    except: return None, None, None, None
 
 def update_existing_projects(data):
     today_str = datetime.now().strftime('%Y-%m-%d')
@@ -59,7 +55,6 @@ def update_existing_projects(data):
             project['stars'] = stars; project['last_updated'] = today_str; updated += 1
         if version: project['version'] = version
         if lic and not project.get('license'): project['license'] = lic
-        # 如果中文简介太短，尝试用 GitHub 最新描述翻译补充
         if desc and (not project.get('description_zh') or len(project['description_zh']) < 30):
             project['description_en'] = desc
             project['description_zh'] = translate(desc)
@@ -79,14 +74,14 @@ def add_new_projects(data, count=3):
         if stars is None: continue
         name = item['github_url'].rstrip('/').split('/')[-1]
         slug = re.sub(r'[^a-z0-9-]', '-', name.lower()).strip('-')
-        # 英文简介：优先候选池预设，其次 GitHub API 返回的描述
         desc_en = item.get('description_en', '') or github_desc or ''
-        # 中文简介：优先候选池预设，其次自动翻译英文
         desc_zh = item.get('description_zh', '')
         if (not desc_zh or len(desc_zh) < 30) and desc_en:
             desc_zh = translate(desc_en)
         if not desc_zh:
             desc_zh = f'{name} 是一个优秀的开源项目。'
+        # 截取简介前40字作为时间线描述
+        short_desc = desc_zh[:40] + '...' if len(desc_zh) > 40 else desc_zh
         project = {
             'id': f'auto-{int(time.time())}-{random.randint(100,999)}',
             'name': name, 'slug': slug, 'category': item['category'], 'github_url': item['github_url'],
@@ -97,15 +92,17 @@ def add_new_projects(data, count=3):
         }
         data['projects'].append(project)
         pending.remove(item)
-        log_entries.append(f"{today_str} 🆕 新增收录：{name}（⭐ {stars:,}）")
+        log_entries.append(f"{today_str} 🆕 新增：{name}（⭐ {stars:,}）| {short_desc}")
         added += 1
         print(f'  ➕ 新增: {name} (⭐ {stars})')
         time.sleep(1)
     data['pending_projects'] = pending
-    # 版本更新日志
+    # 版本更新日志（也带简介）
     for proj in data['projects']:
         if proj.get('last_updated') == today_str and proj.get('date_added') != today_str and proj.get('version'):
-            log_entries.append(f"{today_str} 📦 {proj['name']} 更新至 {proj['version']}（⭐ {proj['stars']:,}）")
+            desc = proj.get('description_zh', '')
+            short = desc[:40] + '...' if len(desc) > 40 else desc
+            log_entries.append(f"{today_str} 📦 {proj['name']} 更新至 {proj['version']}（⭐ {proj['stars']:,}）| {short}")
     if 'update_log' not in data['site']: data['site']['update_log'] = []
     data['site']['update_log'] = (log_entries + data['site']['update_log'])[:30]
     return data, added
