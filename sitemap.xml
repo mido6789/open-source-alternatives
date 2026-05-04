@@ -1,98 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mido6789.github.io/open-source-alternatives/</loc>
+    <loc>https://kyal.cn/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://mido6789.github.io/open-source-alternatives/about.html</loc>
+    <loc>https://kyal.cn/about.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://mido6789.github.io/open-source-alternatives/privacy.html</loc>
+    <loc>https://kyal.cn/privacy.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://mido6789.github.io/open-source-alternatives/category.html</loc>
+    <loc>https://kyal.cn/category.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mido6789.github.io/open-source-alternatives/category.html?id=ai-agent</loc>
+    <loc>https://kyal.cn/category.html?id=ai-agent</loc>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mido6789.github.io/open-source-alternatives/category.html?id=design-tools</loc>
+    <loc>https://kyal.cn/category.html?id=design-tools</loc>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mido6789.github.io/open-source-alternatives/category.html?id=office-productivity</loc>
+    <loc>https://kyal.cn/category.html?id=office-productivity</loc>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mido6789.github.io/open-source-alternatives/category.html?id=dev-tools</loc>
+    <loc>https://kyal.cn/category.html?id=dev-tools</loc>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mido6789.github.io/open-source-alternatives/category.html?id=media-video</loc>
+    <loc>https://kyal.cn/category.html?id=media-video</loc>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mido6789.github.io/open-source-alternatives/category.html?id=security-privacy</loc>
+    <loc>https://kyal.cn/category.html?id=security-privacy</loc>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mido6789.github.io/open-source-alternatives/category.html?id=system-utils</loc>
+    <loc>https://kyal.cn/category.html?id=system-utils</loc>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mido6789.github.io/open-source-alternatives/detail.html?id=stable-diffusion-webui</loc>
+    <loc>https://kyal.cn/detail.html?id=stable-diffusion-webui</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://mido6789.github.io/open-source-alternatives/detail.html?id=gimp</loc>
+    <loc>https://kyal.cn/detail.html?id=gimp</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://mido6789.github.io/open-source-alternatives/detail.html?id=libreoffice</loc>
+    <loc>https://kyal.cn/detail.html?id=libreoffice</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://mido6789.github.io/open-source-alternatives/detail.html?id=langchain</loc>
+    <loc>https://kyal.cn/detail.html?id=langchain</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://mido6789.github.io/open-source-alternatives/detail.html?id=comfyui</loc>
+    <loc>https://kyal.cn/detail.html?id=comfyui</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://mido6789.github.io/open-source-alternatives/detail.html?id=audacity</loc>
+    <loc>https://kyal.cn/detail.html?id=audacity</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://mido6789.github.io/open-source-alternatives/detail.html?id=ollama</loc>
+    <loc>https://kyal.cn/detail.html?id=ollama</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kyal.cn/detail.html?id=blender</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kyal.cn/detail.html?id=keepassxc</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kyal.cn/detail.html?id=lobe-chat</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kyal.cn/detail.html?id=kdenlive</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>

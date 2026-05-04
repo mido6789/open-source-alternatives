@@ -6,6 +6,10 @@
     "contact_email": "mailtomidoo@gmail.com",
     "admin_password_hash": "",
     "update_log": [
+      "2026-05-04 🆕 新增收录：blender（⭐ 18,296）",
+      "2026-05-04 🆕 新增收录：keepassxc（⭐ 26,881）",
+      "2026-05-04 🆕 新增收录：lobe-chat（⭐ 76,014）",
+      "2026-05-04 🆕 新增收录：kdenlive（⭐ 1）",
       "2026-05-04 🆕 新增收录：langchain（⭐ 135,729）",
       "2026-05-04 🆕 新增收录：ComfyUI（⭐ 111,280）",
       "2026-05-04 🆕 新增收录：audacity（⭐ 16,904）",
@@ -71,11 +75,11 @@
       "slug": "stable-diffusion-webui",
       "category": "ai-agent",
       "github_url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
-      "stars": 162714,
+      "stars": 162715,
       "version": "",
       "last_updated": "2026-05-04",
       "stars_history": {
-        "2026-05-04": 162714
+        "2026-05-04": 162715
       },
       "description_zh": "一个功能强大的 Stable Diffusion 网页界面，支持文生图、图生图、图像修复等多种功能，是目前最流行的 AI 绘画工具之一。",
       "description_en": "A web interface for Stable Diffusion with support for txt2img, img2img, inpainting, and more.",
@@ -146,14 +150,14 @@
       "slug": "langchain",
       "category": "ai-agent",
       "github_url": "https://github.com/langchain-ai/langchain",
-      "stars": 135729,
+      "stars": 135736,
       "version": "",
       "last_updated": "2026-05-04",
       "stars_history": {
-        "2026-05-04": 135729
+        "2026-05-04": 135736
       },
-      "description_zh": "构建 LLM 应用的开源框架，支持链式调用和智能代理。",
-      "description_en": "Building applications with LLMs through composability.",
+      "description_zh": "代理工程平台。可在 TypeScript 中使用！",
+      "description_en": "The agent engineering platform. Available in TypeScript!",
       "alternative_to": "商业 AI 开发平台",
       "tags": [
         "AI开发",
@@ -171,11 +175,11 @@
       "slug": "comfyui",
       "category": "ai-agent",
       "github_url": "https://github.com/comfyanonymous/ComfyUI",
-      "stars": 111280,
+      "stars": 111287,
       "version": "",
       "last_updated": "2026-05-04",
       "stars_history": {
-        "2026-05-04": 111280
+        "2026-05-04": 111287
       },
       "description_zh": "基于节点的 Stable Diffusion 工作流工具，灵活高效。",
       "description_en": "A powerful and modular Stable Diffusion GUI with a node-based workflow.",
@@ -196,14 +200,14 @@
       "slug": "audacity",
       "category": "media-video",
       "github_url": "https://github.com/audacity/audacity",
-      "stars": 16904,
+      "stars": 16905,
       "version": "",
       "last_updated": "2026-05-04",
       "stars_history": {
-        "2026-05-04": 16904
+        "2026-05-04": 16905
       },
-      "description_zh": "经典开源音频编辑软件，支持多轨录音和丰富的效果处理。",
-      "description_en": "Audacity is an easy-to-use multi-track audio editor and recorder.",
+      "description_zh": "音频编辑器",
+      "description_en": "Audio Editor                                     ",
       "alternative_to": "Adobe Audition",
       "tags": [
         "音频",
@@ -239,6 +243,106 @@
       "download_url": "",
       "featured": false,
       "date_added": "2026-05-04"
+    },
+    {
+      "id": "auto-1777903715-962",
+      "name": "blender",
+      "slug": "blender",
+      "category": "media-video",
+      "github_url": "https://github.com/blender/blender",
+      "stars": 18296,
+      "version": "",
+      "last_updated": "2026-05-04",
+      "stars_history": {
+        "2026-05-04": 18296
+      },
+      "description_zh": "专业级开源 3D 创作套件，支持建模、渲染、动画、合成全流程。",
+      "description_en": "Blender is the free and open source 3D creation suite.",
+      "alternative_to": "Maya / 3ds Max / Cinema 4D",
+      "tags": [
+        "3D建模",
+        "动画",
+        "渲染"
+      ],
+      "license": "NOASSERTION",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-04"
+    },
+    {
+      "id": "auto-1777903716-969",
+      "name": "keepassxc",
+      "slug": "keepassxc",
+      "category": "security-privacy",
+      "github_url": "https://github.com/keepassxreboot/keepassxc",
+      "stars": 26881,
+      "version": "",
+      "last_updated": "2026-05-04",
+      "stars_history": {
+        "2026-05-04": 26881
+      },
+      "description_zh": "KeePassXC 是 KeePass 的跨平台社区驱动端口。",
+      "description_en": "KeePassXC is a cross-platform community-driven port of KeePass.",
+      "alternative_to": "1Password",
+      "tags": [
+        "密码管理",
+        "离线",
+        "安全"
+      ],
+      "license": "NOASSERTION",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-04"
+    },
+    {
+      "id": "auto-1777903718-946",
+      "name": "lobe-chat",
+      "slug": "lobe-chat",
+      "category": "ai-agent",
+      "github_url": "https://github.com/lobehub/lobe-chat",
+      "stars": 76014,
+      "version": "",
+      "last_updated": "2026-05-04",
+      "stars_history": {
+        "2026-05-04": 76014
+      },
+      "description_zh": "一个开源、现代设计的 ChatGPT/LLM UI/框架。",
+      "description_en": "An open-source, modern-design ChatGPT/LLMs UI/Framework.",
+      "alternative_to": "ChatGPT Plus",
+      "tags": [
+        "AI对话",
+        "多模型",
+        "插件"
+      ],
+      "license": "NOASSERTION",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-04"
+    },
+    {
+      "id": "auto-1777903720-330",
+      "name": "kdenlive",
+      "slug": "kdenlive",
+      "category": "media-video",
+      "github_url": "https://github.com/kdenlive/kdenlive",
+      "stars": 1,
+      "version": "",
+      "last_updated": "2026-05-04",
+      "stars_history": {
+        "2026-05-04": 1
+      },
+      "description_zh": "KDE 非线性视频编辑器。",
+      "description_en": "KDE Non-Linear Video Editor.",
+      "alternative_to": "Adobe Premiere Pro",
+      "tags": [
+        "视频编辑",
+        "剪辑",
+        "非线性编辑"
+      ],
+      "license": "GPL-2.0",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-04"
     }
   ],
   "pending_projects": [
@@ -269,19 +373,6 @@
       "license": "MIT"
     },
     {
-      "github_url": "https://github.com/lobehub/lobe-chat",
-      "category": "ai-agent",
-      "alternative_to": "ChatGPT Plus",
-      "description_zh": "现代化设计的 AI 对话框架，支持多模型和插件。",
-      "description_en": "An open-source, modern-design ChatGPT/LLMs UI/Framework.",
-      "tags": [
-        "AI对话",
-        "多模型",
-        "插件"
-      ],
-      "license": "MIT"
-    },
-    {
       "github_url": "https://github.com/vscode/vscode",
       "category": "dev-tools",
       "alternative_to": "Sublime Text / JetBrains",
@@ -293,19 +384,6 @@
         "IDE"
       ],
       "license": "MIT"
-    },
-    {
-      "github_url": "https://github.com/blender/blender",
-      "category": "media-video",
-      "alternative_to": "Maya / 3ds Max / Cinema 4D",
-      "description_zh": "专业级开源 3D 创作套件，支持建模、渲染、动画、合成全流程。",
-      "description_en": "Blender is the free and open source 3D creation suite.",
-      "tags": [
-        "3D建模",
-        "动画",
-        "渲染"
-      ],
-      "license": "GPL-3.0"
     },
     {
       "github_url": "https://github.com/bitwarden/clients",
@@ -356,32 +434,6 @@
         "矢量图",
         "SVG",
         "设计"
-      ],
-      "license": "GPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/kdenlive/kdenlive",
-      "category": "media-video",
-      "alternative_to": "Adobe Premiere Pro",
-      "description_zh": "功能丰富的开源视频编辑器，多轨道时间线和丰富的转场效果。",
-      "description_en": "KDE Non-Linear Video Editor.",
-      "tags": [
-        "视频编辑",
-        "剪辑",
-        "非线性编辑"
-      ],
-      "license": "GPL-2.0"
-    },
-    {
-      "github_url": "https://github.com/keepassxreboot/keepassxc",
-      "category": "security-privacy",
-      "alternative_to": "1Password",
-      "description_zh": "开源的离线密码管理器，数据库完全本地存储。",
-      "description_en": "KeePassXC is a cross-platform community-driven port of KeePass.",
-      "tags": [
-        "密码管理",
-        "离线",
-        "安全"
       ],
       "license": "GPL-3.0"
     }
