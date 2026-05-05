@@ -80,8 +80,8 @@ def add_new_projects(data, count=3):
             desc_zh = translate(desc_en)
         if not desc_zh:
             desc_zh = f'{name} 是一个优秀的开源项目。'
-        # 截取简介前40字作为时间线描述
-        short_desc = desc_zh[:40] + '...' if len(desc_zh) > 40 else desc_zh
+        # 截取简介前80字作为时间线描述
+        short_desc = desc_zh[:80] + '...' if len(desc_zh) > 80 else desc_zh
         project = {
             'id': f'auto-{int(time.time())}-{random.randint(100,999)}',
             'name': name, 'slug': slug, 'category': item['category'], 'github_url': item['github_url'],
@@ -101,7 +101,7 @@ def add_new_projects(data, count=3):
     for proj in data['projects']:
         if proj.get('last_updated') == today_str and proj.get('date_added') != today_str and proj.get('version'):
             desc = proj.get('description_zh', '')
-            short = desc[:40] + '...' if len(desc) > 40 else desc
+            short = desc[:80] + '...' if len(desc) > 80 else desc
             log_entries.append(f"{today_str} 📦 {proj['name']} 更新至 {proj['version']}（⭐ {proj['stars']:,}）| {short}")
     if 'update_log' not in data['site']: data['site']['update_log'] = []
     data['site']['update_log'] = (log_entries + data['site']['update_log'])[:30]
