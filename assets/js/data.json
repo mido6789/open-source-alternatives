@@ -84,7 +84,7 @@
         "2026-05-04": 162714,
         "2026-05-05": 162727
       },
-      "description_zh": "Stable Diffusion WebUI 是目前最流行的开源 AI 绘画工具，由 AUTOMATIC1111 开发。它提供了直观的网页操作界面，支持文生图、图生图、图像修复、超分辨率放大等多种强大功能。",
+      "description_zh": "Stable Diffusion WebUI 是目前最流行的开源 AI 绘画工具，由 AUTOMATIC1111 开发。它提供了直观的网页操作界面，支持文生图、图生图、图像修复、超分辨率放大等多种强大功能。用户可以通过丰富的扩展插件增强功能，支持多种模型切换，社区活跃教程丰富。无论专业画师还是业余爱好者，都能用它创作出令人惊艳的作品，完全免费无需付费订阅。",
       "description_en": "A web interface for Stable Diffusion.",
       "alternative_to": "Midjourney / DALL·E",
       "tags": [
@@ -109,7 +109,7 @@
         "2026-05-04": 6129,
         "2026-05-05": 6133
       },
-      "description_zh": "GIMP 是开源社区最知名的图像编辑软件，被誉为免费版的 Photoshop。它支持图层管理、通道操作、滤镜特效等专业功能。",
+      "description_zh": "GIMP（GNU Image Manipulation Program）是开源社区最知名的图像编辑软件，被誉为免费版的 Photoshop。它支持图层管理、通道操作、蒙版编辑、色彩调整、滤镜特效等专业功能，可以处理各种常见的图片格式。GIMP 拥有可定制的界面和丰富的插件生态，还可以通过 G MIC 等扩展获得数百种额外滤镜，是平面设计和照片修图的强大替代方案。",
       "description_en": "GNU Image Manipulation Program.",
       "alternative_to": "Adobe Photoshop",
       "tags": [
@@ -134,7 +134,7 @@
         "2026-05-04": 3899,
         "2026-05-05": 3899
       },
-      "description_zh": "LibreOffice 是自由开源办公套件的标杆，包含 Writer、Calc、Impress 等六大组件，全面兼容 Microsoft Office 格式。",
+      "description_zh": "LibreOffice 是自由开源办公套件的标杆，包含 Writer、Calc、Impress、Draw、Base 和 Math 六大组件。它全面兼容 Microsoft Office 格式，支持 ODF 开放文档标准，可跨平台运行在 Windows、macOS 和 Linux 上，由全球社区维护定期更新。",
       "description_en": "A free and open-source office suite.",
       "alternative_to": "Microsoft Office",
       "tags": [
@@ -159,7 +159,7 @@
         "2026-05-04": 135740,
         "2026-05-05": 135799
       },
-      "description_zh": "LangChain 是当前最流行的 LLM 应用开发框架，提供链式调用、智能代理等核心模块。",
+      "description_zh": "LangChain 是当前最流行的 LLM 应用开发框架，支持 Python 和 JavaScript。它提供了链式调用、智能代理、记忆管理、向量检索等核心模块，让开发者可以快速构建基于 GPT、Claude、Llama 等大模型的应用。无论是聊天机器人、文档问答系统还是自动化工作流，LangChain 都能大幅降低开发复杂度，是 AI 应用开发的事实标准。",
       "description_en": "Building applications with LLMs through composability.",
       "alternative_to": "商业 AI 开发平台",
       "tags": [
@@ -184,7 +184,7 @@
         "2026-05-04": 111299,
         "2026-05-05": 111387
       },
-      "description_zh": "ComfyUI 是一款基于节点的 Stable Diffusion 工作流工具，以灵活性和可复现性著称。",
+      "description_zh": "ComfyUI 是一款基于节点的 Stable Diffusion 工作流工具，以灵活性和可复现性著称。用户可以通过拖拽和连接节点来构建复杂的图像生成流水线，精确控制每一步的处理过程。它支持加载多种模型、LoRA、ControlNet 等，适合需要精细控制生成流程的高级用户和研究用途，在 AI 绘画社区中极受欢迎。",
       "description_en": "A powerful and modular Stable Diffusion GUI.",
       "alternative_to": "ComfyUI 云端服务",
       "tags": [
@@ -209,7 +209,7 @@
         "2026-05-04": 16904,
         "2026-05-05": 16908
       },
-      "description_zh": "Audacity 是最知名的开源音频编辑软件，支持多轨录音和丰富的音效处理。",
+      "description_zh": "Audacity 是最知名的开源音频编辑软件，已持续开发超过 20 年。它支持多轨录音和编辑，提供剪切、复制、拼接、混音等基本操作，内置丰富的音效处理功能包括均衡器、压缩器、降噪、变调和混响。支持导入导出 WAV、MP3、FLAC、OGG 等多种格式，可安装 VST 等第三方插件扩展功能，是 Adobe Audition 的最佳免费替代品。",
       "description_en": "Audacity is an easy-to-use multi-track audio editor.",
       "alternative_to": "Adobe Audition",
       "tags": [
@@ -234,7 +234,7 @@
         "2026-05-04": 170670,
         "2026-05-05": 170720
       },
-      "description_zh": "Ollama 让你在本地电脑上轻松运行 Llama、Mistral 等大语言模型，数据完全在本地处理。",
+      "description_zh": "Ollama 是一个让你在本地电脑上轻松运行大语言模型的开源工具。它支持 Llama 3、Mistral、Gemma、Qwen、DeepSeek 等众多主流开源模型，只需一条命令就能下载并启动模型服务。Ollama 提供兼容 OpenAI API 的接口，可以无缝对接各种 AI 应用和前端界面，数据完全在本地处理无需联网，保护隐私安全。",
       "description_en": "Get up and running with large language models locally.",
       "alternative_to": "OpenAI API",
       "tags": [
