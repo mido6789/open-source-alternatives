@@ -6,6 +6,9 @@
     "contact_email": "mailtomidoo@gmail.com",
     "admin_password_hash": "",
     "update_log": [
+      "2026-05-05 🆕 新增：AdGuardHome（⭐ 33,855）| 网络范围内的广告和跟踪器会阻止 DNS 服务器。",
+      "2026-05-05 🆕 新增：qBittorrent（⭐ 37,119）| qBittorrent BitTorrent 客户端。",
+      "2026-05-05 🆕 新增：flameshot（⭐ 29,835）| 功能强大且易于使用的屏幕截图软件。",
       "2026-05-05 🆕 新增：umami（⭐ 36,468）| 一个简单的网络分析解决方案。",
       "2026-05-04 🆕 新增：drawio（⭐ 5,189）| draw.io 是一个图表应用程序。",
       "2026-05-04 🆕 新增：openshot-qt（⭐ 5,719）| OpenShot 视频编辑器。",
@@ -174,12 +177,12 @@
       "slug": "comfyui",
       "category": "ai-agent",
       "github_url": "https://github.com/comfyanonymous/ComfyUI",
-      "stars": 111385,
+      "stars": 111387,
       "version": "",
       "last_updated": "2026-05-05",
       "stars_history": {
         "2026-05-04": 111299,
-        "2026-05-05": 111385
+        "2026-05-05": 111387
       },
       "description_zh": "ComfyUI 是一款基于节点的 Stable Diffusion 工作流工具，以灵活性和可复现性著称。",
       "description_en": "A powerful and modular Stable Diffusion GUI.",
@@ -224,12 +227,12 @@
       "slug": "ollama",
       "category": "ai-agent",
       "github_url": "https://github.com/ollama/ollama",
-      "stars": 170717,
+      "stars": 170720,
       "version": "",
       "last_updated": "2026-05-05",
       "stars_history": {
         "2026-05-04": 170670,
-        "2026-05-05": 170717
+        "2026-05-05": 170720
       },
       "description_zh": "Ollama 让你在本地电脑上轻松运行 Llama、Mistral 等大语言模型，数据完全在本地处理。",
       "description_en": "Get up and running with large language models locally.",
@@ -249,12 +252,12 @@
       "slug": "drawio",
       "category": "design-tools",
       "github_url": "https://github.com/jgraph/drawio",
-      "stars": 5200,
+      "stars": 5201,
       "version": "",
       "last_updated": "2026-05-05",
       "stars_history": {
         "2026-05-04": 5189,
-        "2026-05-05": 5200
+        "2026-05-05": 5201
       },
       "description_zh": "draw.io 是一个用于一般图表绘制的 JavaScript 客户端编辑器。",
       "description_en": "draw.io is a JavaScript, client-side editor for general diagramming.",
@@ -305,14 +308,86 @@
       "stars_history": {
         "2026-05-05": 36468
       },
-      "description_zh": "一个简单的网络分析解决方案。",
-      "description_en": "A simple web analytics solution.",
+      "description_zh": "Umami 是一个注重隐私的现代分析平台。 Google Analytics、Mixpanel 和 Amplitude 的开源替代品。",
+      "description_en": "Umami is a modern, privacy-focused analytics platform. An open-source alternative to Google Analytics, Mixpanel and Amplitude.",
       "alternative_to": "Google Analytics",
       "tags": [
         "网站统计",
         "自建"
       ],
       "license": "MIT",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-05"
+    },
+    {
+      "id": "auto-1777966374-324",
+      "name": "AdGuardHome",
+      "slug": "adguardhome",
+      "category": "security-privacy",
+      "github_url": "https://github.com/AdguardTeam/AdGuardHome",
+      "stars": 33855,
+      "version": "",
+      "last_updated": "2026-05-05",
+      "stars_history": {
+        "2026-05-05": 33855
+      },
+      "description_zh": "网络范围内的广告和跟踪器会阻止 DNS 服务器。",
+      "description_en": "Network-wide ads & trackers blocking DNS server.",
+      "alternative_to": "商业 DNS 过滤",
+      "tags": [
+        "广告拦截",
+        "DNS"
+      ],
+      "license": "GPL-3.0",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-05"
+    },
+    {
+      "id": "auto-1777966377-822",
+      "name": "qBittorrent",
+      "slug": "qbittorrent",
+      "category": "system-utils",
+      "github_url": "https://github.com/qbittorrent/qBittorrent",
+      "stars": 37119,
+      "version": "",
+      "last_updated": "2026-05-05",
+      "stars_history": {
+        "2026-05-05": 37119
+      },
+      "description_zh": "qBittorrent BitTorrent 客户端。",
+      "description_en": "qBittorrent BitTorrent client.",
+      "alternative_to": "uTorrent",
+      "tags": [
+        "BT下载",
+        "P2P"
+      ],
+      "license": "NOASSERTION",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-05"
+    },
+    {
+      "id": "auto-1777966379-107",
+      "name": "flameshot",
+      "slug": "flameshot",
+      "category": "system-utils",
+      "github_url": "https://github.com/flameshot-org/flameshot",
+      "stars": 29835,
+      "version": "",
+      "last_updated": "2026-05-05",
+      "stars_history": {
+        "2026-05-05": 29835
+      },
+      "description_zh": "功能强大且易于使用的屏幕截图软件。",
+      "description_en": "Powerful yet simple to use screenshot software.",
+      "alternative_to": "Snagit / 截图工具",
+      "tags": [
+        "截图",
+        "标注"
+      ],
+      "license": "GPL-3.0",
       "download_url": "",
       "featured": false,
       "date_added": "2026-05-05"
@@ -884,18 +959,6 @@
       "license": "EUPL-1.2"
     },
     {
-      "github_url": "https://github.com/AdguardTeam/AdGuardHome",
-      "category": "security-privacy",
-      "alternative_to": "商业 DNS 过滤",
-      "description_zh": "网络级广告和追踪器拦截 DNS 服务器。",
-      "description_en": "Network-wide ads & trackers blocking DNS server.",
-      "tags": [
-        "广告拦截",
-        "DNS"
-      ],
-      "license": "GPL-3.0"
-    },
-    {
       "github_url": "https://github.com/torproject/tor",
       "category": "security-privacy",
       "alternative_to": "商业 VPN",
@@ -956,18 +1019,6 @@
       "license": "GPL-3.0"
     },
     {
-      "github_url": "https://github.com/qbittorrent/qBittorrent",
-      "category": "system-utils",
-      "alternative_to": "uTorrent",
-      "description_zh": "轻量级开源 BT 下载工具，无广告无捆绑。",
-      "description_en": "qBittorrent BitTorrent client.",
-      "tags": [
-        "BT下载",
-        "P2P"
-      ],
-      "license": "GPL-2.0"
-    },
-    {
       "github_url": "https://github.com/duplicati/duplicati",
       "category": "system-utils",
       "alternative_to": "商业备份软件",
@@ -1024,18 +1075,6 @@
       "tags": [
         "监控",
         "服务器"
-      ],
-      "license": "GPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/flameshot-org/flameshot",
-      "category": "system-utils",
-      "alternative_to": "Snagit / 截图工具",
-      "description_zh": "直观的开源截图神器，带有丰富的标注功能。",
-      "description_en": "Powerful yet simple to use screenshot software.",
-      "tags": [
-        "截图",
-        "标注"
       ],
       "license": "GPL-3.0"
     },
