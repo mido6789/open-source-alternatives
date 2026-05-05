@@ -6,6 +6,7 @@
     "contact_email": "mailtomidoo@gmail.com",
     "admin_password_hash": "",
     "update_log": [
+      "2026-05-05 🆕 新增：umami（⭐ 36,468）| 一个简单的网络分析解决方案。",
       "2026-05-04 🆕 新增：drawio（⭐ 5,189）| draw.io 是一个图表应用程序。",
       "2026-05-04 🆕 新增：openshot-qt（⭐ 5,719）| OpenShot 视频编辑器。",
       "2026-05-04 🆕 新增收录：langchain（⭐ 135,729）",
@@ -73,11 +74,12 @@
       "slug": "stable-diffusion-webui",
       "category": "ai-agent",
       "github_url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
-      "stars": 162714,
+      "stars": 162727,
       "version": "",
-      "last_updated": "2026-05-04",
+      "last_updated": "2026-05-05",
       "stars_history": {
-        "2026-05-04": 162714
+        "2026-05-04": 162714,
+        "2026-05-05": 162727
       },
       "description_zh": "Stable Diffusion WebUI 是目前最流行的开源 AI 绘画工具，由 AUTOMATIC1111 开发。它提供了直观的网页操作界面，支持文生图、图生图、图像修复、超分辨率放大等多种强大功能。",
       "description_en": "A web interface for Stable Diffusion.",
@@ -97,11 +99,12 @@
       "slug": "gimp",
       "category": "design-tools",
       "github_url": "https://github.com/GNOME/gimp",
-      "stars": 6129,
+      "stars": 6133,
       "version": "",
-      "last_updated": "2026-05-04",
+      "last_updated": "2026-05-05",
       "stars_history": {
-        "2026-05-04": 6129
+        "2026-05-04": 6129,
+        "2026-05-05": 6133
       },
       "description_zh": "GIMP 是开源社区最知名的图像编辑软件，被誉为免费版的 Photoshop。它支持图层管理、通道操作、滤镜特效等专业功能。",
       "description_en": "GNU Image Manipulation Program.",
@@ -123,9 +126,10 @@
       "github_url": "https://github.com/LibreOffice/core",
       "stars": 3899,
       "version": "",
-      "last_updated": "2026-05-04",
+      "last_updated": "2026-05-05",
       "stars_history": {
-        "2026-05-04": 3899
+        "2026-05-04": 3899,
+        "2026-05-05": 3899
       },
       "description_zh": "LibreOffice 是自由开源办公套件的标杆，包含 Writer、Calc、Impress 等六大组件，全面兼容 Microsoft Office 格式。",
       "description_en": "A free and open-source office suite.",
@@ -145,11 +149,12 @@
       "slug": "langchain",
       "category": "ai-agent",
       "github_url": "https://github.com/langchain-ai/langchain",
-      "stars": 135740,
+      "stars": 135799,
       "version": "",
-      "last_updated": "2026-05-04",
+      "last_updated": "2026-05-05",
       "stars_history": {
-        "2026-05-04": 135740
+        "2026-05-04": 135740,
+        "2026-05-05": 135799
       },
       "description_zh": "LangChain 是当前最流行的 LLM 应用开发框架，提供链式调用、智能代理等核心模块。",
       "description_en": "Building applications with LLMs through composability.",
@@ -169,11 +174,12 @@
       "slug": "comfyui",
       "category": "ai-agent",
       "github_url": "https://github.com/comfyanonymous/ComfyUI",
-      "stars": 111299,
+      "stars": 111385,
       "version": "",
-      "last_updated": "2026-05-04",
+      "last_updated": "2026-05-05",
       "stars_history": {
-        "2026-05-04": 111299
+        "2026-05-04": 111299,
+        "2026-05-05": 111385
       },
       "description_zh": "ComfyUI 是一款基于节点的 Stable Diffusion 工作流工具，以灵活性和可复现性著称。",
       "description_en": "A powerful and modular Stable Diffusion GUI.",
@@ -193,11 +199,12 @@
       "slug": "audacity",
       "category": "media-video",
       "github_url": "https://github.com/audacity/audacity",
-      "stars": 16904,
+      "stars": 16908,
       "version": "",
-      "last_updated": "2026-05-04",
+      "last_updated": "2026-05-05",
       "stars_history": {
-        "2026-05-04": 16904
+        "2026-05-04": 16904,
+        "2026-05-05": 16908
       },
       "description_zh": "Audacity 是最知名的开源音频编辑软件，支持多轨录音和丰富的音效处理。",
       "description_en": "Audacity is an easy-to-use multi-track audio editor.",
@@ -217,11 +224,12 @@
       "slug": "ollama",
       "category": "ai-agent",
       "github_url": "https://github.com/ollama/ollama",
-      "stars": 170670,
+      "stars": 170717,
       "version": "",
-      "last_updated": "2026-05-04",
+      "last_updated": "2026-05-05",
       "stars_history": {
-        "2026-05-04": 170670
+        "2026-05-04": 170670,
+        "2026-05-05": 170717
       },
       "description_zh": "Ollama 让你在本地电脑上轻松运行 Llama、Mistral 等大语言模型，数据完全在本地处理。",
       "description_en": "Get up and running with large language models locally.",
@@ -241,14 +249,15 @@
       "slug": "drawio",
       "category": "design-tools",
       "github_url": "https://github.com/jgraph/drawio",
-      "stars": 5189,
+      "stars": 5200,
       "version": "",
-      "last_updated": "2026-05-04",
+      "last_updated": "2026-05-05",
       "stars_history": {
-        "2026-05-04": 5189
+        "2026-05-04": 5189,
+        "2026-05-05": 5200
       },
-      "description_zh": "draw.io 是一个图表应用程序。",
-      "description_en": "draw.io is a diagramming application.",
+      "description_zh": "draw.io 是一个用于一般图表绘制的 JavaScript 客户端编辑器。",
+      "description_en": "draw.io is a JavaScript, client-side editor for general diagramming.",
       "alternative_to": "Visio / Lucidchart",
       "tags": [
         "流程图",
@@ -265,14 +274,15 @@
       "slug": "openshot-qt",
       "category": "media-video",
       "github_url": "https://github.com/openshot/openshot-qt",
-      "stars": 5719,
+      "stars": 5723,
       "version": "",
-      "last_updated": "2026-05-04",
+      "last_updated": "2026-05-05",
       "stars_history": {
-        "2026-05-04": 5719
+        "2026-05-04": 5719,
+        "2026-05-05": 5723
       },
-      "description_zh": "OpenShot 视频编辑器。",
-      "description_en": "OpenShot Video Editor.",
+      "description_zh": "OpenShot Video Editor 是一款屡获殊荣的免费开源视频编辑器，适用于 Linux、Mac 和 Windows，致力于向世界提供高质量的视频编辑和动画解决方案。",
+      "description_en": "OpenShot Video Editor is an award-winning free and open-source video editor for Linux, Mac, and Windows, and is dedicated to delivering high quality video editing and animation solutions to the world.",
       "alternative_to": "Adobe Premiere Pro",
       "tags": [
         "视频编辑",
@@ -282,6 +292,30 @@
       "download_url": "",
       "featured": false,
       "date_added": "2026-05-04"
+    },
+    {
+      "id": "auto-1777965494-831",
+      "name": "umami",
+      "slug": "umami",
+      "category": "dev-tools",
+      "github_url": "https://github.com/umami-software/umami",
+      "stars": 36468,
+      "version": "",
+      "last_updated": "2026-05-05",
+      "stars_history": {
+        "2026-05-05": 36468
+      },
+      "description_zh": "一个简单的网络分析解决方案。",
+      "description_en": "A simple web analytics solution.",
+      "alternative_to": "Google Analytics",
+      "tags": [
+        "网站统计",
+        "自建"
+      ],
+      "license": "MIT",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-05"
     }
   ],
   "pending_projects": [
@@ -752,18 +786,6 @@
         "隐私"
       ],
       "license": "AGPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/umami-software/umami",
-      "category": "dev-tools",
-      "alternative_to": "Google Analytics",
-      "description_zh": "极简开源网站分析工具，数据自己掌控，支持自部署。",
-      "description_en": "A simple web analytics solution.",
-      "tags": [
-        "网站统计",
-        "自建"
-      ],
-      "license": "MIT"
     },
     {
       "github_url": "https://github.com/pocketbase/pocketbase",
