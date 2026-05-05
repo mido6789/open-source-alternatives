@@ -1,4 +1,4 @@
-# 🔄 OpenSourceAlternatives.com
+# 🔄 开源替代 kyal.cn
 
 发现优秀的开源替代方案，告别高价付费软件。
 
