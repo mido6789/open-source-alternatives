@@ -38,7 +38,7 @@ function escapeHtml(str) {
   return div.innerHTML;
 }
 
-// ========== 创建项目卡片 ==========
+// ========== 创建项目卡片（新窗口打开）==========
 function createProjectCard(project) {
   const category = siteData.categories.find(c => c.id === project.category);
   const catName = category ? category.name : project.category;
@@ -48,7 +48,7 @@ function createProjectCard(project) {
     <div class="project-card">
       ${project.featured ? '<span class="featured-star" title="精选推荐">⭐</span>' : ''}
       <span class="category-tag">${catIcon} ${catName}</span>
-      <h3><a href="/detail.html?id=${project.slug}">${escapeHtml(project.name)}</a></h3>
+      <h3><a href="/detail.html?id=${project.slug}" target="_blank">${escapeHtml(project.name)}</a></h3>
       <p class="description">${escapeHtml(project.description_zh)}</p>
       <div class="meta">
         <span>⭐ ${getStarDisplay(project.stars)}</span>
@@ -59,7 +59,7 @@ function createProjectCard(project) {
   `;
 }
 
-// ========== 本周热门 ==========
+// ========== 本周热门（新窗口打开）==========
 function getWeeklyHotProjects(data) {
   const today = new Date();
   const sevenDaysAgo = new Date(today - 7 * 24 * 60 * 60 * 1000);
@@ -95,7 +95,7 @@ function createHotProjectCard(project) {
     <div class="project-card hot-card">
       ${project.weekly_growth > 500 ? '<span class="hot-badge">🔥 热门</span>' : ''}
       <span class="category-tag">${catIcon} ${catName}</span>
-      <h3><a href="/detail.html?id=${project.slug}">${escapeHtml(project.name)}</a></h3>
+      <h3><a href="/detail.html?id=${project.slug}" target="_blank">${escapeHtml(project.name)}</a></h3>
       <p class="description">${escapeHtml(project.description_zh)}</p>
       <div class="meta">
         <span>⭐ ${getStarDisplay(project.stars)}</span>
@@ -365,7 +365,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSearch();
 
   const path = window.location.pathname;
-  if (path === '/' || path.endsWith('index.html') || path.endsWith('open-source-alternatives/')) {
+  if (path === '/' || path.endsWith('index.html') || path.endsWith('/')) {
     renderHomePage();
   } else if (path.includes('category.html')) {
     renderCategoryPage();
