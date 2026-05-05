@@ -1,46 +1,62 @@
 #!/usr/bin/env python3
 """每日自动更新：更新 Stars/版本 + 随机新增 + 自动翻译 + 时间线带简介 + 生成 sitemap"""
-import json, os, random, re, time, requests
+import json, os, random, re, time, base64
 from datetime import datetime, timedelta
+import urllib.request
+import urllib.error
+import urllib.parse
 
 DATA_PATH = 'assets/js/data.json'
 SITEMAP_PATH = 'sitemap.xml'
 GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN', '')
-HEADERS = {'Accept': 'application/vnd.github.v3+json'}
-if GITHUB_TOKEN:
-    HEADERS['Authorization'] = f'token {GITHUB_TOKEN}'
 
-try:
-    from deep_translator import GoogleTranslator
-    TRANSLATOR_AVAILABLE = True
-except ImportError:
-    TRANSLATOR_AVAILABLE = False
+def translate(text):
+    if not text or len(text) < 10: return text
+    try:
+        url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-CN&dt=t&q=" + urllib.parse.quote(text[:500])
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            result = json.loads(resp.read().decode())
+            return ''.join([s[0] for s in result[0] if s[0]])
+    except:
+        return text
+
+def get_repo_info(github_url):
+    match = re.search(r'github\.com/([^/]+)/([^/]+?)(?:\.git)?$', github_url)
+    if not match: return None, None, None, None
+    owner, repo = match.groups()
+    url = f'https://api.github.com/repos/{owner}/{repo}'
+    headers = {'Accept': 'application/vnd.github.v3+json', 'User-Agent': 'Python'}
+    if GITHUB_TOKEN:
+        headers['Authorization'] = f'token {GITHUB_TOKEN}'
+    try:
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            d = json.loads(resp.read().decode())
+        version = (d.get('latest_release') or {}).get('tag_name', '')
+        lic = (d.get('license') or {}).get('spdx_id', '')
+        desc = d.get('description', '')
+        if not desc or len(desc) < 80:
+            try:
+                readme_url = f'https://api.github.com/repos/{owner}/{repo}/readme'
+                readme_req = urllib.request.Request(readme_url, headers=headers)
+                with urllib.request.urlopen(readme_req, timeout=10) as rr:
+                    readme_content = base64.b64decode(json.loads(rr.read().decode())['content']).decode('utf-8', errors='ignore')
+                    desc = readme_content[:500].replace('\n', ' ').strip()
+            except:
+                pass
+        return d.get('stargazers_count', 0), version, lic, desc
+    except urllib.error.HTTPError as e:
+        if e.code == 403: time.sleep(2)
+        return None, None, None, None
+    except:
+        return None, None, None, None
 
 def load_data():
     with open(DATA_PATH, 'r', encoding='utf-8') as f: return json.load(f)
 
 def save_data(data):
     with open(DATA_PATH, 'w', encoding='utf-8') as f: json.dump(data, f, ensure_ascii=False, indent=2)
-
-def translate(text):
-    if not text or len(text) < 10: return text
-    try:
-        if TRANSLATOR_AVAILABLE:
-            return GoogleTranslator(source='en', target='zh-CN').translate(text[:500])
-    except: pass
-    return text
-
-def get_repo_info(github_url):
-    match = re.search(r'github\.com/([^/]+)/([^/]+?)(?:\.git)?$', github_url)
-    if not match: return None, None, None, None
-    owner, repo = match.groups()
-    try:
-        resp = requests.get(f'https://api.github.com/repos/{owner}/{repo}', headers=HEADERS, timeout=15)
-        if resp.status_code == 403: time.sleep(2); return None, None, None, None
-        if resp.status_code != 200: return None, None, None, None
-        d = resp.json()
-        return d.get('stargazers_count', 0), (d.get('latest_release') or {}).get('tag_name', ''), (d.get('license') or {}).get('spdx_id', ''), d.get('description', '')
-    except: return None, None, None, None
 
 def update_existing_projects(data):
     today_str = datetime.now().strftime('%Y-%m-%d')
@@ -80,7 +96,6 @@ def add_new_projects(data, count=3):
             desc_zh = translate(desc_en)
         if not desc_zh:
             desc_zh = f'{name} 是一个优秀的开源项目。'
-        # 截取简介前80字作为时间线描述
         short_desc = desc_zh[:80] + '...' if len(desc_zh) > 80 else desc_zh
         project = {
             'id': f'auto-{int(time.time())}-{random.randint(100,999)}',
@@ -97,7 +112,6 @@ def add_new_projects(data, count=3):
         print(f'  ➕ 新增: {name} (⭐ {stars})')
         time.sleep(1)
     data['pending_projects'] = pending
-    # 版本更新日志（也带简介）
     for proj in data['projects']:
         if proj.get('last_updated') == today_str and proj.get('date_added') != today_str and proj.get('version'):
             desc = proj.get('description_zh', '')
