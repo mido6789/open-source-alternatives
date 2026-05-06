@@ -11,10 +11,19 @@ SITEMAP_PATH = 'sitemap.xml'
 GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN', '')
 
 def strip_html(text):
-    """去除HTML标签，只保留纯文本"""
+    """去除HTML标签和Markdown格式，只保留纯文本"""
     if not text: return text
-    # 移除所有HTML标签
+    # 移除 HTML 标签
     clean = re.sub(r'<[^>]+>', ' ', text)
+    # 移除 Markdown 图片和链接语法
+    clean = re.sub(r'\[!\[.*?\]\(.*?\)\]\(.*?\)', ' ', clean)
+    clean = re.sub(r'!\[.*?\]\(.*?\)', ' ', clean)
+    clean = re.sub(r'\[([^\]]*)\]\([^)]+\)', r'\1', clean)
+    # 移除 Markdown 标题标记 #
+    clean = re.sub(r'^#{1,6}\s*', '', clean, flags=re.MULTILINE)
+    # 移除分隔线和多余符号
+    clean = re.sub(r'[-=*]{3,}', ' ', clean)
+    clean = re.sub(r'[`*_~>|]', ' ', clean)
     # 移除多余空白
     clean = re.sub(r'\s+', ' ', clean).strip()
     return clean
@@ -45,18 +54,15 @@ def get_repo_info(github_url):
         version = (d.get('latest_release') or {}).get('tag_name', '')
         lic = (d.get('license') or {}).get('spdx_id', '')
         desc = d.get('description', '')
-        # 如果简介太短，尝试从README获取更多内容
         if not desc or len(desc) < 80:
             try:
                 readme_url = f'https://api.github.com/repos/{owner}/{repo}/readme'
                 readme_req = urllib.request.Request(readme_url, headers=headers)
                 with urllib.request.urlopen(readme_req, timeout=10) as rr:
                     readme_content = base64.b64decode(json.loads(rr.read().decode())['content']).decode('utf-8', errors='ignore')
-                    # 去除HTML标签，只保留纯文本
                     desc = strip_html(readme_content)[:500]
             except:
                 pass
-        # 确保描述是纯文本
         desc = strip_html(desc) if desc else desc
         return d.get('stargazers_count', 0), version, lic, desc
     except urllib.error.HTTPError as e:
@@ -104,7 +110,6 @@ def add_new_projects(data, count=3):
         name = item['github_url'].rstrip('/').split('/')[-1]
         slug = re.sub(r'[^a-z0-9-]', '-', name.lower()).strip('-')
         desc_en = item.get('description_en', '') or github_desc or ''
-        # 确保英文简介是纯文本
         desc_en = strip_html(desc_en)
         desc_zh = item.get('description_zh', '')
         if (not desc_zh or len(desc_zh) < 30) and desc_en:
