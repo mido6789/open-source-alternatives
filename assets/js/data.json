@@ -6,26 +6,17 @@
     "contact_email": "mailtomidoo@gmail.com",
     "admin_password_hash": "",
     "update_log": [
-      "2026-05-06 🆕 新增：open-interpreter（⭐ 63,406）| 自然语言计算机界面。",
-      "2026-05-06 🆕 新增：excalidraw（⭐ 122,605）| 用于绘制手绘草图的虚拟白板。",
-      "2026-05-06 🆕 新增：appflowy（⭐ 70,261）| Notion 的开源替代方案。",
-      "2026-05-06 🆕 新增：pocketbase（⭐ 58,159）| 在 1 个文件中开源实时后端。",
-      "2026-05-06 🆕 新增：olive（⭐ 9,010）| 免费的开源非线性视频编辑器。",
-      "2026-05-06 🆕 新增：lobe-chat（⭐ 76,087）| 开源、现代设计的 ChatGPT/LLMs UI。",
-      "2026-05-05 🆕 新增：metabase（⭐ 47,195）| 简单开源的数据查询与可视化平台，无需编写 SQL 即可分析。",
-      "2026-05-05 🆕 新增：Ventoy（⭐ 76,401）| 新一代多系统启动盘制作工具，直接复制 iso 文件即可启动。",
-      "2026-05-05 🆕 新增：Files（⭐ 43,277）| 构建适用于 Windows 的最佳文件管理器。",
-      "2026-05-05 🆕 新增：mattermost（⭐ 36,533）| 用于安全协作的开源平台。",
-      "2026-05-05 🆕 新增：AdGuardHome（⭐ 33,855）| 网络范围内的广告和跟踪器会阻止 DNS 服务器。",
-      "2026-05-05 🆕 新增：qBittorrent（⭐ 37,119）| qBittorrent BitTorrent 客户端。",
-      "2026-05-05 🆕 新增：flameshot（⭐ 29,835）| 功能强大且易于使用的屏幕截图软件。",
-      "2026-05-05 🆕 新增：umami（⭐ 36,468）| 一个简单的网络分析解决方案。",
-      "2026-05-04 🆕 新增：drawio（⭐ 5,189）| draw.io 是一个图表应用程序。",
-      "2026-05-04 🆕 新增：openshot-qt（⭐ 5,719）| OpenShot 视频编辑器。",
-      "2026-05-04 🆕 新增收录：langchain（⭐ 135,729）",
-      "2026-05-04 🆕 新增收录：ComfyUI（⭐ 111,280）",
-      "2026-05-04 🆕 新增收录：audacity（⭐ 16,904）",
-      "2026-05-04 🆕 新增收录：ollama（⭐ 170,663）"
+      "2026-05-06 🆕 新增：olive（⭐ 9,045）| 🆕 新增：lobe-chat（⭐ 76,141）",
+      "2026-05-06 🆕 新增：AppFlowy-IO（⭐ 76,141）| 开源笔记和项目管理工具...",
+      "2026-05-06 🆕 新增：Stirling-Tools（⭐ 59,625）| 全能私有化 PDF 工具箱...",
+      "2026-05-06 🆕 新增：n8n-io（⭐ 82,849）| 开源自动化平台...",
+      "2026-05-05 🆕 新增：AdGuardHome（⭐ 33,855）| 网络级广告和追踪器拦截 DNS...",
+      "2026-05-05 🆕 新增：qBittorrent（⭐ 37,119）| 轻量级开源 BT 下载工具...",
+      "2026-05-05 🆕 新增：flameshot（⭐ 29,835）| 直观的开源截图神器...",
+      "2026-05-04 🆕 新增：langchain（⭐ 135,729）",
+      "2026-05-04 🆕 新增：ComfyUI（⭐ 111,280）",
+      "2026-05-04 🆕 新增：audacity（⭐ 16,904）",
+      "2026-05-04 🆕 新增：ollama（⭐ 170,663）"
     ],
     "ads": {
       "sidebar_top": "",
@@ -37,1241 +28,169 @@
     }
   },
   "categories": [
-    {
-      "id": "ai-agent",
-      "name": "AI & Agent",
-      "icon": "🤖",
-      "description": "人工智能与智能代理工具"
-    },
-    {
-      "id": "design-tools",
-      "name": "设计工具",
-      "icon": "🎨",
-      "description": "平面设计、UI/UX、图片处理"
-    },
-    {
-      "id": "office-productivity",
-      "name": "办公效率",
-      "icon": "📊",
-      "description": "文档处理、笔记、项目管理"
-    },
-    {
-      "id": "dev-tools",
-      "name": "开发工具",
-      "icon": "💻",
-      "description": "代码编辑、API管理、数据库"
-    },
-    {
-      "id": "media-video",
-      "name": "影音图像",
-      "icon": "🎬",
-      "description": "视频剪辑、音频处理、动效制作"
-    },
-    {
-      "id": "security-privacy",
-      "name": "安全隐私",
-      "icon": "🔒",
-      "description": "密码管理、加密通讯、隐私保护"
-    },
-    {
-      "id": "system-utils",
-      "name": "系统工具",
-      "icon": "⚙️",
-      "description": "文件管理、备份同步、系统优化"
-    }
+    {"id": "ai-agent", "name": "AI & Agent", "icon": "🤖", "description": "人工智能与智能代理工具"},
+    {"id": "design-tools", "name": "设计工具", "icon": "🎨", "description": "平面设计、UI/UX、图片处理"},
+    {"id": "office-productivity", "name": "办公效率", "icon": "📊", "description": "文档处理、笔记、项目管理"},
+    {"id": "dev-tools", "name": "开发工具", "icon": "💻", "description": "代码编辑、API管理、数据库"},
+    {"id": "media-video", "name": "影音图像", "icon": "🎬", "description": "视频剪辑、音频处理、动效制作"},
+    {"id": "security-privacy", "name": "安全隐私", "icon": "🔒", "description": "密码管理、加密通讯、隐私保护"},
+    {"id": "system-utils", "name": "系统工具", "icon": "⚙️", "description": "文件管理、备份同步、系统优化"}
   ],
   "projects": [
     {
-      "id": "stable-diffusion-webui",
-      "name": "Stable Diffusion WebUI",
-      "slug": "stable-diffusion-webui",
-      "category": "ai-agent",
-      "github_url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
-      "stars": 162736,
-      "version": "",
-      "last_updated": "2026-05-06",
-      "stars_history": {
-        "2026-05-04": 162714,
-        "2026-05-05": 162729,
-        "2026-05-06": 162736
-      },
-      "description_zh": "Stable Diffusion WebUI 是目前最流行的开源 AI 绘画工具，由 AUTOMATIC1111 开发。它提供了直观的网页操作界面，支持文生图、图生图、图像修复、超分辨率放大等多种强大功能。用户可以通过丰富的扩展插件增强功能，支持多种模型切换，社区活跃教程丰富。无论专业画师还是业余爱好者，都能用它创作出令人惊艳的作品，完全免费无需付费订阅。",
-      "description_en": "A web interface for Stable Diffusion.",
-      "alternative_to": "Midjourney / DALL·E",
-      "tags": [
-        "AI绘画",
-        "图像生成"
-      ],
-      "license": "AGPL-3.0",
-      "download_url": "",
-      "featured": true,
-      "date_added": "2025-06-01"
+      "id": "stable-diffusion-webui", "name": "Stable Diffusion WebUI", "slug": "stable-diffusion-webui",
+      "category": "ai-agent", "github_url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+      "stars": 162714, "version": "", "last_updated": "2026-05-06", "stars_history": {"2026-05-06": 162714},
+      "description_zh": "Stable Diffusion WebUI 是目前最流行的开源 AI 绘画工具，由 AUTOMATIC1111 开发。它提供了直观的网页操作界面，支持文生图、图生图、图像修复、超分辨率放大等多种强大功能。用户可以通过丰富的扩展插件增强功能，支持多种模型切换，社区活跃教程丰富。",
+      "description_en": "A web interface for Stable Diffusion with support for txt2img, img2img, inpainting, and more.",
+      "alternative_to": "Midjourney / DALL·E", "tags": ["AI绘画", "图像生成", "Stable Diffusion"], "license": "AGPL-3.0",
+      "download_url": "", "featured": true, "date_added": "2025-06-01"
     },
     {
-      "id": "gimp",
-      "name": "GIMP",
-      "slug": "gimp",
-      "category": "design-tools",
-      "github_url": "https://github.com/GNOME/gimp",
-      "stars": 6132,
-      "version": "",
-      "last_updated": "2026-05-06",
-      "stars_history": {
-        "2026-05-04": 6129,
-        "2026-05-05": 6133,
-        "2026-05-06": 6132
-      },
-      "description_zh": "GIMP（GNU Image Manipulation Program）是开源社区最知名的图像编辑软件，被誉为免费版的 Photoshop。它支持图层管理、通道操作、蒙版编辑、色彩调整、滤镜特效等专业功能，可以处理各种常见的图片格式。GIMP 拥有可定制的界面和丰富的插件生态，还可以通过 G MIC 等扩展获得数百种额外滤镜，是平面设计和照片修图的强大替代方案。",
-      "description_en": "GNU Image Manipulation Program.",
-      "alternative_to": "Adobe Photoshop",
-      "tags": [
-        "图像编辑",
-        "设计"
-      ],
-      "license": "GPL-3.0",
-      "download_url": "",
-      "featured": true,
-      "date_added": "2025-06-01"
+      "id": "gimp", "name": "GIMP", "slug": "gimp",
+      "category": "design-tools", "github_url": "https://github.com/GNOME/gimp",
+      "stars": 6130, "version": "", "last_updated": "2026-05-06", "stars_history": {"2026-05-06": 6130},
+      "description_zh": "GIMP（GNU Image Manipulation Program）是开源社区最知名的图像编辑软件，被誉为免费版的 Photoshop。它支持图层管理、通道操作、蒙版编辑、色彩调整、滤镜特效等专业功能，可以处理各种常见的图片格式。",
+      "description_en": "GNU Image Manipulation Program, a powerful open-source image editor.",
+      "alternative_to": "Adobe Photoshop", "tags": ["图像编辑", "图片处理", "设计"], "license": "GPL-3.0",
+      "download_url": "", "featured": true, "date_added": "2025-06-01"
     },
     {
-      "id": "libreoffice",
-      "name": "LibreOffice",
-      "slug": "libreoffice",
-      "category": "office-productivity",
-      "github_url": "https://github.com/LibreOffice/core",
-      "stars": 3902,
-      "version": "",
-      "last_updated": "2026-05-06",
-      "stars_history": {
-        "2026-05-04": 3899,
-        "2026-05-05": 3899,
-        "2026-05-06": 3902
-      },
-      "description_zh": "LibreOffice 是自由开源办公套件的标杆，包含 Writer、Calc、Impress、Draw、Base 和 Math 六大组件。它全面兼容 Microsoft Office 格式，支持 ODF 开放文档标准，可跨平台运行在 Windows、macOS 和 Linux 上，由全球社区维护定期更新。",
-      "description_en": "A free and open-source office suite.",
-      "alternative_to": "Microsoft Office",
-      "tags": [
-        "办公套件",
-        "文档处理"
-      ],
-      "license": "MPL-2.0",
-      "download_url": "",
-      "featured": true,
-      "date_added": "2025-06-01"
+      "id": "libreoffice", "name": "LibreOffice", "slug": "libreoffice",
+      "category": "office-productivity", "github_url": "https://github.com/LibreOffice/core",
+      "stars": 3900, "version": "", "last_updated": "2026-05-06", "stars_history": {"2026-05-06": 3900},
+      "description_zh": "LibreOffice 是自由开源办公套件的标杆，包含 Writer、Calc、Impress、Draw、Base 和 Math 六大组件。它全面兼容 Microsoft Office 格式，支持 ODF 开放文档标准，可跨平台运行。",
+      "description_en": "A free and open-source office suite.", "alternative_to": "Microsoft Office",
+      "tags": ["办公套件", "文档处理", "电子表格"], "license": "MPL-2.0", "download_url": "", "featured": true, "date_added": "2025-06-01"
     },
     {
-      "id": "auto-1777898638-524",
-      "name": "langchain",
-      "slug": "langchain",
-      "category": "ai-agent",
-      "github_url": "https://github.com/langchain-ai/langchain",
-      "stars": 135923,
-      "version": "",
-      "last_updated": "2026-05-06",
-      "stars_history": {
-        "2026-05-04": 135740,
-        "2026-05-05": 135804,
-        "2026-05-06": 135923
-      },
-      "description_zh": "LangChain 是当前最流行的 LLM 应用开发框架，支持 Python 和 JavaScript。它提供了链式调用、智能代理、记忆管理、向量检索等核心模块，让开发者可以快速构建基于 GPT、Claude、Llama 等大模型的应用。无论是聊天机器人、文档问答系统还是自动化工作流，LangChain 都能大幅降低开发复杂度，是 AI 应用开发的事实标准。",
-      "description_en": "Building applications with LLMs through composability.",
-      "alternative_to": "商业 AI 开发平台",
-      "tags": [
-        "AI开发",
-        "LLM"
-      ],
-      "license": "MIT",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-04"
+      "id": "auto-1777898638-524", "name": "langchain", "slug": "langchain",
+      "category": "ai-agent", "github_url": "https://github.com/langchain-ai/langchain",
+      "stars": 135729, "version": "", "last_updated": "2026-05-06", "stars_history": {"2026-05-06": 135729},
+      "description_zh": "LangChain 是当前最流行的 LLM 应用开发框架，支持 Python 和 JavaScript。它提供了链式调用、智能代理、记忆管理、向量检索等核心模块，让开发者可以快速构建基于 GPT、Claude、Llama 等大模型的应用。",
+      "description_en": "Building applications with LLMs through composability.", "alternative_to": "商业 AI 开发平台",
+      "tags": ["AI开发", "LLM", "框架"], "license": "MIT", "download_url": "", "featured": false, "date_added": "2026-05-04"
     },
     {
-      "id": "auto-1777898639-808",
-      "name": "ComfyUI",
-      "slug": "comfyui",
-      "category": "ai-agent",
-      "github_url": "https://github.com/comfyanonymous/ComfyUI",
-      "stars": 111604,
-      "version": "",
-      "last_updated": "2026-05-06",
-      "stars_history": {
-        "2026-05-04": 111299,
-        "2026-05-05": 111404,
-        "2026-05-06": 111604
-      },
-      "description_zh": "ComfyUI 是一款基于节点的 Stable Diffusion 工作流工具，以灵活性和可复现性著称。用户可以通过拖拽和连接节点来构建复杂的图像生成流水线，精确控制每一步的处理过程。它支持加载多种模型、LoRA、ControlNet 等，适合需要精细控制生成流程的高级用户和研究用途，在 AI 绘画社区中极受欢迎。",
-      "description_en": "A powerful and modular Stable Diffusion GUI.",
-      "alternative_to": "ComfyUI 云端服务",
-      "tags": [
-        "AI绘画",
-        "工作流"
-      ],
-      "license": "GPL-3.0",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-04"
+      "id": "auto-1777898639-808", "name": "ComfyUI", "slug": "comfyui",
+      "category": "ai-agent", "github_url": "https://github.com/comfyanonymous/ComfyUI",
+      "stars": 111280, "version": "", "last_updated": "2026-05-06", "stars_history": {"2026-05-06": 111280},
+      "description_zh": "ComfyUI 是一款基于节点的 Stable Diffusion 工作流工具，以灵活性和可复现性著称。用户可以通过拖拽和连接节点来构建复杂的图像生成流水线，精确控制每一步的处理过程。",
+      "description_en": "A powerful and modular Stable Diffusion GUI with a node-based workflow.",
+      "alternative_to": "ComfyUI 云端服务", "tags": ["AI绘画", "工作流", "Stable Diffusion"], "license": "GPL-3.0",
+      "download_url": "", "featured": false, "date_added": "2026-05-04"
     },
     {
-      "id": "auto-1777898640-946",
-      "name": "audacity",
-      "slug": "audacity",
-      "category": "media-video",
-      "github_url": "https://github.com/audacity/audacity",
-      "stars": 16918,
-      "version": "",
-      "last_updated": "2026-05-06",
-      "stars_history": {
-        "2026-05-04": 16904,
-        "2026-05-05": 16910,
-        "2026-05-06": 16918
-      },
-      "description_zh": "Audacity 是最知名的开源音频编辑软件，已持续开发超过 20 年。它支持多轨录音和编辑，提供剪切、复制、拼接、混音等基本操作，内置丰富的音效处理功能包括均衡器、压缩器、降噪、变调和混响。支持导入导出 WAV、MP3、FLAC、OGG 等多种格式，可安装 VST 等第三方插件扩展功能，是 Adobe Audition 的最佳免费替代品。",
-      "description_en": "Audacity is an easy-to-use multi-track audio editor.",
-      "alternative_to": "Adobe Audition",
-      "tags": [
-        "音频",
-        "编辑"
-      ],
-      "license": "GPL-3.0",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-04"
+      "id": "auto-1777898640-946", "name": "audacity", "slug": "audacity",
+      "category": "media-video", "github_url": "https://github.com/audacity/audacity",
+      "stars": 16904, "version": "", "last_updated": "2026-05-06", "stars_history": {"2026-05-06": 16904},
+      "description_zh": "Audacity 是最知名的开源音频编辑软件，已持续开发超过 20 年。它支持多轨录音和编辑，内置丰富的音效处理功能，支持导入导出多种格式，可安装第三方插件扩展功能。",
+      "description_en": "Audacity is an easy-to-use multi-track audio editor and recorder.",
+      "alternative_to": "Adobe Audition", "tags": ["音频", "编辑", "录音"], "license": "GPL-3.0",
+      "download_url": "", "featured": false, "date_added": "2026-05-04"
     },
     {
-      "id": "auto-1777898641-130",
-      "name": "ollama",
-      "slug": "ollama",
-      "category": "ai-agent",
-      "github_url": "https://github.com/ollama/ollama",
-      "stars": 170840,
-      "version": "",
-      "last_updated": "2026-05-06",
-      "stars_history": {
-        "2026-05-04": 170670,
-        "2026-05-05": 170724,
-        "2026-05-06": 170840
-      },
-      "description_zh": "Ollama 是一个让你在本地电脑上轻松运行大语言模型的开源工具。它支持 Llama 3、Mistral、Gemma、Qwen、DeepSeek 等众多主流开源模型，只需一条命令就能下载并启动模型服务。Ollama 提供兼容 OpenAI API 的接口，可以无缝对接各种 AI 应用和前端界面，数据完全在本地处理无需联网，保护隐私安全。",
+      "id": "auto-1777898641-130", "name": "ollama", "slug": "ollama",
+      "category": "ai-agent", "github_url": "https://github.com/ollama/ollama",
+      "stars": 170663, "version": "", "last_updated": "2026-05-06", "stars_history": {"2026-05-06": 170663},
+      "description_zh": "Ollama 是一个让你在本地电脑上轻松运行大语言模型的开源工具。它支持 Llama 3、Mistral、Gemma、Qwen、DeepSeek 等众多主流开源模型，只需一条命令就能下载并启动模型服务。",
       "description_en": "Get up and running with large language models locally.",
-      "alternative_to": "OpenAI API",
-      "tags": [
-        "本地AI",
-        "LLM"
-      ],
-      "license": "MIT",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-04"
+      "alternative_to": "OpenAI API", "tags": ["本地AI", "LLM", "模型部署"], "license": "MIT",
+      "download_url": "", "featured": false, "date_added": "2026-05-04"
     },
     {
-      "id": "auto-1777908039-732",
-      "name": "drawio",
-      "slug": "drawio",
-      "category": "design-tools",
-      "github_url": "https://github.com/jgraph/drawio",
-      "stars": 5221,
-      "version": "",
-      "last_updated": "2026-05-06",
-      "stars_history": {
-        "2026-05-04": 5189,
-        "2026-05-05": 5202,
-        "2026-05-06": 5221
-      },
-      "description_zh": "draw.io 是一个用于一般图表绘制的 JavaScript 客户端编辑器。",
-      "description_en": "draw.io is a JavaScript, client-side editor for general diagramming.",
-      "alternative_to": "Visio / Lucidchart",
-      "tags": [
-        "流程图",
-        "UML"
-      ],
-      "license": "Apache-2.0",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-04"
+      "id": "auto-1777981739-367", "name": "AdGuardHome", "slug": "adguardhome",
+      "category": "security-privacy", "github_url": "https://github.com/AdguardTeam/AdGuardHome",
+      "stars": 33855, "version": "", "last_updated": "2026-05-06", "stars_history": {"2026-05-06": 33855},
+      "description_zh": "免费开源、功能强大的全网络广告和跟踪器拦截 DNS 服务器。一次设置即可保护家中所有设备，支持自定义过滤规则，是商业 DNS 过滤服务的最佳开源替代品。",
+      "description_en": "Free and open source, powerful network-wide ads & trackers blocking DNS server.",
+      "alternative_to": "商业 DNS 过滤", "tags": ["广告拦截", "DNS", "隐私"], "license": "GPL-3.0",
+      "download_url": "", "featured": false, "date_added": "2026-05-05"
     },
     {
-      "id": "auto-1777908041-601",
-      "name": "openshot-qt",
-      "slug": "openshot-qt",
-      "category": "media-video",
-      "github_url": "https://github.com/openshot/openshot-qt",
-      "stars": 5734,
-      "version": "",
-      "last_updated": "2026-05-06",
-      "stars_history": {
-        "2026-05-04": 5719,
-        "2026-05-05": 5723,
-        "2026-05-06": 5734
-      },
-      "description_zh": "OpenShot Video Editor 是一款屡获殊荣的免费开源视频编辑器，适用于 Linux、Mac 和 Windows，致力于向世界提供高质量的视频编辑和动画解决方案。",
-      "description_en": "OpenShot Video Editor is an award-winning free and open-source video editor for Linux, Mac, and Windows, and is dedicated to delivering high quality video editing and animation solutions to the world.",
-      "alternative_to": "Adobe Premiere Pro",
-      "tags": [
-        "视频编辑",
-        "剪辑"
-      ],
-      "license": "NOASSERTION",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-04"
+      "id": "auto-1777981740-745", "name": "qBittorrent", "slug": "qbittorrent",
+      "category": "system-utils", "github_url": "https://github.com/qbittorrent/qBittorrent",
+      "stars": 37195, "version": "", "last_updated": "2026-05-06", "stars_history": {"2026-05-06": 37195},
+      "description_zh": "轻量级开源 BT 下载工具，无广告无捆绑，界面简洁功能全面。支持磁力链接、RSS 订阅、远程控制等高级功能，是 uTorrent 的最佳开源替代品。",
+      "description_en": "A free, open-source BitTorrent client.", "alternative_to": "uTorrent",
+      "tags": ["BT下载", "P2P", "下载工具"], "license": "GPL-2.0", "download_url": "", "featured": false, "date_added": "2026-05-05"
     },
     {
-      "id": "auto-1777965494-831",
-      "name": "umami",
-      "slug": "umami",
-      "category": "dev-tools",
-      "github_url": "https://github.com/umami-software/umami",
-      "stars": 36517,
-      "version": "",
-      "last_updated": "2026-05-06",
-      "stars_history": {
-        "2026-05-05": 36469,
-        "2026-05-06": 36517
-      },
-      "description_zh": "Umami 是一个注重隐私的现代分析平台。 Google Analytics、Mixpanel 和 Amplitude 的开源替代品。",
-      "description_en": "Umami is a modern, privacy-focused analytics platform. An open-source alternative to Google Analytics, Mixpanel and Amplitude.",
-      "alternative_to": "Google Analytics",
-      "tags": [
-        "网站统计",
-        "自建"
-      ],
-      "license": "MIT",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-05"
-    },
-    {
-      "id": "auto-1777966374-324",
-      "name": "AdGuardHome",
-      "slug": "adguardhome",
-      "category": "security-privacy",
-      "github_url": "https://github.com/AdguardTeam/AdGuardHome",
-      "stars": 33885,
-      "version": "",
-      "last_updated": "2026-05-06",
-      "stars_history": {
-        "2026-05-05": 33855,
-        "2026-05-06": 33885
-      },
-      "description_zh": "  <palign=\"center\"> <picture> <source media=\"(prefers-color-scheme: dark)\" srcset=\"doc/adguard_home_darkmode.svg\"> <img alt=\"AdGuard Home\" src=\"doc/adguard_home_lightmode.svg\" width=\"300px\"> </picture> </p> <h3align=\"center\">您和您的设备的隐私保护中心</h3> <p align=“center”> 免费开源、功能强大的全网络广告和跟踪器，可阻止 DNS 服务器。 </p> <palign=\"center\"><a href=\"https://adguard.com/\">AdGuard.com</a> |   <a href=\"https://githu",
-      "description_en": "&nbsp; <p align=\"center\">   <picture>     <source media=\"(prefers-color-scheme: dark)\" srcset=\"doc/adguard_home_darkmode.svg\">     <img alt=\"AdGuard Home\" src=\"doc/adguard_home_lightmode.svg\" width=\"300px\">   </picture> </p> <h3 align=\"center\">Privacy protection center for you and your devices</h3> <p align=\"center\">   Free and open source, powerful network-wide ads & trackers blocking DNS server. </p> <p align=\"center\">   <a href=\"https://adguard.com/\">AdGuard.com</a> |   <a href=\"https://githu",
-      "alternative_to": "商业 DNS 过滤",
-      "tags": [
-        "广告拦截",
-        "DNS"
-      ],
-      "license": "GPL-3.0",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-05"
-    },
-    {
-      "id": "auto-1777966377-822",
-      "name": "qBittorrent",
-      "slug": "qbittorrent",
-      "category": "system-utils",
-      "github_url": "https://github.com/qbittorrent/qBittorrent",
-      "stars": 37215,
-      "version": "",
-      "last_updated": "2026-05-06",
-      "stars_history": {
-        "2026-05-05": 37130,
-        "2026-05-06": 37215
-      },
-      "description_zh": "qBittorrent - Qt 中的 BitTorrent 客户端 ------------------------------------------ [![GitHub Actions CI 状态](https://github.com/qbittorrent/qBittorrent/actions/workflows/ci_ubuntu.yaml/badge.svg)](https://github.com/qbittorrent/qBittorrent/actions) [![Coverity状态](https://scan.coverity.com/projects/5494/badge.svg)](https://scan.coverity.com/projects/5494) ******************************** ### 描述：qBittorrent 是一个用 C++ / Qt 编写的 bittorrent 客户端，使用 libtorrent（某些",
-      "description_en": "qBittorrent - A BitTorrent client in Qt ------------------------------------------  [![GitHub Actions CI Status](https://github.com/qbittorrent/qBittorrent/actions/workflows/ci_ubuntu.yaml/badge.svg)](https://github.com/qbittorrent/qBittorrent/actions) [![Coverity Status](https://scan.coverity.com/projects/5494/badge.svg)](https://scan.coverity.com/projects/5494) ******************************** ### Description: qBittorrent is a bittorrent client programmed in C++ / Qt that uses libtorrent (some",
-      "alternative_to": "uTorrent",
-      "tags": [
-        "BT下载",
-        "P2P"
-      ],
-      "license": "NOASSERTION",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-05"
-    },
-    {
-      "id": "auto-1777966379-107",
-      "name": "flameshot",
-      "slug": "flameshot",
-      "category": "system-utils",
-      "github_url": "https://github.com/flameshot-org/flameshot",
-      "stars": 29847,
-      "version": "",
-      "last_updated": "2026-05-06",
-      "stars_history": {
-        "2026-05-05": 29837,
-        "2026-05-06": 29847
-      },
-      "description_zh": "功能强大且简单易用的截图软件 :desktop_computer: :camera_flash:",
-      "description_en": "Powerful yet simple to use screenshot software :desktop_computer: :camera_flash:",
-      "alternative_to": "Snagit / 截图工具",
-      "tags": [
-        "截图",
-        "标注"
-      ],
-      "license": "GPL-3.0",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-05"
-    },
-    {
-      "id": "auto-1777971001-898",
-      "name": "metabase",
-      "slug": "metabase",
-      "category": "dev-tools",
-      "github_url": "https://github.com/metabase/metabase",
-      "stars": 47211,
-      "version": "",
-      "last_updated": "2026-05-06",
-      "stars_history": {
-        "2026-05-05": 47195,
-        "2026-05-06": 47211
-      },
-      "description_zh": "简单开源的数据查询与可视化平台，无需编写 SQL 即可分析。",
-      "description_en": "The simplest, fastest way to get business intelligence.",
-      "alternative_to": "Tableau / Power BI",
-      "tags": [
-        "数据分析",
-        "BI"
-      ],
-      "license": "NOASSERTION",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-05"
-    },
-    {
-      "id": "auto-1777971003-533",
-      "name": "Ventoy",
-      "slug": "ventoy",
-      "category": "system-utils",
-      "github_url": "https://github.com/ventoy/Ventoy",
-      "stars": 76422,
-      "version": "",
-      "last_updated": "2026-05-06",
-      "stars_history": {
-        "2026-05-05": 76401,
-        "2026-05-06": 76422
-      },
-      "description_zh": "新一代多系统启动盘制作工具，直接复制 iso 文件即可启动。",
-      "description_en": "A new bootable USB solution.",
-      "alternative_to": "Rufus / 启动盘工具",
-      "tags": [
-        "启动盘",
-        "USB"
-      ],
-      "license": "GPL-3.0",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-05"
-    },
-    {
-      "id": "auto-1777971005-669",
-      "name": "Files",
-      "slug": "files",
-      "category": "system-utils",
-      "github_url": "https://github.com/files-community/Files",
-      "stars": 43299,
-      "version": "",
-      "last_updated": "2026-05-06",
-      "stars_history": {
-        "2026-05-05": 43277,
-        "2026-05-06": 43299
-      },
-      "description_zh": "<palign=\"center\"> <img alt=\"文件英雄图片\" src=\"./assets/ReadmeHero.png\" /> </p> <palign=\"center\"> <a style=\"text-decoration:none\" href=\"https://files.community/\"> <img src=\"https://img.shields.io/badge/Files-Website-F9B81F\" alt=\"文件网站\" /></a> <a style=\"text-decoration:none\" href=\"https://github.com/files-community/Files/actions/workflows/ci.yml\"> <img src=\"https://github.com/files-community/Files/actions/workflows/ci.yml/badge.svg\" alt=\"文件 CI 状态\" /></a> <a s",
-      "description_en": "<p align=\"center\">   <img alt=\"Files hero image\" src=\"./assets/ReadmeHero.png\" /> </p>  <p align=\"center\">   <a style=\"text-decoration:none\" href=\"https://files.community/\">     <img src=\"https://img.shields.io/badge/Files-Website-F9B81F\" alt=\"Files Website\" /></a>   <a style=\"text-decoration:none\" href=\"https://github.com/files-community/Files/actions/workflows/ci.yml\">     <img src=\"https://github.com/files-community/Files/actions/workflows/ci.yml/badge.svg\" alt=\"Files CI Status\" /></a>   <a s",
-      "alternative_to": "Windows 自带资源管理器",
-      "tags": [
-        "文件管理",
-        "Windows"
-      ],
-      "license": "MIT",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-05"
-    },
-    {
-      "id": "auto-1777971007-507",
-      "name": "mattermost",
-      "slug": "mattermost",
-      "category": "office-productivity",
-      "github_url": "https://github.com/mattermost/mattermost",
-      "stars": 36542,
-      "version": "",
-      "last_updated": "2026-05-06",
-      "stars_history": {
-        "2026-05-05": 36533,
-        "2026-05-06": 36542
-      },
-      "description_zh": "Mattermost 是一个开源平台，用于在整个软件开发生命周期中进行安全协作。",
-      "description_en": "Mattermost is an open source platform for secure collaboration across the entire software development lifecycle..",
-      "alternative_to": "Slack / Teams",
-      "tags": [
-        "团队协作",
-        "即时通讯"
-      ],
-      "license": "NOASSERTION",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-05"
-    },
-    {
-      "id": "auto-1778046187-938",
-      "name": "olive",
-      "slug": "olive",
-      "category": "media-video",
-      "github_url": "https://github.com/olive-editor/olive",
-      "stars": 9009,
-      "version": "",
-      "last_updated": "2026-05-06",
-      "stars_history": {
-        "2026-05-06": 9009
-      },
-      "description_zh": "Olive 视频编辑器 Olive 是一款适用于 Windows、macOS 和 Linux 的免费非线性视频编辑器。了解更多：网站二进制文件 Patreon Wiki Community Discord（非官方） 注意：Olive 是 alpha 软件，被认为高度不稳定。虽然我们非常感谢用户测试并提供使用信息，但请您自行承担使用风险。二进制文件 - 0.1.0 alpha - 0.2.0 不稳定开发版本 支持 Olive 请考虑支持 Olive：从源代码编译：Windows 编译指令，m",
-      "description_en": "Olive Video Editor Olive is a free non-linear video editor for Windows, macOS, and Linux. Discover more: Website Binaries Patreon Wiki Community Discord (Unofficial) NOTE: Olive is alpha software and is considered highly unstable. While we highly appreciate users testing and providing usage information, please use at your own risk. Binaries - 0.1.0 alpha - 0.2.0 unstable development build Support Olive Please consider supporting Olive: Compiling from Source: Compiling instructions for Windows, m",
-      "alternative_to": "Premiere Pro / DaVinci",
-      "tags": [
-        "视频编辑",
-        "调色"
-      ],
-      "license": "GPL-3.0",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-06"
-    },
-    {
-      "id": "auto-1778046189-365",
-      "name": "lobe-chat",
-      "slug": "lobe-chat",
-      "category": "ai-agent",
-      "github_url": "https://github.com/lobehub/lobe-chat",
-      "stars": 76118,
-      "version": "",
-      "last_updated": "2026-05-06",
-      "stars_history": {
-        "2026-05-06": 76118
-      },
-      "description_zh": "工作和生活的终极空间 - 寻找、建立并与与您一起成长的代理团队成员进行协作。我们正在将代理利用提升到一个新的水平——实现多代理协作、轻松的代理团队设计，以及引入代理作为工作交互单元。",
-      "description_en": "The ultimate space for work and life — to find, build, and collaborate with agent teammates that grow with you. We are taking agent harness to the next level — enabling multi-agent collaboration, effortless agent team design, and introducing agents as the unit of work interaction.",
-      "alternative_to": "ChatGPT Plus",
-      "tags": [
-        "AI对话",
-        "多模型"
-      ],
-      "license": "NOASSERTION",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-06"
-    },
-    {
-      "id": "auto-1778077980-730",
-      "name": "open-interpreter",
-      "slug": "open-interpreter",
-      "category": "ai-agent",
-      "github_url": "https://github.com/OpenInterpreter/open-interpreter",
-      "stars": 63406,
-      "version": "",
-      "last_updated": "2026-05-06",
-      "stars_history": {
-        "2026-05-06": 63406
-      },
-      "description_zh": "自然语言计算机界面。",
-      "description_en": "A natural language computer interface.",
-      "alternative_to": "Copilot / Devin",
-      "tags": [
-        "AI助手",
-        "代码解释器"
-      ],
-      "license": "AGPL-3.0",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-06"
-    },
-    {
-      "id": "auto-1778077982-759",
-      "name": "excalidraw",
-      "slug": "excalidraw",
-      "category": "design-tools",
-      "github_url": "https://github.com/excalidraw/excalidraw",
-      "stars": 122605,
-      "version": "",
-      "last_updated": "2026-05-06",
-      "stars_history": {
-        "2026-05-06": 122605
-      },
-      "description_zh": "用于绘制手绘草图的虚拟白板。",
-      "description_en": "Virtual whiteboard for sketching hand-drawn like diagrams.",
-      "alternative_to": "Miro / Visio",
-      "tags": [
-        "白板",
-        "绘图"
-      ],
-      "license": "MIT",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-06"
-    },
-    {
-      "id": "auto-1778077984-398",
-      "name": "appflowy",
-      "slug": "appflowy",
-      "category": "office-productivity",
-      "github_url": "https://github.com/AppFlowy-IO/appflowy",
-      "stars": 70261,
-      "version": "",
-      "last_updated": "2026-05-06",
-      "stars_history": {
-        "2026-05-06": 70261
-      },
-      "description_zh": "Notion 的开源替代方案。",
-      "description_en": "The open source alternative to Notion.",
-      "alternative_to": "Notion",
-      "tags": [
-        "笔记",
-        "项目管理"
-      ],
-      "license": "AGPL-3.0",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-06"
-    },
-    {
-      "id": "auto-1778077986-554",
-      "name": "pocketbase",
-      "slug": "pocketbase",
-      "category": "dev-tools",
-      "github_url": "https://github.com/pocketbase/pocketbase",
-      "stars": 58159,
-      "version": "",
-      "last_updated": "2026-05-06",
-      "stars_history": {
-        "2026-05-06": 58159
-      },
-      "description_zh": "在 1 个文件中开源实时后端。",
-      "description_en": "Open Source realtime backend in 1 file.",
-      "alternative_to": "Firebase / Supabase",
-      "tags": [
-        "后端",
-        "数据库"
-      ],
-      "license": "MIT",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-06"
+      "id": "auto-1777981741-339", "name": "flameshot", "slug": "flameshot",
+      "category": "system-utils", "github_url": "https://github.com/flameshot-org/flameshot",
+      "stars": 29835, "version": "", "last_updated": "2026-05-06", "stars_history": {"2026-05-06": 29835},
+      "description_zh": "直观的开源截图工具，带有丰富的标注功能。支持矩形、圆形、箭头、文字、模糊等标注方式，截图后可一键上传或保存，是 Snagit 的轻量级免费替代品。",
+      "description_en": "Powerful yet simple to use screenshot software.", "alternative_to": "Snagit / 截图工具",
+      "tags": ["截图", "标注", "效率"], "license": "GPL-3.0", "download_url": "", "featured": false, "date_added": "2026-05-05"
     }
   ],
   "pending_projects": [
-    {
-      "github_url": "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web",
-      "category": "ai-agent",
-      "alternative_to": "ChatGPT 客户端",
-      "description_zh": "精美的 ChatGPT 网页客户端，支持多平台部署。",
-      "description_en": "A well-designed cross-platform ChatGPT web UI.",
-      "tags": [
-        "ChatGPT",
-        "客户端"
-      ],
-      "license": "MIT"
-    },
-    {
-      "github_url": "https://github.com/ggerganov/llama.cpp",
-      "category": "ai-agent",
-      "alternative_to": "OpenAI API",
-      "description_zh": "C++ 实现的高性能 LLM 推理引擎，支持在消费级硬件上运行大模型。",
-      "description_en": "LLM inference in C/C++ running on consumer hardware.",
-      "tags": [
-        "LLM推理",
-        "本地部署"
-      ],
-      "license": "MIT"
-    },
-    {
-      "github_url": "https://github.com/FlowiseAI/Flowise",
-      "category": "ai-agent",
-      "alternative_to": "商业 AI 工作流",
-      "description_zh": "拖拽式 LLM 应用构建器，无需代码即可创建 AI 工作流。",
-      "description_en": "Drag & drop UI to build customized LLM flow.",
-      "tags": [
-        "低代码",
-        "AI工作流"
-      ],
-      "license": "MIT"
-    },
-    {
-      "github_url": "https://github.com/langgenius/dify",
-      "category": "ai-agent",
-      "alternative_to": "Cohere / AI 平台",
-      "description_zh": "开源的 LLM 应用开发平台，融合了后端即服务和 LLMOps 理念。",
-      "description_en": "An open-source LLM app development platform.",
-      "tags": [
-        "AI平台",
-        "LLMOps"
-      ],
-      "license": "Apache-2.0"
-    },
-    {
-      "github_url": "https://github.com/nicedoc/chatgpt-on-wechat",
-      "category": "ai-agent",
-      "alternative_to": "商业客服机器人",
-      "description_zh": "在微信上接入 ChatGPT 的开源方案，支持多种大模型。",
-      "description_en": "ChatGPT on WeChat with multiple LLM support.",
-      "tags": [
-        "微信",
-        "聊天机器人"
-      ],
-      "license": "MIT"
-    },
-    {
-      "github_url": "https://github.com/open-webui/open-webui",
-      "category": "ai-agent",
-      "alternative_to": "ChatGPT 界面",
-      "description_zh": "美观的 Ollama 网页界面，类 ChatGPT 体验，支持多模型。",
-      "description_en": "User-friendly WebUI for LLMs.",
-      "tags": [
-        "ChatGPT",
-        "网页界面"
-      ],
-      "license": "MIT"
-    },
-    {
-      "github_url": "https://github.com/krita/krita",
-      "category": "design-tools",
-      "alternative_to": "Procreate / Corel Painter",
-      "description_zh": "专业开源绘画软件，拥有丰富的笔刷引擎和图层管理。",
-      "description_en": "Krita is a professional FREE and open source painting program.",
-      "tags": [
-        "绘画",
-        "插画"
-      ],
-      "license": "GPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/penpot/penpot",
-      "category": "design-tools",
-      "alternative_to": "Figma",
-      "description_zh": "开源协作设计平台，支持在线原型设计和矢量编辑。",
-      "description_en": "Penpot - The open-source design & prototyping platform.",
-      "tags": [
-        "UI设计",
-        "原型"
-      ],
-      "license": "MPL-2.0"
-    },
-    {
-      "github_url": "https://github.com/darktable-org/darktable",
-      "category": "design-tools",
-      "alternative_to": "Adobe Lightroom",
-      "description_zh": "开源摄影后期处理软件，支持 RAW 格式编辑和非破坏性处理。",
-      "description_en": "Open source photography workflow application and RAW developer.",
-      "tags": [
-        "摄影",
-        "RAW"
-      ],
-      "license": "GPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/scribusproject/scribus",
-      "category": "design-tools",
-      "alternative_to": "Adobe InDesign",
-      "description_zh": "开源桌面排版软件，支持专业级出版和印刷设计。",
-      "description_en": "Open Source desktop publishing.",
-      "tags": [
-        "排版",
-        "出版"
-      ],
-      "license": "GPL-2.0"
-    },
-    {
-      "github_url": "https://github.com/FreeCAD/FreeCAD",
-      "category": "design-tools",
-      "alternative_to": "SolidWorks / AutoCAD",
-      "description_zh": "开源 3D 参数化建模软件，适合机械设计和工程制图。",
-      "description_en": "Your own 3D parametric modeler.",
-      "tags": [
-        "3D建模",
-        "CAD"
-      ],
-      "license": "LGPL-2.1"
-    },
-    {
-      "github_url": "https://github.com/shotcut/shotcut",
-      "category": "media-video",
-      "alternative_to": "Premiere Pro",
-      "description_zh": "跨平台开源视频编辑器，支持宽屏格式和多种滤镜。",
-      "description_en": "Shotcut - a free, open source, cross-platform video editor.",
-      "tags": [
-        "视频编辑",
-        "滤镜"
-      ],
-      "license": "GPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/HandBrake/HandBrake",
-      "category": "media-video",
-      "alternative_to": "商业视频转换器",
-      "description_zh": "开源视频转码工具，支持几乎所有格式、硬件加速压缩。",
-      "description_en": "HandBrake is a tool for converting video.",
-      "tags": [
-        "视频转码",
-        "压缩"
-      ],
-      "license": "GPL-2.0"
-    },
-    {
-      "github_url": "https://github.com/jellyfin/jellyfin",
-      "category": "media-video",
-      "alternative_to": "Plex / Emby",
-      "description_zh": "开源媒体服务器，自由组织、管理和流式传输你的影音库。",
-      "description_en": "The Free Software Media System.",
-      "tags": [
-        "媒体服务器",
-        "流媒体"
-      ],
-      "license": "GPL-2.0"
-    },
-    {
-      "github_url": "https://github.com/immich-app/immich",
-      "category": "media-video",
-      "alternative_to": "Google Photos / iCloud",
-      "description_zh": "自建照片和视频管理方案，支持自动备份、AI 人脸识别等功能。",
-      "description_en": "Self-hosted photo and video management solution.",
-      "tags": [
-        "照片管理",
-        "备份"
-      ],
-      "license": "AGPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/LMMS/lmms",
-      "category": "media-video",
-      "alternative_to": "FL Studio",
-      "description_zh": "开源数字音频工作站，可创作旋律、节拍和混音。",
-      "description_en": "Cross-platform music production software.",
-      "tags": [
-        "音乐制作",
-        "编曲"
-      ],
-      "license": "GPL-2.0"
-    },
-    {
-      "github_url": "https://github.com/musescore/MuseScore",
-      "category": "media-video",
-      "alternative_to": "Sibelius / Finale",
-      "description_zh": "开源乐谱制作软件，支持专业级乐谱编辑和在线分享。",
-      "description_en": "MuseScore is a music notation software.",
-      "tags": [
-        "乐谱",
-        "作曲"
-      ],
-      "license": "GPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/jitsi/jitsi-meet",
-      "category": "office-productivity",
-      "alternative_to": "Zoom / Teams",
-      "description_zh": "开源视频会议方案，可自建、安全、无需安装客户端。",
-      "description_en": "Jitsi Meet - Secure, Simple and Scalable Video Conferences.",
-      "tags": [
-        "视频会议",
-        "远程协作"
-      ],
-      "license": "Apache-2.0"
-    },
-    {
-      "github_url": "https://github.com/logseq/logseq",
-      "category": "office-productivity",
-      "alternative_to": "Roam Research / Notion",
-      "description_zh": "开源双向链接笔记和大纲工具，隐私优先知识管理。",
-      "description_en": "A privacy-first, open-source knowledge base.",
-      "tags": [
-        "笔记",
-        "双向链接"
-      ],
-      "license": "AGPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/calcom/cal.com",
-      "category": "office-productivity",
-      "alternative_to": "Calendly",
-      "description_zh": "开源日程预约平台，可自建或使用云端服务。",
-      "description_en": "The open source Calendly alternative.",
-      "tags": [
-        "日程",
-        "预约"
-      ],
-      "license": "MIT"
-    },
-    {
-      "github_url": "https://github.com/Stirling-Tools/Stirling-PDF",
-      "category": "office-productivity",
-      "alternative_to": "Adobe Acrobat",
-      "description_zh": "全能私有化 PDF 工具箱，支持分割、合并、转换等数十种操作。",
-      "description_en": "#1 Locally hosted PDF web application.",
-      "tags": [
-        "PDF",
-        "文档处理"
-      ],
-      "license": "GPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/nocodb/nocodb",
-      "category": "office-productivity",
-      "alternative_to": "Airtable",
-      "description_zh": "开源无代码数据库，将表格瞬间变成智能电子表格和 API。",
-      "description_en": "Open Source Airtable Alternative.",
-      "tags": [
-        "无代码",
-        "数据库"
-      ],
-      "license": "AGPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/onlyoffice/DocumentServer",
-      "category": "office-productivity",
-      "alternative_to": "Office 365",
-      "description_zh": "开源在线办公套件，高度兼容 MS Office 格式，支持在线协作。",
-      "description_en": "ONLYOFFICE Document Server is an online office suite.",
-      "tags": [
-        "在线办公",
-        "协作"
-      ],
-      "license": "AGPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/paperless-ngx/paperless-ngx",
-      "category": "office-productivity",
-      "alternative_to": "商业文档管理",
-      "description_zh": "文档扫描、归档、索引利器，用 OCR 将纸质文件数字化。",
-      "description_en": "A document management system that transforms your documents.",
-      "tags": [
-        "文档管理",
-        "OCR"
-      ],
-      "license": "GPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/gitlab-org/gitlab",
-      "category": "dev-tools",
-      "alternative_to": "GitHub Enterprise",
-      "description_zh": "开源 DevOps 平台，从项目管理到 CI/CD 一应俱全。",
-      "description_en": "GitLab is an open source end-to-end software development platform.",
-      "tags": [
-        "DevOps",
-        "CI/CD"
-      ],
-      "license": "MIT"
-    },
-    {
-      "github_url": "https://github.com/go-gitea/gitea",
-      "category": "dev-tools",
-      "alternative_to": "GitHub / GitLab",
-      "description_zh": "轻量级自建 Git 服务，资源占用极低，适合个人和小团队。",
-      "description_en": "Git with a cup of tea! Painless self-hosted Git service.",
-      "tags": [
-        "Git",
-        "代码托管"
-      ],
-      "license": "MIT"
-    },
-    {
-      "github_url": "https://github.com/supabase/supabase",
-      "category": "dev-tools",
-      "alternative_to": "Firebase",
-      "description_zh": "开源 Firebase 替代品，提供数据库、认证、存储等服务。",
-      "description_en": "The open source Firebase alternative.",
-      "tags": [
-        "BaaS",
-        "数据库"
-      ],
-      "license": "Apache-2.0"
-    },
-    {
-      "github_url": "https://github.com/n8n-io/n8n",
-      "category": "dev-tools",
-      "alternative_to": "Zapier / Make",
-      "description_zh": "开源自动化平台，可自托管连接超过 300+ 应用的 API。",
-      "description_en": "Free and source-available fair-code licensed workflow automation.",
-      "tags": [
-        "自动化",
-        "工作流"
-      ],
-      "license": "Sustainable Use"
-    },
-    {
-      "github_url": "https://github.com/hoppscotch/hoppscotch",
-      "category": "dev-tools",
-      "alternative_to": "Postman",
-      "description_zh": "轻量级开源 API 测试工具，运行在浏览器即可。",
-      "description_en": "Open source API development ecosystem.",
-      "tags": [
-        "API测试",
-        "HTTP客户端"
-      ],
-      "license": "MIT"
-    },
-    {
-      "github_url": "https://github.com/dbeaver/dbeaver",
-      "category": "dev-tools",
-      "alternative_to": "Navicat / DataGrip",
-      "description_zh": "万能开源数据库管理工具，支持所有主流关系型和非关系型数据库。",
-      "description_en": "Free universal database tool and SQL client.",
-      "tags": [
-        "数据库",
-        "SQL"
-      ],
-      "license": "Apache-2.0"
-    },
-    {
-      "github_url": "https://github.com/grafana/grafana",
-      "category": "dev-tools",
-      "alternative_to": "DataDog / 商业监控",
-      "description_zh": "开源可观测性平台，支持监控仪表盘、告警和数据可视化。",
-      "description_en": "The open and composable observability and data visualization platform.",
-      "tags": [
-        "监控",
-        "仪表盘"
-      ],
-      "license": "AGPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/plausible/analytics",
-      "category": "dev-tools",
-      "alternative_to": "Google Analytics",
-      "description_zh": "轻量开源网站统计，不追踪隐私，无需 Cookie 同意横幅。",
-      "description_en": "Simple, open source, lightweight web analytics.",
-      "tags": [
-        "网站统计",
-        "隐私"
-      ],
-      "license": "AGPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/ToolJet/ToolJet",
-      "category": "dev-tools",
-      "alternative_to": "Retool",
-      "description_zh": "开源低代码平台，快速构建内部工具面板。",
-      "description_en": "Low-code platform to build internal tools.",
-      "tags": [
-        "低代码",
-        "内部工具"
-      ],
-      "license": "AGPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/directus/directus",
-      "category": "dev-tools",
-      "alternative_to": "Contentful",
-      "description_zh": "开源无头 CMS，自动生成 API，支持任意数据库。",
-      "description_en": "The Modern Data Stack. Wrap any SQL database.",
-      "tags": [
-        "CMS",
-        "无头"
-      ],
-      "license": "BUSL-1.1"
-    },
-    {
-      "github_url": "https://github.com/appsmithorg/appsmith",
-      "category": "dev-tools",
-      "alternative_to": "Retool",
-      "description_zh": "开源低代码平台，快速构建企业内部工具和面板。",
-      "description_en": "Low-code project to build admin panels.",
-      "tags": [
-        "低代码",
-        "内部工具"
-      ],
-      "license": "Apache-2.0"
-    },
-    {
-      "github_url": "https://github.com/signalapp/Signal-Desktop",
-      "category": "security-privacy",
-      "alternative_to": "WhatsApp",
-      "description_zh": "开源的端到端加密通讯应用，被广泛认为最安全。",
-      "description_en": "Signal Desktop client.",
-      "tags": [
-        "加密通讯",
-        "隐私"
-      ],
-      "license": "AGPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/veracrypt/VeraCrypt",
-      "category": "security-privacy",
-      "alternative_to": "BitLocker",
-      "description_zh": "开源磁盘加密软件，支持创建加密的虚拟磁盘。",
-      "description_en": "Disk encryption with strong security.",
-      "tags": [
-        "磁盘加密",
-        "数据安全"
-      ],
-      "license": "Apache-2.0"
-    },
-    {
-      "github_url": "https://github.com/cryptomator/cryptomator",
-      "category": "security-privacy",
-      "alternative_to": "Boxcryptor",
-      "description_zh": "云盘文件加密工具，上传前自动加密，保护云端隐私。",
-      "description_en": "Multi-platform transparent client-side encryption.",
-      "tags": [
-        "云盘加密",
-        "隐私"
-      ],
-      "license": "GPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/pihole/pihole",
-      "category": "security-privacy",
-      "alternative_to": "商业广告过滤",
-      "description_zh": "网络级广告拦截和追踪保护，一次设置保护所有设备。",
-      "description_en": "A black hole for Internet advertisements.",
-      "tags": [
-        "广告拦截",
-        "DNS"
-      ],
-      "license": "EUPL-1.2"
-    },
-    {
-      "github_url": "https://github.com/torproject/tor",
-      "category": "security-privacy",
-      "alternative_to": "商业 VPN",
-      "description_zh": "匿名通讯网络，保护上网隐私和身份。",
-      "description_en": "Tor - the onion router.",
-      "tags": [
-        "匿名",
-        "隐私"
-      ],
-      "license": "BSD-3-Clause"
-    },
-    {
-      "github_url": "https://github.com/wazuh/wazuh",
-      "category": "security-privacy",
-      "alternative_to": "Splunk / SIEM",
-      "description_zh": "开源安全信息与事件管理平台，威胁检测和合规管理。",
-      "description_en": "Wazuh - The Open Source Security Platform.",
-      "tags": [
-        "安全监控",
-        "SIEM"
-      ],
-      "license": "GPL-2.0"
-    },
-    {
-      "github_url": "https://github.com/syncthing/syncthing",
-      "category": "system-utils",
-      "alternative_to": "Resilio Sync / Dropbox",
-      "description_zh": "开源 P2P 文件同步工具，点对点同步无需中心服务器。",
-      "description_en": "Open Source Continuous File Synchronization.",
-      "tags": [
-        "文件同步",
-        "P2P"
-      ],
-      "license": "MPL-2.0"
-    },
-    {
-      "github_url": "https://github.com/ShareX/ShareX",
-      "category": "system-utils",
-      "alternative_to": "Snagit",
-      "description_zh": "开源截图、录屏和文件分享工具，功能全面。",
-      "description_en": "Screen capture, file sharing and productivity tool.",
-      "tags": [
-        "截图",
-        "录屏"
-      ],
-      "license": "GPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/duplicati/duplicati",
-      "category": "system-utils",
-      "alternative_to": "商业备份软件",
-      "description_zh": "开源加密备份工具，支持多种云存储目的地。",
-      "description_en": "Store securely encrypted backups in the cloud!",
-      "tags": [
-        "备份",
-        "加密"
-      ],
-      "license": "LGPL-2.1"
-    },
-    {
-      "github_url": "https://github.com/bleachbit/bleachbit",
-      "category": "system-utils",
-      "alternative_to": "CCleaner",
-      "description_zh": "开源系统清理工具，保护隐私并释放磁盘空间。",
-      "description_en": "BleachBit system cleaner.",
-      "tags": [
-        "系统清理",
-        "隐私"
-      ],
-      "license": "GPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/localsend/localsend",
-      "category": "system-utils",
-      "alternative_to": "AirDrop",
-      "description_zh": "开源跨平台文件传输，局域网内快传，支持多设备。",
-      "description_en": "Share files to nearby devices.",
-      "tags": [
-        "文件传输",
-        "局域网"
-      ],
-      "license": "MIT"
-    },
-    {
-      "github_url": "https://github.com/netdata/netdata",
-      "category": "system-utils",
-      "alternative_to": "DataDog / 商业监控",
-      "description_zh": "实时性能和健康监控，零配置即可监控服务器。",
-      "description_en": "Real-time performance monitoring.",
-      "tags": [
-        "监控",
-        "服务器"
-      ],
-      "license": "GPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/nicedoc/librewolf",
-      "category": "security-privacy",
-      "alternative_to": "Chrome / Edge",
-      "description_zh": "注重隐私的 Firefox 分支浏览器，默认关闭遥测。",
-      "description_en": "A fork of Firefox, focused on privacy.",
-      "tags": [
-        "浏览器",
-        "隐私"
-      ],
-      "license": "MPL-2.0"
-    },
-    {
-      "github_url": "https://github.com/nicedoc/thorium-browser",
-      "category": "security-privacy",
-      "alternative_to": "Chrome",
-      "description_zh": "最快的 Chromium 分支浏览器，针对现代处理器优化。",
-      "description_en": "The fastest browser on Earth.",
-      "tags": [
-        "浏览器",
-        "速度"
-      ],
-      "license": "BSD-3-Clause"
-    },
-    {
-      "github_url": "https://github.com/nicedoc/ungoogled-chromium",
-      "category": "security-privacy",
-      "alternative_to": "Google Chrome",
-      "description_zh": "移除所有 Google 依赖的开源 Chromium 浏览器。",
-      "description_en": "Google Chromium, sans integration with Google.",
-      "tags": [
-        "浏览器",
-        "去谷歌化"
-      ],
-      "license": "BSD-3-Clause"
-    },
-    {
-      "github_url": "https://github.com/nicedoc/tabby",
-      "category": "system-utils",
-      "alternative_to": "Windows Terminal",
-      "description_zh": "超级终端，支持 SSH、SFTP 和各种终端模拟。",
-      "description_en": "A terminal for the modern age.",
-      "tags": [
-        "终端",
-        "SSH"
-      ],
-      "license": "MIT"
-    }
+    {"github_url": "https://github.com/OpenInterpreter/open-interpreter", "category": "ai-agent", "alternative_to": "Copilot / Devin", "description_zh": "本地运行的大模型代码解释器，用自然语言操控电脑。", "description_en": "A natural language computer interface.", "tags": ["AI助手", "代码解释器"], "license": "AGPL-3.0"},
+    {"github_url": "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web", "category": "ai-agent", "alternative_to": "ChatGPT 客户端", "description_zh": "精美的 ChatGPT 网页客户端，支持多平台部署。", "description_en": "A well-designed cross-platform ChatGPT web UI.", "tags": ["ChatGPT", "客户端"], "license": "MIT"},
+    {"github_url": "https://github.com/ggerganov/llama.cpp", "category": "ai-agent", "alternative_to": "OpenAI API", "description_zh": "C++ 实现的高性能 LLM 推理引擎，支持在消费级硬件上运行大模型。", "description_en": "LLM inference in C/C++ running on consumer hardware.", "tags": ["LLM推理", "本地部署"], "license": "MIT"},
+    {"github_url": "https://github.com/FlowiseAI/Flowise", "category": "ai-agent", "alternative_to": "商业 AI 工作流", "description_zh": "拖拽式 LLM 应用构建器，无需代码即可创建 AI 工作流。", "description_en": "Drag & drop UI to build customized LLM flow.", "tags": ["低代码", "AI工作流"], "license": "MIT"},
+    {"github_url": "https://github.com/langgenius/dify", "category": "ai-agent", "alternative_to": "Cohere / AI 平台", "description_zh": "开源的 LLM 应用开发平台，融合了后端即服务和 LLMOps 理念。", "description_en": "An open-source LLM app development platform.", "tags": ["AI平台", "LLMOps"], "license": "Apache-2.0"},
+    {"github_url": "https://github.com/nicedoc/chatgpt-on-wechat", "category": "ai-agent", "alternative_to": "商业客服机器人", "description_zh": "在微信上接入 ChatGPT 的开源方案，支持多种大模型。", "description_en": "ChatGPT on WeChat with multiple LLM support.", "tags": ["微信", "聊天机器人"], "license": "MIT"},
+    {"github_url": "https://github.com/open-webui/open-webui", "category": "ai-agent", "alternative_to": "ChatGPT 界面", "description_zh": "美观的 Ollama 网页界面，类 ChatGPT 体验，支持多模型。", "description_en": "User-friendly WebUI for LLMs.", "tags": ["ChatGPT", "网页界面"], "license": "MIT"},
+    {"github_url": "https://github.com/krita/krita", "category": "design-tools", "alternative_to": "Procreate / Corel Painter", "description_zh": "专业开源绘画软件，拥有丰富的笔刷引擎和图层管理。", "description_en": "Krita is a professional FREE and open source painting program.", "tags": ["绘画", "插画"], "license": "GPL-3.0"},
+    {"github_url": "https://github.com/penpot/penpot", "category": "design-tools", "alternative_to": "Figma", "description_zh": "开源协作设计平台，支持在线原型设计和矢量编辑。", "description_en": "Penpot - The open-source design & prototyping platform.", "tags": ["UI设计", "原型"], "license": "MPL-2.0"},
+    {"github_url": "https://github.com/excalidraw/excalidraw", "category": "design-tools", "alternative_to": "Miro / Visio", "description_zh": "手绘风格的白板绘图工具，轻量简洁支持协作。", "description_en": "Virtual whiteboard for sketching hand-drawn like diagrams.", "tags": ["白板", "绘图"], "license": "MIT"},
+    {"github_url": "https://github.com/darktable-org/darktable", "category": "design-tools", "alternative_to": "Adobe Lightroom", "description_zh": "开源摄影后期处理软件，支持 RAW 格式编辑和非破坏性处理。", "description_en": "Open source photography workflow application and RAW developer.", "tags": ["摄影", "RAW"], "license": "GPL-3.0"},
+    {"github_url": "https://github.com/scribusproject/scribus", "category": "design-tools", "alternative_to": "Adobe InDesign", "description_zh": "开源桌面排版软件，支持专业级出版和印刷设计。", "description_en": "Open Source desktop publishing.", "tags": ["排版", "出版"], "license": "GPL-2.0"},
+    {"github_url": "https://github.com/FreeCAD/FreeCAD", "category": "design-tools", "alternative_to": "SolidWorks / AutoCAD", "description_zh": "开源 3D 参数化建模软件，适合机械设计和工程制图。", "description_en": "Your own 3D parametric modeler.", "tags": ["3D建模", "CAD"], "license": "LGPL-2.1"},
+    {"github_url": "https://github.com/jgraph/drawio", "category": "design-tools", "alternative_to": "Visio / Lucidchart", "description_zh": "在线绘图工具，支持流程图、UML、网络拓扑等多种图表。", "description_en": "draw.io is a diagramming application.", "tags": ["流程图", "UML"], "license": "Apache-2.0"},
+    {"github_url": "https://github.com/openshot/openshot-qt", "category": "media-video", "alternative_to": "Adobe Premiere Pro", "description_zh": "简单易用的开源视频编辑器，支持多种视频格式和转场效果。", "description_en": "OpenShot Video Editor.", "tags": ["视频编辑", "剪辑"], "license": "GPL-3.0"},
+    {"github_url": "https://github.com/shotcut/shotcut", "category": "media-video", "alternative_to": "Premiere Pro", "description_zh": "跨平台开源视频编辑器，支持宽屏格式和多种滤镜。", "description_en": "Shotcut - a free, open source, cross-platform video editor.", "tags": ["视频编辑", "滤镜"], "license": "GPL-3.0"},
+    {"github_url": "https://github.com/HandBrake/HandBrake", "category": "media-video", "alternative_to": "商业视频转换器", "description_zh": "开源视频转码工具，支持几乎所有格式、硬件加速压缩。", "description_en": "HandBrake is a tool for converting video.", "tags": ["视频转码", "压缩"], "license": "GPL-2.0"},
+    {"github_url": "https://github.com/jellyfin/jellyfin", "category": "media-video", "alternative_to": "Plex / Emby", "description_zh": "开源媒体服务器，自由组织、管理和流式传输你的影音库。", "description_en": "The Free Software Media System.", "tags": ["媒体服务器", "流媒体"], "license": "GPL-2.0"},
+    {"github_url": "https://github.com/immich-app/immich", "category": "media-video", "alternative_to": "Google Photos / iCloud", "description_zh": "自建照片和视频管理方案，支持自动备份、AI 人脸识别等功能。", "description_en": "Self-hosted photo and video management solution.", "tags": ["照片管理", "备份"], "license": "AGPL-3.0"},
+    {"github_url": "https://github.com/LMMS/lmms", "category": "media-video", "alternative_to": "FL Studio", "description_zh": "开源数字音频工作站，可创作旋律、节拍和混音。", "description_en": "Cross-platform music production software.", "tags": ["音乐制作", "编曲"], "license": "GPL-2.0"},
+    {"github_url": "https://github.com/musescore/MuseScore", "category": "media-video", "alternative_to": "Sibelius / Finale", "description_zh": "开源乐谱制作软件，支持专业级乐谱编辑和在线分享。", "description_en": "MuseScore is a music notation software.", "tags": ["乐谱", "作曲"], "license": "GPL-3.0"},
+    {"github_url": "https://github.com/jitsi/jitsi-meet", "category": "office-productivity", "alternative_to": "Zoom / Teams", "description_zh": "开源视频会议方案，可自建、安全、无需安装客户端。", "description_en": "Jitsi Meet - Secure, Simple and Scalable Video Conferences.", "tags": ["视频会议", "远程协作"], "license": "Apache-2.0"},
+    {"github_url": "https://github.com/mattermost/mattermost", "category": "office-productivity", "alternative_to": "Slack / Teams", "description_zh": "开源企业级团队协作平台，注重安全与隐私。", "description_en": "Open source platform for secure collaboration.", "tags": ["团队协作", "即时通讯"], "license": "MIT"},
+    {"github_url": "https://github.com/logseq/logseq", "category": "office-productivity", "alternative_to": "Roam Research / Notion", "description_zh": "开源双向链接笔记和大纲工具，隐私优先知识管理。", "description_en": "A privacy-first, open-source knowledge base.", "tags": ["笔记", "双向链接"], "license": "AGPL-3.0"},
+    {"github_url": "https://github.com/calcom/cal.com", "category": "office-productivity", "alternative_to": "Calendly", "description_zh": "开源日程预约平台，可自建或使用云端服务。", "description_en": "The open source Calendly alternative.", "tags": ["日程", "预约"], "license": "MIT"},
+    {"github_url": "https://github.com/paperless-ngx/paperless-ngx", "category": "office-productivity", "alternative_to": "商业文档管理", "description_zh": "文档扫描、归档、索引利器，用 OCR 将纸质文件数字化。", "description_en": "A document management system that transforms your documents.", "tags": ["文档管理", "OCR"], "license": "GPL-3.0"},
+    {"github_url": "https://github.com/gitlab-org/gitlab", "category": "dev-tools", "alternative_to": "GitHub Enterprise", "description_zh": "开源 DevOps 平台，从项目管理到 CI/CD 一应俱全。", "description_en": "GitLab is an open source end-to-end software development platform.", "tags": ["DevOps", "CI/CD"], "license": "MIT"},
+    {"github_url": "https://github.com/go-gitea/gitea", "category": "dev-tools", "alternative_to": "GitHub / GitLab", "description_zh": "轻量级自建 Git 服务，资源占用极低，适合个人和小团队。", "description_en": "Git with a cup of tea! Painless self-hosted Git service.", "tags": ["Git", "代码托管"], "license": "MIT"},
+    {"github_url": "https://github.com/supabase/supabase", "category": "dev-tools", "alternative_to": "Firebase", "description_zh": "开源 Firebase 替代品，提供数据库、认证、存储等服务。", "description_en": "The open source Firebase alternative.", "tags": ["BaaS", "数据库"], "license": "Apache-2.0"},
+    {"github_url": "https://github.com/n8n-io/n8n", "category": "dev-tools", "alternative_to": "Zapier / Make", "description_zh": "开源自动化平台，可自托管连接超过 300+ 应用的 API。", "description_en": "Free and source-available fair-code licensed workflow automation.", "tags": ["自动化", "工作流"], "license": "Sustainable Use"},
+    {"github_url": "https://github.com/hoppscotch/hoppscotch", "category": "dev-tools", "alternative_to": "Postman", "description_zh": "轻量级开源 API 测试工具，运行在浏览器即可。", "description_en": "Open source API development ecosystem.", "tags": ["API测试", "HTTP客户端"], "license": "MIT"},
+    {"github_url": "https://github.com/dbeaver/dbeaver", "category": "dev-tools", "alternative_to": "Navicat / DataGrip", "description_zh": "万能开源数据库管理工具，支持所有主流关系型和非关系型数据库。", "description_en": "Free universal database tool and SQL client.", "tags": ["数据库", "SQL"], "license": "Apache-2.0"},
+    {"github_url": "https://github.com/metabase/metabase", "category": "dev-tools", "alternative_to": "Tableau / Power BI", "description_zh": "简单开源的数据查询与可视化平台，无需编写 SQL 即可分析。", "description_en": "The simplest, fastest way to get business intelligence.", "tags": ["数据分析", "BI"], "license": "AGPL-3.0"},
+    {"github_url": "https://github.com/grafana/grafana", "category": "dev-tools", "alternative_to": "DataDog / 商业监控", "description_zh": "开源可观测性平台，支持监控仪表盘、告警和数据可视化。", "description_en": "The open and composable observability and data visualization platform.", "tags": ["监控", "仪表盘"], "license": "AGPL-3.0"},
+    {"github_url": "https://github.com/plausible/analytics", "category": "dev-tools", "alternative_to": "Google Analytics", "description_zh": "轻量开源网站统计，不追踪隐私，无需 Cookie 同意横幅。", "description_en": "Simple, open source, lightweight web analytics.", "tags": ["网站统计", "隐私"], "license": "AGPL-3.0"},
+    {"github_url": "https://github.com/umami-software/umami", "category": "dev-tools", "alternative_to": "Google Analytics", "description_zh": "极简开源网站分析工具，数据自己掌控，支持自部署。", "description_en": "A simple web analytics solution.", "tags": ["网站统计", "自建"], "license": "MIT"},
+    {"github_url": "https://github.com/pocketbase/pocketbase", "category": "dev-tools", "alternative_to": "Firebase / Supabase", "description_zh": "单文件后端，集合了数据库、文件存储和用户认证。", "description_en": "Open Source realtime backend in 1 file.", "tags": ["后端", "数据库"], "license": "MIT"},
+    {"github_url": "https://github.com/ToolJet/ToolJet", "category": "dev-tools", "alternative_to": "Retool", "description_zh": "开源低代码平台，快速构建内部工具面板。", "description_en": "Low-code platform to build internal tools.", "tags": ["低代码", "内部工具"], "license": "AGPL-3.0"},
+    {"github_url": "https://github.com/directus/directus", "category": "dev-tools", "alternative_to": "Contentful", "description_zh": "开源无头 CMS，自动生成 API，支持任意数据库。", "description_en": "The Modern Data Stack. Wrap any SQL database.", "tags": ["CMS", "无头"], "license": "BUSL-1.1"},
+    {"github_url": "https://github.com/appsmithorg/appsmith", "category": "dev-tools", "alternative_to": "Retool", "description_zh": "开源低代码平台，快速构建企业内部工具和面板。", "description_en": "Low-code project to build admin panels.", "tags": ["低代码", "内部工具"], "license": "Apache-2.0"},
+    {"github_url": "https://github.com/vscode/vscode", "category": "dev-tools", "alternative_to": "Sublime Text / JetBrains", "description_zh": "微软开源的代码编辑器，拥有最丰富的插件生态。", "description_en": "Visual Studio Code - Open Source code editor.", "tags": ["编辑器", "代码", "IDE"], "license": "MIT"},
+    {"github_url": "https://github.com/blender/blender", "category": "media-video", "alternative_to": "Maya / 3ds Max / Cinema 4D", "description_zh": "专业级开源 3D 创作套件，支持建模、渲染、动画、合成全流程。", "description_en": "Blender is the free and open source 3D creation suite.", "tags": ["3D建模", "动画", "渲染"], "license": "GPL-3.0"},
+    {"github_url": "https://github.com/bitwarden/clients", "category": "security-privacy", "alternative_to": "1Password / LastPass", "description_zh": "开源密码管理器，全平台同步，安全性经过独立审计。", "description_en": "Bitwarden client applications.", "tags": ["密码管理", "安全", "跨平台"], "license": "GPL-3.0"},
+    {"github_url": "https://github.com/obsproject/obs-studio", "category": "media-video", "alternative_to": "XSplit / Wirecast", "description_zh": "最流行的开源直播和录屏软件，支持多场景和插件。", "description_en": "Free and open source software for live streaming and screen recording.", "tags": ["直播", "录屏", "视频"], "license": "GPL-2.0"},
+    {"github_url": "https://github.com/nextcloud/server", "category": "office-productivity", "alternative_to": "Google Drive / Dropbox", "description_zh": "自建云存储和协作平台，功能全面，数据由你掌控。", "description_en": "A safe home for all your data.", "tags": ["云存储", "协作", "自建"], "license": "AGPL-3.0"},
+    {"github_url": "https://github.com/inkscape/inkscape", "category": "design-tools", "alternative_to": "Adobe Illustrator", "description_zh": "专业的开源矢量图形编辑器，支持 SVG 标准。", "description_en": "Professional vector graphics editor.", "tags": ["矢量图", "SVG", "设计"], "license": "GPL-3.0"},
+    {"github_url": "https://github.com/kdenlive/kdenlive", "category": "media-video", "alternative_to": "Adobe Premiere Pro", "description_zh": "功能丰富的开源视频编辑器，多轨道时间线和丰富的转场效果。", "description_en": "KDE Non-Linear Video Editor.", "tags": ["视频编辑", "剪辑", "非线性编辑"], "license": "GPL-2.0"},
+    {"github_url": "https://github.com/keepassxreboot/keepassxc", "category": "security-privacy", "alternative_to": "1Password", "description_zh": "开源的离线密码管理器，数据库完全本地存储。", "description_en": "KeePassXC is a cross-platform community-driven port of KeePass.", "tags": ["密码管理", "离线", "安全"], "license": "GPL-3.0"},
+    {"github_url": "https://github.com/signalapp/Signal-Desktop", "category": "security-privacy", "alternative_to": "WhatsApp", "description_zh": "开源的端到端加密通讯应用，被广泛认为最安全。", "description_en": "Signal Desktop client.", "tags": ["加密通讯", "隐私"], "license": "AGPL-3.0"},
+    {"github_url": "https://github.com/veracrypt/VeraCrypt", "category": "security-privacy", "alternative_to": "BitLocker", "description_zh": "开源磁盘加密软件，支持创建加密的虚拟磁盘。", "description_en": "Disk encryption with strong security.", "tags": ["磁盘加密", "数据安全"], "license": "Apache-2.0"},
+    {"github_url": "https://github.com/cryptomator/cryptomator", "category": "security-privacy", "alternative_to": "Boxcryptor", "description_zh": "云盘文件加密工具，上传前自动加密，保护云端隐私。", "description_en": "Multi-platform transparent client-side encryption.", "tags": ["云盘加密", "隐私"], "license": "GPL-3.0"},
+    {"github_url": "https://github.com/pihole/pihole", "category": "security-privacy", "alternative_to": "商业广告过滤", "description_zh": "网络级广告拦截和追踪保护，一次设置保护所有设备。", "description_en": "A black hole for Internet advertisements.", "tags": ["广告拦截", "DNS"], "license": "EUPL-1.2"},
+    {"github_url": "https://github.com/torproject/tor", "category": "security-privacy", "alternative_to": "商业 VPN", "description_zh": "匿名通讯网络，保护上网隐私和身份。", "description_en": "Tor - the onion router.", "tags": ["匿名", "隐私"], "license": "BSD-3-Clause"},
+    {"github_url": "https://github.com/wazuh/wazuh", "category": "security-privacy", "alternative_to": "Splunk / SIEM", "description_zh": "开源安全信息与事件管理平台，威胁检测和合规管理。", "description_en": "Wazuh - The Open Source Security Platform.", "tags": ["安全监控", "SIEM"], "license": "GPL-2.0"},
+    {"github_url": "https://github.com/syncthing/syncthing", "category": "system-utils", "alternative_to": "Resilio Sync / Dropbox", "description_zh": "开源 P2P 文件同步工具，点对点同步无需中心服务器。", "description_en": "Open Source Continuous File Synchronization.", "tags": ["文件同步", "P2P"], "license": "MPL-2.0"},
+    {"github_url": "https://github.com/ventoy/Ventoy", "category": "system-utils", "alternative_to": "Rufus / 启动盘工具", "description_zh": "新一代多系统启动盘制作工具，直接复制 iso 文件即可启动。", "description_en": "A new bootable USB solution.", "tags": ["启动盘", "USB"], "license": "GPL-3.0"},
+    {"github_url": "https://github.com/ShareX/ShareX", "category": "system-utils", "alternative_to": "Snagit", "description_zh": "开源截图、录屏和文件分享工具，功能全面。", "description_en": "Screen capture, file sharing and productivity tool.", "tags": ["截图", "录屏"], "license": "GPL-3.0"},
+    {"github_url": "https://github.com/duplicati/duplicati", "category": "system-utils", "alternative_to": "商业备份软件", "description_zh": "开源加密备份工具，支持多种云存储目的地。", "description_en": "Store securely encrypted backups in the cloud!", "tags": ["备份", "加密"], "license": "LGPL-2.1"},
+    {"github_url": "https://github.com/files-community/Files", "category": "system-utils", "alternative_to": "Windows 自带资源管理器", "description_zh": "漂亮的 Windows 文件管理器替代品，支持多标签页。", "description_en": "Building the best file manager for Windows.", "tags": ["文件管理", "Windows"], "license": "MIT"},
+    {"github_url": "https://github.com/bleachbit/bleachbit", "category": "system-utils", "alternative_to": "CCleaner", "description_zh": "开源系统清理工具，保护隐私并释放磁盘空间。", "description_en": "BleachBit system cleaner.", "tags": ["系统清理", "隐私"], "license": "GPL-3.0"},
+    {"github_url": "https://github.com/localsend/localsend", "category": "system-utils", "alternative_to": "AirDrop", "description_zh": "开源跨平台文件传输，局域网内快传，支持多设备。", "description_en": "Share files to nearby devices.", "tags": ["文件传输", "局域网"], "license": "MIT"},
+    {"github_url": "https://github.com/netdata/netdata", "category": "system-utils", "alternative_to": "DataDog / 商业监控", "description_zh": "实时性能和健康监控，零配置即可监控服务器。", "description_en": "Real-time performance monitoring.", "tags": ["监控", "服务器"], "license": "GPL-3.0"},
+    {"github_url": "https://github.com/nicedoc/librewolf", "category": "security-privacy", "alternative_to": "Chrome / Edge", "description_zh": "注重隐私的 Firefox 分支浏览器，默认关闭遥测。", "description_en": "A fork of Firefox, focused on privacy.", "tags": ["浏览器", "隐私"], "license": "MPL-2.0"},
+    {"github_url": "https://github.com/nicedoc/thorium-browser", "category": "security-privacy", "alternative_to": "Chrome", "description_zh": "最快的 Chromium 分支浏览器，针对现代处理器优化。", "description_en": "The fastest browser on Earth.", "tags": ["浏览器", "速度"], "license": "BSD-3-Clause"},
+    {"github_url": "https://github.com/nicedoc/ungoogled-chromium", "category": "security-privacy", "alternative_to": "Google Chrome", "description_zh": "移除所有 Google 依赖的开源 Chromium 浏览器。", "description_en": "Google Chromium, sans integration with Google.", "tags": ["浏览器", "去谷歌化"], "license": "BSD-3-Clause"},
+    {"github_url": "https://github.com/nicedoc/tabby", "category": "system-utils", "alternative_to": "Windows Terminal", "description_zh": "超级终端，支持 SSH、SFTP 和各种终端模拟。", "description_en": "A terminal for the modern age.", "tags": ["终端", "SSH"], "license": "MIT"}
+  } 
   ]
 }
