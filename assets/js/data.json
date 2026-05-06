@@ -6,6 +6,8 @@
     "contact_email": "mailtomidoo@gmail.com",
     "admin_password_hash": "",
     "update_log": [
+      "2026-05-06 🆕 新增：olive（⭐ 9,010）| 免费的开源非线性视频编辑器。",
+      "2026-05-06 🆕 新增：lobe-chat（⭐ 76,087）| 开源、现代设计的 ChatGPT/LLMs UI。",
       "2026-05-05 🆕 新增：metabase（⭐ 47,195）| 简单开源的数据查询与可视化平台，无需编写 SQL 即可分析。",
       "2026-05-05 🆕 新增：Ventoy（⭐ 76,401）| 新一代多系统启动盘制作工具，直接复制 iso 文件即可启动。",
       "2026-05-05 🆕 新增：Files（⭐ 43,277）| 构建适用于 Windows 的最佳文件管理器。",
@@ -81,12 +83,13 @@
       "slug": "stable-diffusion-webui",
       "category": "ai-agent",
       "github_url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
-      "stars": 162729,
+      "stars": 162734,
       "version": "",
-      "last_updated": "2026-05-05",
+      "last_updated": "2026-05-06",
       "stars_history": {
         "2026-05-04": 162714,
-        "2026-05-05": 162729
+        "2026-05-05": 162729,
+        "2026-05-06": 162734
       },
       "description_zh": "Stable Diffusion WebUI 是目前最流行的开源 AI 绘画工具，由 AUTOMATIC1111 开发。它提供了直观的网页操作界面，支持文生图、图生图、图像修复、超分辨率放大等多种强大功能。用户可以通过丰富的扩展插件增强功能，支持多种模型切换，社区活跃教程丰富。无论专业画师还是业余爱好者，都能用它创作出令人惊艳的作品，完全免费无需付费订阅。",
       "description_en": "A web interface for Stable Diffusion.",
@@ -106,12 +109,13 @@
       "slug": "gimp",
       "category": "design-tools",
       "github_url": "https://github.com/GNOME/gimp",
-      "stars": 6133,
+      "stars": 6132,
       "version": "",
-      "last_updated": "2026-05-05",
+      "last_updated": "2026-05-06",
       "stars_history": {
         "2026-05-04": 6129,
-        "2026-05-05": 6133
+        "2026-05-05": 6133,
+        "2026-05-06": 6132
       },
       "description_zh": "GIMP（GNU Image Manipulation Program）是开源社区最知名的图像编辑软件，被誉为免费版的 Photoshop。它支持图层管理、通道操作、蒙版编辑、色彩调整、滤镜特效等专业功能，可以处理各种常见的图片格式。GIMP 拥有可定制的界面和丰富的插件生态，还可以通过 G MIC 等扩展获得数百种额外滤镜，是平面设计和照片修图的强大替代方案。",
       "description_en": "GNU Image Manipulation Program.",
@@ -131,12 +135,13 @@
       "slug": "libreoffice",
       "category": "office-productivity",
       "github_url": "https://github.com/LibreOffice/core",
-      "stars": 3899,
+      "stars": 3901,
       "version": "",
-      "last_updated": "2026-05-05",
+      "last_updated": "2026-05-06",
       "stars_history": {
         "2026-05-04": 3899,
-        "2026-05-05": 3899
+        "2026-05-05": 3899,
+        "2026-05-06": 3901
       },
       "description_zh": "LibreOffice 是自由开源办公套件的标杆，包含 Writer、Calc、Impress、Draw、Base 和 Math 六大组件。它全面兼容 Microsoft Office 格式，支持 ODF 开放文档标准，可跨平台运行在 Windows、macOS 和 Linux 上，由全球社区维护定期更新。",
       "description_en": "A free and open-source office suite.",
@@ -156,12 +161,13 @@
       "slug": "langchain",
       "category": "ai-agent",
       "github_url": "https://github.com/langchain-ai/langchain",
-      "stars": 135804,
+      "stars": 135887,
       "version": "",
-      "last_updated": "2026-05-05",
+      "last_updated": "2026-05-06",
       "stars_history": {
         "2026-05-04": 135740,
-        "2026-05-05": 135804
+        "2026-05-05": 135804,
+        "2026-05-06": 135887
       },
       "description_zh": "LangChain 是当前最流行的 LLM 应用开发框架，支持 Python 和 JavaScript。它提供了链式调用、智能代理、记忆管理、向量检索等核心模块，让开发者可以快速构建基于 GPT、Claude、Llama 等大模型的应用。无论是聊天机器人、文档问答系统还是自动化工作流，LangChain 都能大幅降低开发复杂度，是 AI 应用开发的事实标准。",
       "description_en": "Building applications with LLMs through composability.",
@@ -181,12 +187,13 @@
       "slug": "comfyui",
       "category": "ai-agent",
       "github_url": "https://github.com/comfyanonymous/ComfyUI",
-      "stars": 111404,
+      "stars": 111522,
       "version": "",
-      "last_updated": "2026-05-05",
+      "last_updated": "2026-05-06",
       "stars_history": {
         "2026-05-04": 111299,
-        "2026-05-05": 111404
+        "2026-05-05": 111404,
+        "2026-05-06": 111522
       },
       "description_zh": "ComfyUI 是一款基于节点的 Stable Diffusion 工作流工具，以灵活性和可复现性著称。用户可以通过拖拽和连接节点来构建复杂的图像生成流水线，精确控制每一步的处理过程。它支持加载多种模型、LoRA、ControlNet 等，适合需要精细控制生成流程的高级用户和研究用途，在 AI 绘画社区中极受欢迎。",
       "description_en": "A powerful and modular Stable Diffusion GUI.",
@@ -206,12 +213,13 @@
       "slug": "audacity",
       "category": "media-video",
       "github_url": "https://github.com/audacity/audacity",
-      "stars": 16910,
+      "stars": 16916,
       "version": "",
-      "last_updated": "2026-05-05",
+      "last_updated": "2026-05-06",
       "stars_history": {
         "2026-05-04": 16904,
-        "2026-05-05": 16910
+        "2026-05-05": 16910,
+        "2026-05-06": 16916
       },
       "description_zh": "Audacity 是最知名的开源音频编辑软件，已持续开发超过 20 年。它支持多轨录音和编辑，提供剪切、复制、拼接、混音等基本操作，内置丰富的音效处理功能包括均衡器、压缩器、降噪、变调和混响。支持导入导出 WAV、MP3、FLAC、OGG 等多种格式，可安装 VST 等第三方插件扩展功能，是 Adobe Audition 的最佳免费替代品。",
       "description_en": "Audacity is an easy-to-use multi-track audio editor.",
@@ -231,12 +239,13 @@
       "slug": "ollama",
       "category": "ai-agent",
       "github_url": "https://github.com/ollama/ollama",
-      "stars": 170724,
+      "stars": 170802,
       "version": "",
-      "last_updated": "2026-05-05",
+      "last_updated": "2026-05-06",
       "stars_history": {
         "2026-05-04": 170670,
-        "2026-05-05": 170724
+        "2026-05-05": 170724,
+        "2026-05-06": 170802
       },
       "description_zh": "Ollama 是一个让你在本地电脑上轻松运行大语言模型的开源工具。它支持 Llama 3、Mistral、Gemma、Qwen、DeepSeek 等众多主流开源模型，只需一条命令就能下载并启动模型服务。Ollama 提供兼容 OpenAI API 的接口，可以无缝对接各种 AI 应用和前端界面，数据完全在本地处理无需联网，保护隐私安全。",
       "description_en": "Get up and running with large language models locally.",
@@ -256,12 +265,13 @@
       "slug": "drawio",
       "category": "design-tools",
       "github_url": "https://github.com/jgraph/drawio",
-      "stars": 5202,
+      "stars": 5214,
       "version": "",
-      "last_updated": "2026-05-05",
+      "last_updated": "2026-05-06",
       "stars_history": {
         "2026-05-04": 5189,
-        "2026-05-05": 5202
+        "2026-05-05": 5202,
+        "2026-05-06": 5214
       },
       "description_zh": "draw.io 是一个用于一般图表绘制的 JavaScript 客户端编辑器。",
       "description_en": "draw.io is a JavaScript, client-side editor for general diagramming.",
@@ -281,12 +291,13 @@
       "slug": "openshot-qt",
       "category": "media-video",
       "github_url": "https://github.com/openshot/openshot-qt",
-      "stars": 5723,
+      "stars": 5727,
       "version": "",
-      "last_updated": "2026-05-05",
+      "last_updated": "2026-05-06",
       "stars_history": {
         "2026-05-04": 5719,
-        "2026-05-05": 5723
+        "2026-05-05": 5723,
+        "2026-05-06": 5727
       },
       "description_zh": "OpenShot Video Editor 是一款屡获殊荣的免费开源视频编辑器，适用于 Linux、Mac 和 Windows，致力于向世界提供高质量的视频编辑和动画解决方案。",
       "description_en": "OpenShot Video Editor is an award-winning free and open-source video editor for Linux, Mac, and Windows, and is dedicated to delivering high quality video editing and animation solutions to the world.",
@@ -306,11 +317,12 @@
       "slug": "umami",
       "category": "dev-tools",
       "github_url": "https://github.com/umami-software/umami",
-      "stars": 36469,
+      "stars": 36502,
       "version": "",
-      "last_updated": "2026-05-05",
+      "last_updated": "2026-05-06",
       "stars_history": {
-        "2026-05-05": 36469
+        "2026-05-05": 36469,
+        "2026-05-06": 36502
       },
       "description_zh": "Umami 是一个注重隐私的现代分析平台。 Google Analytics、Mixpanel 和 Amplitude 的开源替代品。",
       "description_en": "Umami is a modern, privacy-focused analytics platform. An open-source alternative to Google Analytics, Mixpanel and Amplitude.",
@@ -330,11 +342,12 @@
       "slug": "adguardhome",
       "category": "security-privacy",
       "github_url": "https://github.com/AdguardTeam/AdGuardHome",
-      "stars": 33855,
+      "stars": 33871,
       "version": "",
-      "last_updated": "2026-05-05",
+      "last_updated": "2026-05-06",
       "stars_history": {
-        "2026-05-05": 33855
+        "2026-05-05": 33855,
+        "2026-05-06": 33871
       },
       "description_zh": "  <palign=\"center\"> <picture> <source media=\"(prefers-color-scheme: dark)\" srcset=\"doc/adguard_home_darkmode.svg\"> <img alt=\"AdGuard Home\" src=\"doc/adguard_home_lightmode.svg\" width=\"300px\"> </picture> </p> <h3align=\"center\">您和您的设备的隐私保护中心</h3> <p align=“center”> 免费开源、功能强大的全网络广告和跟踪器，可阻止 DNS 服务器。 </p> <palign=\"center\"><a href=\"https://adguard.com/\">AdGuard.com</a> |   <a href=\"https://githu",
       "description_en": "&nbsp; <p align=\"center\">   <picture>     <source media=\"(prefers-color-scheme: dark)\" srcset=\"doc/adguard_home_darkmode.svg\">     <img alt=\"AdGuard Home\" src=\"doc/adguard_home_lightmode.svg\" width=\"300px\">   </picture> </p> <h3 align=\"center\">Privacy protection center for you and your devices</h3> <p align=\"center\">   Free and open source, powerful network-wide ads & trackers blocking DNS server. </p> <p align=\"center\">   <a href=\"https://adguard.com/\">AdGuard.com</a> |   <a href=\"https://githu",
@@ -354,11 +367,12 @@
       "slug": "qbittorrent",
       "category": "system-utils",
       "github_url": "https://github.com/qbittorrent/qBittorrent",
-      "stars": 37130,
+      "stars": 37195,
       "version": "",
-      "last_updated": "2026-05-05",
+      "last_updated": "2026-05-06",
       "stars_history": {
-        "2026-05-05": 37130
+        "2026-05-05": 37130,
+        "2026-05-06": 37195
       },
       "description_zh": "qBittorrent - Qt 中的 BitTorrent 客户端 ------------------------------------------ [![GitHub Actions CI 状态](https://github.com/qbittorrent/qBittorrent/actions/workflows/ci_ubuntu.yaml/badge.svg)](https://github.com/qbittorrent/qBittorrent/actions) [![Coverity状态](https://scan.coverity.com/projects/5494/badge.svg)](https://scan.coverity.com/projects/5494) ******************************** ### 描述：qBittorrent 是一个用 C++ / Qt 编写的 bittorrent 客户端，使用 libtorrent（某些",
       "description_en": "qBittorrent - A BitTorrent client in Qt ------------------------------------------  [![GitHub Actions CI Status](https://github.com/qbittorrent/qBittorrent/actions/workflows/ci_ubuntu.yaml/badge.svg)](https://github.com/qbittorrent/qBittorrent/actions) [![Coverity Status](https://scan.coverity.com/projects/5494/badge.svg)](https://scan.coverity.com/projects/5494) ******************************** ### Description: qBittorrent is a bittorrent client programmed in C++ / Qt that uses libtorrent (some",
@@ -378,11 +392,12 @@
       "slug": "flameshot",
       "category": "system-utils",
       "github_url": "https://github.com/flameshot-org/flameshot",
-      "stars": 29837,
+      "stars": 29845,
       "version": "",
-      "last_updated": "2026-05-05",
+      "last_updated": "2026-05-06",
       "stars_history": {
-        "2026-05-05": 29837
+        "2026-05-05": 29837,
+        "2026-05-06": 29845
       },
       "description_zh": "功能强大且简单易用的截图软件 :desktop_computer: :camera_flash:",
       "description_en": "Powerful yet simple to use screenshot software :desktop_computer: :camera_flash:",
@@ -402,11 +417,12 @@
       "slug": "metabase",
       "category": "dev-tools",
       "github_url": "https://github.com/metabase/metabase",
-      "stars": 47195,
+      "stars": 47204,
       "version": "",
-      "last_updated": "2026-05-05",
+      "last_updated": "2026-05-06",
       "stars_history": {
-        "2026-05-05": 47195
+        "2026-05-05": 47195,
+        "2026-05-06": 47204
       },
       "description_zh": "简单开源的数据查询与可视化平台，无需编写 SQL 即可分析。",
       "description_en": "The simplest, fastest way to get business intelligence.",
@@ -426,11 +442,12 @@
       "slug": "ventoy",
       "category": "system-utils",
       "github_url": "https://github.com/ventoy/Ventoy",
-      "stars": 76401,
+      "stars": 76418,
       "version": "",
-      "last_updated": "2026-05-05",
+      "last_updated": "2026-05-06",
       "stars_history": {
-        "2026-05-05": 76401
+        "2026-05-05": 76401,
+        "2026-05-06": 76418
       },
       "description_zh": "新一代多系统启动盘制作工具，直接复制 iso 文件即可启动。",
       "description_en": "A new bootable USB solution.",
@@ -450,14 +467,15 @@
       "slug": "files",
       "category": "system-utils",
       "github_url": "https://github.com/files-community/Files",
-      "stars": 43277,
+      "stars": 43296,
       "version": "",
-      "last_updated": "2026-05-05",
+      "last_updated": "2026-05-06",
       "stars_history": {
-        "2026-05-05": 43277
+        "2026-05-05": 43277,
+        "2026-05-06": 43296
       },
-      "description_zh": "构建适用于 Windows 的最佳文件管理器。",
-      "description_en": "Building the best file manager for Windows.",
+      "description_zh": "<palign=\"center\"> <img alt=\"文件英雄图片\" src=\"./assets/ReadmeHero.png\" /> </p> <palign=\"center\"> <a style=\"text-decoration:none\" href=\"https://files.community/\"> <img src=\"https://img.shields.io/badge/Files-Website-F9B81F\" alt=\"文件网站\" /></a> <a style=\"text-decoration:none\" href=\"https://github.com/files-community/Files/actions/workflows/ci.yml\"> <img src=\"https://github.com/files-community/Files/actions/workflows/ci.yml/badge.svg\" alt=\"文件 CI 状态\" /></a> <a s",
+      "description_en": "<p align=\"center\">   <img alt=\"Files hero image\" src=\"./assets/ReadmeHero.png\" /> </p>  <p align=\"center\">   <a style=\"text-decoration:none\" href=\"https://files.community/\">     <img src=\"https://img.shields.io/badge/Files-Website-F9B81F\" alt=\"Files Website\" /></a>   <a style=\"text-decoration:none\" href=\"https://github.com/files-community/Files/actions/workflows/ci.yml\">     <img src=\"https://github.com/files-community/Files/actions/workflows/ci.yml/badge.svg\" alt=\"Files CI Status\" /></a>   <a s",
       "alternative_to": "Windows 自带资源管理器",
       "tags": [
         "文件管理",
@@ -474,14 +492,15 @@
       "slug": "mattermost",
       "category": "office-productivity",
       "github_url": "https://github.com/mattermost/mattermost",
-      "stars": 36533,
+      "stars": 36539,
       "version": "",
-      "last_updated": "2026-05-05",
+      "last_updated": "2026-05-06",
       "stars_history": {
-        "2026-05-05": 36533
+        "2026-05-05": 36533,
+        "2026-05-06": 36539
       },
-      "description_zh": "用于安全协作的开源平台。",
-      "description_en": "Open source platform for secure collaboration.",
+      "description_zh": "Mattermost 是一个开源平台，用于在整个软件开发生命周期中进行安全协作。",
+      "description_en": "Mattermost is an open source platform for secure collaboration across the entire software development lifecycle..",
       "alternative_to": "Slack / Teams",
       "tags": [
         "团队协作",
@@ -491,6 +510,54 @@
       "download_url": "",
       "featured": false,
       "date_added": "2026-05-05"
+    },
+    {
+      "id": "auto-1778046187-938",
+      "name": "olive",
+      "slug": "olive",
+      "category": "media-video",
+      "github_url": "https://github.com/olive-editor/olive",
+      "stars": 9010,
+      "version": "",
+      "last_updated": "2026-05-06",
+      "stars_history": {
+        "2026-05-06": 9010
+      },
+      "description_zh": "免费的开源非线性视频编辑器。",
+      "description_en": "Free open-source non-linear video editor.",
+      "alternative_to": "Premiere Pro / DaVinci",
+      "tags": [
+        "视频编辑",
+        "调色"
+      ],
+      "license": "GPL-3.0",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-06"
+    },
+    {
+      "id": "auto-1778046189-365",
+      "name": "lobe-chat",
+      "slug": "lobe-chat",
+      "category": "ai-agent",
+      "github_url": "https://github.com/lobehub/lobe-chat",
+      "stars": 76087,
+      "version": "",
+      "last_updated": "2026-05-06",
+      "stars_history": {
+        "2026-05-06": 76087
+      },
+      "description_zh": "开源、现代设计的 ChatGPT/LLMs UI。",
+      "description_en": "An open-source, modern-design ChatGPT/LLMs UI.",
+      "alternative_to": "ChatGPT Plus",
+      "tags": [
+        "AI对话",
+        "多模型"
+      ],
+      "license": "NOASSERTION",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-06"
     }
   ],
   "pending_projects": [
@@ -515,18 +582,6 @@
       "tags": [
         "ChatGPT",
         "客户端"
-      ],
-      "license": "MIT"
-    },
-    {
-      "github_url": "https://github.com/lobehub/lobe-chat",
-      "category": "ai-agent",
-      "alternative_to": "ChatGPT Plus",
-      "description_zh": "现代化设计的 AI 对话框架，支持多模型和插件。",
-      "description_en": "An open-source, modern-design ChatGPT/LLMs UI.",
-      "tags": [
-        "AI对话",
-        "多模型"
       ],
       "license": "MIT"
     },
@@ -661,18 +716,6 @@
         "CAD"
       ],
       "license": "LGPL-2.1"
-    },
-    {
-      "github_url": "https://github.com/olive-editor/olive",
-      "category": "media-video",
-      "alternative_to": "Premiere Pro / DaVinci",
-      "description_zh": "专业非线性视频编辑器，支持节点式合成和调色。",
-      "description_en": "Free open-source non-linear video editor.",
-      "tags": [
-        "视频编辑",
-        "调色"
-      ],
-      "license": "GPL-3.0"
     },
     {
       "github_url": "https://github.com/shotcut/shotcut",
