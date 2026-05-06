@@ -191,5 +191,6 @@
     {"github_url": "https://github.com/nicedoc/thorium-browser", "category": "security-privacy", "alternative_to": "Chrome", "description_zh": "最快的 Chromium 分支浏览器，针对现代处理器优化。", "description_en": "The fastest browser on Earth.", "tags": ["浏览器", "速度"], "license": "BSD-3-Clause"},
     {"github_url": "https://github.com/nicedoc/ungoogled-chromium", "category": "security-privacy", "alternative_to": "Google Chrome", "description_zh": "移除所有 Google 依赖的开源 Chromium 浏览器。", "description_en": "Google Chromium, sans integration with Google.", "tags": ["浏览器", "去谷歌化"], "license": "BSD-3-Clause"},
     {"github_url": "https://github.com/nicedoc/tabby", "category": "system-utils", "alternative_to": "Windows Terminal", "description_zh": "超级终端，支持 SSH、SFTP 和各种终端模拟。", "description_en": "A terminal for the modern age.", "tags": ["终端", "SSH"], "license": "MIT"}
+ }
   ]
 }
