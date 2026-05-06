@@ -10,6 +10,15 @@ DATA_PATH = 'assets/js/data.json'
 SITEMAP_PATH = 'sitemap.xml'
 GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN', '')
 
+def strip_html(text):
+    """去除HTML标签，只保留纯文本"""
+    if not text: return text
+    # 移除所有HTML标签
+    clean = re.sub(r'<[^>]+>', ' ', text)
+    # 移除多余空白
+    clean = re.sub(r'\s+', ' ', clean).strip()
+    return clean
+
 def translate(text):
     if not text or len(text) < 10: return text
     try:
@@ -36,15 +45,19 @@ def get_repo_info(github_url):
         version = (d.get('latest_release') or {}).get('tag_name', '')
         lic = (d.get('license') or {}).get('spdx_id', '')
         desc = d.get('description', '')
+        # 如果简介太短，尝试从README获取更多内容
         if not desc or len(desc) < 80:
             try:
                 readme_url = f'https://api.github.com/repos/{owner}/{repo}/readme'
                 readme_req = urllib.request.Request(readme_url, headers=headers)
                 with urllib.request.urlopen(readme_req, timeout=10) as rr:
                     readme_content = base64.b64decode(json.loads(rr.read().decode())['content']).decode('utf-8', errors='ignore')
-                    desc = readme_content[:500].replace('\n', ' ').strip()
+                    # 去除HTML标签，只保留纯文本
+                    desc = strip_html(readme_content)[:500]
             except:
                 pass
+        # 确保描述是纯文本
+        desc = strip_html(desc) if desc else desc
         return d.get('stargazers_count', 0), version, lic, desc
     except urllib.error.HTTPError as e:
         if e.code == 403: time.sleep(2)
@@ -71,7 +84,7 @@ def update_existing_projects(data):
             project['stars'] = stars; project['last_updated'] = today_str; updated += 1
         if version: project['version'] = version
         if lic and not project.get('license'): project['license'] = lic
-        if desc and (not project.get('description_zh') or len(project['description_zh']) < 30):
+        if desc and (not project.get('description_zh') or len(project.get('description_zh')) < 30):
             project['description_en'] = desc
             project['description_zh'] = translate(desc)
         time.sleep(1)
@@ -91,6 +104,8 @@ def add_new_projects(data, count=3):
         name = item['github_url'].rstrip('/').split('/')[-1]
         slug = re.sub(r'[^a-z0-9-]', '-', name.lower()).strip('-')
         desc_en = item.get('description_en', '') or github_desc or ''
+        # 确保英文简介是纯文本
+        desc_en = strip_html(desc_en)
         desc_zh = item.get('description_zh', '')
         if (not desc_zh or len(desc_zh) < 30) and desc_en:
             desc_zh = translate(desc_en)
