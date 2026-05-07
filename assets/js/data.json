@@ -6,6 +6,8 @@
     "contact_email": "mailtomidoo@gmail.com",
     "admin_password_hash": "",
     "update_log": [
+      "2026-05-07 🆕 新增：appsmith（⭐ 39,756）| 用于构建管理面板的低代码项目。",
+      "2026-05-07 🆕 新增：syncthing（⭐ 83,680）| 开源连续文件同步。",
       "2026-05-07 🆕 新增：openshot-qt（⭐ 5,742）| OpenShot 视频编辑器。",
       "2026-05-07 🆕 新增：obs-studio（⭐ 72,209）| 用于直播和屏幕录制的免费开源软件。",
       "2026-05-07 🆕 新增：ShareX（⭐ 37,353）| 屏幕捕获、文件共享和生产力工具。",
@@ -85,12 +87,12 @@
       "slug": "stable-diffusion-webui",
       "category": "ai-agent",
       "github_url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
-      "stars": 162761,
+      "stars": 162760,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
         "2026-05-06": 162714,
-        "2026-05-07": 162761
+        "2026-05-07": 162760
       },
       "description_zh": "Stable Diffusion WebUI 是目前最流行的开源 AI 绘画工具，由 AUTOMATIC1111 开发。它提供了直观的网页操作界面，支持文生图、图生图、图像修复、超分辨率放大等多种强大功能。用户可以通过丰富的扩展插件增强功能，支持多种模型切换，社区活跃教程丰富。",
       "description_en": "A web interface for Stable Diffusion with support for txt2img, img2img, inpainting, and more.",
@@ -163,12 +165,12 @@
       "slug": "langchain",
       "category": "ai-agent",
       "github_url": "https://github.com/langchain-ai/langchain",
-      "stars": 136048,
+      "stars": 136061,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
         "2026-05-06": 135729,
-        "2026-05-07": 136048
+        "2026-05-07": 136061
       },
       "description_zh": "LangChain 是当前最流行的 LLM 应用开发框架，支持 Python 和 JavaScript。它提供了链式调用、智能代理、记忆管理、向量检索等核心模块，让开发者可以快速构建基于 GPT、Claude、Llama 等大模型的应用。",
       "description_en": "Building applications with LLMs through composability.",
@@ -189,12 +191,12 @@
       "slug": "comfyui",
       "category": "ai-agent",
       "github_url": "https://github.com/comfyanonymous/ComfyUI",
-      "stars": 111803,
+      "stars": 111818,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
         "2026-05-06": 111280,
-        "2026-05-07": 111803
+        "2026-05-07": 111818
       },
       "description_zh": "ComfyUI 是一款基于节点的 Stable Diffusion 工作流工具，以灵活性和可复现性著称。用户可以通过拖拽和连接节点来构建复杂的图像生成流水线，精确控制每一步的处理过程。",
       "description_en": "A powerful and modular Stable Diffusion GUI with a node-based workflow.",
@@ -241,12 +243,12 @@
       "slug": "ollama",
       "category": "ai-agent",
       "github_url": "https://github.com/ollama/ollama",
-      "stars": 170946,
+      "stars": 170953,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
         "2026-05-06": 170663,
-        "2026-05-07": 170946
+        "2026-05-07": 170953
       },
       "description_zh": "Ollama 是一个让你在本地电脑上轻松运行大语言模型的开源工具。它支持 Llama 3、Mistral、Gemma、Qwen、DeepSeek 等众多主流开源模型，只需一条命令就能下载并启动模型服务。",
       "description_en": "Get up and running with large language models locally.",
@@ -267,12 +269,12 @@
       "slug": "adguardhome",
       "category": "security-privacy",
       "github_url": "https://github.com/AdguardTeam/AdGuardHome",
-      "stars": 33904,
+      "stars": 33906,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
         "2026-05-06": 33855,
-        "2026-05-07": 33904
+        "2026-05-07": 33906
       },
       "description_zh": "免费开源、功能强大的全网络广告和跟踪器拦截 DNS 服务器。一次设置即可保护家中所有设备，支持自定义过滤规则，是商业 DNS 过滤服务的最佳开源替代品。",
       "description_en": "Free and open source, powerful network-wide ads & trackers blocking DNS server.",
@@ -293,12 +295,12 @@
       "slug": "qbittorrent",
       "category": "system-utils",
       "github_url": "https://github.com/qbittorrent/qBittorrent",
-      "stars": 37261,
+      "stars": 37263,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
         "2026-05-06": 37195,
-        "2026-05-07": 37261
+        "2026-05-07": 37263
       },
       "description_zh": "轻量级开源 BT 下载工具，无广告无捆绑，界面简洁功能全面。支持磁力链接、RSS 订阅、远程控制等高级功能，是 uTorrent 的最佳开源替代品。",
       "description_en": "A free, open-source BitTorrent client.",
@@ -345,11 +347,11 @@
       "slug": "chatgpt-next-web",
       "category": "ai-agent",
       "github_url": "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web",
-      "stars": 87920,
+      "stars": 87922,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
-        "2026-05-07": 87920
+        "2026-05-07": 87922
       },
       "description_zh": "✨ 轻快的AI助手。支持： Web iOS MacOS Android Linux Windows",
       "description_en": "✨ Light and Fast AI Assistant. Support: Web iOS MacOS Android Linux Windows",
@@ -369,11 +371,11 @@
       "slug": "directus",
       "category": "dev-tools",
       "github_url": "https://github.com/directus/directus",
-      "stars": 35328,
+      "stars": 35342,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
-        "2026-05-07": 35328
+        "2026-05-07": 35342
       },
       "description_zh": "适用于您所有项目的灵活后端🐰 将您的数据库转变为无头 CMS、管理面板或具有自定义 UI、即时 API、身份验证等的应用程序。",
       "description_en": "The flexible backend for all your projects 🐰 Turn your DB into a headless CMS, admin panels, or apps with a custom UI, instant APIs, auth & more.",
@@ -393,11 +395,11 @@
       "slug": "supabase",
       "category": "dev-tools",
       "github_url": "https://github.com/supabase/supabase",
-      "stars": 102010,
+      "stars": 102015,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
-        "2026-05-07": 102010
+        "2026-05-07": 102015
       },
       "description_zh": "开源 Firebase 替代品，提供数据库、认证、存储等服务。",
       "description_en": "The open source Firebase alternative.",
@@ -423,8 +425,8 @@
       "stars_history": {
         "2026-05-07": 5742
       },
-      "description_zh": "OpenShot 视频编辑器。",
-      "description_en": "OpenShot Video Editor.",
+      "description_zh": "OpenShot Video Editor 是一款屡获殊荣的免费开源视频编辑器，适用于 Linux、Mac 和 Windows，致力于向世界提供高质量的视频编辑和动画解决方案。",
+      "description_en": "OpenShot Video Editor is an award-winning free and open-source video editor for Linux, Mac, and Windows, and is dedicated to delivering high quality video editing and animation solutions to the world.",
       "alternative_to": "Adobe Premiere Pro",
       "tags": [
         "视频编辑",
@@ -441,14 +443,14 @@
       "slug": "obs-studio",
       "category": "media-video",
       "github_url": "https://github.com/obsproject/obs-studio",
-      "stars": 72209,
+      "stars": 72211,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
-        "2026-05-07": 72209
+        "2026-05-07": 72211
       },
-      "description_zh": "用于直播和屏幕录制的免费开源软件。",
-      "description_en": "Free and open source software for live streaming and screen recording.",
+      "description_zh": "OBS Studio - 用于直播和屏幕录制的免费开源软件",
+      "description_en": "OBS Studio - Free and open source software for live streaming and screen recording",
       "alternative_to": "XSplit / Wirecast",
       "tags": [
         "直播",
@@ -466,14 +468,14 @@
       "slug": "sharex",
       "category": "system-utils",
       "github_url": "https://github.com/ShareX/ShareX",
-      "stars": 37353,
+      "stars": 37358,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
-        "2026-05-07": 37353
+        "2026-05-07": 37358
       },
-      "description_zh": "屏幕捕获、文件共享和生产力工具。",
-      "description_en": "Screen capture, file sharing and productivity tool.",
+      "description_zh": "ShareX 是一款免费的开源应用程序，用户只需按一下键即可捕获或记录屏幕的任何区域。它还支持将图像、文本和各种文件类型上传到各种目的地。",
+      "description_en": "ShareX is a free and open-source application that enables users to capture or record any area of their screen with a single keystroke. It also supports uploading images, text, and various file types to a wide range of destinations.",
       "alternative_to": "Snagit",
       "tags": [
         "截图",
@@ -490,20 +492,68 @@
       "slug": "gitea",
       "category": "dev-tools",
       "github_url": "https://github.com/go-gitea/gitea",
-      "stars": 55440,
+      "stars": 55446,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
-        "2026-05-07": 55440
+        "2026-05-07": 55446
       },
-      "description_zh": "喝杯茶吧！无痛的自托管 Git 服务。",
-      "description_en": "Git with a cup of tea! Painless self-hosted Git service.",
+      "description_zh": "喝杯茶吧！无痛自托管一体化软件开发服务，包括 Git 托管、代码审查、团队协作、包注册和 CI/CD",
+      "description_en": "Git with a cup of tea! Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD",
       "alternative_to": "GitHub / GitLab",
       "tags": [
         "Git",
         "代码托管"
       ],
       "license": "MIT",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-07"
+    },
+    {
+      "id": "auto-1778197226-364",
+      "name": "appsmith",
+      "slug": "appsmith",
+      "category": "dev-tools",
+      "github_url": "https://github.com/appsmithorg/appsmith",
+      "stars": 39756,
+      "version": "",
+      "last_updated": "2026-05-07",
+      "stars_history": {
+        "2026-05-07": 39756
+      },
+      "description_zh": "用于构建管理面板的低代码项目。",
+      "description_en": "Low-code project to build admin panels.",
+      "alternative_to": "Retool",
+      "tags": [
+        "低代码",
+        "内部工具"
+      ],
+      "license": "Apache-2.0",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-07"
+    },
+    {
+      "id": "auto-1778197228-408",
+      "name": "syncthing",
+      "slug": "syncthing",
+      "category": "system-utils",
+      "github_url": "https://github.com/syncthing/syncthing",
+      "stars": 83680,
+      "version": "",
+      "last_updated": "2026-05-07",
+      "stars_history": {
+        "2026-05-07": 83680
+      },
+      "description_zh": "开源连续文件同步。",
+      "description_en": "Open Source Continuous File Synchronization.",
+      "alternative_to": "Resilio Sync / Dropbox",
+      "tags": [
+        "文件同步",
+        "P2P"
+      ],
+      "license": "MPL-2.0",
       "download_url": "",
       "featured": false,
       "date_added": "2026-05-07"
@@ -919,18 +969,6 @@
       "license": "AGPL-3.0"
     },
     {
-      "github_url": "https://github.com/appsmithorg/appsmith",
-      "category": "dev-tools",
-      "alternative_to": "Retool",
-      "description_zh": "开源低代码平台，快速构建企业内部工具和面板。",
-      "description_en": "Low-code project to build admin panels.",
-      "tags": [
-        "低代码",
-        "内部工具"
-      ],
-      "license": "Apache-2.0"
-    },
-    {
       "github_url": "https://github.com/vscode/vscode",
       "category": "dev-tools",
       "alternative_to": "Sublime Text / JetBrains",
@@ -1092,18 +1130,6 @@
         "SIEM"
       ],
       "license": "GPL-2.0"
-    },
-    {
-      "github_url": "https://github.com/syncthing/syncthing",
-      "category": "system-utils",
-      "alternative_to": "Resilio Sync / Dropbox",
-      "description_zh": "开源 P2P 文件同步工具，点对点同步无需中心服务器。",
-      "description_en": "Open Source Continuous File Synchronization.",
-      "tags": [
-        "文件同步",
-        "P2P"
-      ],
-      "license": "MPL-2.0"
     },
     {
       "github_url": "https://github.com/ventoy/Ventoy",
