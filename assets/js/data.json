@@ -81,12 +81,12 @@
       "slug": "stable-diffusion-webui",
       "category": "ai-agent",
       "github_url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
-      "stars": 162751,
+      "stars": 162758,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
         "2026-05-06": 162714,
-        "2026-05-07": 162751
+        "2026-05-07": 162758
       },
       "description_zh": "Stable Diffusion WebUI 是目前最流行的开源 AI 绘画工具，由 AUTOMATIC1111 开发。它提供了直观的网页操作界面，支持文生图、图生图、图像修复、超分辨率放大等多种强大功能。用户可以通过丰富的扩展插件增强功能，支持多种模型切换，社区活跃教程丰富。",
       "description_en": "A web interface for Stable Diffusion with support for txt2img, img2img, inpainting, and more.",
@@ -107,12 +107,12 @@
       "slug": "gimp",
       "category": "design-tools",
       "github_url": "https://github.com/GNOME/gimp",
-      "stars": 6135,
+      "stars": 6134,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
         "2026-05-06": 6130,
-        "2026-05-07": 6135
+        "2026-05-07": 6134
       },
       "description_zh": "GIMP（GNU Image Manipulation Program）是开源社区最知名的图像编辑软件，被誉为免费版的 Photoshop。它支持图层管理、通道操作、蒙版编辑、色彩调整、滤镜特效等专业功能，可以处理各种常见的图片格式。",
       "description_en": "GNU Image Manipulation Program, a powerful open-source image editor.",
@@ -133,12 +133,12 @@
       "slug": "libreoffice",
       "category": "office-productivity",
       "github_url": "https://github.com/LibreOffice/core",
-      "stars": 3906,
+      "stars": 3908,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
         "2026-05-06": 3900,
-        "2026-05-07": 3906
+        "2026-05-07": 3908
       },
       "description_zh": "LibreOffice 是自由开源办公套件的标杆，包含 Writer、Calc、Impress、Draw、Base 和 Math 六大组件。它全面兼容 Microsoft Office 格式，支持 ODF 开放文档标准，可跨平台运行。",
       "description_en": "A free and open-source office suite.",
@@ -159,12 +159,12 @@
       "slug": "langchain",
       "category": "ai-agent",
       "github_url": "https://github.com/langchain-ai/langchain",
-      "stars": 135974,
+      "stars": 136024,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
         "2026-05-06": 135729,
-        "2026-05-07": 135974
+        "2026-05-07": 136024
       },
       "description_zh": "LangChain 是当前最流行的 LLM 应用开发框架，支持 Python 和 JavaScript。它提供了链式调用、智能代理、记忆管理、向量检索等核心模块，让开发者可以快速构建基于 GPT、Claude、Llama 等大模型的应用。",
       "description_en": "Building applications with LLMs through composability.",
@@ -185,12 +185,12 @@
       "slug": "comfyui",
       "category": "ai-agent",
       "github_url": "https://github.com/comfyanonymous/ComfyUI",
-      "stars": 111683,
+      "stars": 111745,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
         "2026-05-06": 111280,
-        "2026-05-07": 111683
+        "2026-05-07": 111745
       },
       "description_zh": "ComfyUI 是一款基于节点的 Stable Diffusion 工作流工具，以灵活性和可复现性著称。用户可以通过拖拽和连接节点来构建复杂的图像生成流水线，精确控制每一步的处理过程。",
       "description_en": "A powerful and modular Stable Diffusion GUI with a node-based workflow.",
@@ -211,12 +211,12 @@
       "slug": "audacity",
       "category": "media-video",
       "github_url": "https://github.com/audacity/audacity",
-      "stars": 16921,
+      "stars": 16923,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
         "2026-05-06": 16904,
-        "2026-05-07": 16921
+        "2026-05-07": 16923
       },
       "description_zh": "Audacity 是最知名的开源音频编辑软件，已持续开发超过 20 年。它支持多轨录音和编辑，内置丰富的音效处理功能，支持导入导出多种格式，可安装第三方插件扩展功能。",
       "description_en": "Audacity is an easy-to-use multi-track audio editor and recorder.",
@@ -237,12 +237,12 @@
       "slug": "ollama",
       "category": "ai-agent",
       "github_url": "https://github.com/ollama/ollama",
-      "stars": 170879,
+      "stars": 170918,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
         "2026-05-06": 170663,
-        "2026-05-07": 170879
+        "2026-05-07": 170918
       },
       "description_zh": "Ollama 是一个让你在本地电脑上轻松运行大语言模型的开源工具。它支持 Llama 3、Mistral、Gemma、Qwen、DeepSeek 等众多主流开源模型，只需一条命令就能下载并启动模型服务。",
       "description_en": "Get up and running with large language models locally.",
@@ -289,12 +289,12 @@
       "slug": "qbittorrent",
       "category": "system-utils",
       "github_url": "https://github.com/qbittorrent/qBittorrent",
-      "stars": 37232,
+      "stars": 37247,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
         "2026-05-06": 37195,
-        "2026-05-07": 37232
+        "2026-05-07": 37247
       },
       "description_zh": "轻量级开源 BT 下载工具，无广告无捆绑，界面简洁功能全面。支持磁力链接、RSS 订阅、远程控制等高级功能，是 uTorrent 的最佳开源替代品。",
       "description_en": "A free, open-source BitTorrent client.",
@@ -315,12 +315,12 @@
       "slug": "flameshot",
       "category": "system-utils",
       "github_url": "https://github.com/flameshot-org/flameshot",
-      "stars": 29848,
+      "stars": 29850,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
         "2026-05-06": 29835,
-        "2026-05-07": 29848
+        "2026-05-07": 29850
       },
       "description_zh": "直观的开源截图工具，带有丰富的标注功能。支持矩形、圆形、箭头、文字、模糊等标注方式，截图后可一键上传或保存，是 Snagit 的轻量级免费替代品。",
       "description_en": "Powerful yet simple to use screenshot software.",
@@ -341,14 +341,14 @@
       "slug": "chatgpt-next-web",
       "category": "ai-agent",
       "github_url": "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web",
-      "stars": 87912,
+      "stars": 87917,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
-        "2026-05-07": 87912
+        "2026-05-07": 87917
       },
-      "description_zh": "精心设计的跨平台 ChatGPT Web UI。",
-      "description_en": "A well-designed cross-platform ChatGPT web UI.",
+      "description_zh": "✨ 轻快的AI助手。支持： Web iOS MacOS Android Linux Windows",
+      "description_en": "✨ Light and Fast AI Assistant. Support: Web iOS MacOS Android Linux Windows",
       "alternative_to": "ChatGPT 客户端",
       "tags": [
         "ChatGPT",
@@ -365,14 +365,14 @@
       "slug": "directus",
       "category": "dev-tools",
       "github_url": "https://github.com/directus/directus",
-      "stars": 35207,
+      "stars": 35285,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
-        "2026-05-07": 35207
+        "2026-05-07": 35285
       },
-      "description_zh": "现代数据堆栈。包装任何 SQL 数据库。",
-      "description_en": "The Modern Data Stack. Wrap any SQL database.",
+      "description_zh": "适用于您所有项目的灵活后端🐰 将您的数据库转变为无头 CMS、管理面板或具有自定义 UI、即时 API、身份验证等的应用程序。",
+      "description_en": "The flexible backend for all your projects 🐰 Turn your DB into a headless CMS, admin panels, or apps with a custom UI, instant APIs, auth & more.",
       "alternative_to": "Contentful",
       "tags": [
         "CMS",
@@ -389,11 +389,11 @@
       "slug": "supabase",
       "category": "dev-tools",
       "github_url": "https://github.com/supabase/supabase",
-      "stars": 101964,
+      "stars": 101987,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
-        "2026-05-07": 101964
+        "2026-05-07": 101987
       },
       "description_zh": "开源 Firebase 替代品，提供数据库、认证、存储等服务。",
       "description_en": "The open source Firebase alternative.",
