@@ -6,6 +6,10 @@
     "contact_email": "mailtomidoo@gmail.com",
     "admin_password_hash": "",
     "update_log": [
+      "2026-05-07 🆕 新增：openshot-qt（⭐ 5,742）| OpenShot 视频编辑器。",
+      "2026-05-07 🆕 新增：obs-studio（⭐ 72,209）| 用于直播和屏幕录制的免费开源软件。",
+      "2026-05-07 🆕 新增：ShareX（⭐ 37,353）| 屏幕捕获、文件共享和生产力工具。",
+      "2026-05-07 🆕 新增：gitea（⭐ 55,440）| 喝杯茶吧！无痛的自托管 Git 服务。",
       "2026-05-07 🆕 新增：ChatGPT-Next-Web（⭐ 87,912）| 精心设计的跨平台 ChatGPT Web UI。",
       "2026-05-07 🆕 新增：directus（⭐ 35,207）| 现代数据堆栈。包装任何 SQL 数据库。",
       "2026-05-07 🆕 新增：supabase（⭐ 101,964）| 开源 Firebase 替代品，提供数据库、认证、存储等服务。",
@@ -81,12 +85,12 @@
       "slug": "stable-diffusion-webui",
       "category": "ai-agent",
       "github_url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
-      "stars": 162758,
+      "stars": 162761,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
         "2026-05-06": 162714,
-        "2026-05-07": 162758
+        "2026-05-07": 162761
       },
       "description_zh": "Stable Diffusion WebUI 是目前最流行的开源 AI 绘画工具，由 AUTOMATIC1111 开发。它提供了直观的网页操作界面，支持文生图、图生图、图像修复、超分辨率放大等多种强大功能。用户可以通过丰富的扩展插件增强功能，支持多种模型切换，社区活跃教程丰富。",
       "description_en": "A web interface for Stable Diffusion with support for txt2img, img2img, inpainting, and more.",
@@ -107,12 +111,12 @@
       "slug": "gimp",
       "category": "design-tools",
       "github_url": "https://github.com/GNOME/gimp",
-      "stars": 6134,
+      "stars": 6137,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
         "2026-05-06": 6130,
-        "2026-05-07": 6134
+        "2026-05-07": 6137
       },
       "description_zh": "GIMP（GNU Image Manipulation Program）是开源社区最知名的图像编辑软件，被誉为免费版的 Photoshop。它支持图层管理、通道操作、蒙版编辑、色彩调整、滤镜特效等专业功能，可以处理各种常见的图片格式。",
       "description_en": "GNU Image Manipulation Program, a powerful open-source image editor.",
@@ -159,12 +163,12 @@
       "slug": "langchain",
       "category": "ai-agent",
       "github_url": "https://github.com/langchain-ai/langchain",
-      "stars": 136024,
+      "stars": 136048,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
         "2026-05-06": 135729,
-        "2026-05-07": 136024
+        "2026-05-07": 136048
       },
       "description_zh": "LangChain 是当前最流行的 LLM 应用开发框架，支持 Python 和 JavaScript。它提供了链式调用、智能代理、记忆管理、向量检索等核心模块，让开发者可以快速构建基于 GPT、Claude、Llama 等大模型的应用。",
       "description_en": "Building applications with LLMs through composability.",
@@ -185,12 +189,12 @@
       "slug": "comfyui",
       "category": "ai-agent",
       "github_url": "https://github.com/comfyanonymous/ComfyUI",
-      "stars": 111745,
+      "stars": 111803,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
         "2026-05-06": 111280,
-        "2026-05-07": 111745
+        "2026-05-07": 111803
       },
       "description_zh": "ComfyUI 是一款基于节点的 Stable Diffusion 工作流工具，以灵活性和可复现性著称。用户可以通过拖拽和连接节点来构建复杂的图像生成流水线，精确控制每一步的处理过程。",
       "description_en": "A powerful and modular Stable Diffusion GUI with a node-based workflow.",
@@ -211,12 +215,12 @@
       "slug": "audacity",
       "category": "media-video",
       "github_url": "https://github.com/audacity/audacity",
-      "stars": 16923,
+      "stars": 16922,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
         "2026-05-06": 16904,
-        "2026-05-07": 16923
+        "2026-05-07": 16922
       },
       "description_zh": "Audacity 是最知名的开源音频编辑软件，已持续开发超过 20 年。它支持多轨录音和编辑，内置丰富的音效处理功能，支持导入导出多种格式，可安装第三方插件扩展功能。",
       "description_en": "Audacity is an easy-to-use multi-track audio editor and recorder.",
@@ -237,12 +241,12 @@
       "slug": "ollama",
       "category": "ai-agent",
       "github_url": "https://github.com/ollama/ollama",
-      "stars": 170918,
+      "stars": 170946,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
         "2026-05-06": 170663,
-        "2026-05-07": 170918
+        "2026-05-07": 170946
       },
       "description_zh": "Ollama 是一个让你在本地电脑上轻松运行大语言模型的开源工具。它支持 Llama 3、Mistral、Gemma、Qwen、DeepSeek 等众多主流开源模型，只需一条命令就能下载并启动模型服务。",
       "description_en": "Get up and running with large language models locally.",
@@ -263,12 +267,12 @@
       "slug": "adguardhome",
       "category": "security-privacy",
       "github_url": "https://github.com/AdguardTeam/AdGuardHome",
-      "stars": 33896,
+      "stars": 33904,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
         "2026-05-06": 33855,
-        "2026-05-07": 33896
+        "2026-05-07": 33904
       },
       "description_zh": "免费开源、功能强大的全网络广告和跟踪器拦截 DNS 服务器。一次设置即可保护家中所有设备，支持自定义过滤规则，是商业 DNS 过滤服务的最佳开源替代品。",
       "description_en": "Free and open source, powerful network-wide ads & trackers blocking DNS server.",
@@ -289,12 +293,12 @@
       "slug": "qbittorrent",
       "category": "system-utils",
       "github_url": "https://github.com/qbittorrent/qBittorrent",
-      "stars": 37247,
+      "stars": 37261,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
         "2026-05-06": 37195,
-        "2026-05-07": 37247
+        "2026-05-07": 37261
       },
       "description_zh": "轻量级开源 BT 下载工具，无广告无捆绑，界面简洁功能全面。支持磁力链接、RSS 订阅、远程控制等高级功能，是 uTorrent 的最佳开源替代品。",
       "description_en": "A free, open-source BitTorrent client.",
@@ -315,12 +319,12 @@
       "slug": "flameshot",
       "category": "system-utils",
       "github_url": "https://github.com/flameshot-org/flameshot",
-      "stars": 29850,
+      "stars": 29852,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
         "2026-05-06": 29835,
-        "2026-05-07": 29850
+        "2026-05-07": 29852
       },
       "description_zh": "直观的开源截图工具，带有丰富的标注功能。支持矩形、圆形、箭头、文字、模糊等标注方式，截图后可一键上传或保存，是 Snagit 的轻量级免费替代品。",
       "description_en": "Powerful yet simple to use screenshot software.",
@@ -341,11 +345,11 @@
       "slug": "chatgpt-next-web",
       "category": "ai-agent",
       "github_url": "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web",
-      "stars": 87917,
+      "stars": 87920,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
-        "2026-05-07": 87917
+        "2026-05-07": 87920
       },
       "description_zh": "✨ 轻快的AI助手。支持： Web iOS MacOS Android Linux Windows",
       "description_en": "✨ Light and Fast AI Assistant. Support: Web iOS MacOS Android Linux Windows",
@@ -365,11 +369,11 @@
       "slug": "directus",
       "category": "dev-tools",
       "github_url": "https://github.com/directus/directus",
-      "stars": 35285,
+      "stars": 35328,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
-        "2026-05-07": 35285
+        "2026-05-07": 35328
       },
       "description_zh": "适用于您所有项目的灵活后端🐰 将您的数据库转变为无头 CMS、管理面板或具有自定义 UI、即时 API、身份验证等的应用程序。",
       "description_en": "The flexible backend for all your projects 🐰 Turn your DB into a headless CMS, admin panels, or apps with a custom UI, instant APIs, auth & more.",
@@ -389,11 +393,11 @@
       "slug": "supabase",
       "category": "dev-tools",
       "github_url": "https://github.com/supabase/supabase",
-      "stars": 101987,
+      "stars": 102010,
       "version": "",
       "last_updated": "2026-05-07",
       "stars_history": {
-        "2026-05-07": 101987
+        "2026-05-07": 102010
       },
       "description_zh": "开源 Firebase 替代品，提供数据库、认证、存储等服务。",
       "description_en": "The open source Firebase alternative.",
@@ -403,6 +407,103 @@
         "数据库"
       ],
       "license": "Apache-2.0",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-07"
+    },
+    {
+      "id": "auto-1778184391-247",
+      "name": "openshot-qt",
+      "slug": "openshot-qt",
+      "category": "media-video",
+      "github_url": "https://github.com/openshot/openshot-qt",
+      "stars": 5742,
+      "version": "",
+      "last_updated": "2026-05-07",
+      "stars_history": {
+        "2026-05-07": 5742
+      },
+      "description_zh": "OpenShot 视频编辑器。",
+      "description_en": "OpenShot Video Editor.",
+      "alternative_to": "Adobe Premiere Pro",
+      "tags": [
+        "视频编辑",
+        "剪辑"
+      ],
+      "license": "NOASSERTION",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-07"
+    },
+    {
+      "id": "auto-1778184392-640",
+      "name": "obs-studio",
+      "slug": "obs-studio",
+      "category": "media-video",
+      "github_url": "https://github.com/obsproject/obs-studio",
+      "stars": 72209,
+      "version": "",
+      "last_updated": "2026-05-07",
+      "stars_history": {
+        "2026-05-07": 72209
+      },
+      "description_zh": "用于直播和屏幕录制的免费开源软件。",
+      "description_en": "Free and open source software for live streaming and screen recording.",
+      "alternative_to": "XSplit / Wirecast",
+      "tags": [
+        "直播",
+        "录屏",
+        "视频"
+      ],
+      "license": "GPL-2.0",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-07"
+    },
+    {
+      "id": "auto-1778184394-737",
+      "name": "ShareX",
+      "slug": "sharex",
+      "category": "system-utils",
+      "github_url": "https://github.com/ShareX/ShareX",
+      "stars": 37353,
+      "version": "",
+      "last_updated": "2026-05-07",
+      "stars_history": {
+        "2026-05-07": 37353
+      },
+      "description_zh": "屏幕捕获、文件共享和生产力工具。",
+      "description_en": "Screen capture, file sharing and productivity tool.",
+      "alternative_to": "Snagit",
+      "tags": [
+        "截图",
+        "录屏"
+      ],
+      "license": "GPL-3.0",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-07"
+    },
+    {
+      "id": "auto-1778184396-655",
+      "name": "gitea",
+      "slug": "gitea",
+      "category": "dev-tools",
+      "github_url": "https://github.com/go-gitea/gitea",
+      "stars": 55440,
+      "version": "",
+      "last_updated": "2026-05-07",
+      "stars_history": {
+        "2026-05-07": 55440
+      },
+      "description_zh": "喝杯茶吧！无痛的自托管 Git 服务。",
+      "description_en": "Git with a cup of tea! Painless self-hosted Git service.",
+      "alternative_to": "GitHub / GitLab",
+      "tags": [
+        "Git",
+        "代码托管"
+      ],
+      "license": "MIT",
       "download_url": "",
       "featured": false,
       "date_added": "2026-05-07"
@@ -566,18 +667,6 @@
       "license": "Apache-2.0"
     },
     {
-      "github_url": "https://github.com/openshot/openshot-qt",
-      "category": "media-video",
-      "alternative_to": "Adobe Premiere Pro",
-      "description_zh": "简单易用的开源视频编辑器，支持多种视频格式和转场效果。",
-      "description_en": "OpenShot Video Editor.",
-      "tags": [
-        "视频编辑",
-        "剪辑"
-      ],
-      "license": "GPL-3.0"
-    },
-    {
       "github_url": "https://github.com/shotcut/shotcut",
       "category": "media-video",
       "alternative_to": "Premiere Pro",
@@ -718,18 +807,6 @@
       "tags": [
         "DevOps",
         "CI/CD"
-      ],
-      "license": "MIT"
-    },
-    {
-      "github_url": "https://github.com/go-gitea/gitea",
-      "category": "dev-tools",
-      "alternative_to": "GitHub / GitLab",
-      "description_zh": "轻量级自建 Git 服务，资源占用极低，适合个人和小团队。",
-      "description_en": "Git with a cup of tea! Painless self-hosted Git service.",
-      "tags": [
-        "Git",
-        "代码托管"
       ],
       "license": "MIT"
     },
@@ -893,19 +970,6 @@
       "license": "GPL-3.0"
     },
     {
-      "github_url": "https://github.com/obsproject/obs-studio",
-      "category": "media-video",
-      "alternative_to": "XSplit / Wirecast",
-      "description_zh": "最流行的开源直播和录屏软件，支持多场景和插件。",
-      "description_en": "Free and open source software for live streaming and screen recording.",
-      "tags": [
-        "直播",
-        "录屏",
-        "视频"
-      ],
-      "license": "GPL-2.0"
-    },
-    {
       "github_url": "https://github.com/nextcloud/server",
       "category": "office-productivity",
       "alternative_to": "Google Drive / Dropbox",
@@ -1050,18 +1114,6 @@
       "tags": [
         "启动盘",
         "USB"
-      ],
-      "license": "GPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/ShareX/ShareX",
-      "category": "system-utils",
-      "alternative_to": "Snagit",
-      "description_zh": "开源截图、录屏和文件分享工具，功能全面。",
-      "description_en": "Screen capture, file sharing and productivity tool.",
-      "tags": [
-        "截图",
-        "录屏"
       ],
       "license": "GPL-3.0"
     },
