@@ -6,6 +6,9 @@
     "contact_email": "mailtomidoo@gmail.com",
     "admin_password_hash": "",
     "update_log": [
+      "2026-05-08 🆕 新增：llama.cpp（⭐ 109,056）| C++ 实现的高性能 LLM 推理引擎，支持在消费级硬件上运行大模型。",
+      "2026-05-08 🆕 新增：tor（⭐ 4,914）| Tor - the onion router.",
+      "2026-05-08 🆕 新增：duplicati（⭐ 14,525）| 将安全加密的备份存储在云中！",
       "2026-05-08 🆕 新增：analytics（⭐ 24,792）| 轻量开源网站统计，不追踪隐私，无需 Cookie 同意横幅。",
       "2026-05-08 🆕 新增：logseq（⭐ 42,712）| 隐私第一的开源知识库。",
       "2026-05-08 🆕 新增：metabase（⭐ 47,238）| 简单开源的数据查询与可视化平台，无需编写 SQL 即可分析。",
@@ -93,13 +96,13 @@
       "slug": "stable-diffusion-webui",
       "category": "ai-agent",
       "github_url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
-      "stars": 162778,
+      "stars": 162785,
       "version": "",
       "last_updated": "2026-05-08",
       "stars_history": {
         "2026-05-06": 162714,
         "2026-05-07": 162760,
-        "2026-05-08": 162778
+        "2026-05-08": 162785
       },
       "description_zh": "Stable Diffusion WebUI 是目前最流行的开源 AI 绘画工具，由 AUTOMATIC1111 开发。它提供了直观的网页操作界面，支持文生图、图生图、图像修复、超分辨率放大等多种强大功能。用户可以通过丰富的扩展插件增强功能，支持多种模型切换，社区活跃教程丰富。",
       "description_en": "A web interface for Stable Diffusion with support for txt2img, img2img, inpainting, and more.",
@@ -147,13 +150,13 @@
       "slug": "libreoffice",
       "category": "office-productivity",
       "github_url": "https://github.com/LibreOffice/core",
-      "stars": 3907,
+      "stars": 3908,
       "version": "",
       "last_updated": "2026-05-08",
       "stars_history": {
         "2026-05-06": 3900,
         "2026-05-07": 3908,
-        "2026-05-08": 3907
+        "2026-05-08": 3908
       },
       "description_zh": "LibreOffice 是自由开源办公套件的标杆，包含 Writer、Calc、Impress、Draw、Base 和 Math 六大组件。它全面兼容 Microsoft Office 格式，支持 ODF 开放文档标准，可跨平台运行。",
       "description_en": "A free and open-source office suite.",
@@ -174,13 +177,13 @@
       "slug": "langchain",
       "category": "ai-agent",
       "github_url": "https://github.com/langchain-ai/langchain",
-      "stars": 136146,
+      "stars": 136158,
       "version": "",
       "last_updated": "2026-05-08",
       "stars_history": {
         "2026-05-06": 135729,
         "2026-05-07": 136061,
-        "2026-05-08": 136146
+        "2026-05-08": 136158
       },
       "description_zh": "LangChain 是当前最流行的 LLM 应用开发框架，支持 Python 和 JavaScript。它提供了链式调用、智能代理、记忆管理、向量检索等核心模块，让开发者可以快速构建基于 GPT、Claude、Llama 等大模型的应用。",
       "description_en": "Building applications with LLMs through composability.",
@@ -201,13 +204,13 @@
       "slug": "comfyui",
       "category": "ai-agent",
       "github_url": "https://github.com/comfyanonymous/ComfyUI",
-      "stars": 111948,
+      "stars": 111981,
       "version": "",
       "last_updated": "2026-05-08",
       "stars_history": {
         "2026-05-06": 111280,
         "2026-05-07": 111818,
-        "2026-05-08": 111948
+        "2026-05-08": 111981
       },
       "description_zh": "ComfyUI 是一款基于节点的 Stable Diffusion 工作流工具，以灵活性和可复现性著称。用户可以通过拖拽和连接节点来构建复杂的图像生成流水线，精确控制每一步的处理过程。",
       "description_en": "A powerful and modular Stable Diffusion GUI with a node-based workflow.",
@@ -228,13 +231,13 @@
       "slug": "audacity",
       "category": "media-video",
       "github_url": "https://github.com/audacity/audacity",
-      "stars": 16923,
+      "stars": 16926,
       "version": "",
       "last_updated": "2026-05-08",
       "stars_history": {
         "2026-05-06": 16904,
         "2026-05-07": 16922,
-        "2026-05-08": 16923
+        "2026-05-08": 16926
       },
       "description_zh": "Audacity 是最知名的开源音频编辑软件，已持续开发超过 20 年。它支持多轨录音和编辑，内置丰富的音效处理功能，支持导入导出多种格式，可安装第三方插件扩展功能。",
       "description_en": "Audacity is an easy-to-use multi-track audio editor and recorder.",
@@ -255,13 +258,13 @@
       "slug": "ollama",
       "category": "ai-agent",
       "github_url": "https://github.com/ollama/ollama",
-      "stars": 170992,
+      "stars": 171011,
       "version": "",
       "last_updated": "2026-05-08",
       "stars_history": {
         "2026-05-06": 170663,
         "2026-05-07": 170953,
-        "2026-05-08": 170992
+        "2026-05-08": 171011
       },
       "description_zh": "Ollama 是一个让你在本地电脑上轻松运行大语言模型的开源工具。它支持 Llama 3、Mistral、Gemma、Qwen、DeepSeek 等众多主流开源模型，只需一条命令就能下载并启动模型服务。",
       "description_en": "Get up and running with large language models locally.",
@@ -282,13 +285,13 @@
       "slug": "adguardhome",
       "category": "security-privacy",
       "github_url": "https://github.com/AdguardTeam/AdGuardHome",
-      "stars": 33915,
+      "stars": 33918,
       "version": "",
       "last_updated": "2026-05-08",
       "stars_history": {
         "2026-05-06": 33855,
         "2026-05-07": 33906,
-        "2026-05-08": 33915
+        "2026-05-08": 33918
       },
       "description_zh": "免费开源、功能强大的全网络广告和跟踪器拦截 DNS 服务器。一次设置即可保护家中所有设备，支持自定义过滤规则，是商业 DNS 过滤服务的最佳开源替代品。",
       "description_en": "Free and open source, powerful network-wide ads & trackers blocking DNS server.",
@@ -309,13 +312,13 @@
       "slug": "qbittorrent",
       "category": "system-utils",
       "github_url": "https://github.com/qbittorrent/qBittorrent",
-      "stars": 37279,
+      "stars": 37286,
       "version": "",
       "last_updated": "2026-05-08",
       "stars_history": {
         "2026-05-06": 37195,
         "2026-05-07": 37263,
-        "2026-05-08": 37279
+        "2026-05-08": 37286
       },
       "description_zh": "轻量级开源 BT 下载工具，无广告无捆绑，界面简洁功能全面。支持磁力链接、RSS 订阅、远程控制等高级功能，是 uTorrent 的最佳开源替代品。",
       "description_en": "A free, open-source BitTorrent client.",
@@ -336,13 +339,13 @@
       "slug": "flameshot",
       "category": "system-utils",
       "github_url": "https://github.com/flameshot-org/flameshot",
-      "stars": 29854,
+      "stars": 29856,
       "version": "",
       "last_updated": "2026-05-08",
       "stars_history": {
         "2026-05-06": 29835,
         "2026-05-07": 29852,
-        "2026-05-08": 29854
+        "2026-05-08": 29856
       },
       "description_zh": "直观的开源截图工具，带有丰富的标注功能。支持矩形、圆形、箭头、文字、模糊等标注方式，截图后可一键上传或保存，是 Snagit 的轻量级免费替代品。",
       "description_en": "Powerful yet simple to use screenshot software.",
@@ -363,12 +366,12 @@
       "slug": "chatgpt-next-web",
       "category": "ai-agent",
       "github_url": "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web",
-      "stars": 87941,
+      "stars": 87943,
       "version": "",
       "last_updated": "2026-05-08",
       "stars_history": {
         "2026-05-07": 87922,
-        "2026-05-08": 87941
+        "2026-05-08": 87943
       },
       "description_zh": "✨ 轻快的AI助手。支持： Web iOS MacOS Android Linux Windows",
       "description_en": "✨ Light and Fast AI Assistant. Support: Web iOS MacOS Android Linux Windows",
@@ -388,12 +391,12 @@
       "slug": "directus",
       "category": "dev-tools",
       "github_url": "https://github.com/directus/directus",
-      "stars": 35372,
+      "stars": 35371,
       "version": "",
       "last_updated": "2026-05-08",
       "stars_history": {
         "2026-05-07": 35342,
-        "2026-05-08": 35372
+        "2026-05-08": 35371
       },
       "description_zh": "适用于您所有项目的灵活后端🐰 将您的数据库转变为无头 CMS、管理面板或具有自定义 UI、即时 API、身份验证等的应用程序。",
       "description_en": "The flexible backend for all your projects 🐰 Turn your DB into a headless CMS, admin panels, or apps with a custom UI, instant APIs, auth & more.",
@@ -413,12 +416,12 @@
       "slug": "supabase",
       "category": "dev-tools",
       "github_url": "https://github.com/supabase/supabase",
-      "stars": 102063,
+      "stars": 102072,
       "version": "",
       "last_updated": "2026-05-08",
       "stars_history": {
         "2026-05-07": 102015,
-        "2026-05-08": 102063
+        "2026-05-08": 102072
       },
       "description_zh": "开源 Firebase 替代品，提供数据库、认证、存储等服务。",
       "description_en": "The open source Firebase alternative.",
@@ -438,12 +441,12 @@
       "slug": "openshot-qt",
       "category": "media-video",
       "github_url": "https://github.com/openshot/openshot-qt",
-      "stars": 5743,
+      "stars": 5744,
       "version": "",
       "last_updated": "2026-05-08",
       "stars_history": {
         "2026-05-07": 5742,
-        "2026-05-08": 5743
+        "2026-05-08": 5744
       },
       "description_zh": "OpenShot Video Editor 是一款屡获殊荣的免费开源视频编辑器，适用于 Linux、Mac 和 Windows，致力于向世界提供高质量的视频编辑和动画解决方案。",
       "description_en": "OpenShot Video Editor is an award-winning free and open-source video editor for Linux, Mac, and Windows, and is dedicated to delivering high quality video editing and animation solutions to the world.",
@@ -463,12 +466,12 @@
       "slug": "obs-studio",
       "category": "media-video",
       "github_url": "https://github.com/obsproject/obs-studio",
-      "stars": 72237,
+      "stars": 72250,
       "version": "",
       "last_updated": "2026-05-08",
       "stars_history": {
         "2026-05-07": 72211,
-        "2026-05-08": 72237
+        "2026-05-08": 72250
       },
       "description_zh": "OBS Studio - 用于直播和屏幕录制的免费开源软件",
       "description_en": "OBS Studio - Free and open source software for live streaming and screen recording",
@@ -489,12 +492,12 @@
       "slug": "sharex",
       "category": "system-utils",
       "github_url": "https://github.com/ShareX/ShareX",
-      "stars": 37388,
+      "stars": 37394,
       "version": "",
       "last_updated": "2026-05-08",
       "stars_history": {
         "2026-05-07": 37358,
-        "2026-05-08": 37388
+        "2026-05-08": 37394
       },
       "description_zh": "ShareX 是一款免费的开源应用程序，用户只需按一下键即可捕获或记录屏幕的任何区域。它还支持将图像、文本和各种文件类型上传到各种目的地。",
       "description_en": "ShareX is a free and open-source application that enables users to capture or record any area of their screen with a single keystroke. It also supports uploading images, text, and various file types to a wide range of destinations.",
@@ -514,12 +517,12 @@
       "slug": "gitea",
       "category": "dev-tools",
       "github_url": "https://github.com/go-gitea/gitea",
-      "stars": 55478,
+      "stars": 55482,
       "version": "",
       "last_updated": "2026-05-08",
       "stars_history": {
         "2026-05-07": 55446,
-        "2026-05-08": 55478
+        "2026-05-08": 55482
       },
       "description_zh": "喝杯茶吧！无痛自托管一体化软件开发服务，包括 Git 托管、代码审查、团队协作、包注册和 CI/CD",
       "description_en": "Git with a cup of tea! Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD",
@@ -539,12 +542,12 @@
       "slug": "appsmith",
       "category": "dev-tools",
       "github_url": "https://github.com/appsmithorg/appsmith",
-      "stars": 39761,
+      "stars": 39765,
       "version": "",
       "last_updated": "2026-05-08",
       "stars_history": {
         "2026-05-07": 39756,
-        "2026-05-08": 39761
+        "2026-05-08": 39765
       },
       "description_zh": "用于构建管理面板、内部工具和仪表板的平台。与超过 25 个数据库和任何 API 集成。",
       "description_en": "Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ databases and any API.",
@@ -564,12 +567,12 @@
       "slug": "syncthing",
       "category": "system-utils",
       "github_url": "https://github.com/syncthing/syncthing",
-      "stars": 83706,
+      "stars": 83711,
       "version": "",
       "last_updated": "2026-05-08",
       "stars_history": {
         "2026-05-07": 83680,
-        "2026-05-08": 83706
+        "2026-05-08": 83711
       },
       "description_zh": "[![Syncthing][14]][15] Goals Syncthing is a continuous file synchronization program . It synchronizes files between two or more computers.我们努力实现以下目标。 The goals are listed in order of importance, the most important ones first. This is the summary version of the goal list - for more commentary, see the full [Goals document][13]. Syncthing should be: 1. Safe From Data Loss Protecting the user's data is paramount. We take every reasonable precaution to avoid corrupting the",
       "description_en": "[![Syncthing][14]][15] Goals Syncthing is a continuous file synchronization program . It synchronizes files between two or more computers. We strive to fulfill the goals below. The goals are listed in order of importance, the most important ones first. This is the summary version of the goal list - for more commentary, see the full [Goals document][13]. Syncthing should be: 1. Safe From Data Loss Protecting the user's data is paramount. We take every reasonable precaution to avoid corrupting the",
@@ -589,11 +592,11 @@
       "slug": "hoppscotch",
       "category": "dev-tools",
       "github_url": "https://github.com/hoppscotch/hoppscotch",
-      "stars": 79135,
+      "stars": 79137,
       "version": "",
       "last_updated": "2026-05-08",
       "stars_history": {
-        "2026-05-08": 79135
+        "2026-05-08": 79137
       },
       "description_zh": "Open source API development ecosystem.",
       "description_en": "Open source API development ecosystem.",
@@ -613,11 +616,11 @@
       "slug": "localsend",
       "category": "system-utils",
       "github_url": "https://github.com/localsend/localsend",
-      "stars": 80834,
+      "stars": 80846,
       "version": "",
       "last_updated": "2026-05-08",
       "stars_history": {
-        "2026-05-08": 80834
+        "2026-05-08": 80846
       },
       "description_zh": "LocalSend [![CI 状态][ci-badge]][ci-workflow] [![翻译][translate-badge]][translate-link] [![打包状态][packaging-badge]][packaging-link] [ci-badge]：https://github.com/localsend/localsend/actions/workflows/ci.yml/badge.svg [ci-workflow]： https://github.com/localsend/localsend/actions/workflows/ci.yml [翻译徽章]：https://hosted.weblate.org/widget/localsend/app/svg-badge.svg [翻译链接]：https://hosted.weblate.org/engage/localsend/ [打包徽章]：https://repology.o",
       "description_en": "LocalSend [![CI status][ci-badge]][ci-workflow] [![Translations][translate-badge]][translate-link] [![Packaging status][packaging-badge]][packaging-link] [ci-badge]: https://github.com/localsend/localsend/actions/workflows/ci.yml/badge.svg [ci-workflow]: https://github.com/localsend/localsend/actions/workflows/ci.yml [translate-badge]: https://hosted.weblate.org/widget/localsend/app/svg-badge.svg [translate-link]: https://hosted.weblate.org/engage/localsend/ [packaging-badge]: https://repology.o",
@@ -637,11 +640,11 @@
       "slug": "jitsi-meet",
       "category": "office-productivity",
       "github_url": "https://github.com/jitsi/jitsi-meet",
-      "stars": 29178,
+      "stars": 29180,
       "version": "",
       "last_updated": "2026-05-08",
       "stars_history": {
-        "2026-05-08": 29178
+        "2026-05-08": 29180
       },
       "description_zh": "Jitsi Meet - 安全、简单且可扩展的视频会议，您可以将其用作独立应用程序或嵌入到您的 Web 应用程序中。",
       "description_en": "Jitsi Meet - Secure, Simple and Scalable Video Conferences that you use as a standalone app or embed in your web application.",
@@ -661,11 +664,11 @@
       "slug": "analytics",
       "category": "dev-tools",
       "github_url": "https://github.com/plausible/analytics",
-      "stars": 24792,
+      "stars": 24793,
       "version": "",
       "last_updated": "2026-05-08",
       "stars_history": {
-        "2026-05-08": 24792
+        "2026-05-08": 24793
       },
       "description_zh": "轻量开源网站统计，不追踪隐私，无需 Cookie 同意横幅。",
       "description_en": "Simple, open source, lightweight web analytics.",
@@ -691,8 +694,8 @@
       "stars_history": {
         "2026-05-08": 42712
       },
-      "description_zh": "隐私第一的开源知识库。",
-      "description_en": "A privacy-first, open-source knowledge base.",
+      "description_zh": "一个隐私第一的开源知识管理和协作平台。下载链接：http://github.com/logseq/logseq/releases。路线图：https://logseq.io/p/NX4mc ggEV",
+      "description_en": "A privacy-first, open-source platform for knowledge management and collaboration. Download link: http://github.com/logseq/logseq/releases. roadmap: https://logseq.io/p/NX4mc ggEV",
       "alternative_to": "Roam Research / Notion",
       "tags": [
         "笔记",
@@ -709,11 +712,11 @@
       "slug": "metabase",
       "category": "dev-tools",
       "github_url": "https://github.com/metabase/metabase",
-      "stars": 47238,
+      "stars": 47240,
       "version": "",
       "last_updated": "2026-05-08",
       "stars_history": {
-        "2026-05-08": 47238
+        "2026-05-08": 47240
       },
       "description_zh": "简单开源的数据查询与可视化平台，无需编写 SQL 即可分析。",
       "description_en": "The simplest, fastest way to get business intelligence.",
@@ -721,6 +724,78 @@
       "tags": [
         "数据分析",
         "BI"
+      ],
+      "license": "NOASSERTION",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-08"
+    },
+    {
+      "id": "auto-1778276215-514",
+      "name": "llama.cpp",
+      "slug": "llama-cpp",
+      "category": "ai-agent",
+      "github_url": "https://github.com/ggerganov/llama.cpp",
+      "stars": 109056,
+      "version": "",
+      "last_updated": "2026-05-08",
+      "stars_history": {
+        "2026-05-08": 109056
+      },
+      "description_zh": "C++ 实现的高性能 LLM 推理引擎，支持在消费级硬件上运行大模型。",
+      "description_en": "LLM inference in C/C++ running on consumer hardware.",
+      "alternative_to": "OpenAI API",
+      "tags": [
+        "LLM推理",
+        "本地部署"
+      ],
+      "license": "MIT",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-08"
+    },
+    {
+      "id": "auto-1778276217-252",
+      "name": "tor",
+      "slug": "tor",
+      "category": "security-privacy",
+      "github_url": "https://github.com/torproject/tor",
+      "stars": 4914,
+      "version": "",
+      "last_updated": "2026-05-08",
+      "stars_history": {
+        "2026-05-08": 4914
+      },
+      "description_zh": "Tor - the onion router.",
+      "description_en": "Tor - the onion router.",
+      "alternative_to": "商业 VPN",
+      "tags": [
+        "匿名",
+        "隐私"
+      ],
+      "license": "BSD-3-Clause",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-08"
+    },
+    {
+      "id": "auto-1778276219-298",
+      "name": "duplicati",
+      "slug": "duplicati",
+      "category": "system-utils",
+      "github_url": "https://github.com/duplicati/duplicati",
+      "stars": 14525,
+      "version": "",
+      "last_updated": "2026-05-08",
+      "stars_history": {
+        "2026-05-08": 14525
+      },
+      "description_zh": "将安全加密的备份存储在云中！",
+      "description_en": "Store securely encrypted backups in the cloud!",
+      "alternative_to": "商业备份软件",
+      "tags": [
+        "备份",
+        "加密"
       ],
       "license": "NOASSERTION",
       "download_url": "",
@@ -740,18 +815,6 @@
         "代码解释器"
       ],
       "license": "AGPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/ggerganov/llama.cpp",
-      "category": "ai-agent",
-      "alternative_to": "OpenAI API",
-      "description_zh": "C++ 实现的高性能 LLM 推理引擎，支持在消费级硬件上运行大模型。",
-      "description_en": "LLM inference in C/C++ running on consumer hardware.",
-      "tags": [
-        "LLM推理",
-        "本地部署"
-      ],
-      "license": "MIT"
     },
     {
       "github_url": "https://github.com/FlowiseAI/Flowise",
@@ -1217,18 +1280,6 @@
       "license": "EUPL-1.2"
     },
     {
-      "github_url": "https://github.com/torproject/tor",
-      "category": "security-privacy",
-      "alternative_to": "商业 VPN",
-      "description_zh": "匿名通讯网络，保护上网隐私和身份。",
-      "description_en": "Tor - the onion router.",
-      "tags": [
-        "匿名",
-        "隐私"
-      ],
-      "license": "BSD-3-Clause"
-    },
-    {
       "github_url": "https://github.com/wazuh/wazuh",
       "category": "security-privacy",
       "alternative_to": "Splunk / SIEM",
@@ -1251,18 +1302,6 @@
         "USB"
       ],
       "license": "GPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/duplicati/duplicati",
-      "category": "system-utils",
-      "alternative_to": "商业备份软件",
-      "description_zh": "开源加密备份工具，支持多种云存储目的地。",
-      "description_en": "Store securely encrypted backups in the cloud!",
-      "tags": [
-        "备份",
-        "加密"
-      ],
-      "license": "LGPL-2.1"
     },
     {
       "github_url": "https://github.com/files-community/Files",
