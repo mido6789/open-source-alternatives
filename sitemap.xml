@@ -307,4 +307,22 @@
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://kyal.cn/detail.html?id=open-interpreter</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kyal.cn/detail.html?id=pocketbase</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kyal.cn/detail.html?id=excalidraw</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
