@@ -254,6 +254,90 @@ def generate_static_project_pages(data):
     
     print(f"✅ 已生成 {generated} 个项目静态页面")
 
+def generate_static_homepage(data):
+    """生成简化版静态首页，供搜索引擎抓取"""
+    print("⏳ 正在生成静态首页...")
+    base_url = data['site']['url'].rstrip('/')
+    
+    # 按 Stars 排序取前 30 个项目
+    top_projects = sorted(data['projects'], key=lambda p: p['stars'], reverse=True)[:30]
+    
+    projects_html = ''
+    for proj in top_projects:
+        category = next((c for c in data['categories'] if c['id'] == proj['category']), None)
+        cat_name = category['name'] if category else proj['category']
+        projects_html += f"""
+      <div class="project-card">
+        <span class="category-tag">{cat_name}</span>
+        <h3><a href="/projects/{proj['slug']}.html">{proj['name']}</a></h3>
+        <p class="description">{proj.get('description_zh', '')[:120]}</p>
+        <div class="meta">
+          <span>⭐ {proj['stars']:,}</span>
+          <span class="alt-badge">替代: {proj.get('alternative_to', '')}</span>
+        </div>
+      </div>"""
+    
+    categories_html = ''
+    for cat in data['categories']:
+        count = len([p for p in data['projects'] if p['category'] == cat['id']])
+        categories_html += f'<a href="/category.html?id={cat["id"]}" class="category-card"><span class="icon">{cat["icon"]}</span><span class="name">{cat["name"]}</span><span class="count">{count}个项目</span></a>\n'
+    
+    html = f"""<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>开源替代 - 发现优秀的开源替代方案</title>
+  <meta name="description" content="发现优秀的开源替代方案，告别高价付费软件。收录AI、设计工具、办公效率、开发工具等7大类{len(data['projects'])}个开源替代品。每日更新。">
+  <link rel="canonical" href="{base_url}/">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔄</text></svg>">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="/" class="logo">🔄 开源替代</a>
+      <ul class="nav-links">
+        <li><a href="/">首页</a></li>
+        <li><a href="/category.html?id=ai-agent">AI & Agent</a></li>
+        <li><a href="/category.html?id=design-tools">设计工具</a></li>
+        <li><a href="/category.html?id=dev-tools">开发工具</a></li>
+        <li><a href="/about.html">关于我们</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main class="container">
+    <section class="hero">
+      <h1>发现优秀的开源替代方案</h1>
+      <p>告别高价付费软件，探索自由开源的无限可能。我们每日追踪 GitHub 上最受欢迎的开源项目，帮你找到最合适的替代品。目前已收录 <strong>{len(data['projects'])}</strong> 个开源项目。</p>
+    </section>
+
+    <section>
+      <h2 class="section-title">📂 浏览分类</h2>
+      <div class="categories-grid">
+        {categories_html}
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">⭐ 热门开源项目</h2>
+      <div class="projects-grid">
+        {projects_html}
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>© {datetime.now().year} 开源替代 - 尊重开源，分享价值</p>
+    </div>
+  </footer>
+</body>
+</html>"""
+    
+    with open('index.html', 'w', encoding='utf-8') as f:
+        f.write(html)
+    print(f"✅ 静态首页已生成（包含 {len(top_projects)} 个热门项目）")
+
 # ========== 主流程 ==========
 def main():
     print(f'🚀 开始每日更新 - {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}')
@@ -264,6 +348,7 @@ def main():
     save_data(data)
     generate_sitemap(data)
     generate_static_project_pages(data)
+    generate_static_homepage(data)
     print(f'✅ 完成：新增 {added} 个，总计 {len(data["projects"])} 个项目')
 
 if __name__ == '__main__':
