@@ -6,6 +6,11 @@
     "contact_email": "mailtomidoo@gmail.com",
     "admin_password_hash": "",
     "update_log": [
+      "2026-05-12 🆕 新增：DocumentServer（⭐ 6,498）| 开源在线办公套件，高度兼容 MS Office 格式，支持在线协作。",
+      "2026-05-12 🆕 新增：hoppscotch（⭐ 79,162）| 开源 API 开发生态系统。",
+      "2026-05-12 🆕 新增：Stirling-PDF（⭐ 78,628）| 全能私有化 PDF 工具箱，支持分割、合并、转换等数十种操作。",
+      "2026-05-12 🆕 新增：blender（⭐ 18,371）| 专业级开源 3D 创作套件，支持建模、渲染、动画、合成全流程。",
+      "2026-05-12 🆕 新增：dbeaver（⭐ 49,997）| 万能开源数据库管理工具，支持所有主流关系型和非关系型数据库。",
       "2026-05-12 🆕 新增：netdata（⭐ 78,780）| 实时性能监控。",
       "2026-05-12 🆕 新增：ToolJet（⭐ 37,897）| 用于构建内部工具的低代码平台。",
       "2026-05-12 🆕 新增：open-interpreter（⭐ 63,489）| 自然语言计算机界面。",
@@ -30,12 +35,7 @@
       "2026-05-09 🆕 新增：darktable（⭐ 12,383）| 开源摄影后期处理软件，支持 RAW 格式编辑和非破坏性处理。",
       "2026-05-09 🆕 新增：MuseScore（⭐ 14,552）| MuseScore 是一款乐谱软件。",
       "2026-05-09 🆕 新增：cryptomator（⭐ 15,090）| 多平台透明客户端加密。",
-      "2026-05-09 🆕 新增：scribus（⭐ 583）| 开源桌面出版。",
-      "2026-05-09 🆕 新增：clients（⭐ 12,793）| Bitwarden 客户端应用程序。",
-      "2026-05-09 🆕 新增：VeraCrypt（⭐ 9,760）| 磁盘加密，安全性强。",
-      "2026-05-09 🆕 新增：server（⭐ 34,839）| 所有数据的安全之家。",
-      "2026-05-09 🆕 新增：FreeCAD（⭐ 30,820）| 您自己的 3D 参数化建模器。",
-      "2026-05-09 🆕 新增：mattermost（⭐ 36,593）| 用于安全协作的开源平台。"
+      "2026-05-09 🆕 新增：scribus（⭐ 583）| 开源桌面出版。"
     ],
     "ads": {
       "sidebar_top": "",
@@ -221,7 +221,7 @@
       "slug": "comfyui",
       "category": "ai-agent",
       "github_url": "https://github.com/comfyanonymous/ComfyUI",
-      "stars": 112591,
+      "stars": 112592,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
@@ -231,7 +231,7 @@
         "2026-05-09": 112156,
         "2026-05-10": 112280,
         "2026-05-11": 112450,
-        "2026-05-12": 112591
+        "2026-05-12": 112592
       },
       "description_zh": "ComfyUI 是一款基于节点的 Stable Diffusion 工作流工具，以灵活性和可复现性著称。用户可以通过拖拽和连接节点来构建复杂的图像生成流水线，精确控制每一步的处理过程。",
       "description_en": "A powerful and modular Stable Diffusion GUI with a node-based workflow.",
@@ -436,7 +436,7 @@
       "slug": "directus",
       "category": "dev-tools",
       "github_url": "https://github.com/directus/directus",
-      "stars": 35465,
+      "stars": 35466,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
@@ -445,7 +445,7 @@
         "2026-05-09": 35403,
         "2026-05-10": 35441,
         "2026-05-11": 35455,
-        "2026-05-12": 35465
+        "2026-05-12": 35466
       },
       "description_zh": "适用于您所有项目的灵活后端🐰 将您的数据库转变为无头 CMS、管理面板或具有自定义 UI、即时 API、身份验证等的应用程序。",
       "description_en": "The flexible backend for all your projects 🐰 Turn your DB into a headless CMS, admin panels, or apps with a custom UI, instant APIs, auth & more.",
@@ -465,7 +465,7 @@
       "slug": "supabase",
       "category": "dev-tools",
       "github_url": "https://github.com/supabase/supabase",
-      "stars": 102224,
+      "stars": 102226,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
@@ -474,7 +474,7 @@
         "2026-05-09": 102103,
         "2026-05-10": 102130,
         "2026-05-11": 102173,
-        "2026-05-12": 102224
+        "2026-05-12": 102226
       },
       "description_zh": "开源 Firebase 替代品，提供数据库、认证、存储等服务。",
       "description_en": "The open source Firebase alternative.",
@@ -553,7 +553,7 @@
       "slug": "sharex",
       "category": "system-utils",
       "github_url": "https://github.com/ShareX/ShareX",
-      "stars": 37479,
+      "stars": 37480,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
@@ -562,7 +562,7 @@
         "2026-05-09": 37424,
         "2026-05-10": 37445,
         "2026-05-11": 37462,
-        "2026-05-12": 37479
+        "2026-05-12": 37480
       },
       "description_zh": "ShareX 是一款免费的开源应用程序，用户只需按一下键即可捕获或记录屏幕的任何区域。它还支持将图像、文本和各种文件类型上传到各种目的地。",
       "description_en": "ShareX is a free and open-source application that enables users to capture or record any area of their screen with a single keystroke. It also supports uploading images, text, and various file types to a wide range of destinations.",
@@ -697,7 +697,7 @@
       "slug": "localsend",
       "category": "system-utils",
       "github_url": "https://github.com/localsend/localsend",
-      "stars": 81113,
+      "stars": 81115,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
@@ -705,7 +705,7 @@
         "2026-05-09": 80944,
         "2026-05-10": 81001,
         "2026-05-11": 81064,
-        "2026-05-12": 81113
+        "2026-05-12": 81115
       },
       "description_zh": "LocalSend 是一款开源的跨平台文件传输工具，支持在局域网内的多设备间快速共享文件和消息，无需互联网连接，是 AirDrop 的最佳开源替代方案。",
       "description_en": "LocalSend is a free, open-source app that allows you to securely share files and messages with nearby devices over your local network without needing an internet connection.",
@@ -781,7 +781,7 @@
       "slug": "logseq",
       "category": "office-productivity",
       "github_url": "https://github.com/logseq/logseq",
-      "stars": 42815,
+      "stars": 42825,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
@@ -789,7 +789,7 @@
         "2026-05-09": 42735,
         "2026-05-10": 42767,
         "2026-05-11": 42794,
-        "2026-05-12": 42815
+        "2026-05-12": 42825
       },
       "description_zh": "一个隐私第一的开源知识管理和协作平台。下载链接：http://github.com/logseq/logseq/releases。路线图：https://logseq.io/p/NX4mc ggEV",
       "description_en": "A privacy-first, open-source platform for knowledge management and collaboration. Download link: http://github.com/logseq/logseq/releases. roadmap: https://logseq.io/p/NX4mc ggEV",
@@ -837,7 +837,7 @@
       "slug": "llama-cpp",
       "category": "ai-agent",
       "github_url": "https://github.com/ggerganov/llama.cpp",
-      "stars": 109712,
+      "stars": 109714,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
@@ -845,7 +845,7 @@
         "2026-05-09": 109246,
         "2026-05-10": 109402,
         "2026-05-11": 109560,
-        "2026-05-12": 109712
+        "2026-05-12": 109714
       },
       "description_zh": "C++ 实现的高性能 LLM 推理引擎，支持在消费级硬件上运行大模型。",
       "description_en": "LLM inference in C/C++ running on consumer hardware.",
@@ -921,14 +921,14 @@
       "slug": "mattermost",
       "category": "office-productivity",
       "github_url": "https://github.com/mattermost/mattermost",
-      "stars": 36679,
+      "stars": 36681,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
         "2026-05-09": 36606,
         "2026-05-10": 36624,
         "2026-05-11": 36652,
-        "2026-05-12": 36679
+        "2026-05-12": 36681
       },
       "description_zh": "Mattermost 是一个开源平台，用于在整个软件开发生命周期中进行安全协作。",
       "description_en": "Mattermost is an open source platform for secure collaboration across the entire software development lifecycle..",
@@ -1111,14 +1111,14 @@
       "slug": "clients",
       "category": "security-privacy",
       "github_url": "https://github.com/bitwarden/clients",
-      "stars": 12820,
+      "stars": 12821,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
         "2026-05-09": 12795,
         "2026-05-10": 12807,
         "2026-05-11": 12815,
-        "2026-05-12": 12820
+        "2026-05-12": 12821
       },
       "description_zh": "Bitwarden 客户端应用程序 该存储库包含除移动应用程序（iOS android）之外的所有 Bitwarden 客户端应用程序。请参阅贡献文档的客户端部分，了解构建说明、推荐工具、代码风格提示以及许多其他帮助您入门的重要信息。相关项目： - bitwarden/server：核心基础设施后端（API、数据库、Docker 等）。 - bitwarden/ios：Bitwarden iOS 密码管理器和身份验证器应用程序。 - 位向",
       "description_en": "Bitwarden Client Applications This repository houses all Bitwarden client applications except the mobile applications (iOS android). Please refer to the Clients section of the Contributing Documentation for build instructions, recommended tooling, code style tips, and lots of other great information to get you started. Related projects: - bitwarden/server: The core infrastructure backend (API, database, Docker, etc). - bitwarden/ios: Bitwarden iOS Password Manager & Authenticator apps. - bitward",
@@ -1352,13 +1352,13 @@
       "slug": "excalidraw",
       "category": "design-tools",
       "github_url": "https://github.com/excalidraw/excalidraw",
-      "stars": 122997,
+      "stars": 122998,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
         "2026-05-10": 122868,
         "2026-05-11": 122948,
-        "2026-05-12": 122997
+        "2026-05-12": 122998
       },
       "description_zh": "Excalidraw 编辑器博客文档 Excalidraw+ 开源虚拟手绘风格白板。协作和端到端加密。创建漂亮的手绘图、线框图或任何您喜欢的内容。功能 Excalidraw 编辑器（npm 软件包）支持： - 💯 免费且开源。 - 🎨 无限的、基于画布的白板。 - ✍️手绘风格。 - 🌓 深色模式。 - 🏗️ 可定制。 - 📷 图像支持。 - 😀 形状库支持。 - 🌐 本地化",
       "description_en": "Excalidraw Editor Blog Documentation Excalidraw+ An open source virtual hand-drawn style whiteboard. Collaborative and end-to-end encrypted. Create beautiful hand-drawn like diagrams, wireframes, or whatever you like. Features The Excalidraw editor (npm package) supports: - 💯&nbsp;Free & open-source. - 🎨&nbsp;Infinite, canvas-based whiteboard. - ✍️&nbsp;Hand-drawn like style. - 🌓&nbsp;Dark mode. - 🏗️&nbsp;Customizable. - 📷&nbsp;Image support. - 😀&nbsp;Shape libraries support. - 🌐&nbsp;Localizati",
@@ -1736,14 +1736,135 @@
       "stars_history": {
         "2026-05-12": 63489
       },
-      "description_zh": "自然语言计算机界面。",
-      "description_en": "A natural language computer interface.",
+      "description_zh": "● Open Interpreter 尽早访问桌面应用程序 ‎ ‎ ‎ ‎ 文档 Open Interpreter 允许法学硕士在本地运行代码（Python、Javascript、Shell 等）。您可以在安装后运行 $terpreter，通过终端中类似 ChatGPT 的界面与 Open Interpreter 聊天。这为您的计算机的通用功能提供了一个自然语言界面： - 创建和编辑照片、视频、PDF 等。 - 控制 Chrome 浏览器执行研究 - 绘图、清理和分析",
+      "description_en": "● Open Interpreter Get early access to the desktop app ‎ ‎ ‎ ‎ Documentation Open Interpreter lets LLMs run code (Python, Javascript, Shell, and more) locally. You can chat with Open Interpreter through a ChatGPT-like interface in your terminal by running $ interpreter after installing. This provides a natural-language interface to your computer's general-purpose capabilities: - Create and edit photos, videos, PDFs, etc. - Control a Chrome browser to perform research - Plot, clean, and analyze l",
       "alternative_to": "Copilot / Devin",
       "tags": [
         "AI助手",
         "代码解释器"
       ],
       "license": "AGPL-3.0",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-12"
+    },
+    {
+      "id": "auto-1778593881-623",
+      "name": "DocumentServer",
+      "slug": "documentserver",
+      "category": "office-productivity",
+      "github_url": "https://github.com/onlyoffice/DocumentServer",
+      "stars": 6498,
+      "version": "",
+      "last_updated": "2026-05-12",
+      "stars_history": {
+        "2026-05-12": 6498
+      },
+      "description_zh": "开源在线办公套件，高度兼容 MS Office 格式，支持在线协作。",
+      "description_en": "ONLYOFFICE Document Server is an online office suite.",
+      "alternative_to": "Office 365",
+      "tags": [
+        "在线办公",
+        "协作"
+      ],
+      "license": "AGPL-3.0",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-12"
+    },
+    {
+      "id": "auto-1778593883-961",
+      "name": "hoppscotch",
+      "slug": "hoppscotch",
+      "category": "dev-tools",
+      "github_url": "https://github.com/hoppscotch/hoppscotch",
+      "stars": 79162,
+      "version": "",
+      "last_updated": "2026-05-12",
+      "stars_history": {
+        "2026-05-12": 79162
+      },
+      "description_zh": "开源 API 开发生态系统。",
+      "description_en": "Open source API development ecosystem.",
+      "alternative_to": "Postman",
+      "tags": [
+        "API测试",
+        "HTTP客户端"
+      ],
+      "license": "MIT",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-12"
+    },
+    {
+      "id": "auto-1778593884-935",
+      "name": "Stirling-PDF",
+      "slug": "stirling-pdf",
+      "category": "office-productivity",
+      "github_url": "https://github.com/Stirling-Tools/Stirling-PDF",
+      "stars": 78628,
+      "version": "",
+      "last_updated": "2026-05-12",
+      "stars_history": {
+        "2026-05-12": 78628
+      },
+      "description_zh": "全能私有化 PDF 工具箱，支持分割、合并、转换等数十种操作。",
+      "description_en": "1 Locally hosted PDF web application.",
+      "alternative_to": "Adobe Acrobat",
+      "tags": [
+        "PDF",
+        "文档处理"
+      ],
+      "license": "NOASSERTION",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-12"
+    },
+    {
+      "id": "auto-1778593886-732",
+      "name": "blender",
+      "slug": "blender",
+      "category": "media-video",
+      "github_url": "https://github.com/blender/blender",
+      "stars": 18371,
+      "version": "",
+      "last_updated": "2026-05-12",
+      "stars_history": {
+        "2026-05-12": 18371
+      },
+      "description_zh": "专业级开源 3D 创作套件，支持建模、渲染、动画、合成全流程。",
+      "description_en": "Blender is the free and open source 3D creation suite.",
+      "alternative_to": "Maya / 3ds Max / Cinema 4D",
+      "tags": [
+        "3D建模",
+        "动画",
+        "渲染"
+      ],
+      "license": "NOASSERTION",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-12"
+    },
+    {
+      "id": "auto-1778593887-717",
+      "name": "dbeaver",
+      "slug": "dbeaver",
+      "category": "dev-tools",
+      "github_url": "https://github.com/dbeaver/dbeaver",
+      "stars": 49997,
+      "version": "",
+      "last_updated": "2026-05-12",
+      "stars_history": {
+        "2026-05-12": 49997
+      },
+      "description_zh": "万能开源数据库管理工具，支持所有主流关系型和非关系型数据库。",
+      "description_en": "Free universal database tool and SQL client.",
+      "alternative_to": "Navicat / DataGrip",
+      "tags": [
+        "数据库",
+        "SQL"
+      ],
+      "license": "Apache-2.0",
       "download_url": "",
       "featured": false,
       "date_added": "2026-05-12"
@@ -2111,18 +2232,6 @@
       "license": "AGPL-3.0"
     },
     {
-      "github_url": "https://github.com/Stirling-Tools/Stirling-PDF",
-      "category": "office-productivity",
-      "alternative_to": "Adobe Acrobat",
-      "description_zh": "全能私有化 PDF 工具箱，支持分割、合并、转换等数十种操作。",
-      "description_en": "#1 Locally hosted PDF web application.",
-      "tags": [
-        "PDF",
-        "文档处理"
-      ],
-      "license": "GPL-3.0"
-    },
-    {
       "github_url": "https://github.com/nocodb/nocodb",
       "category": "office-productivity",
       "alternative_to": "Airtable",
@@ -2131,18 +2240,6 @@
       "tags": [
         "无代码",
         "数据库"
-      ],
-      "license": "AGPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/onlyoffice/DocumentServer",
-      "category": "office-productivity",
-      "alternative_to": "Office 365",
-      "description_zh": "开源在线办公套件，高度兼容 MS Office 格式，支持在线协作。",
-      "description_en": "ONLYOFFICE Document Server is an online office suite.",
-      "tags": [
-        "在线办公",
-        "协作"
       ],
       "license": "AGPL-3.0"
     },
@@ -2193,30 +2290,6 @@
         "工作流"
       ],
       "license": "Sustainable Use"
-    },
-    {
-      "github_url": "https://github.com/hoppscotch/hoppscotch",
-      "category": "dev-tools",
-      "alternative_to": "Postman",
-      "description_zh": "轻量级开源 API 测试工具，运行在浏览器即可。",
-      "description_en": "Open source API development ecosystem.",
-      "tags": [
-        "API测试",
-        "HTTP客户端"
-      ],
-      "license": "MIT"
-    },
-    {
-      "github_url": "https://github.com/dbeaver/dbeaver",
-      "category": "dev-tools",
-      "alternative_to": "Navicat / DataGrip",
-      "description_zh": "万能开源数据库管理工具，支持所有主流关系型和非关系型数据库。",
-      "description_en": "Free universal database tool and SQL client.",
-      "tags": [
-        "数据库",
-        "SQL"
-      ],
-      "license": "Apache-2.0"
     },
     {
       "github_url": "https://github.com/metabase/metabase",
@@ -2324,19 +2397,6 @@
       "tags": [
         "编辑器",
         "高性能"
-      ],
-      "license": "GPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/blender/blender",
-      "category": "media-video",
-      "alternative_to": "Maya / 3ds Max / Cinema 4D",
-      "description_zh": "专业级开源 3D 创作套件，支持建模、渲染、动画、合成全流程。",
-      "description_en": "Blender is the free and open source 3D creation suite.",
-      "tags": [
-        "3D建模",
-        "动画",
-        "渲染"
       ],
       "license": "GPL-3.0"
     },
