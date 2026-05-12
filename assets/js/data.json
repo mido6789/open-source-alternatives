@@ -651,7 +651,7 @@
         "2026-05-11": 83846,
         "2026-05-12": 83913
       },
-      "description_zh": "[![Syncthing][14]][15] Goals Syncthing is a continuous file synchronization program . It synchronizes files between two or more computers.我们努力实现以下目标。 The goals are listed in order of importance, the most important ones first. This is the summary version of the goal list - for more commentary, see the full [Goals document][13]. Syncthing should be: 1. Safe From Data Loss Protecting the user's data is paramount. We take every reasonable precaution to avoid corrupting the",
+      "description_zh": "Syncthing 是一款开源的 P2P 连续文件同步工具，无需中心服务器即可在多台电脑之间安全地同步文件，保护用户数据安全，是 Resilio Sync 和 Dropbox 的隐私优先替代方案。",
       "description_en": "[![Syncthing][14]][15] Goals Syncthing is a continuous file synchronization program . It synchronizes files between two or more computers. We strive to fulfill the goals below. The goals are listed in order of importance, the most important ones first. This is the summary version of the goal list - for more commentary, see the full [Goals document][13]. Syncthing should be: 1. Safe From Data Loss Protecting the user's data is paramount. We take every reasonable precaution to avoid corrupting the",
       "alternative_to": "Resilio Sync / Dropbox",
       "tags": [
@@ -707,7 +707,7 @@
         "2026-05-11": 81064,
         "2026-05-12": 81104
       },
-      "description_zh": "LocalSend [![CI 状态][ci-badge]][ci-workflow] [![翻译][translate-badge]][translate-link] [![打包状态][packaging-badge]][packaging-link] [ci-badge]：https://github.com/localsend/localsend/actions/workflows/ci.yml/badge.svg [ci-workflow]： https://github.com/localsend/localsend/actions/workflows/ci.yml [翻译徽章]：https://hosted.weblate.org/widget/localsend/app/svg-badge.svg [翻译链接]：https://hosted.weblate.org/engage/localsend/ [打包徽章]：https://repology.o",
+      "description_zh": "LocalSend 是一款开源的跨平台文件传输工具，支持在局域网内的多设备间快速共享文件和消息，无需互联网连接，是 AirDrop 的最佳开源替代方案。",
       "description_en": "LocalSend [![CI status][ci-badge]][ci-workflow] [![Translations][translate-badge]][translate-link] [![Packaging status][packaging-badge]][packaging-link] [ci-badge]: https://github.com/localsend/localsend/actions/workflows/ci.yml/badge.svg [ci-workflow]: https://github.com/localsend/localsend/actions/workflows/ci.yml [translate-badge]: https://hosted.weblate.org/widget/localsend/app/svg-badge.svg [translate-link]: https://hosted.weblate.org/engage/localsend/ [packaging-badge]: https://repology.o",
       "alternative_to": "AirDrop",
       "tags": [
