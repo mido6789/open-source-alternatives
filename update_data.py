@@ -4,7 +4,7 @@
 功能：
 1. 更新 Stars/版本 + 自动翻译 + 时间线带简介
 2. 自动新增 3-5 个候选项目
-3. 🆕 自动生成静态HTML项目页面，提升SEO
+3. 自动生成静态HTML项目页面 + 静态首页（含分类、精选、最新收录、最近更新）
 """
 import json, os, random, re, time, base64
 from datetime import datetime, timedelta
@@ -17,7 +17,6 @@ SITEMAP_PATH = 'sitemap.xml'
 PROJECTS_DIR = 'projects'
 GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN', '')
 
-# ========== 工具函数 ==========
 def strip_html(text):
     if not text: return text
     clean = re.sub(r'<[^>]+>', ' ', text)
@@ -79,7 +78,6 @@ def load_data():
 def save_data(data):
     with open(DATA_PATH, 'w', encoding='utf-8') as f: json.dump(data, f, ensure_ascii=False, indent=2)
 
-# ========== 核心更新逻辑 ==========
 def update_existing_projects(data):
     today_str = datetime.now().strftime('%Y-%m-%d')
     cutoff = (datetime.now() - timedelta(days=14)).strftime('%Y-%m-%d')
@@ -144,7 +142,6 @@ def add_new_projects(data, count=3):
     data['site']['update_log'] = (log_entries + data['site']['update_log'])[:30]
     return data, added
 
-# ========== Sitemap 生成 ==========
 def generate_sitemap(data):
     base_url = data['site']['url'].rstrip('/')
     today = datetime.now().strftime('%Y-%m-%d')
@@ -170,12 +167,10 @@ def generate_sitemap(data):
     with open(SITEMAP_PATH, 'w', encoding='utf-8') as f: f.write(xml)
     print(f'✅ sitemap.xml 已生成，{len(urls)} 个页面')
 
-# ========== 🆕 静态HTML生成 ==========
 def generate_static_project_pages(data):
     print("⏳ 正在生成项目静态页面...")
     if not os.path.exists(PROJECTS_DIR):
         os.makedirs(PROJECTS_DIR)
-    
     base_url = data['site']['url'].rstrip('/')
     generated = 0
     for proj in data['projects']:
@@ -183,7 +178,6 @@ def generate_static_project_pages(data):
         category = next((c for c in data['categories'] if c['id'] == proj['category']), None)
         cat_name = category['name'] if category else proj['category']
         cat_icon = category['icon'] if category else ''
-        
         html = f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -225,16 +219,12 @@ def generate_static_project_pages(data):
     <div class="detail-content">
       <h2>📖 项目简介</h2>
       <p>{proj.get('description_zh', '暂无介绍')}</p>
-      
       <h2>🔗 GitHub 项目地址</h2>
       <p><a href="{proj['github_url']}" target="_blank">{proj['github_url']}</a></p>
-      
       <h2>🔄 可替代的商用软件</h2>
       <p>{proj.get('alternative_to', '')}</p>
-      
       <h2>📝 项目原文介绍（英文）</h2>
       <p>{proj.get('description_en', 'No description available.')}</p>
-      
       <div class="disclaimer-box">
         ⚠️ <strong>免责声明：</strong>本文内容整理自 GitHub 开源社区，旨在分享和介绍优秀的开源替代方案。
       </div>
@@ -247,20 +237,17 @@ def generate_static_project_pages(data):
   </footer>
 </body>
 </html>"""
-        
         with open(f'{PROJECTS_DIR}/{slug}.html', 'w', encoding='utf-8') as f:
             f.write(html)
         generated += 1
-    
     print(f"✅ 已生成 {generated} 个项目静态页面")
 
 def generate_static_homepage(data):
-    """生成静态首页"""
     print("⏳ 正在生成静态首页...")
     base_url = data['site']['url'].rstrip('/')
     
-    top_projects = sorted(data['projects'], key=lambda p: p['stars'], reverse=True)[:30]
-    
+    # 精选推荐 Top 6
+    top_projects = sorted(data['projects'], key=lambda p: p['stars'], reverse=True)[:6]
     projects_html = ''
     for proj in top_projects:
         category = next((c for c in data['categories'] if c['id'] == proj['category']), None)
@@ -276,10 +263,32 @@ def generate_static_homepage(data):
         </div>
       </div>"""
     
+    # 分类卡片
     categories_html = ''
     for cat in data['categories']:
         count = len([p for p in data['projects'] if p['category'] == cat['id']])
         categories_html += f'<a href="/category.html?id={cat["id"]}" class="category-card"><span class="icon">{cat["icon"]}</span><span class="name">{cat["name"]}</span><span class="count">{count}个项目</span></a>\n'
+    
+    # 最近更新日志
+    update_logs = data['site'].get('update_log', [])[:10]
+    timeline_html = '\n'.join([f'        <div class="timeline-item">{log}</div>' for log in update_logs]) if update_logs else '<p style="color:var(--text-secondary);padding:20px;">即将更新...</p>'
+    
+    # 最新收录 Top 6
+    latest_projects = sorted(data['projects'], key=lambda p: p.get('date_added', ''), reverse=True)[:6]
+    latest_html = ''
+    for proj in latest_projects:
+        category = next((c for c in data['categories'] if c['id'] == proj['category']), None)
+        cat_name = category['name'] if category else proj['category']
+        latest_html += f"""
+      <div class="project-card">
+        <span class="category-tag">{cat_name}</span>
+        <h3><a href="/projects/{proj['slug']}.html">{proj['name']}</a></h3>
+        <p class="description">{proj.get('description_zh', '')[:120]}</p>
+        <div class="meta">
+          <span>⭐ {proj['stars']:,}</span>
+          <span class="alt-badge">替代: {proj.get('alternative_to', '')}</span>
+        </div>
+      </div>"""
     
     html = f"""<!DOCTYPE html>
 <html lang="zh-CN">
@@ -357,7 +366,7 @@ def generate_static_homepage(data):
       <h2 class="section-title"><span class="hot-icon">🔥</span> 本周热门</h2>
       <p style="color:var(--text-secondary);margin-bottom:20px;font-size:0.9rem;">Star 增长最快的开源项目（7日内涨幅）</p>
       <div class="projects-grid" id="weeklyHot">
-        <p style="color:var(--text-secondary);padding:20px;">加载中...</p>
+        <p style="color:var(--text-secondary);padding:20px;">数据收集中，明天再来看看...</p>
       </div>
     </section>
 
@@ -365,7 +374,7 @@ def generate_static_homepage(data):
 
     <section>
       <h2 class="section-title">⭐ 精选推荐</h2>
-      <div class="projects-grid" id="featuredProjects">
+      <div class="projects-grid">
         {projects_html}
       </div>
     </section>
@@ -374,8 +383,8 @@ def generate_static_homepage(data):
 
     <section>
       <h2 class="section-title">📋 最近更新</h2>
-      <div class="timeline-container" id="updateTimeline">
-        <p style="color:var(--text-secondary);text-align:center;padding:20px;">加载中...</p>
+      <div class="timeline-container">
+        {timeline_html}
       </div>
     </section>
 
@@ -383,8 +392,8 @@ def generate_static_homepage(data):
 
     <section>
       <h2 class="section-title">🆕 最新收录</h2>
-      <div class="projects-grid" id="latestProjects">
-        <p style="color:var(--text-secondary);text-align:center;padding:20px;">加载中...</p>
+      <div class="projects-grid">
+        {latest_html}
       </div>
     </section>
   </main>
@@ -419,9 +428,8 @@ def generate_static_homepage(data):
     
     with open('index.html', 'w', encoding='utf-8') as f:
         f.write(html)
-    print(f"✅ 静态首页已生成（包含 {len(top_projects)} 个热门项目）")
+    print(f"✅ 静态首页已生成（精选{len(top_projects)}个 | 最新{len(latest_projects)}个 | 更新{len(update_logs)}条）")
 
-# ========== 主流程 ==========
 def main():
     print(f'🚀 开始每日更新 - {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}')
     data = load_data()
