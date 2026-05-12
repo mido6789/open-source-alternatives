@@ -6,6 +6,9 @@
     "contact_email": "mailtomidoo@gmail.com",
     "admin_password_hash": "",
     "update_log": [
+      "2026-05-12 🆕 新增：penpot（⭐ 47,502）| Penpot - 开源设计和原型制作平台。",
+      "2026-05-12 🆕 新增：analytics（⭐ 24,820）| 轻量开源网站统计，不追踪隐私，无需 Cookie 同意横幅。",
+      "2026-05-12 🆕 新增：MuseScore（⭐ 14,560）| MuseScore 是一款乐谱软件。",
       "2026-05-12 🆕 新增：DocumentServer（⭐ 6,498）| 开源在线办公套件，高度兼容 MS Office 格式，支持在线协作。",
       "2026-05-12 🆕 新增：hoppscotch（⭐ 79,162）| 开源 API 开发生态系统。",
       "2026-05-12 🆕 新增：Stirling-PDF（⭐ 78,628）| 全能私有化 PDF 工具箱，支持分割、合并、转换等数十种操作。",
@@ -32,10 +35,7 @@
       "2026-05-10 🆕 新增：blender（⭐ 18,350）| 专业级开源 3D 创作套件，支持建模、渲染、动画、合成全流程。",
       "2026-05-10 🆕 新增：Ventoy（⭐ 76,507）| 新一代多系统启动盘制作工具，直接复制 iso 文件即可启动。",
       "2026-05-10 🆕 新增：inkscape（⭐ 3,448）| 专业矢量图形编辑器。",
-      "2026-05-09 🆕 新增：darktable（⭐ 12,383）| 开源摄影后期处理软件，支持 RAW 格式编辑和非破坏性处理。",
-      "2026-05-09 🆕 新增：MuseScore（⭐ 14,552）| MuseScore 是一款乐谱软件。",
-      "2026-05-09 🆕 新增：cryptomator（⭐ 15,090）| 多平台透明客户端加密。",
-      "2026-05-09 🆕 新增：scribus（⭐ 583）| 开源桌面出版。"
+      "2026-05-09 🆕 新增：darktable（⭐ 12,383）| 开源摄影后期处理软件，支持 RAW 格式编辑和非破坏性处理。"
     ],
     "ads": {
       "sidebar_top": "",
@@ -97,7 +97,7 @@
       "slug": "stable-diffusion-webui",
       "category": "ai-agent",
       "github_url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
-      "stars": 162999,
+      "stars": 163000,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
@@ -107,7 +107,7 @@
         "2026-05-09": 162784,
         "2026-05-10": 162804,
         "2026-05-11": 162873,
-        "2026-05-12": 162999
+        "2026-05-12": 163000
       },
       "description_zh": "Stable Diffusion WebUI 是目前最流行的开源 AI 绘画工具，由 AUTOMATIC1111 开发。它提供了直观的网页操作界面，支持文生图、图生图、图像修复、超分辨率放大等多种强大功能。用户可以通过丰富的扩展插件增强功能，支持多种模型切换，社区活跃教程丰富。",
       "description_en": "A web interface for Stable Diffusion with support for txt2img, img2img, inpainting, and more.",
@@ -190,7 +190,7 @@
       "slug": "langchain",
       "category": "ai-agent",
       "github_url": "https://github.com/langchain-ai/langchain",
-      "stars": 136526,
+      "stars": 136530,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
@@ -200,7 +200,7 @@
         "2026-05-09": 136258,
         "2026-05-10": 136322,
         "2026-05-11": 136433,
-        "2026-05-12": 136526
+        "2026-05-12": 136530
       },
       "description_zh": "LangChain 是当前最流行的 LLM 应用开发框架，支持 Python 和 JavaScript。它提供了链式调用、智能代理、记忆管理、向量检索等核心模块，让开发者可以快速构建基于 GPT、Claude、Llama 等大模型的应用。",
       "description_en": "Building applications with LLMs through composability.",
@@ -221,7 +221,7 @@
       "slug": "comfyui",
       "category": "ai-agent",
       "github_url": "https://github.com/comfyanonymous/ComfyUI",
-      "stars": 112592,
+      "stars": 112603,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
@@ -231,7 +231,7 @@
         "2026-05-09": 112156,
         "2026-05-10": 112280,
         "2026-05-11": 112450,
-        "2026-05-12": 112592
+        "2026-05-12": 112603
       },
       "description_zh": "ComfyUI 是一款基于节点的 Stable Diffusion 工作流工具，以灵活性和可复现性著称。用户可以通过拖拽和连接节点来构建复杂的图像生成流水线，精确控制每一步的处理过程。",
       "description_en": "A powerful and modular Stable Diffusion GUI with a node-based workflow.",
@@ -283,7 +283,7 @@
       "slug": "ollama",
       "category": "ai-agent",
       "github_url": "https://github.com/ollama/ollama",
-      "stars": 171262,
+      "stars": 171267,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
@@ -293,7 +293,7 @@
         "2026-05-09": 171072,
         "2026-05-10": 171154,
         "2026-05-11": 171202,
-        "2026-05-12": 171262
+        "2026-05-12": 171267
       },
       "description_zh": "Ollama 是一个让你在本地电脑上轻松运行大语言模型的开源工具。它支持 Llama 3、Mistral、Gemma、Qwen、DeepSeek 等众多主流开源模型，只需一条命令就能下载并启动模型服务。",
       "description_en": "Get up and running with large language models locally.",
@@ -345,7 +345,7 @@
       "slug": "qbittorrent",
       "category": "system-utils",
       "github_url": "https://github.com/qbittorrent/qBittorrent",
-      "stars": 37388,
+      "stars": 37390,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
@@ -355,7 +355,7 @@
         "2026-05-09": 37319,
         "2026-05-10": 37350,
         "2026-05-11": 37372,
-        "2026-05-12": 37388
+        "2026-05-12": 37390
       },
       "description_zh": "轻量级开源 BT 下载工具，无广告无捆绑，界面简洁功能全面。支持磁力链接、RSS 订阅、远程控制等高级功能，是 uTorrent 的最佳开源替代品。",
       "description_en": "A free, open-source BitTorrent client.",
@@ -436,7 +436,7 @@
       "slug": "directus",
       "category": "dev-tools",
       "github_url": "https://github.com/directus/directus",
-      "stars": 35466,
+      "stars": 35467,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
@@ -445,7 +445,7 @@
         "2026-05-09": 35403,
         "2026-05-10": 35441,
         "2026-05-11": 35455,
-        "2026-05-12": 35466
+        "2026-05-12": 35467
       },
       "description_zh": "适用于您所有项目的灵活后端🐰 将您的数据库转变为无头 CMS、管理面板或具有自定义 UI、即时 API、身份验证等的应用程序。",
       "description_en": "The flexible backend for all your projects 🐰 Turn your DB into a headless CMS, admin panels, or apps with a custom UI, instant APIs, auth & more.",
@@ -465,7 +465,7 @@
       "slug": "supabase",
       "category": "dev-tools",
       "github_url": "https://github.com/supabase/supabase",
-      "stars": 102226,
+      "stars": 102230,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
@@ -474,7 +474,7 @@
         "2026-05-09": 102103,
         "2026-05-10": 102130,
         "2026-05-11": 102173,
-        "2026-05-12": 102226
+        "2026-05-12": 102230
       },
       "description_zh": "开源 Firebase 替代品，提供数据库、认证、存储等服务。",
       "description_en": "The open source Firebase alternative.",
@@ -553,7 +553,7 @@
       "slug": "sharex",
       "category": "system-utils",
       "github_url": "https://github.com/ShareX/ShareX",
-      "stars": 37480,
+      "stars": 37482,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
@@ -562,7 +562,7 @@
         "2026-05-09": 37424,
         "2026-05-10": 37445,
         "2026-05-11": 37462,
-        "2026-05-12": 37480
+        "2026-05-12": 37482
       },
       "description_zh": "ShareX 是一款免费的开源应用程序，用户只需按一下键即可捕获或记录屏幕的任何区域。它还支持将图像、文本和各种文件类型上传到各种目的地。",
       "description_en": "ShareX is a free and open-source application that enables users to capture or record any area of their screen with a single keystroke. It also supports uploading images, text, and various file types to a wide range of destinations.",
@@ -582,7 +582,7 @@
       "slug": "gitea",
       "category": "dev-tools",
       "github_url": "https://github.com/go-gitea/gitea",
-      "stars": 55606,
+      "stars": 55608,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
@@ -591,7 +591,7 @@
         "2026-05-09": 55520,
         "2026-05-10": 55547,
         "2026-05-11": 55570,
-        "2026-05-12": 55606
+        "2026-05-12": 55608
       },
       "description_zh": "喝杯茶吧！无痛自托管一体化软件开发服务，包括 Git 托管、代码审查、团队协作、包注册和 CI/CD",
       "description_en": "Git with a cup of tea! Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD",
@@ -611,7 +611,7 @@
       "slug": "appsmith",
       "category": "dev-tools",
       "github_url": "https://github.com/appsmithorg/appsmith",
-      "stars": 39795,
+      "stars": 39797,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
@@ -620,7 +620,7 @@
         "2026-05-09": 39772,
         "2026-05-10": 39781,
         "2026-05-11": 39789,
-        "2026-05-12": 39795
+        "2026-05-12": 39797
       },
       "description_zh": "用于构建管理面板、内部工具和仪表板的平台。与超过 25 个数据库和任何 API 集成。",
       "description_en": "Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ databases and any API.",
@@ -640,7 +640,7 @@
       "slug": "syncthing",
       "category": "system-utils",
       "github_url": "https://github.com/syncthing/syncthing",
-      "stars": 83918,
+      "stars": 83919,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
@@ -649,7 +649,7 @@
         "2026-05-09": 83759,
         "2026-05-10": 83806,
         "2026-05-11": 83846,
-        "2026-05-12": 83918
+        "2026-05-12": 83919
       },
       "description_zh": "Syncthing 是一款开源的 P2P 连续文件同步工具，无需中心服务器即可在多台电脑之间安全地同步文件，保护用户数据安全，是 Resilio Sync 和 Dropbox 的隐私优先替代方案。",
       "description_en": "Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers in real time, safely protected from prying eyes. Your data is your data alone and you deserve to choose where it is stored.",
@@ -669,7 +669,7 @@
       "slug": "hoppscotch",
       "category": "dev-tools",
       "github_url": "https://github.com/hoppscotch/hoppscotch",
-      "stars": 79162,
+      "stars": 79164,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
@@ -677,7 +677,7 @@
         "2026-05-09": 79144,
         "2026-05-10": 79147,
         "2026-05-11": 79153,
-        "2026-05-12": 79162
+        "2026-05-12": 79164
       },
       "description_zh": "Open source API development ecosystem.",
       "description_en": "Open source API development ecosystem.",
@@ -697,7 +697,7 @@
       "slug": "localsend",
       "category": "system-utils",
       "github_url": "https://github.com/localsend/localsend",
-      "stars": 81115,
+      "stars": 81117,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
@@ -705,7 +705,7 @@
         "2026-05-09": 80944,
         "2026-05-10": 81001,
         "2026-05-11": 81064,
-        "2026-05-12": 81115
+        "2026-05-12": 81117
       },
       "description_zh": "LocalSend 是一款开源的跨平台文件传输工具，支持在局域网内的多设备间快速共享文件和消息，无需互联网连接，是 AirDrop 的最佳开源替代方案。",
       "description_en": "LocalSend is a free, open-source app that allows you to securely share files and messages with nearby devices over your local network without needing an internet connection.",
@@ -837,7 +837,7 @@
       "slug": "llama-cpp",
       "category": "ai-agent",
       "github_url": "https://github.com/ggerganov/llama.cpp",
-      "stars": 109714,
+      "stars": 109723,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
@@ -845,7 +845,7 @@
         "2026-05-09": 109246,
         "2026-05-10": 109402,
         "2026-05-11": 109560,
-        "2026-05-12": 109714
+        "2026-05-12": 109723
       },
       "description_zh": "C++ 实现的高性能 LLM 推理引擎，支持在消费级硬件上运行大模型。",
       "description_en": "LLM inference in C/C++ running on consumer hardware.",
@@ -948,14 +948,14 @@
       "slug": "dbeaver",
       "category": "dev-tools",
       "github_url": "https://github.com/dbeaver/dbeaver",
-      "stars": 49997,
+      "stars": 49998,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
         "2026-05-09": 49959,
         "2026-05-10": 49968,
         "2026-05-11": 49986,
-        "2026-05-12": 49997
+        "2026-05-12": 49998
       },
       "description_zh": "万能开源数据库管理工具，支持所有主流关系型和非关系型数据库。",
       "description_en": "Free universal database tool and SQL client.",
@@ -1029,14 +1029,14 @@
       "slug": "server",
       "category": "office-productivity",
       "github_url": "https://github.com/nextcloud/server",
-      "stars": 34884,
+      "stars": 34883,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
         "2026-05-09": 34850,
         "2026-05-10": 34865,
         "2026-05-11": 34874,
-        "2026-05-12": 34884
+        "2026-05-12": 34883
       },
       "description_zh": "Nextcloud 服务器 ☁ 所有数据的安全之家。为什么这这么棒？ 🤩 📁 访问您的数据您可以将文件、联系人、日历等存储在您选择的服务器上。 🔄 同步您的数据 您可以在设备之间保持文件、联系人、日历等内容的同步。 🙌 共享您的数据……让其他人访问您希望他们查看或协作的内容。 🚀 可扩展数百个应用程序...例如日历、联系人、邮件、视频聊天以及您可以在 o 中找到的所有应用程序",
       "description_en": "Nextcloud Server ☁ A safe home for all your data. Why is this so awesome? 🤩 📁 Access your Data You can store your files, contacts, calendars, and more on a server of your choosing. 🔄 Sync your Data You keep your files, contacts, calendars, and more synchronized amongst your devices. 🙌 Share your Data …by giving others access to the stuff you want them to see or to collaborate with. 🚀 Expandable with hundreds of Apps ...like Calendar, Contacts, Mail, Video Chat and all those you can discover in o",
@@ -1111,14 +1111,14 @@
       "slug": "clients",
       "category": "security-privacy",
       "github_url": "https://github.com/bitwarden/clients",
-      "stars": 12821,
+      "stars": 12822,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
         "2026-05-09": 12795,
         "2026-05-10": 12807,
         "2026-05-11": 12815,
-        "2026-05-12": 12821
+        "2026-05-12": 12822
       },
       "description_zh": "Bitwarden 客户端应用程序 该存储库包含除移动应用程序（iOS android）之外的所有 Bitwarden 客户端应用程序。请参阅贡献文档的客户端部分，了解构建说明、推荐工具、代码风格提示以及许多其他帮助您入门的重要信息。相关项目： - bitwarden/server：核心基础设施后端（API、数据库、Docker 等）。 - bitwarden/ios：Bitwarden iOS 密码管理器和身份验证器应用程序。 - 位向",
       "description_en": "Bitwarden Client Applications This repository houses all Bitwarden client applications except the mobile applications (iOS android). Please refer to the Clients section of the Contributing Documentation for build instructions, recommended tooling, code style tips, and lots of other great information to get you started. Related projects: - bitwarden/server: The core infrastructure backend (API, database, Docker, etc). - bitwarden/ios: Bitwarden iOS Password Manager & Authenticator apps. - bitward",
@@ -1300,13 +1300,13 @@
       "slug": "open-interpreter",
       "category": "ai-agent",
       "github_url": "https://github.com/OpenInterpreter/open-interpreter",
-      "stars": 63489,
+      "stars": 63494,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
         "2026-05-10": 63459,
         "2026-05-11": 63475,
-        "2026-05-12": 63489
+        "2026-05-12": 63494
       },
       "description_zh": "● Open Interpreter 尽早访问桌面应用程序 ‎ ‎ ‎ ‎ 文档 Open Interpreter 允许法学硕士在本地运行代码（Python、Javascript、Shell 等）。您可以在安装后运行 $terpreter，通过终端中类似 ChatGPT 的界面与 Open Interpreter 聊天。这为您的计算机的通用功能提供了一个自然语言界面： - 创建和编辑照片、视频、PDF 等。 - 控制 Chrome 浏览器执行研究 - 绘图、清理和分析",
       "description_en": "● Open Interpreter Get early access to the desktop app ‎ ‎ ‎ ‎ Documentation Open Interpreter lets LLMs run code (Python, Javascript, Shell, and more) locally. You can chat with Open Interpreter through a ChatGPT-like interface in your terminal by running $ interpreter after installing. This provides a natural-language interface to your computer's general-purpose capabilities: - Create and edit photos, videos, PDFs, etc. - Control a Chrome browser to perform research - Plot, clean, and analyze l",
@@ -1352,13 +1352,13 @@
       "slug": "excalidraw",
       "category": "design-tools",
       "github_url": "https://github.com/excalidraw/excalidraw",
-      "stars": 122998,
+      "stars": 123004,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
         "2026-05-10": 122868,
         "2026-05-11": 122948,
-        "2026-05-12": 122998
+        "2026-05-12": 123004
       },
       "description_zh": "Excalidraw 编辑器博客文档 Excalidraw+ 开源虚拟手绘风格白板。协作和端到端加密。创建漂亮的手绘图、线框图或任何您喜欢的内容。功能 Excalidraw 编辑器（npm 软件包）支持： - 💯 免费且开源。 - 🎨 无限的、基于画布的白板。 - ✍️手绘风格。 - 🌓 深色模式。 - 🏗️ 可定制。 - 📷 图像支持。 - 😀 形状库支持。 - 🌐 本地化",
       "description_en": "Excalidraw Editor Blog Documentation Excalidraw+ An open source virtual hand-drawn style whiteboard. Collaborative and end-to-end encrypted. Create beautiful hand-drawn like diagrams, wireframes, or whatever you like. Features The Excalidraw editor (npm package) supports: - 💯&nbsp;Free & open-source. - 🎨&nbsp;Infinite, canvas-based whiteboard. - ✍️&nbsp;Hand-drawn like style. - 🌓&nbsp;Dark mode. - 🏗️&nbsp;Customizable. - 📷&nbsp;Image support. - 😀&nbsp;Shape libraries support. - 🌐&nbsp;Localizati",
@@ -1404,13 +1404,13 @@
       "slug": "keepassxc",
       "category": "security-privacy",
       "github_url": "https://github.com/keepassxreboot/keepassxc",
-      "stars": 27104,
+      "stars": 27106,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
         "2026-05-10": 27072,
         "2026-05-11": 27090,
-        "2026-05-12": 27104
+        "2026-05-12": 27106
       },
       "description_zh": "KeePassXC 是 KeePass 的跨平台社区驱动端口。",
       "description_en": "KeePassXC is a cross-platform community-driven port of KeePass.",
@@ -1431,13 +1431,13 @@
       "slug": "wazuh",
       "category": "security-privacy",
       "github_url": "https://github.com/wazuh/wazuh",
-      "stars": 15563,
+      "stars": 15564,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
         "2026-05-10": 15536,
         "2026-05-11": 15552,
-        "2026-05-12": 15563
+        "2026-05-12": 15564
       },
       "description_zh": "Wazuh - 开源安全平台。针对端点和云工作负载的统一 XDR 和 SIEM 保护。",
       "description_en": "Wazuh - The Open Source Security Platform. Unified XDR and SIEM protection for endpoints and cloud workloads.",
@@ -1484,12 +1484,12 @@
       "slug": "grafana",
       "category": "dev-tools",
       "github_url": "https://github.com/grafana/grafana",
-      "stars": 73691,
+      "stars": 73692,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
         "2026-05-11": 73674,
-        "2026-05-12": 73691
+        "2026-05-12": 73692
       },
       "description_zh": "开放且可组合的可观测性和数据可视化平台。可视化来自 Prometheus、Loki、Elasticsearch、InfluxDB、Postgres 等多个来源的指标、日志和跟踪。",
       "description_en": "The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and many more.",
@@ -1509,12 +1509,12 @@
       "slug": "dify",
       "category": "ai-agent",
       "github_url": "https://github.com/langgenius/dify",
-      "stars": 141081,
+      "stars": 141086,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
         "2026-05-11": 140962,
-        "2026-05-12": 141081
+        "2026-05-12": 141086
       },
       "description_zh": "开源的 LLM 应用开发平台，融合了后端即服务和 LLMOps 理念。",
       "description_en": "An open-source LLM app development platform.",
@@ -1534,12 +1534,12 @@
       "slug": "immich",
       "category": "media-video",
       "github_url": "https://github.com/immich-app/immich",
-      "stars": 100371,
+      "stars": 100375,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
         "2026-05-11": 100318,
-        "2026-05-12": 100371
+        "2026-05-12": 100375
       },
       "description_zh": "自建照片和视频管理方案，支持自动备份、AI 人脸识别等功能。",
       "description_en": "Self-hosted photo and video management solution.",
@@ -1584,12 +1584,12 @@
       "slug": "files",
       "category": "system-utils",
       "github_url": "https://github.com/files-community/Files",
-      "stars": 43447,
+      "stars": 43449,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
         "2026-05-11": 43400,
-        "2026-05-12": 43447
+        "2026-05-12": 43449
       },
       "description_zh": "Files 是一个现代文件管理器，可以帮助用户组织他们的文件和文件夹。我们文件的使命是为 Windows 构建最好的文件管理器，我们很自豪能够公开构建它，以便每个人都可以参与。用户反馈有助于塑造我们正在开发的功能，GitHub 上的错误报告有助于使 Files 更加可靠。 Files 由开源社区构建和维护，具有强大的多任务体验、文件标签、深度集成和直观的设计。在",
       "description_en": "Files is a modern file manager that helps users organize their files and folders. Our mission with Files is to build the best file manager for Windows, and we’re proud to be building it out in the open so everyone can participate. User feedback helps shape the features we work on, & the bug reports on GitHub help to make Files more reliable. Built and maintained by the open-source community, Files features robust multitasking experiences, file tags, deep integrations, and an intuitive design. In",
@@ -1609,12 +1609,12 @@
       "slug": "flowise",
       "category": "ai-agent",
       "github_url": "https://github.com/FlowiseAI/Flowise",
-      "stars": 52762,
+      "stars": 52763,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
         "2026-05-11": 52737,
-        "2026-05-12": 52762
+        "2026-05-12": 52763
       },
       "description_zh": "拖拽式 LLM 应用构建器，无需代码即可创建 AI 工作流。",
       "description_en": "Drag & drop UI to build customized LLM flow.",
@@ -1658,11 +1658,11 @@
       "slug": "open-webui",
       "category": "ai-agent",
       "github_url": "https://github.com/open-webui/open-webui",
-      "stars": 136746,
+      "stars": 136756,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
-        "2026-05-12": 136746
+        "2026-05-12": 136756
       },
       "description_zh": "美观的 Ollama 网页界面，类 ChatGPT 体验，支持多模型。",
       "description_en": "User-friendly WebUI for LLMs.",
@@ -1682,14 +1682,14 @@
       "slug": "netdata",
       "category": "system-utils",
       "github_url": "https://github.com/netdata/netdata",
-      "stars": 78780,
+      "stars": 78781,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
-        "2026-05-12": 78780
+        "2026-05-12": 78781
       },
-      "description_zh": "实时性能监控。",
-      "description_en": "Real-time performance monitoring.",
+      "description_zh": "适用于您的基础设施的 X 射线视觉！每个指标，每一秒。没有BS。访问我们的主页 菜单：我们是谁 主要功能 开始使用 工作原理 常见问题解答 文档社区贡献许可证 [!警告] 人们对 Netdata 上瘾。一旦您在系统上使用它，就无法回头。我们是谁 Netdata 是一个开源的实时基础设施监控平台。监控、检测整个基础设施并采取行动。核心优势：即时洞察 – 通过 Netdata，您可以访问每个",
+      "description_en": "X-Ray Vision for your infrastructure! Every Metric, Every Second. No BS. Visit our Home Page MENU: WHO WE ARE KEY FEATURES GETTING STARTED HOW IT WORKS FAQ DOCS COMMUNITY CONTRIBUTE LICENSE [!WARNING] People get addicted to Netdata. Once you use it on your systems, there's no going back. WHO WE ARE Netdata is an open-source, real-time infrastructure monitoring platform. Monitor, detect, and act across your entire infrastructure. Core Advantages: Instant Insights – With Netdata you can access per",
       "alternative_to": "DataDog / 商业监控",
       "tags": [
         "监控",
@@ -1712,8 +1712,8 @@
       "stars_history": {
         "2026-05-12": 37897
       },
-      "description_zh": "用于构建内部工具的低代码平台。",
-      "description_en": "Low-code platform to build internal tools.",
+      "description_zh": "ToolJet 是 ToolJet AI 的开源基础 - ToolJet AI 是用于构建内部工具、仪表板、业务应用程序、工作流程和 AI 代理的企业应用程序生成平台 🚀",
+      "description_en": "ToolJet is the open-source foundation of ToolJet AI - the enterprise app generation platform for building internal tools, dashboard, business applications, workflows and AI agents 🚀",
       "alternative_to": "Retool",
       "tags": [
         "低代码",
@@ -1730,11 +1730,11 @@
       "slug": "open-interpreter",
       "category": "ai-agent",
       "github_url": "https://github.com/OpenInterpreter/open-interpreter",
-      "stars": 63489,
+      "stars": 63494,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
-        "2026-05-12": 63489
+        "2026-05-12": 63494
       },
       "description_zh": "● Open Interpreter 尽早访问桌面应用程序 ‎ ‎ ‎ ‎ 文档 Open Interpreter 允许法学硕士在本地运行代码（Python、Javascript、Shell 等）。您可以在安装后运行 $terpreter，通过终端中类似 ChatGPT 的界面与 Open Interpreter 聊天。这为您的计算机的通用功能提供了一个自然语言界面： - 创建和编辑照片、视频、PDF 等。 - 控制 Chrome 浏览器执行研究 - 绘图、清理和分析",
       "description_en": "● Open Interpreter Get early access to the desktop app ‎ ‎ ‎ ‎ Documentation Open Interpreter lets LLMs run code (Python, Javascript, Shell, and more) locally. You can chat with Open Interpreter through a ChatGPT-like interface in your terminal by running $ interpreter after installing. This provides a natural-language interface to your computer's general-purpose capabilities: - Create and edit photos, videos, PDFs, etc. - Control a Chrome browser to perform research - Plot, clean, and analyze l",
@@ -1754,11 +1754,11 @@
       "slug": "documentserver",
       "category": "office-productivity",
       "github_url": "https://github.com/onlyoffice/DocumentServer",
-      "stars": 6498,
+      "stars": 6499,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
-        "2026-05-12": 6498
+        "2026-05-12": 6499
       },
       "description_zh": "开源在线办公套件，高度兼容 MS Office 格式，支持在线协作。",
       "description_en": "ONLYOFFICE Document Server is an online office suite.",
@@ -1778,14 +1778,14 @@
       "slug": "hoppscotch",
       "category": "dev-tools",
       "github_url": "https://github.com/hoppscotch/hoppscotch",
-      "stars": 79162,
+      "stars": 79164,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
-        "2026-05-12": 79162
+        "2026-05-12": 79164
       },
-      "description_zh": "开源 API 开发生态系统。",
-      "description_en": "Open source API development ecosystem.",
+      "description_zh": "开源 API 开发生态系统 • https://hoppscotch.io • 离线、本地和云 • Web、桌面和 CLI • Postman、Insomnia 的开源替代方案",
+      "description_en": "Open-Source API Development Ecosystem • https://hoppscotch.io • Offline, On-Prem & Cloud • Web, Desktop & CLI • Open-Source Alternative to Postman, Insomnia",
       "alternative_to": "Postman",
       "tags": [
         "API测试",
@@ -1802,11 +1802,11 @@
       "slug": "stirling-pdf",
       "category": "office-productivity",
       "github_url": "https://github.com/Stirling-Tools/Stirling-PDF",
-      "stars": 78628,
+      "stars": 78629,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
-        "2026-05-12": 78628
+        "2026-05-12": 78629
       },
       "description_zh": "全能私有化 PDF 工具箱，支持分割、合并、转换等数十种操作。",
       "description_en": "1 Locally hosted PDF web application.",
@@ -1851,11 +1851,11 @@
       "slug": "dbeaver",
       "category": "dev-tools",
       "github_url": "https://github.com/dbeaver/dbeaver",
-      "stars": 49997,
+      "stars": 49998,
       "version": "",
       "last_updated": "2026-05-12",
       "stars_history": {
-        "2026-05-12": 49997
+        "2026-05-12": 49998
       },
       "description_zh": "万能开源数据库管理工具，支持所有主流关系型和非关系型数据库。",
       "description_en": "Free universal database tool and SQL client.",
@@ -1865,6 +1865,78 @@
         "SQL"
       ],
       "license": "Apache-2.0",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-12"
+    },
+    {
+      "id": "auto-1778596980-675",
+      "name": "penpot",
+      "slug": "penpot",
+      "category": "design-tools",
+      "github_url": "https://github.com/penpot/penpot",
+      "stars": 47502,
+      "version": "",
+      "last_updated": "2026-05-12",
+      "stars_history": {
+        "2026-05-12": 47502
+      },
+      "description_zh": "Penpot - 开源设计和原型制作平台。",
+      "description_en": "Penpot - The open-source design & prototyping platform.",
+      "alternative_to": "Figma",
+      "tags": [
+        "UI设计",
+        "原型"
+      ],
+      "license": "MPL-2.0",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-12"
+    },
+    {
+      "id": "auto-1778596981-552",
+      "name": "analytics",
+      "slug": "analytics",
+      "category": "dev-tools",
+      "github_url": "https://github.com/plausible/analytics",
+      "stars": 24820,
+      "version": "",
+      "last_updated": "2026-05-12",
+      "stars_history": {
+        "2026-05-12": 24820
+      },
+      "description_zh": "轻量开源网站统计，不追踪隐私，无需 Cookie 同意横幅。",
+      "description_en": "Simple, open source, lightweight web analytics.",
+      "alternative_to": "Google Analytics",
+      "tags": [
+        "网站统计",
+        "隐私"
+      ],
+      "license": "AGPL-3.0",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-12"
+    },
+    {
+      "id": "auto-1778596983-552",
+      "name": "MuseScore",
+      "slug": "musescore",
+      "category": "media-video",
+      "github_url": "https://github.com/musescore/MuseScore",
+      "stars": 14560,
+      "version": "",
+      "last_updated": "2026-05-12",
+      "stars_history": {
+        "2026-05-12": 14560
+      },
+      "description_zh": "MuseScore 是一款乐谱软件。",
+      "description_en": "MuseScore is a music notation software.",
+      "alternative_to": "Sibelius / Finale",
+      "tags": [
+        "乐谱",
+        "作曲"
+      ],
+      "license": "NOASSERTION",
       "download_url": "",
       "featured": false,
       "date_added": "2026-05-12"
@@ -1990,18 +2062,6 @@
         "插画"
       ],
       "license": "GPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/penpot/penpot",
-      "category": "design-tools",
-      "alternative_to": "Figma",
-      "description_zh": "开源协作设计平台，支持在线原型设计和矢量编辑。",
-      "description_en": "Penpot - The open-source design & prototyping platform.",
-      "tags": [
-        "UI设计",
-        "原型"
-      ],
-      "license": "MPL-2.0"
     },
     {
       "github_url": "https://github.com/excalidraw/excalidraw",
@@ -2134,18 +2194,6 @@
         "编曲"
       ],
       "license": "GPL-2.0"
-    },
-    {
-      "github_url": "https://github.com/musescore/MuseScore",
-      "category": "media-video",
-      "alternative_to": "Sibelius / Finale",
-      "description_zh": "开源乐谱制作软件，支持专业级乐谱编辑和在线分享。",
-      "description_en": "MuseScore is a music notation software.",
-      "tags": [
-        "乐谱",
-        "作曲"
-      ],
-      "license": "GPL-3.0"
     },
     {
       "github_url": "https://github.com/photoprism/photoprism",
@@ -2312,18 +2360,6 @@
       "tags": [
         "监控",
         "仪表盘"
-      ],
-      "license": "AGPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/plausible/analytics",
-      "category": "dev-tools",
-      "alternative_to": "Google Analytics",
-      "description_zh": "轻量开源网站统计，不追踪隐私，无需 Cookie 同意横幅。",
-      "description_en": "Simple, open source, lightweight web analytics.",
-      "tags": [
-        "网站统计",
-        "隐私"
       ],
       "license": "AGPL-3.0"
     },
