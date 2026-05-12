@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
-  <title>管理后台 - 开源替代</title>
+  <title>管理后台 - OpenSourceAlternatives</title>
   <style>
     :root {
       --primary: #6366f1; --primary-dark: #4f46e5; --bg: #f1f5f9; --bg-card: #ffffff;
@@ -172,7 +172,7 @@
       </div>
       <div class="section" id="ads">
         <h3 style="margin-bottom:20px;">📢 广告位管理</h3>
-        <p style="color:var(--text-secondary);margin-bottom:20px;">将广告联盟代码粘贴到对应位置。支持 Google AdSense 等任意 JS/HTML。留空则广告位隐藏。</p>
+        <p style="color:var(--text-secondary);margin-bottom:20px;">将广告联盟代码粘贴到对应位置。支持 Google AdSense 等任意 JS/HTML。留空则广告位隐藏。移动端会自动隐藏所有广告位。</p>
         <div id="adsForm"></div>
         <button class="btn btn-primary" onclick="saveAds()" style="margin-top:16px;">💾 保存广告设置</button>
         <div style="margin-top:30px;padding:16px;background:#fffbeb;border:1px solid #fcd34d;border-radius:8px;color:#92400e;">
@@ -302,9 +302,20 @@
     function renderAdsForm() {
       if (!siteData) return;
       const ads = siteData.site.ads;
-      const slots = ['sidebar_top', 'sidebar_bottom', 'article_top', 'article_bottom', 'list_item', 'footer'];
-      const labels = { sidebar_top: '侧边栏顶部（首页）', sidebar_bottom: '侧边栏底部（首页）', article_top: '文章页顶部', article_bottom: '文章页底部', list_item: '列表项之间', footer: '页脚区域' };
-      document.getElementById('adsForm').innerHTML = slots.map(s => `<div class="form-group"><label>📢 ${labels[s]} (${s})</label><textarea class="ad-textarea" id="ad_${s}" placeholder="粘贴广告代码...">${escapeHtml(ads[s] || '')}</textarea></div>`).join('');
+      const slots = [
+        { id: 'sidebar_top', label: '📢 侧边栏顶部', desc: '首页分类下方，浏览分类与本周热门之间' },
+        { id: 'sidebar_bottom', label: '📢 侧边栏底部', desc: '首页时间线下方，最新收录上方' },
+        { id: 'article_top', label: '📢 文章页顶部', desc: '每个项目详情页，GitHub地址上方' },
+        { id: 'article_bottom', label: '📢 文章页底部', desc: '每个项目详情页，免责声明上方' },
+        { id: 'list_item', label: '📢 列表项之间', desc: '首页本周热门与精选推荐之间' },
+        { id: 'footer', label: '📢 页脚区域', desc: '所有页面底部' }
+      ];
+      document.getElementById('adsForm').innerHTML = slots.map(s => `
+        <div class="form-group">
+          <label>${s.label} <span style="color:var(--text-secondary);font-weight:400;font-size:0.8rem;">— ${s.desc}</span></label>
+          <textarea class="ad-textarea" id="ad_${s.id}" placeholder="粘贴广告代码...">${escapeHtml(ads[s.id] || '')}</textarea>
+        </div>
+      `).join('');
     }
     function saveAds() {
       ['sidebar_top', 'sidebar_bottom', 'article_top', 'article_bottom', 'list_item', 'footer'].forEach(s => { siteData.site.ads[s] = document.getElementById(`ad_${s}`).value; });
