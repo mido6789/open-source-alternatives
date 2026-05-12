@@ -255,11 +255,10 @@ def generate_static_project_pages(data):
     print(f"✅ 已生成 {generated} 个项目静态页面")
 
 def generate_static_homepage(data):
-    """生成简化版静态首页，供搜索引擎抓取"""
+    """生成静态首页"""
     print("⏳ 正在生成静态首页...")
     base_url = data['site']['url'].rstrip('/')
     
-    # 按 Stars 排序取前 30 个项目
     top_projects = sorted(data['projects'], key=lambda p: p['stars'], reverse=True)[:30]
     
     projects_html = ''
@@ -290,26 +289,59 @@ def generate_static_homepage(data):
   <title>开源替代 - 发现优秀的开源替代方案</title>
   <meta name="description" content="发现优秀的开源替代方案，告别高价付费软件。收录AI、设计工具、办公效率、开发工具等7大类{len(data['projects'])}个开源替代品。每日更新。">
   <link rel="canonical" href="{base_url}/">
+  <meta property="og:title" content="开源替代 - 发现优秀的开源替代方案">
+  <meta property="og:description" content="收录最全的开源替代方案，涵盖AI、设计、办公、开发等7大领域，每日更新Stars和版本号。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{base_url}/">
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔄</text></svg>">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#6366f1">
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "开源替代",
+    "description": "发现优秀的开源替代方案，告别高价付费软件",
+    "url": "{base_url}"
+  }}
+  </script>
+  <script>
+  function translatePage() {{
+    var currentUrl = window.location.href;
+    window.open('https://translate.google.com/translate?sl=zh-CN&tl=en&u=' + encodeURIComponent(currentUrl), '_blank');
+  }}
+  </script>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="f80d17db-cf1a-4532-88ce-6cbefe2a77ee"></script>
 </head>
 <body>
   <nav class="navbar">
     <div class="navbar-inner">
       <a href="/" class="logo">🔄 开源替代</a>
-      <ul class="nav-links">
-        <li><a href="/">首页</a></li>
+      <button class="hamburger" id="hamburgerBtn" aria-label="菜单">☰</button>
+      <ul class="nav-links" id="navLinks">
         <li><a href="/category.html?id=ai-agent">AI & Agent</a></li>
         <li><a href="/category.html?id=design-tools">设计工具</a></li>
+        <li><a href="/category.html?id=office-productivity">办公效率</a></li>
         <li><a href="/category.html?id=dev-tools">开发工具</a></li>
+        <li><a href="/category.html?id=media-video">影音图像</a></li>
+        <li><a href="/category.html?id=security-privacy">安全隐私</a></li>
+        <li><a href="/category.html?id=system-utils">系统工具</a></li>
         <li><a href="/about.html">关于我们</a></li>
+        <li><button class="theme-toggle" id="themeToggle" aria-label="切换主题">🌓</button></li>
+        <li><button onclick="translatePage()" style="background:none;border:1px solid var(--border);border-radius:20px;padding:6px 10px;cursor:pointer;font-size:0.85rem;color:var(--text-secondary);margin-left:8px;" title="Translate to English">🇺🇸 EN</button></li>
       </ul>
     </div>
   </nav>
+
   <main class="container">
     <section class="hero">
       <h1>发现优秀的开源替代方案</h1>
       <p>告别高价付费软件，探索自由开源的无限可能。我们每日追踪 GitHub 上最受欢迎的开源项目，帮你找到最合适的替代品。目前已收录 <strong>{len(data['projects'])}</strong> 个开源项目。</p>
+      <div class="hero-search">
+        <input type="text" id="globalSearch2" placeholder="搜索你想要的替代方案...">
+        <button id="searchBtn2">🔍 探索</button>
+      </div>
     </section>
 
     <section>
@@ -319,18 +351,69 @@ def generate_static_homepage(data):
       </div>
     </section>
 
+    <div class="ad-slot" data-ad-slot="sidebar_top"></div>
+
     <section>
-      <h2 class="section-title">⭐ 热门开源项目</h2>
-      <div class="projects-grid">
+      <h2 class="section-title"><span class="hot-icon">🔥</span> 本周热门</h2>
+      <p style="color:var(--text-secondary);margin-bottom:20px;font-size:0.9rem;">Star 增长最快的开源项目（7日内涨幅）</p>
+      <div class="projects-grid" id="weeklyHot">
+        <p style="color:var(--text-secondary);padding:20px;">加载中...</p>
+      </div>
+    </section>
+
+    <div class="ad-slot" data-ad-slot="list_item"></div>
+
+    <section>
+      <h2 class="section-title">⭐ 精选推荐</h2>
+      <div class="projects-grid" id="featuredProjects">
         {projects_html}
       </div>
     </section>
+
+    <div class="ad-slot" data-ad-slot="list_item"></div>
+
+    <section>
+      <h2 class="section-title">📋 最近更新</h2>
+      <div class="timeline-container" id="updateTimeline">
+        <p style="color:var(--text-secondary);text-align:center;padding:20px;">加载中...</p>
+      </div>
+    </section>
+
+    <div class="ad-slot" data-ad-slot="sidebar_bottom"></div>
+
+    <section>
+      <h2 class="section-title">🆕 最新收录</h2>
+      <div class="projects-grid" id="latestProjects">
+        <p style="color:var(--text-secondary);text-align:center;padding:20px;">加载中...</p>
+      </div>
+    </section>
   </main>
+
+  <div id="footerAd" class="ad-slot" data-ad-slot="footer"></div>
   <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>关于本站</h4>
+        <p style="font-size:0.85rem;color:var(--text-secondary);">发现并分享优秀的开源替代方案，让更多人用上自由软件。</p>
+      </div>
+      <div class="footer-col">
+        <h4>快速链接</h4>
+        <a href="/">首页</a>
+        <a href="/about.html">关于我们</a>
+        <a href="/privacy.html">隐私政策</a>
+      </div>
+      <div class="footer-col">
+        <h4>联系我们</h4>
+        <a href="mailto:mailtomidoo@gmail.com">📧 mailtomidoo@gmail.com</a>
+      </div>
+    </div>
     <div class="footer-bottom">
-      <p>© {datetime.now().year} 开源替代 - 尊重开源，分享价值</p>
+      <p>© <span id="currentYear"></span> 开源替代 - 尊重开源，分享价值</p>
+      <p style="margin-top:4px;">本站内容整理自 GitHub 开源社区。如有侵权请联系删除。</p>
     </div>
   </footer>
+  <script>document.getElementById('currentYear').textContent = new Date().getFullYear();</script>
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>"""
     
