@@ -271,7 +271,7 @@ def generate_static_homepage(data):
     
     # 最近更新日志
     update_logs = data['site'].get('update_log', [])[:10]
-    timeline_html = '\n'.join([f'        <div class="timeline-item">{log}</div>' for log in update_logs]) if update_logs else '<p style="color:var(--text-secondary);padding:20px;">即将更新...</p>'
+       timeline_html = '\n'.join([f'        <div class="timeline-item"><span class="timeline-date">{log[:10]}</span>{log[11:]}</div>' for log in update_logs]) if update_logs else '<p style="color:var(--text-secondary);padding:20px;">即将更新...</p>'
     
     # 最新收录 Top 6
     latest_projects = sorted(data['projects'], key=lambda p: p.get('date_added', ''), reverse=True)[:6]
