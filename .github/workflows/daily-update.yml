@@ -27,7 +27,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Actions Bot"
-          git add assets/js/data.json sitemap.xml
+          git add assets/js/data.json sitemap.xml projects/
           if git diff --staged --quiet; then
             echo "📭 没有新更新"
           else
