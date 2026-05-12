@@ -56,343 +56,361 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=stable-diffusion-webui</loc>
+    <loc>https://kyal.cn/projects/stable-diffusion-webui.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=gimp</loc>
+    <loc>https://kyal.cn/projects/gimp.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=libreoffice</loc>
+    <loc>https://kyal.cn/projects/libreoffice.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=langchain</loc>
+    <loc>https://kyal.cn/projects/langchain.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=comfyui</loc>
+    <loc>https://kyal.cn/projects/comfyui.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=audacity</loc>
+    <loc>https://kyal.cn/projects/audacity.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=ollama</loc>
+    <loc>https://kyal.cn/projects/ollama.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=adguardhome</loc>
+    <loc>https://kyal.cn/projects/adguardhome.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=qbittorrent</loc>
+    <loc>https://kyal.cn/projects/qbittorrent.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=flameshot</loc>
+    <loc>https://kyal.cn/projects/flameshot.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=chatgpt-next-web</loc>
+    <loc>https://kyal.cn/projects/chatgpt-next-web.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=directus</loc>
+    <loc>https://kyal.cn/projects/directus.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=supabase</loc>
+    <loc>https://kyal.cn/projects/supabase.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=openshot-qt</loc>
+    <loc>https://kyal.cn/projects/openshot-qt.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=obs-studio</loc>
+    <loc>https://kyal.cn/projects/obs-studio.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=sharex</loc>
+    <loc>https://kyal.cn/projects/sharex.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=gitea</loc>
+    <loc>https://kyal.cn/projects/gitea.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=appsmith</loc>
+    <loc>https://kyal.cn/projects/appsmith.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=syncthing</loc>
+    <loc>https://kyal.cn/projects/syncthing.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=hoppscotch</loc>
+    <loc>https://kyal.cn/projects/hoppscotch.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=localsend</loc>
+    <loc>https://kyal.cn/projects/localsend.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=jitsi-meet</loc>
+    <loc>https://kyal.cn/projects/jitsi-meet.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=analytics</loc>
+    <loc>https://kyal.cn/projects/analytics.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=logseq</loc>
+    <loc>https://kyal.cn/projects/logseq.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=metabase</loc>
+    <loc>https://kyal.cn/projects/metabase.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=llama-cpp</loc>
+    <loc>https://kyal.cn/projects/llama-cpp.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=tor</loc>
+    <loc>https://kyal.cn/projects/tor.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=duplicati</loc>
+    <loc>https://kyal.cn/projects/duplicati.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=mattermost</loc>
+    <loc>https://kyal.cn/projects/mattermost.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=dbeaver</loc>
+    <loc>https://kyal.cn/projects/dbeaver.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=cal-com</loc>
+    <loc>https://kyal.cn/projects/cal-com.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=veracrypt</loc>
+    <loc>https://kyal.cn/projects/veracrypt.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=server</loc>
+    <loc>https://kyal.cn/projects/server.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=freecad</loc>
+    <loc>https://kyal.cn/projects/freecad.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=scribus</loc>
+    <loc>https://kyal.cn/projects/scribus.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=clients</loc>
+    <loc>https://kyal.cn/projects/clients.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=darktable</loc>
+    <loc>https://kyal.cn/projects/darktable.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=musescore</loc>
+    <loc>https://kyal.cn/projects/musescore.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=cryptomator</loc>
+    <loc>https://kyal.cn/projects/cryptomator.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=blender</loc>
+    <loc>https://kyal.cn/projects/blender.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=ventoy</loc>
+    <loc>https://kyal.cn/projects/ventoy.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=inkscape</loc>
+    <loc>https://kyal.cn/projects/inkscape.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=open-interpreter</loc>
+    <loc>https://kyal.cn/projects/open-interpreter.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=pocketbase</loc>
+    <loc>https://kyal.cn/projects/pocketbase.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=excalidraw</loc>
+    <loc>https://kyal.cn/projects/excalidraw.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=penpot</loc>
+    <loc>https://kyal.cn/projects/penpot.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=keepassxc</loc>
+    <loc>https://kyal.cn/projects/keepassxc.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=wazuh</loc>
+    <loc>https://kyal.cn/projects/wazuh.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=kdenlive</loc>
+    <loc>https://kyal.cn/projects/kdenlive.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=grafana</loc>
+    <loc>https://kyal.cn/projects/grafana.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=dify</loc>
+    <loc>https://kyal.cn/projects/dify.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=immich</loc>
+    <loc>https://kyal.cn/projects/immich.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=tooljet</loc>
+    <loc>https://kyal.cn/projects/tooljet.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=files</loc>
+    <loc>https://kyal.cn/projects/files.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=flowise</loc>
+    <loc>https://kyal.cn/projects/flowise.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=signal-desktop</loc>
+    <loc>https://kyal.cn/projects/signal-desktop.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/detail.html?id=open-webui</loc>
+    <loc>https://kyal.cn/projects/open-webui.html</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kyal.cn/projects/netdata.html</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kyal.cn/projects/tooljet.html</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kyal.cn/projects/open-interpreter.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
