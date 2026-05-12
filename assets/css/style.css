@@ -370,6 +370,7 @@ body {
   color: var(--text-secondary);
   font-size: 0.85rem;
   overflow: hidden;
+  max-width: 100%;
 }
 
 .ad-slot.sidebar { min-height: 250px; }
@@ -563,5 +564,9 @@ body {
   }
   .hot-card .description {
     -webkit-line-clamp: 3;
+  }
+
+  .ad-slot {
+    display: none !important;
   }
 }
