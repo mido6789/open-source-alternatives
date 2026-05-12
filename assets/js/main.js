@@ -221,70 +221,6 @@ async function renderCategoryPage() {
   renderAds(data);
 }
 
-// ========== 详情页渲染（兜底，仍然可用）==========
-async function renderDetailPage() {
-  const data = await loadData();
-  if (!data) return;
-
-  const params = new URLSearchParams(window.location.search);
-  const slug = params.get('id');
-  const project = data.projects.find(p => p.slug === slug);
-
-  if (!project) {
-    document.getElementById('detailContent').innerHTML = '<p style="text-align:center;padding:60px;">项目未找到</p>';
-    return;
-  }
-
-  document.title = project.name + ' - 开源替代 ' + project.alternative_to + ' - ' + data.site.name;
-  
-  const category = data.categories.find(c => c.id === project.category);
-  
-  document.getElementById('detailContent').innerHTML = `
-    <div class="detail-header">
-      <span class="category-tag">${category ? category.icon + ' ' + category.name : project.category}</span>
-      <h1>${escapeHtml(project.name)}</h1>
-      <div class="detail-meta">
-        <span class="stat">⭐ ${project.stars.toLocaleString()} Stars</span>
-        ${project.version ? `<span class="stat">🏷️ ${escapeHtml(project.version)}</span>` : ''}
-        ${project.license ? `<span class="stat">📜 ${escapeHtml(project.license)}</span>` : ''}
-        <span class="alt-badge">替代: ${escapeHtml(project.alternative_to)}</span>
-      </div>
-    </div>
-
-    <div class="detail-content">
-      <h2>📖 项目简介</h2>
-      <p>${escapeHtml(project.description_zh)}</p>
-      
-      <h2>🔗 GitHub 项目地址</h2>
-      <p><a href="${escapeHtml(project.github_url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(project.github_url)}</a></p>
-      
-      <h2>🔄 可替代的商用软件</h2>
-      <p>${escapeHtml(project.alternative_to)}</p>
-      
-      <h2>📝 项目原文介绍（英文）</h2>
-      <p>${escapeHtml(project.description_en)}</p>
-
-      ${project.download_url ? `
-      <h2>💾 网盘下载</h2>
-      <p><a href="${escapeHtml(project.download_url)}" target="_blank" rel="noopener">点击下载（网盘）</a></p>
-      ` : ''}
-
-      <div id="articleAd" class="ad-slot"></div>
-
-      <div class="disclaimer-box">
-        ⚠️ <strong>免责声明：</strong>本文内容整理自 GitHub 开源社区，旨在分享和介绍优秀的开源替代方案。所有项目版权归原作者所有，我们尊重并注明原始出处。如有侵权请联系我们删除。感谢开源社区的每一位贡献者！
-      </div>
-    </div>
-  `;
-
-  renderAds(data);
-  if (data.site.ads.article_bottom && data.site.ads.article_bottom.trim() !== '') {
-    const articleAd = document.getElementById('articleAd');
-    articleAd.innerHTML = data.site.ads.article_bottom;
-    articleAd.style.display = 'flex';
-  }
-}
-
 // ========== 搜索功能 ==========
 function initSearch() {
   const searchInputs = document.querySelectorAll('#globalSearch, #globalSearch2');
@@ -364,7 +300,5 @@ document.addEventListener('DOMContentLoaded', () => {
     renderHomePage();
   } else if (path.includes('category.html')) {
     renderCategoryPage();
-  } else if (path.includes('detail.html')) {
-    renderDetailPage();
   }
 });
