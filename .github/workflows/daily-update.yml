@@ -2,7 +2,7 @@ name: 🤖 每日自动更新
 
 on:
   schedule:
-    - cron: '0 */3 * * *'
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Actions Bot"
-          git add assets/js/data.json sitemap.xml projects/
+          git add assets/js/data.json sitemap.xml projects/ index.html
           if git diff --staged --quiet; then
             echo "📭 没有新更新"
           else
