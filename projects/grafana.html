@@ -4,56 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>grafana - 开源替代 DataDog / 商业监控 | 开源替代</title>
-  <meta name="description" content="开放且可组合的可观测性和数据可视化平台。">
+  <meta name="description" content="开放且可组合的可观测性和数据可视化平台。可视化来自 Prometheus、Loki、Elasticsearch、InfluxDB、Postgres 等多个来源的指标、日志和跟踪。">
   <link rel="canonical" href="https://kyal.cn/projects/grafana.html">
   <meta property="og:title" content="grafana - 开源替代 DataDog / 商业监控">
-  <meta property="og:description" content="开放且可组合的可观测性和数据可视化平台。">
+  <meta property="og:description" content="开放且可组合的可观测性和数据可视化平台。可视化来自 Prometheus、Loki、Elasticsearch、InfluxDB、Postgres 等多个来源的指标、日志和跟踪。">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://kyal.cn/projects/grafana.html">
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔄</text></svg>">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#6366f1">
+  <script>
+  function translatePage() {
+    var currentUrl = window.location.href;
+    window.open('https://translate.google.com/translate?sl=zh-CN&tl=en&u=' + encodeURIComponent(currentUrl), '_blank');
+  }
+  </script>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="f80d17db-cf1a-4532-88ce-6cbefe2a77ee"></script>
 </head>
 <body>
   <nav class="navbar">
     <div class="navbar-inner">
-      <a href="/" class="logo">🔄 开源替代</a>
-      <ul class="nav-links">
-        <li><a href="/">首页</a></li>
+      <a href="/" class="logo">🔄 <span data-site-name>开源替代</span></a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="菜单">☰</button>
+      <ul class="nav-links" id="navLinks">
         <li><a href="/category.html?id=ai-agent">AI & Agent</a></li>
         <li><a href="/category.html?id=design-tools">设计工具</a></li>
+        <li><a href="/category.html?id=office-productivity">办公效率</a></li>
         <li><a href="/category.html?id=dev-tools">开发工具</a></li>
+        <li><a href="/category.html?id=media-video">影音图像</a></li>
+        <li><a href="/category.html?id=security-privacy">安全隐私</a></li>
+        <li><a href="/category.html?id=system-utils">系统工具</a></li>
         <li><a href="/about.html">关于我们</a></li>
+        <li><button class="theme-toggle" id="themeToggle" aria-label="切换主题">🌓</button></li>
+        <li><button onclick="translatePage()" style="background:none;border:1px solid var(--border);border-radius:20px;padding:6px 10px;cursor:pointer;font-size:0.85rem;color:var(--text-secondary);margin-left:8px;" title="Translate to English">🇺🇸 EN</button></li>
       </ul>
     </div>
   </nav>
   <main class="container">
-    <div class="detail-header">
+    <header class="detail-header">
       <span class="category-tag">💻 开发工具</span>
       <h1>grafana</h1>
       <div class="detail-meta">
-        <span>⭐ 73,776 Stars</span>
+        <span>⭐ 73,781 Stars</span>
         <span>📜 AGPL-3.0</span>
         <span class="alt-badge">替代: DataDog / 商业监控</span>
       </div>
-    </div>
-    <div class="detail-content">
+    </header>
+    <article class="detail-content">
       <h2>📖 项目简介</h2>
-      <p>开放且可组合的可观测性和数据可视化平台。</p>
+      <p>开放且可组合的可观测性和数据可视化平台。可视化来自 Prometheus、Loki、Elasticsearch、InfluxDB、Postgres 等多个来源的指标、日志和跟踪。</p>
       <h2>🔗 GitHub 项目地址</h2>
       <p><a href="https://github.com/grafana/grafana" target="_blank">https://github.com/grafana/grafana</a></p>
       <h2>🔄 可替代的商用软件</h2>
       <p>DataDog / 商业监控</p>
       <h2>📝 项目原文介绍（英文）</h2>
-      <p>The open and composable observability and data visualization platform.</p>
-      <div class="disclaimer-box">
+      <p>The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and many more.</p>
+      <section class="disclaimer-box">
         ⚠️ <strong>免责声明：</strong>本文内容整理自 GitHub 开源社区，旨在分享和介绍优秀的开源替代方案。
-      </div>
-    </div>
+      </section>
+    </article>
   </main>
   <footer class="footer">
-    <div class="footer-bottom">
-      <p>© 2026 开源替代 - 尊重开源，分享价值</p>
+    <div class="footer-inner">
+      <div class="footer-col"><h4>关于本站</h4><p style="font-size:0.85rem;color:var(--text-secondary);">发现并分享优秀的开源替代方案。</p></div>
+      <div class="footer-col"><h4>快速链接</h4><a href="/">首页</a><a href="/about.html">关于我们</a><a href="/privacy.html">隐私政策</a></div>
+      <div class="footer-col"><h4>联系我们</h4><a href="mailto:mailtomidoo@gmail.com">📧 mailtomidoo@gmail.com</a></div>
     </div>
+    <div class="footer-bottom"><p>© <span id="currentYear"></span> 开源替代 - 尊重开源，分享价值</p></div>
   </footer>
+  <script>document.getElementById('currentYear').textContent = new Date().getFullYear();</script>
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>

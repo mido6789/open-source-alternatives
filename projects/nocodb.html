@@ -12,31 +12,46 @@
   <meta property="og:url" content="https://kyal.cn/projects/nocodb.html">
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔄</text></svg>">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#6366f1">
+  <script>
+  function translatePage() {
+    var currentUrl = window.location.href;
+    window.open('https://translate.google.com/translate?sl=zh-CN&tl=en&u=' + encodeURIComponent(currentUrl), '_blank');
+  }
+  </script>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="f80d17db-cf1a-4532-88ce-6cbefe2a77ee"></script>
 </head>
 <body>
   <nav class="navbar">
     <div class="navbar-inner">
-      <a href="/" class="logo">🔄 开源替代</a>
-      <ul class="nav-links">
-        <li><a href="/">首页</a></li>
+      <a href="/" class="logo">🔄 <span data-site-name>开源替代</span></a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="菜单">☰</button>
+      <ul class="nav-links" id="navLinks">
         <li><a href="/category.html?id=ai-agent">AI & Agent</a></li>
         <li><a href="/category.html?id=design-tools">设计工具</a></li>
+        <li><a href="/category.html?id=office-productivity">办公效率</a></li>
         <li><a href="/category.html?id=dev-tools">开发工具</a></li>
+        <li><a href="/category.html?id=media-video">影音图像</a></li>
+        <li><a href="/category.html?id=security-privacy">安全隐私</a></li>
+        <li><a href="/category.html?id=system-utils">系统工具</a></li>
         <li><a href="/about.html">关于我们</a></li>
+        <li><button class="theme-toggle" id="themeToggle" aria-label="切换主题">🌓</button></li>
+        <li><button onclick="translatePage()" style="background:none;border:1px solid var(--border);border-radius:20px;padding:6px 10px;cursor:pointer;font-size:0.85rem;color:var(--text-secondary);margin-left:8px;" title="Translate to English">🇺🇸 EN</button></li>
       </ul>
     </div>
   </nav>
   <main class="container">
-    <div class="detail-header">
+    <header class="detail-header">
       <span class="category-tag">📊 办公效率</span>
       <h1>nocodb</h1>
       <div class="detail-meta">
-        <span>⭐ 63,051 Stars</span>
+        <span>⭐ 63,052 Stars</span>
         <span>📜 NOASSERTION</span>
         <span class="alt-badge">替代: Airtable</span>
       </div>
-    </div>
-    <div class="detail-content">
+    </header>
+    <article class="detail-content">
       <h2>📖 项目简介</h2>
       <p>NocoDB 是在线构建数据库最快、最简单的方法。网站 • Discord • 社区 • Twitter • Reddit • 文档 查看其他语言 » 加入我们的社区 安装 Docker with SQLite bash docker run -d \ --name noco \ -v "$(pwd)"/nocodb:/usr/app/data/ \ -p 8080:8080 \ nocodb/nocodb:latest Docker with PG bash docker run -d \ --name noco \ -v “$(pwd)”/nocodb:/usr/app/data/ \ -p 8080:8080 \ -e NC DB="pg://host.docker.internal:5432?u=root&p=password&d=d1" \ -e NC AUTH JWT SECRET=</p>
       <h2>🔗 GitHub 项目地址</h2>
@@ -45,15 +60,20 @@
       <p>Airtable</p>
       <h2>📝 项目原文介绍（英文）</h2>
       <p>NocoDB is the fastest and easiest way to build databases online. Website • Discord • Community • Twitter • Reddit • Documentation See other languages » Join Our Community Installation Docker with SQLite bash docker run -d \ --name noco \ -v "$(pwd)"/nocodb:/usr/app/data/ \ -p 8080:8080 \ nocodb/nocodb:latest Docker with PG bash docker run -d \ --name noco \ -v "$(pwd)"/nocodb:/usr/app/data/ \ -p 8080:8080 \ -e NC DB="pg://host.docker.internal:5432?u=root&p=password&d=d1" \ -e NC AUTH JWT SECRET=</p>
-      <div class="disclaimer-box">
+      <section class="disclaimer-box">
         ⚠️ <strong>免责声明：</strong>本文内容整理自 GitHub 开源社区，旨在分享和介绍优秀的开源替代方案。
-      </div>
-    </div>
+      </section>
+    </article>
   </main>
   <footer class="footer">
-    <div class="footer-bottom">
-      <p>© 2026 开源替代 - 尊重开源，分享价值</p>
+    <div class="footer-inner">
+      <div class="footer-col"><h4>关于本站</h4><p style="font-size:0.85rem;color:var(--text-secondary);">发现并分享优秀的开源替代方案。</p></div>
+      <div class="footer-col"><h4>快速链接</h4><a href="/">首页</a><a href="/about.html">关于我们</a><a href="/privacy.html">隐私政策</a></div>
+      <div class="footer-col"><h4>联系我们</h4><a href="mailto:mailtomidoo@gmail.com">📧 mailtomidoo@gmail.com</a></div>
     </div>
+    <div class="footer-bottom"><p>© <span id="currentYear"></span> 开源替代 - 尊重开源，分享价值</p></div>
   </footer>
+  <script>document.getElementById('currentYear').textContent = new Date().getFullYear();</script>
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>
