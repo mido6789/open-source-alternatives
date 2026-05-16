@@ -4,7 +4,7 @@
 功能：
 1. 更新 Stars/版本 + 自动翻译 + 时间线带简介
 2. 自动新增 3-5 个候选项目
-3. 自动生成静态HTML项目页面 + 静态首页（含分类、精选、最新收录、最近更新）
+3. 自动生成语义化、SEO友好的静态HTML项目页面 + 静态首页
 """
 import json, os, random, re, time, base64
 from datetime import datetime, timedelta
@@ -168,6 +168,7 @@ def generate_sitemap(data):
     print(f'✅ sitemap.xml 已生成，{len(urls)} 个页面')
 
 def generate_static_project_pages(data):
+    """生成语义化的静态项目页面"""
     print("⏳ 正在生成项目静态页面...")
     if not os.path.exists(PROJECTS_DIR):
         os.makedirs(PROJECTS_DIR)
@@ -178,6 +179,7 @@ def generate_static_project_pages(data):
         category = next((c for c in data['categories'] if c['id'] == proj['category']), None)
         cat_name = category['name'] if category else proj['category']
         cat_icon = category['icon'] if category else ''
+        
         html = f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -192,22 +194,37 @@ def generate_static_project_pages(data):
   <meta property="og:url" content="{base_url}/projects/{slug}.html">
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔄</text></svg>">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#6366f1">
+  <script>
+  function translatePage() {{
+    var currentUrl = window.location.href;
+    window.open('https://translate.google.com/translate?sl=zh-CN&tl=en&u=' + encodeURIComponent(currentUrl), '_blank');
+  }}
+  </script>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="f80d17db-cf1a-4532-88ce-6cbefe2a77ee"></script>
 </head>
 <body>
   <nav class="navbar">
     <div class="navbar-inner">
-      <a href="/" class="logo">🔄 开源替代</a>
-      <ul class="nav-links">
-        <li><a href="/">首页</a></li>
+      <a href="/" class="logo">🔄 <span data-site-name>开源替代</span></a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="菜单">☰</button>
+      <ul class="nav-links" id="navLinks">
         <li><a href="/category.html?id=ai-agent">AI & Agent</a></li>
         <li><a href="/category.html?id=design-tools">设计工具</a></li>
+        <li><a href="/category.html?id=office-productivity">办公效率</a></li>
         <li><a href="/category.html?id=dev-tools">开发工具</a></li>
+        <li><a href="/category.html?id=media-video">影音图像</a></li>
+        <li><a href="/category.html?id=security-privacy">安全隐私</a></li>
+        <li><a href="/category.html?id=system-utils">系统工具</a></li>
         <li><a href="/about.html">关于我们</a></li>
+        <li><button class="theme-toggle" id="themeToggle" aria-label="切换主题">🌓</button></li>
+        <li><button onclick="translatePage()" style="background:none;border:1px solid var(--border);border-radius:20px;padding:6px 10px;cursor:pointer;font-size:0.85rem;color:var(--text-secondary);margin-left:8px;" title="Translate to English">🇺🇸 EN</button></li>
       </ul>
     </div>
   </nav>
   <main class="container">
-    <div class="detail-header">
+    <header class="detail-header">
       <span class="category-tag">{cat_icon} {cat_name}</span>
       <h1>{proj['name']}</h1>
       <div class="detail-meta">
@@ -215,8 +232,8 @@ def generate_static_project_pages(data):
         <span>📜 {proj.get('license', 'N/A')}</span>
         <span class="alt-badge">替代: {proj.get('alternative_to', '')}</span>
       </div>
-    </div>
-    <div class="detail-content">
+    </header>
+    <article class="detail-content">
       <h2>📖 项目简介</h2>
       <p>{proj.get('description_zh', '暂无介绍')}</p>
       <h2>🔗 GitHub 项目地址</h2>
@@ -225,24 +242,31 @@ def generate_static_project_pages(data):
       <p>{proj.get('alternative_to', '')}</p>
       <h2>📝 项目原文介绍（英文）</h2>
       <p>{proj.get('description_en', 'No description available.')}</p>
-      <div class="disclaimer-box">
+      <section class="disclaimer-box">
         ⚠️ <strong>免责声明：</strong>本文内容整理自 GitHub 开源社区，旨在分享和介绍优秀的开源替代方案。
-      </div>
-    </div>
+      </section>
+    </article>
   </main>
   <footer class="footer">
-    <div class="footer-bottom">
-      <p>© {datetime.now().year} 开源替代 - 尊重开源，分享价值</p>
+    <div class="footer-inner">
+      <div class="footer-col"><h4>关于本站</h4><p style="font-size:0.85rem;color:var(--text-secondary);">发现并分享优秀的开源替代方案。</p></div>
+      <div class="footer-col"><h4>快速链接</h4><a href="/">首页</a><a href="/about.html">关于我们</a><a href="/privacy.html">隐私政策</a></div>
+      <div class="footer-col"><h4>联系我们</h4><a href="mailto:mailtomidoo@gmail.com">📧 mailtomidoo@gmail.com</a></div>
     </div>
+    <div class="footer-bottom"><p>© <span id="currentYear"></span> 开源替代 - 尊重开源，分享价值</p></div>
   </footer>
+  <script>document.getElementById('currentYear').textContent = new Date().getFullYear();</script>
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>"""
+        
         with open(f'{PROJECTS_DIR}/{slug}.html', 'w', encoding='utf-8') as f:
             f.write(html)
         generated += 1
     print(f"✅ 已生成 {generated} 个项目静态页面")
-
+    
 def generate_static_homepage(data):
+    """生成语义化的静态首页"""
     print("⏳ 正在生成静态首页...")
     base_url = data['site']['url'].rstrip('/')
     
@@ -252,7 +276,7 @@ def generate_static_homepage(data):
         category = next((c for c in data['categories'] if c['id'] == proj['category']), None)
         cat_name = category['name'] if category else proj['category']
         projects_html += f"""
-      <div class="project-card">
+      <article class="project-card">
         <span class="category-tag">{cat_name}</span>
         <h3><a href="/projects/{proj['slug']}.html">{proj['name']}</a></h3>
         <p class="description">{proj.get('description_zh', '')[:120]}</p>
@@ -260,7 +284,7 @@ def generate_static_homepage(data):
           <span>⭐ {proj['stars']:,}</span>
           <span class="alt-badge">替代: {proj.get('alternative_to', '')}</span>
         </div>
-      </div>"""
+      </article>"""
     
     categories_html = ''
     for cat in data['categories']:
@@ -282,7 +306,7 @@ def generate_static_homepage(data):
         category = next((c for c in data['categories'] if c['id'] == proj['category']), None)
         cat_name = category['name'] if category else proj['category']
         latest_html += f"""
-      <div class="project-card">
+      <article class="project-card">
         <span class="category-tag">{cat_name}</span>
         <h3><a href="/projects/{proj['slug']}.html">{proj['name']}</a></h3>
         <p class="description">{proj.get('description_zh', '')[:120]}</p>
@@ -290,7 +314,7 @@ def generate_static_homepage(data):
           <span>⭐ {proj['stars']:,}</span>
           <span class="alt-badge">替代: {proj.get('alternative_to', '')}</span>
         </div>
-      </div>"""
+      </article>"""
     
     html = f"""<!DOCTYPE html>
 <html lang="zh-CN">
@@ -328,7 +352,7 @@ def generate_static_homepage(data):
 <body>
   <nav class="navbar">
     <div class="navbar-inner">
-      <a href="/" class="logo">🔄 开源替代</a>
+      <a href="/" class="logo">🔄 <span data-site-name>开源替代</span></a>
       <button class="hamburger" id="hamburgerBtn" aria-label="菜单">☰</button>
       <ul class="nav-links" id="navLinks">
         <li><a href="/category.html?id=ai-agent">AI & Agent</a></li>
@@ -357,9 +381,9 @@ def generate_static_homepage(data):
 
     <section>
       <h2 class="section-title">📂 浏览分类</h2>
-      <div class="categories-grid">
+      <nav class="categories-grid">
         {categories_html}
-      </div>
+      </nav>
     </section>
 
     <div class="ad-slot" data-ad-slot="sidebar_top"></div>
