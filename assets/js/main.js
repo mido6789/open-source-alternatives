@@ -1,7 +1,7 @@
 // ============================================
 // OpenSourceAlternatives.com - 主脚本
 // 功能：数据加载、页面渲染、搜索、主题切换
-// 版本：修复搜索重复 & 分类页显示优化
+// 版本：修复搜索重复 + 前端去重保护
 // ============================================
 
 const SITE_CONFIG = {
@@ -11,20 +11,20 @@ const SITE_CONFIG = {
 
 let siteData = null;
 
-// ========== 加载数据 ==========
+// ========== 加载数据（含前端去重） ==========
 async function loadData() {
   if (siteData) return siteData;
   try {
     const res = await fetch(SITE_CONFIG.dataUrl);
     siteData = await res.json();
-    // 额外在客户端进行一次去重，防止数据文件有遗漏
+    // 前端去重：以防万一数据文件有重复 slug
     if (siteData && siteData.projects) {
-        const seen = new Set();
-        siteData.projects = siteData.projects.filter(p => {
-            if (seen.has(p.slug)) return false;
-            seen.add(p.slug);
-            return true;
-        });
+      const seen = new Set();
+      siteData.projects = siteData.projects.filter(p => {
+        if (seen.has(p.slug)) return false;
+        seen.add(p.slug);
+        return true;
+      });
     }
     return siteData;
   } catch (e) {
@@ -48,7 +48,7 @@ function escapeHtml(str) {
   return div.innerHTML;
 }
 
-// ========== 创建项目卡片（指向静态页面）==========
+// ========== 创建项目卡片（新窗口打开静态页面）==========
 function createProjectCard(project) {
   const category = siteData.categories.find(c => c.id === project.category);
   const catName = category ? category.name : project.category;
@@ -71,31 +71,135 @@ function createProjectCard(project) {
 
 // ========== 本周热门 ==========
 function getWeeklyHotProjects(data) {
-  // ... (getWeeklyHotProjects 函数代码保持不变) ...
-  return [];
+  const today = new Date();
+  const sevenDaysAgo = new Date(today - 7 * 24 * 60 * 60 * 1000);
+  const cutoffStr = sevenDaysAgo.toISOString().split('T')[0];
+  
+  return data.projects
+    .map(proj => {
+      const history = proj.stars_history || {};
+      let oldestInRange = proj.stars;
+      let newestInRange = proj.stars;
+      
+      Object.entries(history).forEach(([date, stars]) => {
+        if (date >= cutoffStr) {
+          oldestInRange = Math.min(oldestInRange, stars);
+          newestInRange = Math.max(newestInRange, stars);
+        }
+      });
+      
+      const growth = newestInRange - oldestInRange;
+      return { ...proj, weekly_growth: growth };
+    })
+    .filter(p => p.weekly_growth > 0)
+    .sort((a, b) => b.weekly_growth - a.weekly_growth)
+    .slice(0, 8);
 }
 
 function createHotProjectCard(project) {
-  // ... (createHotProjectCard 函数代码保持不变) ...
-  return '';
+  const category = siteData.categories.find(c => c.id === project.category);
+  const catName = category ? category.name : project.category;
+  const catIcon = category ? category.icon : '';
+  
+  return `
+    <article class="project-card hot-card">
+      ${project.weekly_growth > 500 ? '<span class="hot-badge">🔥 热门</span>' : ''}
+      <span class="category-tag">${catIcon} ${catName}</span>
+      <h3><a href="/projects/${project.slug}.html" target="_blank">${escapeHtml(project.name)}</a></h3>
+      <p class="description">${escapeHtml(project.description_zh)}</p>
+      <div class="meta">
+        <span>⭐ ${getStarDisplay(project.stars)}</span>
+        <span class="growth-positive">📈 +${project.weekly_growth.toLocaleString()}</span>
+      </div>
+      <span class="alt-badge">替代: ${escapeHtml(project.alternative_to)}</span>
+    </article>
+  `;
 }
 
 // ========== 更新时间线 ==========
 function renderUpdateTimeline(data) {
-  // ... (renderUpdateTimeline 函数代码保持不变) ...
+  const container = document.getElementById('updateTimeline');
+  if (!container) return;
+  
+  const logs = data.site.update_log || [];
+  if (logs.length === 0) {
+    container.innerHTML = '<p style="color:var(--text-secondary);text-align:center;padding:20px;">⏳ 自动更新后会显示最近动态...</p>';
+    return;
+  }
+  
+  const recent = logs.slice(0, 10);
+  container.innerHTML = recent.map(log => {
+    const formatted = log.replace(/^(\d{4}-\d{2}-\d{2})/, '<span class="timeline-date">$1</span>');
+    return `<div class="timeline-item">${formatted}</div>`;
+  }).join('');
 }
 
 // ========== 广告渲染 ==========
 function renderAds(data) {
-  // ... (renderAds 函数代码保持不变) ...
+  const ads = data.site.ads;
+  const adSlots = document.querySelectorAll('[data-ad-slot]');
+  adSlots.forEach(slot => {
+    const slotName = slot.dataset.adSlot;
+    if (ads[slotName] && ads[slotName].trim() !== '') {
+      slot.innerHTML = ads[slotName];
+      slot.style.display = 'flex';
+    }
+  });
 }
 
 // ========== 首页渲染 ==========
 async function renderHomePage() {
-  // ... (renderHomePage 函数代码保持不变) ...
+  const data = await loadData();
+  if (!data) return;
+
+  document.querySelectorAll('[data-site-name]').forEach(el => {
+    el.textContent = data.site.name;
+  });
+  document.title = data.site.name + ' - ' + data.site.description;
+
+  const catGrid = document.getElementById('categoriesGrid');
+  if (catGrid) {
+    catGrid.innerHTML = data.categories.map(cat => `
+      <a href="/category.html?id=${cat.id}" class="category-card">
+        <span class="icon">${cat.icon}</span>
+        <span class="name">${cat.name}</span>
+      </a>
+    `).join('');
+  }
+
+  const hotGrid = document.getElementById('weeklyHot');
+  if (hotGrid) {
+    const hotProjects = getWeeklyHotProjects(data);
+    if (hotProjects.length > 0) {
+      hotGrid.innerHTML = hotProjects.map(createHotProjectCard).join('');
+    } else {
+      hotGrid.innerHTML = '<p style="color:var(--text-secondary);text-align:center;padding:20px;">📊 数据收集中，明天再来看看...</p>';
+    }
+  }
+
+  const featuredGrid = document.getElementById('featuredProjects');
+  if (featuredGrid) {
+    const featured = data.projects.filter(p => p.featured);
+    featuredGrid.innerHTML = featured.length > 0
+      ? featured.map(createProjectCard).join('')
+      : '<p style="color:var(--text-secondary);text-align:center;padding:20px;">精选项目即将上线...</p>';
+  }
+
+  renderUpdateTimeline(data);
+
+  const latestGrid = document.getElementById('latestProjects');
+  if (latestGrid) {
+    const latest = [...data.projects].sort((a, b) => new Date(b.date_added) - new Date(a.date_added)).slice(0, 6);
+    latestGrid.innerHTML = latest.length > 0
+      ? latest.map(createProjectCard).join('')
+      : '<p style="color:var(--text-secondary);text-align:center;padding:20px;">项目即将上线...</p>';
+  }
+
+  renderAds(data);
+  generateStructuredData(data);
 }
 
-// ========== 分类页 / 搜索页渲染 (修复版) ==========
+// ========== 分类页 / 搜索页渲染（修复重复调用） ==========
 async function renderCategoryPage() {
   const data = await loadData();
   if (!data) return;
@@ -109,32 +213,23 @@ async function renderCategoryPage() {
   const projects = data.projects || [];
 
   if (searchQuery) {
-    // 搜索模式
     const query = searchQuery.toLowerCase();
-    // 使用 for 循环并严格控制过滤逻辑
-    for (let p of projects) {
-        let match = false;
-        if (p.name && p.name.toLowerCase().includes(query)) match = true;
-        else if (p.description_zh && p.description_zh.toLowerCase().includes(query)) match = true;
-        else if (p.tags && p.tags.some(tag => tag.toLowerCase().includes(query))) match = true;
-        
-        if (match) filteredProjects.push(p);
-    }
+    filteredProjects = projects.filter(p => {
+      return (p.name && p.name.toLowerCase().includes(query)) ||
+             (p.description_zh && p.description_zh.toLowerCase().includes(query)) ||
+             (p.tags && p.tags.some(tag => tag.toLowerCase().includes(query)));
+    });
     title = `🔍 搜索：${searchQuery}`;
   } else if (catId) {
-    // 分类模式
     const category = data.categories.find(c => c.id === catId);
     if (!category) {
       document.getElementById('categoryContent').innerHTML = '<p style="text-align:center;padding:60px;">分类未找到</p>';
       return;
     }
-    for (let p of projects) {
-        if (p.category === catId) filteredProjects.push(p);
-    }
+    filteredProjects = projects.filter(p => p.category === catId);
     title = `${category.icon} ${category.name}`;
     document.getElementById('categoryDesc').textContent = category.description;
   } else {
-    // 无参数，显示全部
     filteredProjects = [...projects];
     title = '全部项目';
   }
@@ -142,17 +237,15 @@ async function renderCategoryPage() {
   document.title = title + ' - ' + data.site.name;
   document.getElementById('categoryTitle').textContent = title;
 
-  // 按 Stars 排序
   filteredProjects.sort((a, b) => (b.stars || 0) - (a.stars || 0));
   
   const grid = document.getElementById('categoryProjects');
   if (grid) {
-    // 关键修复：先清空，再一次性渲染，避免重复触发
-    grid.innerHTML = ''; 
+    grid.innerHTML = '';
     if (filteredProjects.length > 0) {
-        grid.innerHTML = filteredProjects.map(createProjectCard).join('');
+      grid.innerHTML = filteredProjects.map(createProjectCard).join('');
     } else {
-        grid.innerHTML = '<p style="text-align:center;color:var(--text-secondary);padding:40px;">没有找到匹配的项目</p>';
+      grid.innerHTML = '<p style="text-align:center;color:var(--text-secondary);padding:40px;">没有找到匹配的项目</p>';
     }
   }
 
@@ -161,22 +254,70 @@ async function renderCategoryPage() {
 
 // ========== 搜索功能 ==========
 function initSearch() {
-  // ... (initSearch 函数代码保持不变) ...
+  const searchInputs = document.querySelectorAll('#globalSearch, #globalSearch2');
+  const searchBtns = document.querySelectorAll('#searchBtn, #searchBtn2');
+  
+  function doSearch(input) {
+    const query = input?.value.trim();
+    if (query) {
+      window.location.href = '/category.html?search=' + encodeURIComponent(query);
+    }
+  }
+  
+  searchInputs.forEach(input => {
+    input?.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') doSearch(input);
+    });
+  });
+  
+  searchBtns.forEach(btn => {
+    btn?.addEventListener('click', () => {
+      const input = document.querySelector('#globalSearch, #globalSearch2');
+      doSearch(input);
+    });
+  });
 }
 
 // ========== 主题切换 ==========
 function initThemeToggle() {
-  // ... (initThemeToggle 函数代码保持不变) ...
+  const toggles = document.querySelectorAll('#themeToggle');
+  const saved = localStorage.getItem('theme');
+  if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+  
+  toggles.forEach(toggle => {
+    toggle?.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+  });
 }
 
 // ========== 移动端菜单 ==========
 function initMobileMenu() {
-  // ... (initMobileMenu 函数代码保持不变) ...
+  const hamburger = document.getElementById('hamburgerBtn');
+  const navLinks = document.getElementById('navLinks');
+  hamburger?.addEventListener('click', () => {
+    navLinks?.classList.toggle('open');
+  });
 }
 
 // ========== 结构化数据 ==========
 function generateStructuredData(data) {
-  // ... (generateStructuredData 函数代码保持不变) ...
+  const structured = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": data.site.name,
+    "description": data.site.description,
+    "url": data.site.url,
+  };
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.textContent = JSON.stringify(structured);
+  document.head.appendChild(script);
 }
 
 // ========== 初始化 ==========
@@ -189,10 +330,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (path === '/' || path.endsWith('index.html') || path.endsWith('/')) {
     renderHomePage();
   } else if (path.includes('category.html')) {
-    // 确保只调用一次渲染
     if (!window._categoryRendered) {
-        window._categoryRendered = true;
-        renderCategoryPage();
+      window._categoryRendered = true;
+      renderCategoryPage();
     }
   }
 });
