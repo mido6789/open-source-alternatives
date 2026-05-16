@@ -38,7 +38,7 @@ function escapeHtml(str) {
   return div.innerHTML;
 }
 
-// ========== 创建项目卡片（新窗口打开静态页面）==========
+// ========== 创建项目卡片（指向静态页面）==========
 function createProjectCard(project) {
   const category = siteData.categories.find(c => c.id === project.category);
   const catName = category ? category.name : project.category;
@@ -59,7 +59,7 @@ function createProjectCard(project) {
   `;
 }
 
-// ========== 本周热门（新窗口打开静态页面）==========
+// ========== 本周热门 ==========
 function getWeeklyHotProjects(data) {
   const today = new Date();
   const sevenDaysAgo = new Date(today - 7 * 24 * 60 * 60 * 1000);
@@ -189,33 +189,54 @@ async function renderHomePage() {
   generateStructuredData(data);
 }
 
-// ========== 分类页渲染（链接指向静态页面）==========
+// ========== 分类页 / 搜索页渲染 ==========
 async function renderCategoryPage() {
   const data = await loadData();
   if (!data) return;
   
   const params = new URLSearchParams(window.location.search);
   const catId = params.get('id');
-  const category = data.categories.find(c => c.id === catId);
-  
-  if (!category) {
-    document.getElementById('categoryContent').innerHTML = '<p style="text-align:center;padding:60px;">分类未找到</p>';
-    return;
+  const searchQuery = params.get('search');
+
+  let title = '';
+  let filteredProjects = [];
+
+  if (searchQuery) {
+    // 搜索模式
+    const query = searchQuery.toLowerCase();
+    filteredProjects = data.projects.filter(p => {
+      return p.name.toLowerCase().includes(query) ||
+             p.description_zh.toLowerCase().includes(query) ||
+             (p.tags && p.tags.some(tag => tag.toLowerCase().includes(query)));
+    });
+    title = `🔍 搜索：${searchQuery}`;
+  } else if (catId) {
+    // 分类模式
+    const category = data.categories.find(c => c.id === catId);
+    if (!category) {
+      document.getElementById('categoryContent').innerHTML = '<p style="text-align:center;padding:60px;">分类未找到</p>';
+      return;
+    }
+    filteredProjects = data.projects.filter(p => p.category === catId);
+    title = `${category.icon} ${category.name}`;
+    document.getElementById('categoryDesc').textContent = category.description;
+  } else {
+    // 无参数，显示全部
+    filteredProjects = data.projects;
+    title = '全部项目';
   }
 
-  document.title = category.icon + ' ' + category.name + ' - ' + data.site.name;
-  document.getElementById('categoryTitle').textContent = category.icon + ' ' + category.name;
-  document.getElementById('categoryDesc').textContent = category.description;
+  document.title = title + ' - ' + data.site.name;
+  document.getElementById('categoryTitle').textContent = title;
 
-  const projects = data.projects
-    .filter(p => p.category === catId)
-    .sort((a, b) => b.stars - a.stars);
+  // 按 Stars 排序
+  filteredProjects.sort((a, b) => b.stars - a.stars);
   
   const grid = document.getElementById('categoryProjects');
   if (grid) {
-    grid.innerHTML = projects.length > 0 
-      ? projects.map(createProjectCard).join('')
-      : '<p style="text-align:center;color:var(--text-secondary);padding:40px;">该分类下暂无项目，敬请期待~</p>';
+    grid.innerHTML = filteredProjects.length > 0 
+      ? filteredProjects.map(createProjectCard).join('')
+      : '<p style="text-align:center;color:var(--text-secondary);padding:40px;">没有找到匹配的项目</p>';
   }
 
   renderAds(data);
