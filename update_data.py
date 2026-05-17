@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """
-每日自动更新脚本
+每日自动更新脚本 (增强版)
 功能：
 1. 更新 Stars/版本 + 自动翻译 + 时间线带简介
 2. 自动新增 3-5 个候选项目
-3. 自动生成语义化、SEO友好的静态HTML项目页面 + 静态首页
+3. 增量生成语义化、SEO友好的静态HTML项目页面 + 静态首页
+4. 抓取社区讨论 (Discussions) 丰富内容
 """
-import json, os, random, re, time, base64
+import json, os, random, re, time, base64, hashlib
 from datetime import datetime, timedelta
 import urllib.request
 import urllib.error
@@ -15,6 +16,7 @@ import urllib.parse
 DATA_PATH = 'assets/js/data.json'
 SITEMAP_PATH = 'sitemap.xml'
 PROJECTS_DIR = 'projects'
+PAGE_STATES_PATH = 'assets/js/page_states.json'
 GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN', '')
 
 def strip_html(text):
@@ -167,19 +169,57 @@ def generate_sitemap(data):
     with open(SITEMAP_PATH, 'w', encoding='utf-8') as f: f.write(xml)
     print(f'✅ sitemap.xml 已生成，{len(urls)} 个页面')
 
+def get_project_fingerprint(proj):
+    key_content = f"{proj['name']}|{proj['description_zh']}|{proj['description_en']}|{proj['stars']}|{proj.get('version','')}"
+    if 'discussions' in proj:
+        key_content += '|' + '|'.join([d['title'] for d in proj['discussions'][:5]])
+    return hashlib.md5(key_content.encode('utf-8')).hexdigest()
+
+def load_page_states():
+    if os.path.exists(PAGE_STATES_PATH):
+        with open(PAGE_STATES_PATH, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    return {}
+
+def save_page_states(states):
+    with open(PAGE_STATES_PATH, 'w', encoding='utf-8') as f:
+        json.dump(states, f, ensure_ascii=False, indent=2)
+
 def generate_static_project_pages(data):
-    """生成语义化的静态项目页面"""
-    print("⏳ 正在生成项目静态页面...")
+    print("⏳ 正在生成项目静态页面 (增量模式)...")
     if not os.path.exists(PROJECTS_DIR):
         os.makedirs(PROJECTS_DIR)
     base_url = data['site']['url'].rstrip('/')
-    generated = 0
+    generated, skipped, new_states = 0, 0, {}
+    old_states = load_page_states()
+    
     for proj in data['projects']:
         slug = proj['slug']
+        fingerprint = get_project_fingerprint(proj)
+        if old_states.get(slug) == fingerprint:
+            skipped += 1
+            new_states[slug] = fingerprint
+            continue
+
         category = next((c for c in data['categories'] if c['id'] == proj['category']), None)
         cat_name = category['name'] if category else proj['category']
         cat_icon = category['icon'] if category else ''
         
+        discussions_html = ''
+        if 'discussions' in proj and proj['discussions']:
+            disc_items = []
+            for d in proj['discussions'][:5]:
+                title = d.get('title', '讨论')
+                author = d.get('author', '社区用户')
+                url = d.get('url', '#')
+                time_str = d.get('created_at', '')[:10]
+                disc_items.append(f'<li><a href="{url}" target="_blank">{title}</a> <span style="color: var(--text-secondary); font-size: 0.85rem;">(@{author}, {time_str})</span></li>')
+            discussions_html = f"""
+      <h2>💬 社区讨论</h2>
+      <ul>
+        {''.join(disc_items)}
+      </ul>"""
+
         html = f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -242,6 +282,7 @@ def generate_static_project_pages(data):
       <p>{proj.get('alternative_to', '')}</p>
       <h2>📝 项目原文介绍（英文）</h2>
       <p>{proj.get('description_en', 'No description available.')}</p>
+      {discussions_html}
       <section class="disclaimer-box">
         ⚠️ <strong>免责声明：</strong>本文内容整理自 GitHub 开源社区，旨在分享和介绍优秀的开源替代方案。
       </section>
@@ -259,14 +300,69 @@ def generate_static_project_pages(data):
   <script src="/assets/js/main.js"></script>
 </body>
 </html>"""
-        
         with open(f'{PROJECTS_DIR}/{slug}.html', 'w', encoding='utf-8') as f:
             f.write(html)
         generated += 1
-    print(f"✅ 已生成 {generated} 个项目静态页面")
+        new_states[slug] = fingerprint
+
+    save_page_states(new_states)
+    print(f"✅ 已生成 {generated} 个页面，跳过 {skipped} 个未变化的页面")
+
+def fetch_discussions(data):
+    if not GITHUB_TOKEN:
+        print("⚠️ 未配置 GITHUB_TOKEN，跳过 Discussions 抓取")
+        return data
+    print("⏳ 正在抓取社区讨论...")
+    headers = {'Authorization': f'Bearer {GITHUB_TOKEN}', 'Content-Type': 'application/json'}
+    updated_count = 0
     
+    for i, proj in enumerate(data['projects']):
+        match = re.search(r'github\.com/([^/]+)/([^/]+?)(?:\.git)?$', proj['github_url'])
+        if not match: continue
+        owner, repo = match.groups()
+        
+        query = """
+        {
+          repository(owner: "%s", name: "%s") {
+            discussions(first: 5, orderBy: {field: CREATED_AT, direction: DESC}) {
+              nodes {
+                title
+                url
+                createdAt
+                author { login }
+              }
+            }
+          }
+        }
+        """ % (owner, repo)
+        
+        try:
+            req = urllib.request.Request(
+                'https://api.github.com/graphql',
+                data=json.dumps({'query': query}).encode('utf-8'),
+                headers=headers,
+                method='POST'
+            )
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                res = json.loads(resp.read().decode())
+                nodes = res.get('data', {}).get('repository', {}).get('discussions', {}).get('nodes', [])
+                
+                if nodes:
+                    proj['discussions'] = [
+                        {'title': n['title'], 'url': n['url'], 'created_at': n['createdAt'], 'author': n['author']['login']}
+                        for n in nodes if n
+                    ]
+                    updated_count += 1
+        except Exception as e:
+            pass
+        
+        if (i + 1) % 10 == 0:
+            time.sleep(1)
+    
+    print(f"✅ 已抓取 {updated_count} 个项目的讨论内容")
+    return data
+
 def generate_static_homepage(data):
-    """生成语义化的静态首页"""
     print("⏳ 正在生成静态首页...")
     base_url = data['site']['url'].rstrip('/')
     
@@ -462,6 +558,7 @@ def main():
     data = update_existing_projects(data)
     new_count = random.randint(3, 5)
     data, added = add_new_projects(data, new_count)
+    data = fetch_discussions(data)
     save_data(data)
     generate_sitemap(data)
     generate_static_project_pages(data)
