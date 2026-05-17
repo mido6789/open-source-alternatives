@@ -6,6 +6,10 @@
     "contact_email": "mailtomidoo@gmail.com",
     "admin_password_hash": "",
     "update_log": [
+      "2026-05-17 🆕 新增：excalidraw（⭐ 123,404）| 用于绘制手绘草图的虚拟白板。",
+      "2026-05-17 🆕 新增：server（⭐ 35,011）| 所有数据的安全之家。",
+      "2026-05-17 🆕 新增：clients（⭐ 12,844）| Bitwarden 客户端应用程序。",
+      "2026-05-17 🆕 新增：pocketbase（⭐ 58,383）| 在 1 个文件中开源实时后端。",
       "2026-05-17 🆕 新增：mattermost（⭐ 36,726）| 用于安全协作的开源平台。",
       "2026-05-17 🆕 新增：Flowise（⭐ 52,869）| 拖拽式 LLM 应用构建器，无需代码即可创建 AI 工作流。",
       "2026-05-17 🆕 新增：lmms（⭐ 9,883）| 跨平台音乐制作软件。",
@@ -31,11 +35,7 @@
       "2026-05-12 🆕 新增：analytics（⭐ 24,820）| 轻量开源网站统计，不追踪隐私，无需 Cookie 同意横幅。",
       "2026-05-12 🆕 新增：MuseScore（⭐ 14,560）| MuseScore 是一款乐谱软件。",
       "2026-05-12 🆕 新增：DocumentServer（⭐ 6,498）| 开源在线办公套件，高度兼容 MS Office 格式，支持在线协作。",
-      "2026-05-12 🆕 新增：hoppscotch（⭐ 79,162）| 开源 API 开发生态系统。",
-      "2026-05-12 🆕 新增：Stirling-PDF（⭐ 78,628）| 全能私有化 PDF 工具箱，支持分割、合并、转换等数十种操作。",
-      "2026-05-12 🆕 新增：blender（⭐ 18,371）| 专业级开源 3D 创作套件，支持建模、渲染、动画、合成全流程。",
-      "2026-05-12 🆕 新增：dbeaver（⭐ 49,997）| 万能开源数据库管理工具，支持所有主流关系型和非关系型数据库。",
-      "2026-05-12 🆕 新增：netdata（⭐ 78,780）| 实时性能监控。"
+      "2026-05-12 🆕 新增：hoppscotch（⭐ 79,162）| 开源 API 开发生态系统。"
     ],
     "ads": {
       "sidebar_top": "",
@@ -125,7 +125,39 @@
       "license": "AGPL-3.0",
       "download_url": "",
       "featured": true,
-      "date_added": "2025-06-01"
+      "date_added": "2025-06-01",
+      "discussions": [
+        {
+          "title": "Не могу установить SD.",
+          "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/17405",
+          "created_at": "2026-05-17T06:20:11Z",
+          "author": "Diroverlay"
+        },
+        {
+          "title": "RuntimeError: Couldn't clone Stable Diffusion. Command: \"git\" clone --config core.filemode=false \"https://github.com/Stability-AI/stablediffusion.git\" \"C:\\SD\\stable-diffusion-webui\\repositories\\stable-diffusion-stability-ai\" Error code: 128",
+          "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/17402",
+          "created_at": "2026-05-14T08:34:26Z",
+          "author": "foxov27"
+        },
+        {
+          "title": "[Security] Please enable private vulnerability reporting",
+          "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/17395",
+          "created_at": "2026-05-09T15:08:59Z",
+          "author": "3erk1n"
+        },
+        {
+          "title": "i am getting error on stable someone please help",
+          "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/17389",
+          "created_at": "2026-05-03T09:18:17Z",
+          "author": "deepaklamhe3333-oss"
+        },
+        {
+          "title": "Cannot import: 'setuptools.build.meta'",
+          "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/17388",
+          "created_at": "2026-05-03T08:21:23Z",
+          "author": "Etoiel"
+        }
+      ]
     },
     {
       "id": "gimp",
@@ -169,7 +201,7 @@
       "slug": "libreoffice",
       "category": "office-productivity",
       "github_url": "https://github.com/LibreOffice/core",
-      "stars": 3932,
+      "stars": 3933,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
@@ -184,7 +216,7 @@
         "2026-05-14": 3921,
         "2026-05-15": 3924,
         "2026-05-16": 3926,
-        "2026-05-17": 3932
+        "2026-05-17": 3933
       },
       "description_zh": "LibreOffice 是自由开源办公套件的标杆，包含 Writer、Calc、Impress、Draw、Base 和 Math 六大组件。它全面兼容 Microsoft Office 格式，支持 ODF 开放文档标准，可跨平台运行。",
       "description_en": "A free and open-source office suite.",
@@ -205,7 +237,7 @@
       "slug": "langchain",
       "category": "ai-agent",
       "github_url": "https://github.com/langchain-ai/langchain",
-      "stars": 136936,
+      "stars": 136937,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
@@ -220,7 +252,7 @@
         "2026-05-14": 136703,
         "2026-05-15": 136791,
         "2026-05-16": 136866,
-        "2026-05-17": 136936
+        "2026-05-17": 136937
       },
       "description_zh": "LangChain 是当前最流行的 LLM 应用开发框架，支持 Python 和 JavaScript。它提供了链式调用、智能代理、记忆管理、向量检索等核心模块，让开发者可以快速构建基于 GPT、Claude、Llama 等大模型的应用。",
       "description_en": "Building applications with LLMs through composability.",
@@ -233,7 +265,33 @@
       "license": "MIT",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-04"
+      "date_added": "2026-05-04",
+      "discussions": [
+        {
+          "title": "Making it easier to contribute to LangChain",
+          "url": "https://github.com/langchain-ai/langchain/discussions/35700",
+          "created_at": "2026-03-09T19:33:18Z",
+          "author": "mdrxy"
+        },
+        {
+          "title": "New first-party packages: `langchain-openrouter` and `langchain-litellm`",
+          "url": "https://github.com/langchain-ai/langchain/discussions/35672",
+          "created_at": "2026-03-08T20:40:15Z",
+          "author": "mdrxy"
+        },
+        {
+          "title": "Deprecation Notice: LangSmith Tracing Changes",
+          "url": "https://github.com/langchain-ai/langchain/discussions/34690",
+          "created_at": "2026-01-09T20:17:30Z",
+          "author": "mdrxy"
+        },
+        {
+          "title": "Discussions have moved to the LangChain Forum!",
+          "url": "https://github.com/langchain-ai/langchain/discussions/31978",
+          "created_at": "2025-07-11T17:03:08Z",
+          "author": "eyurtsev"
+        }
+      ]
     },
     {
       "id": "auto-1777898639-808",
@@ -241,7 +299,7 @@
       "slug": "comfyui",
       "category": "ai-agent",
       "github_url": "https://github.com/comfyanonymous/ComfyUI",
-      "stars": 113280,
+      "stars": 113281,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
@@ -256,7 +314,7 @@
         "2026-05-14": 112867,
         "2026-05-15": 113003,
         "2026-05-16": 113139,
-        "2026-05-17": 113280
+        "2026-05-17": 113281
       },
       "description_zh": "ComfyUI 是一款基于节点的 Stable Diffusion 工作流工具，以灵活性和可复现性著称。用户可以通过拖拽和连接节点来构建复杂的图像生成流水线，精确控制每一步的处理过程。",
       "description_en": "A powerful and modular Stable Diffusion GUI with a node-based workflow.",
@@ -269,7 +327,39 @@
       "license": "GPL-3.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-04"
+      "date_added": "2026-05-04",
+      "discussions": [
+        {
+          "title": "ComfyUI show nothing after launching at Google Chrome",
+          "url": "https://github.com/Comfy-Org/ComfyUI/discussions/13935",
+          "created_at": "2026-05-17T03:20:25Z",
+          "author": "Jerry20221227"
+        },
+        {
+          "title": "I made a modern and easy to use frontend for ComfyUI!",
+          "url": "https://github.com/Comfy-Org/ComfyUI/discussions/13932",
+          "created_at": "2026-05-16T15:16:05Z",
+          "author": "searcc"
+        },
+        {
+          "title": "Startup window for comfyui",
+          "url": "https://github.com/Comfy-Org/ComfyUI/discussions/13912",
+          "created_at": "2026-05-15T11:40:51Z",
+          "author": "noyart"
+        },
+        {
+          "title": "[Withdrawn] Suggestion: Encourage custom nodes to adopt i18n for official template inclusion",
+          "url": "https://github.com/Comfy-Org/ComfyUI/discussions/13908",
+          "created_at": "2026-05-15T06:12:08Z",
+          "author": "LifetimeVip"
+        },
+        {
+          "title": "The latest version of ComfyUI cannot open workflows by dragging and dropping files. How to solve this? (Google Chrome.)",
+          "url": "https://github.com/Comfy-Org/ComfyUI/discussions/13886",
+          "created_at": "2026-05-14T07:14:39Z",
+          "author": "divineblessing"
+        }
+      ]
     },
     {
       "id": "auto-1777898640-946",
@@ -277,7 +367,7 @@
       "slug": "audacity",
       "category": "media-video",
       "github_url": "https://github.com/audacity/audacity",
-      "stars": 16977,
+      "stars": 16978,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
@@ -292,7 +382,7 @@
         "2026-05-14": 16968,
         "2026-05-15": 16972,
         "2026-05-16": 16974,
-        "2026-05-17": 16977
+        "2026-05-17": 16978
       },
       "description_zh": "Audacity 是最知名的开源音频编辑软件，已持续开发超过 20 年。它支持多轨录音和编辑，内置丰富的音效处理功能，支持导入导出多种格式，可安装第三方插件扩展功能。",
       "description_en": "Audacity is an easy-to-use multi-track audio editor and recorder.",
@@ -305,7 +395,39 @@
       "license": "GPL-3.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-04"
+      "date_added": "2026-05-04",
+      "discussions": [
+        {
+          "title": "Vocal Harmony effect and Vocal Choir effect in Audacity 3.7.7",
+          "url": "https://github.com/audacity/audacity/discussions/10824",
+          "created_at": "2026-04-29T02:54:59Z",
+          "author": "Rong51"
+        },
+        {
+          "title": "Tool to cut section(s), copy file without repeated decoding encoding thus bloating; a tool analogous to ffmpeg codelines given below",
+          "url": "https://github.com/audacity/audacity/discussions/10798",
+          "created_at": "2026-04-26T04:26:51Z",
+          "author": "rajibando"
+        },
+        {
+          "title": "Working PRs: N-Channel Track Model and Playback for Audacity",
+          "url": "https://github.com/audacity/audacity/discussions/10699",
+          "created_at": "2026-04-13T02:27:58Z",
+          "author": "bitswype"
+        },
+        {
+          "title": "I want to contribute",
+          "url": "https://github.com/audacity/audacity/discussions/10663",
+          "created_at": "2026-04-06T04:11:43Z",
+          "author": "maagenta"
+        },
+        {
+          "title": "Main 6 buttons should be bigger",
+          "url": "https://github.com/audacity/audacity/discussions/10575",
+          "created_at": "2026-03-19T22:52:21Z",
+          "author": "robotlandscape"
+        }
+      ]
     },
     {
       "id": "auto-1777898641-130",
@@ -313,7 +435,7 @@
       "slug": "ollama",
       "category": "ai-agent",
       "github_url": "https://github.com/ollama/ollama",
-      "stars": 171604,
+      "stars": 171605,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
@@ -328,7 +450,7 @@
         "2026-05-14": 171372,
         "2026-05-15": 171435,
         "2026-05-16": 171506,
-        "2026-05-17": 171604
+        "2026-05-17": 171605
       },
       "description_zh": "Ollama 是一个让你在本地电脑上轻松运行大语言模型的开源工具。它支持 Llama 3、Mistral、Gemma、Qwen、DeepSeek 等众多主流开源模型，只需一条命令就能下载并启动模型服务。",
       "description_en": "Get up and running with large language models locally.",
@@ -377,7 +499,39 @@
       "license": "GPL-3.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-05"
+      "date_added": "2026-05-05",
+      "discussions": [
+        {
+          "title": "Issues with periodic network errors in Gemini, and failed Play Store app installs",
+          "url": "https://github.com/AdguardTeam/AdGuardHome/discussions/8378",
+          "created_at": "2026-05-15T11:04:50Z",
+          "author": "silviuk"
+        },
+        {
+          "title": "WARNING - GLASSWIRE UDPATE BREAKS ADGUARD !!!",
+          "url": "https://github.com/AdguardTeam/AdGuardHome/discussions/8374",
+          "created_at": "2026-05-09T21:13:44Z",
+          "author": "SynapseScribe"
+        },
+        {
+          "title": "Unblocking whole domain and called domains in Adguard Home on Home Assistant",
+          "url": "https://github.com/AdguardTeam/AdGuardHome/discussions/8369",
+          "created_at": "2026-05-06T04:04:18Z",
+          "author": "Ducati748ss"
+        },
+        {
+          "title": "Propose storing Client reverse DNS lookups as part of logging",
+          "url": "https://github.com/AdguardTeam/AdGuardHome/discussions/8368",
+          "created_at": "2026-05-05T07:37:40Z",
+          "author": "nomandera"
+        },
+        {
+          "title": "Enable DOH behind Traefik with self signed certificate on adguard/adguardhome:v0.107.74",
+          "url": "https://github.com/AdguardTeam/AdGuardHome/discussions/8366",
+          "created_at": "2026-05-03T22:10:16Z",
+          "author": "XayneCast"
+        }
+      ]
     },
     {
       "id": "auto-1777981740-745",
@@ -413,7 +567,39 @@
       "license": "GPL-2.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-05"
+      "date_added": "2026-05-05",
+      "discussions": [
+        {
+          "title": "Help - initial login not working",
+          "url": "https://github.com/qbittorrent/qBittorrent/discussions/24230",
+          "created_at": "2026-05-10T18:02:52Z",
+          "author": "cmj01"
+        },
+        {
+          "title": "for arm64 devices",
+          "url": "https://github.com/qbittorrent/qBittorrent/discussions/24221",
+          "created_at": "2026-05-09T12:06:41Z",
+          "author": "kingslayer009-cpu"
+        },
+        {
+          "title": "GitHub or SourceForge?",
+          "url": "https://github.com/qbittorrent/qBittorrent/discussions/24205",
+          "created_at": "2026-05-07T05:59:32Z",
+          "author": "absolutep"
+        },
+        {
+          "title": "How to export shell theme settings",
+          "url": "https://github.com/qbittorrent/qBittorrent/discussions/24186",
+          "created_at": "2026-05-05T09:03:13Z",
+          "author": "electrifying"
+        },
+        {
+          "title": "Different Icon Sizes for Fusion (and other) styles except System (windowsvista).",
+          "url": "https://github.com/qbittorrent/qBittorrent/discussions/24166",
+          "created_at": "2026-05-04T08:05:39Z",
+          "author": "lelik107"
+        }
+      ]
     },
     {
       "id": "auto-1777981741-339",
@@ -449,7 +635,39 @@
       "license": "GPL-3.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-05"
+      "date_added": "2026-05-05",
+      "discussions": [
+        {
+          "title": "Please reopen #4558",
+          "url": "https://github.com/flameshot-org/flameshot/discussions/4641",
+          "created_at": "2026-04-14T08:08:09Z",
+          "author": "haferburg"
+        },
+        {
+          "title": "v14.0.rc1",
+          "url": "https://github.com/flameshot-org/flameshot/discussions/4624",
+          "created_at": "2026-04-06T21:12:45Z",
+          "author": "borgmanJeremy"
+        },
+        {
+          "title": "[Windows] Printscreen",
+          "url": "https://github.com/flameshot-org/flameshot/discussions/4582",
+          "created_at": "2026-03-19T20:06:49Z",
+          "author": "joombler"
+        },
+        {
+          "title": "How to disable monitor selection",
+          "url": "https://github.com/flameshot-org/flameshot/discussions/4572",
+          "created_at": "2026-03-17T00:53:45Z",
+          "author": "SKProCH"
+        },
+        {
+          "title": "Screenshot clipboard can't paste to Whatsapp on MacOS",
+          "url": "https://github.com/flameshot-org/flameshot/discussions/4551",
+          "created_at": "2026-03-04T07:43:16Z",
+          "author": "alex-iordache"
+        }
+      ]
     },
     {
       "id": "auto-1778127822-115",
@@ -457,7 +675,7 @@
       "slug": "chatgpt-next-web",
       "category": "ai-agent",
       "github_url": "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web",
-      "stars": 88017,
+      "stars": 88018,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
@@ -471,7 +689,7 @@
         "2026-05-14": 87982,
         "2026-05-15": 87998,
         "2026-05-16": 88003,
-        "2026-05-17": 88017
+        "2026-05-17": 88018
       },
       "description_zh": "✨ 轻快的AI助手。支持： Web iOS MacOS Android Linux Windows",
       "description_en": "✨ Light and Fast AI Assistant. Support: Web iOS MacOS Android Linux Windows",
@@ -483,7 +701,39 @@
       "license": "MIT",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-07"
+      "date_added": "2026-05-07",
+      "discussions": [
+        {
+          "title": "Claude Code skills for investment analysis — options flow scanner + alerts (open source)",
+          "url": "https://github.com/ChatGPTNextWeb/NextChat/discussions/6775",
+          "created_at": "2026-05-13T13:08:43Z",
+          "author": "tellmefrankie"
+        },
+        {
+          "title": "🤖 朱雀找人 - AI发布任务，真人执行，自动结算！欢迎AI Agent来测试",
+          "url": "https://github.com/ChatGPTNextWeb/NextChat/discussions/6770",
+          "created_at": "2026-05-05T19:45:03Z",
+          "author": "fangqiang331-gif"
+        },
+        {
+          "title": "【API 推荐】高性价比 AI API 中转站 marting.pro，支持近600种模型，完美兼容 NextChat",
+          "url": "https://github.com/ChatGPTNextWeb/NextChat/discussions/6729",
+          "created_at": "2026-03-26T12:31:35Z",
+          "author": "WrbMax"
+        },
+        {
+          "title": "Pissbook: connect your NextChat instance to an agent-only forum",
+          "url": "https://github.com/ChatGPTNextWeb/NextChat/discussions/6728",
+          "created_at": "2026-03-23T00:57:59Z",
+          "author": "ColinRobinsonSOL"
+        },
+        {
+          "title": "怎么没更新了",
+          "url": "https://github.com/ChatGPTNextWeb/NextChat/discussions/6713",
+          "created_at": "2026-02-23T10:42:38Z",
+          "author": "grace3132"
+        }
+      ]
     },
     {
       "id": "auto-1778127824-454",
@@ -517,7 +767,39 @@
       "license": "NOASSERTION",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-07"
+      "date_added": "2026-05-07",
+      "discussions": [
+        {
+          "title": "Feature Request - Please use our Public Roadmap",
+          "url": "https://github.com/directus/directus/discussions/27165",
+          "created_at": "2026-04-20T03:26:08Z",
+          "author": "DrRoway"
+        },
+        {
+          "title": "“Is the Directus Pizza demo codebase in (NextJs) available publicly? if yes can anyone share or give access for learning purpose”",
+          "url": "https://github.com/directus/directus/discussions/27052",
+          "created_at": "2026-04-06T13:01:58Z",
+          "author": "siddhesh021"
+        },
+        {
+          "title": "Feature Request - Please use our Public Roadmap",
+          "url": "https://github.com/directus/directus/discussions/26926",
+          "created_at": "2026-03-20T04:32:54Z",
+          "author": "lishanrong"
+        },
+        {
+          "title": "Have Difficulty in setting Access Control for amny to many relationship",
+          "url": "https://github.com/directus/directus/discussions/26503",
+          "created_at": "2026-01-20T11:50:08Z",
+          "author": "y-mk-yc"
+        },
+        {
+          "title": "Feature Request - Please use our Public Roadmap",
+          "url": "https://github.com/directus/directus/discussions/26403",
+          "created_at": "2025-12-19T13:14:17Z",
+          "author": "ritup9"
+        }
+      ]
     },
     {
       "id": "auto-1778127825-156",
@@ -525,7 +807,7 @@
       "slug": "supabase",
       "category": "dev-tools",
       "github_url": "https://github.com/supabase/supabase",
-      "stars": 102531,
+      "stars": 102534,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
@@ -539,7 +821,7 @@
         "2026-05-14": 102312,
         "2026-05-15": 102357,
         "2026-05-16": 102415,
-        "2026-05-17": 102531
+        "2026-05-17": 102534
       },
       "description_zh": "开源 Firebase 替代品，提供数据库、认证、存储等服务。",
       "description_en": "The open source Firebase alternative.",
@@ -551,7 +833,39 @@
       "license": "Apache-2.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-07"
+      "date_added": "2026-05-07",
+      "discussions": [
+        {
+          "title": "Issue While Restoring Supabase Database Backup",
+          "url": "https://github.com/orgs/supabase/discussions/46035",
+          "created_at": "2026-05-17T05:52:25Z",
+          "author": "Ithachiuchiha"
+        },
+        {
+          "title": "Storage upload returns 403 \"row-level security policy\" despite valid authenticated JWT and correct policy",
+          "url": "https://github.com/orgs/supabase/discussions/46022",
+          "created_at": "2026-05-16T17:12:26Z",
+          "author": "joferrari"
+        },
+        {
+          "title": "Better eMail Service Support + Support for \"Cloudflare Email Service\"",
+          "url": "https://github.com/orgs/supabase/discussions/46014",
+          "created_at": "2026-05-16T07:13:12Z",
+          "author": "rootacc3ss"
+        },
+        {
+          "title": "SU-377218 Can not connect to Realtime for multiple days",
+          "url": "https://github.com/orgs/supabase/discussions/45999",
+          "created_at": "2026-05-15T16:45:11Z",
+          "author": "DominikLevitsky"
+        },
+        {
+          "title": "SU-377129. Cannot open dashboard after GitHub OAuth (blank page, auth.supabase.io)",
+          "url": "https://github.com/orgs/supabase/discussions/45985",
+          "created_at": "2026-05-15T13:32:12Z",
+          "author": "comdacomda-eng"
+        }
+      ]
     },
     {
       "id": "auto-1778184391-247",
@@ -593,7 +907,7 @@
       "slug": "obs-studio",
       "category": "media-video",
       "github_url": "https://github.com/obsproject/obs-studio",
-      "stars": 72458,
+      "stars": 72459,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
@@ -607,7 +921,7 @@
         "2026-05-14": 72369,
         "2026-05-15": 72401,
         "2026-05-16": 72425,
-        "2026-05-17": 72458
+        "2026-05-17": 72459
       },
       "description_zh": "OBS Studio - 用于直播和屏幕录制的免费开源软件",
       "description_en": "OBS Studio - Free and open source software for live streaming and screen recording",
@@ -620,7 +934,39 @@
       "license": "GPL-2.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-07"
+      "date_added": "2026-05-07",
+      "discussions": [
+        {
+          "title": "Interest check: GPU metrics (NVML) in the Stats panel",
+          "url": "https://github.com/obsproject/obs-studio/discussions/13438",
+          "created_at": "2026-05-17T03:26:20Z",
+          "author": "Marssvoodoo"
+        },
+        {
+          "title": "Suggestion for dynamic scene detection",
+          "url": "https://github.com/obsproject/obs-studio/discussions/13390",
+          "created_at": "2026-05-03T12:47:33Z",
+          "author": "KeYuth"
+        },
+        {
+          "title": "What is PDBs release build?",
+          "url": "https://github.com/obsproject/obs-studio/discussions/13233",
+          "created_at": "2026-03-20T10:19:46Z",
+          "author": "alekssamos"
+        },
+        {
+          "title": "whoever made the recent changes to the visuals of audio dock, please help",
+          "url": "https://github.com/obsproject/obs-studio/discussions/13225",
+          "created_at": "2026-03-16T19:00:04Z",
+          "author": "SoumyaK4"
+        },
+        {
+          "title": "Image Slide Show: Next Image Preview and Quick Selector Panel",
+          "url": "https://github.com/obsproject/obs-studio/discussions/13178",
+          "created_at": "2026-03-02T06:38:57Z",
+          "author": "razorkyle"
+        }
+      ]
     },
     {
       "id": "auto-1778184394-737",
@@ -789,7 +1135,39 @@
       "license": "MIT",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-08"
+      "date_added": "2026-05-08",
+      "discussions": [
+        {
+          "title": "2026.4.1",
+          "url": "https://github.com/hoppscotch/hoppscotch/discussions/6316",
+          "created_at": "2026-05-14T07:34:32Z",
+          "author": "jamesgeorge007"
+        },
+        {
+          "title": "Configure proxy URL",
+          "url": "https://github.com/hoppscotch/hoppscotch/discussions/6284",
+          "created_at": "2026-05-05T10:39:23Z",
+          "author": "KoldoCanellas"
+        },
+        {
+          "title": "When will the \"API Economy\" End",
+          "url": "https://github.com/hoppscotch/hoppscotch/discussions/6269",
+          "created_at": "2026-05-03T06:21:34Z",
+          "author": "tartaruslovesnoodles"
+        },
+        {
+          "title": "2026.4.0",
+          "url": "https://github.com/hoppscotch/hoppscotch/discussions/6252",
+          "created_at": "2026-04-30T08:52:19Z",
+          "author": "jamesgeorge007"
+        },
+        {
+          "title": "CVE-2026-28215",
+          "url": "https://github.com/hoppscotch/hoppscotch/discussions/6233",
+          "created_at": "2026-04-27T13:08:16Z",
+          "author": "Leon-Luu"
+        }
+      ]
     },
     {
       "id": "auto-1778221153-813",
@@ -822,7 +1200,39 @@
       "license": "Apache-2.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-08"
+      "date_added": "2026-05-08",
+      "discussions": [
+        {
+          "title": "该项目网站源代码使用",
+          "url": "https://github.com/localsend/localsend/discussions/3030",
+          "created_at": "2026-04-21T03:05:01Z",
+          "author": "kjxbyz"
+        },
+        {
+          "title": "Slow Transfer Speed - Ethernet",
+          "url": "https://github.com/localsend/localsend/discussions/3022",
+          "created_at": "2026-04-13T05:22:58Z",
+          "author": "wiplasher-Quoit"
+        },
+        {
+          "title": "Can't find the received files anywhere on Android",
+          "url": "https://github.com/localsend/localsend/discussions/3018",
+          "created_at": "2026-04-10T19:44:53Z",
+          "author": "Odi-3"
+        },
+        {
+          "title": "Windows 10 Update KB4074588 may block localsend default port 53317",
+          "url": "https://github.com/localsend/localsend/discussions/3015",
+          "created_at": "2026-04-10T09:00:32Z",
+          "author": "Arondight"
+        },
+        {
+          "title": "Such good software ！！",
+          "url": "https://github.com/localsend/localsend/discussions/3009",
+          "created_at": "2026-04-08T13:58:30Z",
+          "author": "itgamer"
+        }
+      ]
     },
     {
       "id": "auto-1778221155-141",
@@ -863,7 +1273,7 @@
       "slug": "analytics",
       "category": "dev-tools",
       "github_url": "https://github.com/plausible/analytics",
-      "stars": 25156,
+      "stars": 25159,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
@@ -876,7 +1286,7 @@
         "2026-05-14": 24845,
         "2026-05-15": 24856,
         "2026-05-16": 24901,
-        "2026-05-17": 25156
+        "2026-05-17": 25159
       },
       "description_zh": "轻量开源网站统计，不追踪隐私，无需 Cookie 同意横幅。",
       "description_en": "Simple, open source, lightweight web analytics.",
@@ -888,7 +1298,39 @@
       "license": "AGPL-3.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-08"
+      "date_added": "2026-05-08",
+      "discussions": [
+        {
+          "title": "v3.2.1",
+          "url": "https://github.com/plausible/analytics/discussions/6355",
+          "created_at": "2026-05-15T09:15:57Z",
+          "author": "cnkk"
+        },
+        {
+          "title": "\"Export data\" does nothing at all",
+          "url": "https://github.com/plausible/analytics/discussions/6353",
+          "created_at": "2026-05-15T08:19:54Z",
+          "author": "jlengrand"
+        },
+        {
+          "title": "My Plausible does not show top page details.",
+          "url": "https://github.com/plausible/analytics/discussions/6265",
+          "created_at": "2026-04-20T12:45:57Z",
+          "author": "crazzysongs"
+        },
+        {
+          "title": "How to use Plausible with htmx on client side?",
+          "url": "https://github.com/plausible/analytics/discussions/6264",
+          "created_at": "2026-04-20T10:56:33Z",
+          "author": "ribtoks"
+        },
+        {
+          "title": "Anyone using Plausible for reddit ad campaigns?",
+          "url": "https://github.com/plausible/analytics/discussions/6230",
+          "created_at": "2026-04-06T11:44:40Z",
+          "author": "nnWhisperer"
+        }
+      ]
     },
     {
       "id": "auto-1778252908-930",
@@ -921,7 +1363,39 @@
       "license": "AGPL-3.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-08"
+      "date_added": "2026-05-08",
+      "discussions": [
+        {
+          "title": "Sync no longer works?",
+          "url": "https://github.com/logseq/logseq/discussions/12482",
+          "created_at": "2026-03-30T13:22:24Z",
+          "author": "isterin"
+        },
+        {
+          "title": "Can not change Editor Settings in my Graph",
+          "url": "https://github.com/logseq/logseq/discussions/12396",
+          "created_at": "2026-02-16T07:05:11Z",
+          "author": "michael1maass"
+        },
+        {
+          "title": "Artefacts expired. Not able to download db version.",
+          "url": "https://github.com/logseq/logseq/discussions/12357",
+          "created_at": "2026-01-28T14:03:12Z",
+          "author": "rahulnyk"
+        },
+        {
+          "title": "❄️ Nix Flake for Logseq Desktop + CLI",
+          "url": "https://github.com/logseq/logseq/discussions/12356",
+          "created_at": "2026-01-27T13:06:05Z",
+          "author": "Bad3r"
+        },
+        {
+          "title": "How do you decide whether a note-taking tool fits your thinking?",
+          "url": "https://github.com/logseq/logseq/discussions/12319",
+          "created_at": "2026-01-10T08:17:03Z",
+          "author": "pickthetool"
+        }
+      ]
     },
     {
       "id": "auto-1778252910-460",
@@ -962,7 +1436,7 @@
       "slug": "llama-cpp",
       "category": "ai-agent",
       "github_url": "https://github.com/ggerganov/llama.cpp",
-      "stars": 110574,
+      "stars": 110575,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
@@ -975,7 +1449,7 @@
         "2026-05-14": 110036,
         "2026-05-15": 110223,
         "2026-05-16": 110389,
-        "2026-05-17": 110574
+        "2026-05-17": 110575
       },
       "description_zh": "C++ 实现的高性能 LLM 推理引擎，支持在消费级硬件上运行大模型。",
       "description_en": "LLM inference in C/C++ running on consumer hardware.",
@@ -987,7 +1461,39 @@
       "license": "MIT",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-08"
+      "date_added": "2026-05-08",
+      "discussions": [
+        {
+          "title": "Is `--cache-ram` bugged?",
+          "url": "https://github.com/ggml-org/llama.cpp/discussions/23207",
+          "created_at": "2026-05-17T13:50:38Z",
+          "author": "fantasyz"
+        },
+        {
+          "title": "Running llama.cpp with Mali-G715 GPU on Pixel 9 Pro XL (Termux + Vulkan）",
+          "url": "https://github.com/ggml-org/llama.cpp/discussions/23193",
+          "created_at": "2026-05-17T07:44:06Z",
+          "author": "webshellXX"
+        },
+        {
+          "title": "Splitting mmproj accross GPUs?",
+          "url": "https://github.com/ggml-org/llama.cpp/discussions/23191",
+          "created_at": "2026-05-17T07:39:26Z",
+          "author": "shinishiho"
+        },
+        {
+          "title": "support orthrus: diffusion based speculative decoding",
+          "url": "https://github.com/ggml-org/llama.cpp/discussions/23186",
+          "created_at": "2026-05-17T04:30:14Z",
+          "author": "khimaros"
+        },
+        {
+          "title": "Timeline for NNAPI backend support on Google Tensor devices?",
+          "url": "https://github.com/ggml-org/llama.cpp/discussions/23182",
+          "created_at": "2026-05-17T02:53:34Z",
+          "author": "webshellXX"
+        }
+      ]
     },
     {
       "id": "auto-1778276217-252",
@@ -1061,7 +1567,7 @@
       "slug": "mattermost",
       "category": "office-productivity",
       "github_url": "https://github.com/mattermost/mattermost",
-      "stars": 36730,
+      "stars": 36731,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
@@ -1073,7 +1579,7 @@
         "2026-05-14": 36699,
         "2026-05-15": 36712,
         "2026-05-16": 36722,
-        "2026-05-17": 36730
+        "2026-05-17": 36731
       },
       "description_zh": "Mattermost 是一个开源平台，用于在整个软件开发生命周期中进行安全协作。",
       "description_en": "Mattermost is an open source platform for secure collaboration across the entire software development lifecycle..",
@@ -1117,7 +1623,39 @@
       "license": "Apache-2.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-09"
+      "date_added": "2026-05-09",
+      "discussions": [
+        {
+          "title": "allow creation of customised CSV export formats",
+          "url": "https://github.com/orgs/dbeaver/discussions/41079",
+          "created_at": "2026-05-14T15:28:00Z",
+          "author": "nutmix"
+        },
+        {
+          "title": "Any processes automatically launched on startup?",
+          "url": "https://github.com/orgs/dbeaver/discussions/40998",
+          "created_at": "2026-05-05T09:03:27Z",
+          "author": "CharlesZufferey"
+        },
+        {
+          "title": "Password expiry pop-up or alert during DB connection",
+          "url": "https://github.com/orgs/dbeaver/discussions/40980",
+          "created_at": "2026-05-03T08:36:10Z",
+          "author": "waq"
+        },
+        {
+          "title": "Which specific log files contain user's login attempts to various databases?",
+          "url": "https://github.com/orgs/dbeaver/discussions/40952",
+          "created_at": "2026-04-28T21:05:21Z",
+          "author": "tandigmtech"
+        },
+        {
+          "title": "Inquiry regarding PowerShell activity: Automatic Windows Defender exclusions?",
+          "url": "https://github.com/orgs/dbeaver/discussions/40932",
+          "created_at": "2026-04-27T22:13:17Z",
+          "author": "michael-cooley"
+        }
+      ]
     },
     {
       "id": "auto-1778311389-212",
@@ -1125,7 +1663,7 @@
       "slug": "cal-com",
       "category": "office-productivity",
       "github_url": "https://github.com/calcom/cal.com",
-      "stars": 43061,
+      "stars": 43068,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
@@ -1137,7 +1675,7 @@
         "2026-05-14": 42502,
         "2026-05-15": 42513,
         "2026-05-16": 42607,
-        "2026-05-17": 43061
+        "2026-05-17": 43068
       },
       "description_zh": "[!警告] 使用风险需您自担。 Cal.diy 是 Cal.com 的开源社区版本，适用于想要自行托管自己的 Cal.diy 实例的用户。强烈建议用于个人非生产用途。请仔细检查所有安装和配置步骤。自托管需要服务器管理、数据库管理和保护敏感数据的高级知识。仅当您对这些责任感到满意时才继续。 [!TIP] 对于任何商业",
       "description_en": "[!WARNING] Use at your own risk. Cal.diy is the open source community edition of Cal.com and it is intended for users who want to self-host their own Cal.diy instance. It is strictly recommended for personal, non-production use. Please review all installation and configuration steps carefully. Self-hosting requires advanced knowledge of server administration, database management, and securing sensitive data. Proceed only if you are comfortable with these responsibilities. [!TIP] For any commerci",
@@ -1246,7 +1784,39 @@
       "license": "LGPL-2.1",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-09"
+      "date_added": "2026-05-09",
+      "discussions": [
+        {
+          "title": "there is a freecad developer forum?",
+          "url": "https://github.com/FreeCAD/FreeCAD/discussions/30226",
+          "created_at": "2026-05-17T04:42:10Z",
+          "author": "muezabdalla"
+        },
+        {
+          "title": "selecting overlapped faces",
+          "url": "https://github.com/FreeCAD/FreeCAD/discussions/30128",
+          "created_at": "2026-05-13T08:49:43Z",
+          "author": "etiennelame"
+        },
+        {
+          "title": "Occt 8.0.0 available",
+          "url": "https://github.com/FreeCAD/FreeCAD/discussions/30016",
+          "created_at": "2026-05-10T09:35:45Z",
+          "author": "stefano2734"
+        },
+        {
+          "title": "Cpp formal calculus library",
+          "url": "https://github.com/FreeCAD/FreeCAD/discussions/29925",
+          "created_at": "2026-05-08T09:45:38Z",
+          "author": "FlachyJoe"
+        },
+        {
+          "title": "FreeCAD Libpack 1.20 version 3.40 to 1.2 devs available with actual 3rd party components",
+          "url": "https://github.com/FreeCAD/FreeCAD/discussions/29832",
+          "created_at": "2026-05-04T08:58:27Z",
+          "author": "stefano2734"
+        }
+      ]
     },
     {
       "id": "auto-1778337730-956",
@@ -1309,7 +1879,39 @@
       "license": "NOASSERTION",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-09"
+      "date_added": "2026-05-09",
+      "discussions": [
+        {
+          "title": "Add \"Share via Send\" action to vault items (one-click, UI-only)",
+          "url": "https://github.com/orgs/bitwarden/discussions/20574",
+          "created_at": "2026-05-10T15:16:00Z",
+          "author": "babyhuey"
+        },
+        {
+          "title": "Proposal: create option to require both pin + biometric to unlock vault",
+          "url": "https://github.com/orgs/bitwarden/discussions/20566",
+          "created_at": "2026-05-08T21:25:11Z",
+          "author": "rmitura"
+        },
+        {
+          "title": "Proposal: API‑Driven Validation & Approval Workflow for XDR / SOAR Platforms",
+          "url": "https://github.com/orgs/bitwarden/discussions/20515",
+          "created_at": "2026-05-05T20:25:52Z",
+          "author": "jacob-kraniak"
+        },
+        {
+          "title": "Generator - Do not auto generate, it fills up history",
+          "url": "https://github.com/orgs/bitwarden/discussions/20376",
+          "created_at": "2026-04-25T02:57:13Z",
+          "author": "it-git-k"
+        },
+        {
+          "title": "\"Inactive Two-Step Login\" Report: include entries with registrable-domain fallback and no-documentation matches",
+          "url": "https://github.com/orgs/bitwarden/discussions/20258",
+          "created_at": "2026-04-19T23:47:57Z",
+          "author": "huchimama123"
+        }
+      ]
     },
     {
       "id": "auto-1778348344-732",
@@ -1339,7 +1941,39 @@
       "license": "GPL-3.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-09"
+      "date_added": "2026-05-09",
+      "discussions": [
+        {
+          "title": "5.6.0 - feature freeze",
+          "url": "https://github.com/darktable-org/darktable/discussions/20941",
+          "created_at": "2026-05-05T13:52:33Z",
+          "author": "TurboGit"
+        },
+        {
+          "title": "Version 5.4.1",
+          "url": "https://github.com/darktable-org/darktable/discussions/20220",
+          "created_at": "2026-01-25T15:50:54Z",
+          "author": "TurboGit"
+        },
+        {
+          "title": "5.4 - strings freeze now (2025/12/01)",
+          "url": "https://github.com/darktable-org/darktable/discussions/19845",
+          "created_at": "2025-12-01T07:05:17Z",
+          "author": "TurboGit"
+        },
+        {
+          "title": "5.4 - feature freeze after the week-end (2025/11/17)",
+          "url": "https://github.com/darktable-org/darktable/discussions/19738",
+          "created_at": "2025-11-14T12:20:35Z",
+          "author": "TurboGit"
+        },
+        {
+          "title": "MacOS printing issue",
+          "url": "https://github.com/darktable-org/darktable/discussions/19714",
+          "created_at": "2025-11-11T10:45:17Z",
+          "author": "paleguen"
+        }
+      ]
     },
     {
       "id": "auto-1778348345-223",
@@ -1368,7 +2002,39 @@
       "license": "NOASSERTION",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-09"
+      "date_added": "2026-05-09",
+      "discussions": [
+        {
+          "title": "Trills and turns",
+          "url": "https://github.com/orgs/musescore/discussions/33443",
+          "created_at": "2026-05-16T19:11:29Z",
+          "author": "ErlingIv"
+        },
+        {
+          "title": "Merge Rests with one button",
+          "url": "https://github.com/orgs/musescore/discussions/33417",
+          "created_at": "2026-05-15T04:40:36Z",
+          "author": "VihaanGitHub"
+        },
+        {
+          "title": "Practice Mode with MIDI performance assessment",
+          "url": "https://github.com/orgs/musescore/discussions/33204",
+          "created_at": "2026-04-30T04:07:25Z",
+          "author": "dwerkjem"
+        },
+        {
+          "title": "Double click on an object opens associated palette",
+          "url": "https://github.com/orgs/musescore/discussions/33179",
+          "created_at": "2026-04-28T21:19:29Z",
+          "author": "tomsuta"
+        },
+        {
+          "title": "Windows on Arm support",
+          "url": "https://github.com/orgs/musescore/discussions/33145",
+          "created_at": "2026-04-26T23:44:26Z",
+          "author": "prayaas-a"
+        }
+      ]
     },
     {
       "id": "auto-1778348346-338",
@@ -1397,7 +2063,39 @@
       "license": "GPL-3.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-09"
+      "date_added": "2026-05-09",
+      "discussions": [
+        {
+          "title": "Error Code SF9H:0L5C:VUB5",
+          "url": "https://github.com/cryptomator/cryptomator/discussions/4238",
+          "created_at": "2026-05-11T14:00:38Z",
+          "author": "MSofEU"
+        },
+        {
+          "title": "Error 6HCL:2GTN:615N",
+          "url": "https://github.com/cryptomator/cryptomator/discussions/4233",
+          "created_at": "2026-05-01T15:09:53Z",
+          "author": "Alfagiovanni56"
+        },
+        {
+          "title": "Error N05M:RI0E:RI0E",
+          "url": "https://github.com/cryptomator/cryptomator/discussions/4212",
+          "created_at": "2026-04-04T00:47:38Z",
+          "author": "IvanClaudett"
+        },
+        {
+          "title": "Error N05M:RI0E:RI0E",
+          "url": "https://github.com/cryptomator/cryptomator/discussions/4211",
+          "created_at": "2026-04-03T16:05:38Z",
+          "author": "ricky-rcr001"
+        },
+        {
+          "title": "Error 4VHF:Q9JM:SGVO",
+          "url": "https://github.com/cryptomator/cryptomator/discussions/4206",
+          "created_at": "2026-04-01T17:03:13Z",
+          "author": "Dreismann-stack"
+        }
+      ]
     },
     {
       "id": "auto-1778399378-620",
@@ -1435,7 +2133,7 @@
       "slug": "ventoy",
       "category": "system-utils",
       "github_url": "https://github.com/ventoy/Ventoy",
-      "stars": 76666,
+      "stars": 76668,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
@@ -1444,7 +2142,7 @@
         "2026-05-12": 76580,
         "2026-05-13": 76593,
         "2026-05-14": 76617,
-        "2026-05-17": 76666
+        "2026-05-17": 76668
       },
       "description_zh": "新一代多系统启动盘制作工具，直接复制 iso 文件即可启动。",
       "description_en": "A new bootable USB solution.",
@@ -1456,7 +2154,39 @@
       "license": "GPL-3.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-10"
+      "date_added": "2026-05-10",
+      "discussions": [
+        {
+          "title": "FreeBSD 16 CURRENT(0510) .ko",
+          "url": "https://github.com/ventoy/Ventoy/discussions/3610",
+          "created_at": "2026-05-16T14:31:07Z",
+          "author": "GuihongWang"
+        },
+        {
+          "title": "Non-specific install.wim directory failing to find wim...",
+          "url": "https://github.com/ventoy/Ventoy/discussions/3543",
+          "created_at": "2026-03-25T17:14:55Z",
+          "author": "Ge-koh"
+        },
+        {
+          "title": "Ventoy on mac",
+          "url": "https://github.com/ventoy/Ventoy/discussions/3534",
+          "created_at": "2026-03-12T03:23:50Z",
+          "author": "codigoperfeito"
+        },
+        {
+          "title": "能不能把 绕过Windows 11的两个选项默认关闭？",
+          "url": "https://github.com/ventoy/Ventoy/discussions/3501",
+          "created_at": "2026-02-05T19:14:06Z",
+          "author": "LiuuRR"
+        },
+        {
+          "title": "New GitHub non-runtime issue template",
+          "url": "https://github.com/ventoy/Ventoy/discussions/3495",
+          "created_at": "2026-01-31T14:55:15Z",
+          "author": "QuickBanjo"
+        }
+      ]
     },
     {
       "id": "auto-1778399381-585",
@@ -1516,7 +2246,27 @@
       "license": "AGPL-3.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-10"
+      "date_added": "2026-05-10",
+      "discussions": [
+        {
+          "title": "Which models work well with Open Interpreter?",
+          "url": "https://github.com/openinterpreter/open-interpreter/discussions/1757",
+          "created_at": "2026-05-16T23:56:27Z",
+          "author": "endolith"
+        },
+        {
+          "title": "Problems",
+          "url": "https://github.com/openinterpreter/open-interpreter/discussions/1755",
+          "created_at": "2026-05-16T03:25:27Z",
+          "author": "ganshaowen"
+        },
+        {
+          "title": "Welcome to Open Interpreter Discussions!",
+          "url": "https://github.com/openinterpreter/open-interpreter/discussions/1752",
+          "created_at": "2026-05-08T23:28:10Z",
+          "author": "KillianLucas"
+        }
+      ]
     },
     {
       "id": "auto-1778413141-519",
@@ -1524,7 +2274,7 @@
       "slug": "pocketbase",
       "category": "dev-tools",
       "github_url": "https://github.com/pocketbase/pocketbase",
-      "stars": 58384,
+      "stars": 58383,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
@@ -1534,7 +2284,7 @@
         "2026-05-13": 58297,
         "2026-05-14": 58308,
         "2026-05-16": 58360,
-        "2026-05-17": 58384
+        "2026-05-17": 58383
       },
       "description_zh": "PocketBase 是一个开源 Go 后端，包括： - 具有实时订阅的嵌入式数据库 ( SQLite ) - 内置文件和用户管理 - 方便的管理仪表板 UI - 和简单的 REST-ish API 有关文档和示例，请访问 https://pocketbase.io/docs。 [!警告] 请记住，PocketBase 仍在积极开发中，因此在达到 v1.0.0 之前不能保证完全向后兼容性。 API SDK 客户端 与 API SDK 交互的最简单方式",
       "description_en": "PocketBase is an open source Go backend that includes: - embedded database ( SQLite ) with realtime subscriptions - built-in files and users management - convenient Admin dashboard UI - and simple REST-ish API For documentation and examples, please visit https://pocketbase.io/docs. [!WARNING] Please keep in mind that PocketBase is still under active development and therefore full backward compatibility is not guaranteed before reaching v1.0.0. API SDK clients The easiest way to interact with the",
@@ -1546,7 +2296,39 @@
       "license": "MIT",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-10"
+      "date_added": "2026-05-10",
+      "discussions": [
+        {
+          "title": "Instagram in-app browser rendering issues",
+          "url": "https://github.com/pocketbase/pocketbase/discussions/7692",
+          "created_at": "2026-05-16T13:13:14Z",
+          "author": "veliona"
+        },
+        {
+          "title": "[realtime connexion] Is it a race condition ?",
+          "url": "https://github.com/pocketbase/pocketbase/discussions/7684",
+          "created_at": "2026-05-07T20:05:18Z",
+          "author": "Spixz"
+        },
+        {
+          "title": "Pocketbase WASM in Cloudflare Workers",
+          "url": "https://github.com/pocketbase/pocketbase/discussions/7682",
+          "created_at": "2026-05-06T17:58:46Z",
+          "author": "theuargb"
+        },
+        {
+          "title": "How do you use the Duration interface?",
+          "url": "https://github.com/pocketbase/pocketbase/discussions/7680",
+          "created_at": "2026-05-05T19:44:58Z",
+          "author": "solo-nko"
+        },
+        {
+          "title": "OAuth2 Link get removed After Mail Verification",
+          "url": "https://github.com/pocketbase/pocketbase/discussions/7679",
+          "created_at": "2026-05-04T20:55:47Z",
+          "author": "LeCyreaxYT"
+        }
+      ]
     },
     {
       "id": "auto-1778413143-627",
@@ -1576,7 +2358,39 @@
       "license": "MIT",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-10"
+      "date_added": "2026-05-10",
+      "discussions": [
+        {
+          "title": "[Request?] Zoning or user-edependent edit rights.",
+          "url": "https://github.com/excalidraw/excalidraw/discussions/11259",
+          "created_at": "2026-04-29T17:04:47Z",
+          "author": "robinhood1596"
+        },
+        {
+          "title": "Unofficial Excalidraw Desktop",
+          "url": "https://github.com/excalidraw/excalidraw/discussions/11216",
+          "created_at": "2026-04-21T14:18:59Z",
+          "author": "gorillamoe"
+        },
+        {
+          "title": "Contributing",
+          "url": "https://github.com/excalidraw/excalidraw/discussions/11126",
+          "created_at": "2026-04-08T16:02:14Z",
+          "author": "ryelae"
+        },
+        {
+          "title": "ExcaliMath — open-source plugin that adds LaTeX equations, function graphs, and STEM shape libraries to Excalidraw",
+          "url": "https://github.com/excalidraw/excalidraw/discussions/11110",
+          "created_at": "2026-04-05T05:18:40Z",
+          "author": "tamerUAE"
+        },
+        {
+          "title": "Excalidraw Plus MCP Alpha Feedback: 39/39 Tests Passed, 4 Feature Requests",
+          "url": "https://github.com/excalidraw/excalidraw/discussions/11108",
+          "created_at": "2026-04-04T19:08:45Z",
+          "author": "mikehickey2"
+        }
+      ]
     },
     {
       "id": "auto-1778426282-986",
@@ -1606,7 +2420,39 @@
       "license": "MPL-2.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-10"
+      "date_added": "2026-05-10",
+      "discussions": [
+        {
+          "title": "API access for tokens",
+          "url": "https://github.com/penpot/penpot/discussions/9047",
+          "created_at": "2026-04-17T12:49:04Z",
+          "author": "RWOverdijk"
+        },
+        {
+          "title": "Project & File Level Plugins / Embedded Documentation",
+          "url": "https://github.com/penpot/penpot/discussions/7959",
+          "created_at": "2025-12-11T12:48:47Z",
+          "author": "alan-strickland-red"
+        },
+        {
+          "title": "Adding (SRS) Software Requirements Specification",
+          "url": "https://github.com/penpot/penpot/discussions/7805",
+          "created_at": "2025-11-21T13:15:39Z",
+          "author": "wulfstem"
+        },
+        {
+          "title": "Colloboration",
+          "url": "https://github.com/penpot/penpot/discussions/7470",
+          "created_at": "2025-10-09T07:51:22Z",
+          "author": "nauti23"
+        },
+        {
+          "title": "I have a great Idea this app might work for what I need",
+          "url": "https://github.com/penpot/penpot/discussions/7260",
+          "created_at": "2025-09-04T06:28:13Z",
+          "author": "mycell6611phone"
+        }
+      ]
     },
     {
       "id": "auto-1778426284-394",
@@ -1614,7 +2460,7 @@
       "slug": "keepassxc",
       "category": "security-privacy",
       "github_url": "https://github.com/keepassxreboot/keepassxc",
-      "stars": 27185,
+      "stars": 27186,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
@@ -1624,7 +2470,7 @@
         "2026-05-13": 27123,
         "2026-05-14": 27127,
         "2026-05-16": 27164,
-        "2026-05-17": 27185
+        "2026-05-17": 27186
       },
       "description_zh": "KeePassXC 是 KeePass 的跨平台社区驱动端口。",
       "description_en": "KeePassXC is a cross-platform community-driven port of KeePass.",
@@ -1637,7 +2483,39 @@
       "license": "NOASSERTION",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-10"
+      "date_added": "2026-05-10",
+      "discussions": [
+        {
+          "title": "Syncing PWD Generator to lost password form",
+          "url": "https://github.com/keepassxreboot/keepassxc/discussions/13348",
+          "created_at": "2026-05-16T14:30:30Z",
+          "author": "danrossi"
+        },
+        {
+          "title": "Parameter option to hide epired entry from the search result",
+          "url": "https://github.com/keepassxreboot/keepassxc/discussions/13339",
+          "created_at": "2026-05-13T07:46:04Z",
+          "author": "msd3287"
+        },
+        {
+          "title": "[Debian 12] Will The Native Repo Version Be Updated For Passkeys?",
+          "url": "https://github.com/keepassxreboot/keepassxc/discussions/13326",
+          "created_at": "2026-05-08T12:36:28Z",
+          "author": "eliot-cole"
+        },
+        {
+          "title": "Request - Ctrl-Alt-2 - for copy password - ability to alter short cut to user selected",
+          "url": "https://github.com/keepassxreboot/keepassxc/discussions/13325",
+          "created_at": "2026-05-07T19:12:58Z",
+          "author": "psyciknz"
+        },
+        {
+          "title": "How to allow all passwords for browser integration?",
+          "url": "https://github.com/keepassxreboot/keepassxc/discussions/13319",
+          "created_at": "2026-05-06T09:33:53Z",
+          "author": "RoadRoller01"
+        }
+      ]
     },
     {
       "id": "auto-1778426285-676",
@@ -1667,7 +2545,39 @@
       "license": "NOASSERTION",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-10"
+      "date_added": "2026-05-10",
+      "discussions": [
+        {
+          "title": "Wazuh as syslogserver?",
+          "url": "https://github.com/wazuh/wazuh/discussions/36042",
+          "created_at": "2026-05-12T07:16:38Z",
+          "author": "colttt"
+        },
+        {
+          "title": "JSON decoder not decoding in 4.14.x - in 4.10.3 everything is fine",
+          "url": "https://github.com/wazuh/wazuh/discussions/35935",
+          "created_at": "2026-05-06T11:27:58Z",
+          "author": "dsek"
+        },
+        {
+          "title": "Bitdefender GravityZone CEF syslog via rsyslog not appearing in Wazuh archives.log",
+          "url": "https://github.com/wazuh/wazuh/discussions/35620",
+          "created_at": "2026-04-22T08:18:30Z",
+          "author": "Revontoucan"
+        },
+        {
+          "title": "Three detection gaps in default Wazuh —  T1053, T1110, T1078.001 — how are you  handling these?",
+          "url": "https://github.com/wazuh/wazuh/discussions/35593",
+          "created_at": "2026-04-21T07:57:59Z",
+          "author": "brahmareddy001"
+        },
+        {
+          "title": "Removal of OpenScap",
+          "url": "https://github.com/wazuh/wazuh/discussions/35452",
+          "created_at": "2026-04-15T15:42:32Z",
+          "author": "Xyz00777"
+        }
+      ]
     },
     {
       "id": "auto-1778426288-813",
@@ -1706,7 +2616,7 @@
       "slug": "grafana",
       "category": "dev-tools",
       "github_url": "https://github.com/grafana/grafana",
-      "stars": 73809,
+      "stars": 73823,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
@@ -1715,7 +2625,7 @@
         "2026-05-13": 73708,
         "2026-05-14": 73735,
         "2026-05-16": 73781,
-        "2026-05-17": 73809
+        "2026-05-17": 73823
       },
       "description_zh": "开放且可组合的可观测性和数据可视化平台。可视化来自 Prometheus、Loki、Elasticsearch、InfluxDB、Postgres 等多个来源的指标、日志和跟踪。",
       "description_en": "The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and many more.",
@@ -1727,7 +2637,39 @@
       "license": "AGPL-3.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-11"
+      "date_added": "2026-05-11",
+      "discussions": [
+        {
+          "title": "Unable to Express \"AND NOT\" Logic in Grafana JSON Filters",
+          "url": "https://github.com/grafana/grafana/discussions/79674",
+          "created_at": "2023-12-19T09:01:22Z",
+          "author": "medahalli"
+        },
+        {
+          "title": "Error: Field is required: version - when upload New revision to grafana.com Dashboards",
+          "url": "https://github.com/grafana/grafana/discussions/78995",
+          "created_at": "2023-12-03T17:09:23Z",
+          "author": "masterwishx"
+        },
+        {
+          "title": "Feature Request: Dashboard List: add description",
+          "url": "https://github.com/grafana/grafana/discussions/78726",
+          "created_at": "2023-11-28T10:32:38Z",
+          "author": "Cosmoledo"
+        },
+        {
+          "title": "Grafana v9.4.3 Table Panel Issue: Unable to perform operation on date column field",
+          "url": "https://github.com/grafana/grafana/discussions/78623",
+          "created_at": "2023-11-24T08:00:33Z",
+          "author": "lakshay2711"
+        },
+        {
+          "title": "Why were the patch versions for CVE-2022-35957, CVE-2022-21702, CVE-2022-21713 released so late?",
+          "url": "https://github.com/grafana/grafana/discussions/78195",
+          "created_at": "2023-11-15T13:14:52Z",
+          "author": "Silence-worker-02"
+        }
+      ]
     },
     {
       "id": "auto-1778500098-270",
@@ -1735,7 +2677,7 @@
       "slug": "dify",
       "category": "ai-agent",
       "github_url": "https://github.com/langgenius/dify",
-      "stars": 141630,
+      "stars": 141660,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
@@ -1744,7 +2686,7 @@
         "2026-05-13": 141206,
         "2026-05-14": 141337,
         "2026-05-16": 141576,
-        "2026-05-17": 141630
+        "2026-05-17": 141660
       },
       "description_zh": "开源的 LLM 应用开发平台，融合了后端即服务和 LLMOps 理念。",
       "description_en": "An open-source LLM app development platform.",
@@ -1756,7 +2698,39 @@
       "license": "NOASSERTION",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-11"
+      "date_added": "2026-05-11",
+      "discussions": [
+        {
+          "title": "tools disable",
+          "url": "https://github.com/langgenius/dify/discussions/36241",
+          "created_at": "2026-05-16T02:25:32Z",
+          "author": "kingWYZ"
+        },
+        {
+          "title": "Workflow finishes without reaching to the end + minor issues",
+          "url": "https://github.com/langgenius/dify/discussions/36229",
+          "created_at": "2026-05-15T16:23:17Z",
+          "author": "davodm"
+        },
+        {
+          "title": "Help: How to trust a self-signed cert of a llm endpoint for model provider connection?",
+          "url": "https://github.com/langgenius/dify/discussions/36184",
+          "created_at": "2026-05-14T12:52:34Z",
+          "author": "tyh-carl"
+        },
+        {
+          "title": "Is there a way to set the timeout for HTTP request node and customize tools？",
+          "url": "https://github.com/langgenius/dify/discussions/36181",
+          "created_at": "2026-05-14T11:56:31Z",
+          "author": "fataldemon"
+        },
+        {
+          "title": "An unexpected error occurred while rendering this component.",
+          "url": "https://github.com/langgenius/dify/discussions/36159",
+          "created_at": "2026-05-14T06:19:12Z",
+          "author": "kuim0226-stack"
+        }
+      ]
     },
     {
       "id": "auto-1778500100-830",
@@ -1764,7 +2738,7 @@
       "slug": "immich",
       "category": "media-video",
       "github_url": "https://github.com/immich-app/immich",
-      "stars": 100830,
+      "stars": 100832,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
@@ -1773,7 +2747,7 @@
         "2026-05-13": 100431,
         "2026-05-14": 100515,
         "2026-05-16": 100723,
-        "2026-05-17": 100830
+        "2026-05-17": 100832
       },
       "description_zh": "自建照片和视频管理方案，支持自动备份、AI 人脸识别等功能。",
       "description_en": "Self-hosted photo and video management solution.",
@@ -1785,7 +2759,39 @@
       "license": "AGPL-3.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-11"
+      "date_added": "2026-05-11",
+      "discussions": [
+        {
+          "title": "[Feature] Long press to preview a photo on mobile app",
+          "url": "https://github.com/immich-app/immich/discussions/28466",
+          "created_at": "2026-05-17T13:56:19Z",
+          "author": "FueledxJarritos"
+        },
+        {
+          "title": "[Feature] feature-name-goes-here",
+          "url": "https://github.com/immich-app/immich/discussions/28464",
+          "created_at": "2026-05-17T10:04:23Z",
+          "author": "tongatajo"
+        },
+        {
+          "title": "[Feature] Search by selected image crop / region",
+          "url": "https://github.com/immich-app/immich/discussions/28463",
+          "created_at": "2026-05-17T09:12:25Z",
+          "author": "cepera-ang"
+        },
+        {
+          "title": "[Feature] Machine Learning Model ENV TTL",
+          "url": "https://github.com/immich-app/immich/discussions/28459",
+          "created_at": "2026-05-16T22:56:12Z",
+          "author": "jaysqvl"
+        },
+        {
+          "title": "[Feature] Albums that hide images from the overview",
+          "url": "https://github.com/immich-app/immich/discussions/28457",
+          "created_at": "2026-05-16T18:08:12Z",
+          "author": "TimB87"
+        }
+      ]
     },
     {
       "id": "auto-1778523818-142",
@@ -1814,7 +2820,39 @@
       "license": "AGPL-3.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-11"
+      "date_added": "2026-05-11",
+      "discussions": [
+        {
+          "title": "Setting up Tooljet in Azure error with container",
+          "url": "https://github.com/ToolJet/ToolJet/discussions/14876",
+          "created_at": "2025-12-28T12:16:45Z",
+          "author": "hpatel0528"
+        },
+        {
+          "title": "Trying to setup ToolJet with Docker but having problem with the process",
+          "url": "https://github.com/ToolJet/ToolJet/discussions/14251",
+          "created_at": "2025-10-04T08:49:43Z",
+          "author": "Pratik5252"
+        },
+        {
+          "title": "Reposition ToolJet as AI-native internal application & agent builder",
+          "url": "https://github.com/ToolJet/ToolJet/discussions/14002",
+          "created_at": "2025-09-09T04:33:00Z",
+          "author": "Navaneeth-pk"
+        },
+        {
+          "title": "Low Code",
+          "url": "https://github.com/ToolJet/ToolJet/discussions/13739",
+          "created_at": "2025-08-10T02:49:03Z",
+          "author": "nerdThockey"
+        },
+        {
+          "title": "Is ai agent builder open sourced?",
+          "url": "https://github.com/ToolJet/ToolJet/discussions/13573",
+          "created_at": "2025-07-31T08:48:17Z",
+          "author": "byte-ma"
+        }
+      ]
     },
     {
       "id": "auto-1778523820-888",
@@ -1872,7 +2910,39 @@
       "license": "NOASSERTION",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-11"
+      "date_added": "2026-05-11",
+      "discussions": [
+        {
+          "title": "Asking for Guidance",
+          "url": "https://github.com/FlowiseAI/Flowise/discussions/6381",
+          "created_at": "2026-05-14T10:16:31Z",
+          "author": "Umesh042005"
+        },
+        {
+          "title": "AI-Powered Organizational Policy Assistant using Flowise RAG",
+          "url": "https://github.com/FlowiseAI/Flowise/discussions/6380",
+          "created_at": "2026-05-13T20:27:52Z",
+          "author": "shonibarej"
+        },
+        {
+          "title": "Built Claude Code investment analysis skills — options flow scanner + price alerts (open source)",
+          "url": "https://github.com/FlowiseAI/Flowise/discussions/6379",
+          "created_at": "2026-05-13T13:18:03Z",
+          "author": "tellmefrankie"
+        },
+        {
+          "title": "Idea: Add Xquik public X/Twitter data nodes",
+          "url": "https://github.com/FlowiseAI/Flowise/discussions/6374",
+          "created_at": "2026-05-13T00:07:34Z",
+          "author": "kriptoburak"
+        },
+        {
+          "title": "Question: would free API credits help test OpenAI-compatible providers?",
+          "url": "https://github.com/FlowiseAI/Flowise/discussions/6358",
+          "created_at": "2026-05-07T08:12:56Z",
+          "author": "haocn-ops"
+        }
+      ]
     },
     {
       "id": "auto-1778544821-327",
@@ -1908,7 +2978,7 @@
       "slug": "open-webui",
       "category": "ai-agent",
       "github_url": "https://github.com/open-webui/open-webui",
-      "stars": 137454,
+      "stars": 137457,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
@@ -1916,7 +2986,7 @@
         "2026-05-13": 136867,
         "2026-05-14": 137008,
         "2026-05-16": 137307,
-        "2026-05-17": 137454
+        "2026-05-17": 137457
       },
       "description_zh": "美观的 Ollama 网页界面，类 ChatGPT 体验，支持多模型。",
       "description_en": "User-friendly WebUI for LLMs.",
@@ -1928,7 +2998,39 @@
       "license": "NOASSERTION",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-12"
+      "date_added": "2026-05-12",
+      "discussions": [
+        {
+          "title": "Q: Just clicking on a chat bumps it to the top",
+          "url": "https://github.com/open-webui/open-webui/discussions/24836",
+          "created_at": "2026-05-17T12:45:27Z",
+          "author": "tekuusne"
+        },
+        {
+          "title": "Prompt Caching: Add x-grok-conv-id header for Grok models",
+          "url": "https://github.com/open-webui/open-webui/discussions/24810",
+          "created_at": "2026-05-16T12:11:42Z",
+          "author": "mysteryx93"
+        },
+        {
+          "title": "SKIA integration — Ollama-compatible runtime that works with Open WebUI",
+          "url": "https://github.com/open-webui/open-webui/discussions/24795",
+          "created_at": "2026-05-15T20:44:21Z",
+          "author": "AI-SKIA"
+        },
+        {
+          "title": "Function list for tooll server",
+          "url": "https://github.com/open-webui/open-webui/discussions/24788",
+          "created_at": "2026-05-15T20:17:27Z",
+          "author": "Mastersomy"
+        },
+        {
+          "title": "Prefer source URLs over internal file links for API-uploaded document citations",
+          "url": "https://github.com/open-webui/open-webui/discussions/24773",
+          "created_at": "2026-05-15T19:04:34Z",
+          "author": "DuncanSARapp"
+        }
+      ]
     },
     {
       "id": "auto-1778593041-850",
@@ -1956,7 +3058,39 @@
       "license": "GPL-3.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-12"
+      "date_added": "2026-05-12",
+      "discussions": [
+        {
+          "title": "Card title for custom dashboard",
+          "url": "https://github.com/netdata/netdata/discussions/22425",
+          "created_at": "2026-05-05T22:06:30Z",
+          "author": "rllbm"
+        },
+        {
+          "title": "Where are gone the mysql replication metrics ?",
+          "url": "https://github.com/netdata/netdata/discussions/22241",
+          "created_at": "2026-04-21T14:58:44Z",
+          "author": "BenoitPoulet"
+        },
+        {
+          "title": "DATABASE CALCULATION",
+          "url": "https://github.com/netdata/netdata/discussions/21922",
+          "created_at": "2026-03-09T13:24:53Z",
+          "author": "NGURE-TIM"
+        },
+        {
+          "title": "Build packages for Ubuntu 26.04 (resolute)",
+          "url": "https://github.com/netdata/netdata/discussions/21912",
+          "created_at": "2026-03-09T01:13:05Z",
+          "author": "iredmail"
+        },
+        {
+          "title": "Notification on telegram was turned off, but why?",
+          "url": "https://github.com/netdata/netdata/discussions/21644",
+          "created_at": "2026-01-26T19:21:57Z",
+          "author": "AleksCee"
+        }
+      ]
     },
     {
       "id": "auto-1778593043-482",
@@ -1983,7 +3117,39 @@
       "license": "AGPL-3.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-12"
+      "date_added": "2026-05-12",
+      "discussions": [
+        {
+          "title": "Setting up Tooljet in Azure error with container",
+          "url": "https://github.com/ToolJet/ToolJet/discussions/14876",
+          "created_at": "2025-12-28T12:16:45Z",
+          "author": "hpatel0528"
+        },
+        {
+          "title": "Trying to setup ToolJet with Docker but having problem with the process",
+          "url": "https://github.com/ToolJet/ToolJet/discussions/14251",
+          "created_at": "2025-10-04T08:49:43Z",
+          "author": "Pratik5252"
+        },
+        {
+          "title": "Reposition ToolJet as AI-native internal application & agent builder",
+          "url": "https://github.com/ToolJet/ToolJet/discussions/14002",
+          "created_at": "2025-09-09T04:33:00Z",
+          "author": "Navaneeth-pk"
+        },
+        {
+          "title": "Low Code",
+          "url": "https://github.com/ToolJet/ToolJet/discussions/13739",
+          "created_at": "2025-08-10T02:49:03Z",
+          "author": "nerdThockey"
+        },
+        {
+          "title": "Is ai agent builder open sourced?",
+          "url": "https://github.com/ToolJet/ToolJet/discussions/13573",
+          "created_at": "2025-07-31T08:48:17Z",
+          "author": "byte-ma"
+        }
+      ]
     },
     {
       "id": "auto-1778593046-327",
@@ -2010,7 +3176,27 @@
       "license": "AGPL-3.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-12"
+      "date_added": "2026-05-12",
+      "discussions": [
+        {
+          "title": "Which models work well with Open Interpreter?",
+          "url": "https://github.com/openinterpreter/open-interpreter/discussions/1757",
+          "created_at": "2026-05-16T23:56:27Z",
+          "author": "endolith"
+        },
+        {
+          "title": "Problems",
+          "url": "https://github.com/openinterpreter/open-interpreter/discussions/1755",
+          "created_at": "2026-05-16T03:25:27Z",
+          "author": "ganshaowen"
+        },
+        {
+          "title": "Welcome to Open Interpreter Discussions!",
+          "url": "https://github.com/openinterpreter/open-interpreter/discussions/1752",
+          "created_at": "2026-05-08T23:28:10Z",
+          "author": "KillianLucas"
+        }
+      ]
     },
     {
       "id": "auto-1778593881-623",
@@ -2037,7 +3223,39 @@
       "license": "AGPL-3.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-12"
+      "date_added": "2026-05-12",
+      "discussions": [
+        {
+          "title": "Integration of ONLYOFFICE docs with Exchange Server",
+          "url": "https://github.com/ONLYOFFICE/DocumentServer/discussions/3639",
+          "created_at": "2026-03-30T13:34:04Z",
+          "author": "RobertWojtowicz"
+        },
+        {
+          "title": "Does CVE-2025-50200 (RabbitMQ HTTP/s API vulnerability) affect OnlyOffice Document Server 7.5.x?",
+          "url": "https://github.com/ONLYOFFICE/DocumentServer/discussions/3565",
+          "created_at": "2026-01-20T06:15:58Z",
+          "author": "Aaditya-Rane"
+        },
+        {
+          "title": "OnlyOffice seems working fine with OpenCloud, but still have this [Violation] Potential permissions policy violation:......",
+          "url": "https://github.com/ONLYOFFICE/DocumentServer/discussions/3500",
+          "created_at": "2025-11-11T02:18:32Z",
+          "author": "europacafe"
+        },
+        {
+          "title": "api.js 0 KB",
+          "url": "https://github.com/ONLYOFFICE/DocumentServer/discussions/3482",
+          "created_at": "2025-11-03T15:43:03Z",
+          "author": "M1stak"
+        },
+        {
+          "title": "How to trigger save call back url, when save button is rendered in outside iframe",
+          "url": "https://github.com/ONLYOFFICE/DocumentServer/discussions/3406",
+          "created_at": "2025-09-01T12:20:24Z",
+          "author": "PrakashT1296"
+        }
+      ]
     },
     {
       "id": "auto-1778593883-961",
@@ -2064,7 +3282,39 @@
       "license": "MIT",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-12"
+      "date_added": "2026-05-12",
+      "discussions": [
+        {
+          "title": "2026.4.1",
+          "url": "https://github.com/hoppscotch/hoppscotch/discussions/6316",
+          "created_at": "2026-05-14T07:34:32Z",
+          "author": "jamesgeorge007"
+        },
+        {
+          "title": "Configure proxy URL",
+          "url": "https://github.com/hoppscotch/hoppscotch/discussions/6284",
+          "created_at": "2026-05-05T10:39:23Z",
+          "author": "KoldoCanellas"
+        },
+        {
+          "title": "When will the \"API Economy\" End",
+          "url": "https://github.com/hoppscotch/hoppscotch/discussions/6269",
+          "created_at": "2026-05-03T06:21:34Z",
+          "author": "tartaruslovesnoodles"
+        },
+        {
+          "title": "2026.4.0",
+          "url": "https://github.com/hoppscotch/hoppscotch/discussions/6252",
+          "created_at": "2026-04-30T08:52:19Z",
+          "author": "jamesgeorge007"
+        },
+        {
+          "title": "CVE-2026-28215",
+          "url": "https://github.com/hoppscotch/hoppscotch/discussions/6233",
+          "created_at": "2026-04-27T13:08:16Z",
+          "author": "Leon-Luu"
+        }
+      ]
     },
     {
       "id": "auto-1778593884-935",
@@ -2072,14 +3322,14 @@
       "slug": "stirling-pdf",
       "category": "office-productivity",
       "github_url": "https://github.com/Stirling-Tools/Stirling-PDF",
-      "stars": 78852,
+      "stars": 78854,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
         "2026-05-12": 78635,
         "2026-05-13": 78683,
         "2026-05-16": 78815,
-        "2026-05-17": 78852
+        "2026-05-17": 78854
       },
       "description_zh": "全能私有化 PDF 工具箱，支持分割、合并、转换等数十种操作。",
       "description_en": "1 Locally hosted PDF web application.",
@@ -2091,7 +3341,39 @@
       "license": "NOASSERTION",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-12"
+      "date_added": "2026-05-12",
+      "discussions": [
+        {
+          "title": "Environment variables for database configuration",
+          "url": "https://github.com/Stirling-Tools/Stirling-PDF/discussions/6307",
+          "created_at": "2026-05-04T14:05:58Z",
+          "author": "tarilen"
+        },
+        {
+          "title": "The PDF Merger Tool Is Not Very Intuitive",
+          "url": "https://github.com/Stirling-Tools/Stirling-PDF/discussions/6306",
+          "created_at": "2026-05-03T16:27:13Z",
+          "author": "LuisLauM"
+        },
+        {
+          "title": "Fedora Desktop App (and other Distros) for personal use",
+          "url": "https://github.com/Stirling-Tools/Stirling-PDF/discussions/6117",
+          "created_at": "2026-04-15T22:06:58Z",
+          "author": "meckh"
+        },
+        {
+          "title": "UX Feedback & Potential Contributions: Form Filling and Annotation Tools",
+          "url": "https://github.com/Stirling-Tools/Stirling-PDF/discussions/6105",
+          "created_at": "2026-04-14T10:41:03Z",
+          "author": "cheema-corellian"
+        },
+        {
+          "title": "Remove \"_convertedToPDF\" suffix for converted files",
+          "url": "https://github.com/Stirling-Tools/Stirling-PDF/discussions/6077",
+          "created_at": "2026-04-06T09:36:49Z",
+          "author": "Robubble"
+        }
+      ]
     },
     {
       "id": "auto-1778593886-732",
@@ -2147,7 +3429,39 @@
       "license": "Apache-2.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-12"
+      "date_added": "2026-05-12",
+      "discussions": [
+        {
+          "title": "allow creation of customised CSV export formats",
+          "url": "https://github.com/orgs/dbeaver/discussions/41079",
+          "created_at": "2026-05-14T15:28:00Z",
+          "author": "nutmix"
+        },
+        {
+          "title": "Any processes automatically launched on startup?",
+          "url": "https://github.com/orgs/dbeaver/discussions/40998",
+          "created_at": "2026-05-05T09:03:27Z",
+          "author": "CharlesZufferey"
+        },
+        {
+          "title": "Password expiry pop-up or alert during DB connection",
+          "url": "https://github.com/orgs/dbeaver/discussions/40980",
+          "created_at": "2026-05-03T08:36:10Z",
+          "author": "waq"
+        },
+        {
+          "title": "Which specific log files contain user's login attempts to various databases?",
+          "url": "https://github.com/orgs/dbeaver/discussions/40952",
+          "created_at": "2026-04-28T21:05:21Z",
+          "author": "tandigmtech"
+        },
+        {
+          "title": "Inquiry regarding PowerShell activity: Automatic Windows Defender exclusions?",
+          "url": "https://github.com/orgs/dbeaver/discussions/40932",
+          "created_at": "2026-04-27T22:13:17Z",
+          "author": "michael-cooley"
+        }
+      ]
     },
     {
       "id": "auto-1778596980-675",
@@ -2175,7 +3489,39 @@
       "license": "MPL-2.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-12"
+      "date_added": "2026-05-12",
+      "discussions": [
+        {
+          "title": "API access for tokens",
+          "url": "https://github.com/penpot/penpot/discussions/9047",
+          "created_at": "2026-04-17T12:49:04Z",
+          "author": "RWOverdijk"
+        },
+        {
+          "title": "Project & File Level Plugins / Embedded Documentation",
+          "url": "https://github.com/penpot/penpot/discussions/7959",
+          "created_at": "2025-12-11T12:48:47Z",
+          "author": "alan-strickland-red"
+        },
+        {
+          "title": "Adding (SRS) Software Requirements Specification",
+          "url": "https://github.com/penpot/penpot/discussions/7805",
+          "created_at": "2025-11-21T13:15:39Z",
+          "author": "wulfstem"
+        },
+        {
+          "title": "Colloboration",
+          "url": "https://github.com/penpot/penpot/discussions/7470",
+          "created_at": "2025-10-09T07:51:22Z",
+          "author": "nauti23"
+        },
+        {
+          "title": "I have a great Idea this app might work for what I need",
+          "url": "https://github.com/penpot/penpot/discussions/7260",
+          "created_at": "2025-09-04T06:28:13Z",
+          "author": "mycell6611phone"
+        }
+      ]
     },
     {
       "id": "auto-1778596981-552",
@@ -2183,7 +3529,7 @@
       "slug": "analytics",
       "category": "dev-tools",
       "github_url": "https://github.com/plausible/analytics",
-      "stars": 25156,
+      "stars": 25160,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
@@ -2191,7 +3537,7 @@
         "2026-05-13": 24833,
         "2026-05-14": 24845,
         "2026-05-16": 24901,
-        "2026-05-17": 25156
+        "2026-05-17": 25160
       },
       "description_zh": "轻量开源网站统计，不追踪隐私，无需 Cookie 同意横幅。",
       "description_en": "Simple, open source, lightweight web analytics.",
@@ -2203,7 +3549,39 @@
       "license": "AGPL-3.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-12"
+      "date_added": "2026-05-12",
+      "discussions": [
+        {
+          "title": "v3.2.1",
+          "url": "https://github.com/plausible/analytics/discussions/6355",
+          "created_at": "2026-05-15T09:15:57Z",
+          "author": "cnkk"
+        },
+        {
+          "title": "\"Export data\" does nothing at all",
+          "url": "https://github.com/plausible/analytics/discussions/6353",
+          "created_at": "2026-05-15T08:19:54Z",
+          "author": "jlengrand"
+        },
+        {
+          "title": "My Plausible does not show top page details.",
+          "url": "https://github.com/plausible/analytics/discussions/6265",
+          "created_at": "2026-04-20T12:45:57Z",
+          "author": "crazzysongs"
+        },
+        {
+          "title": "How to use Plausible with htmx on client side?",
+          "url": "https://github.com/plausible/analytics/discussions/6264",
+          "created_at": "2026-04-20T10:56:33Z",
+          "author": "ribtoks"
+        },
+        {
+          "title": "Anyone using Plausible for reddit ad campaigns?",
+          "url": "https://github.com/plausible/analytics/discussions/6230",
+          "created_at": "2026-04-06T11:44:40Z",
+          "author": "nnWhisperer"
+        }
+      ]
     },
     {
       "id": "auto-1778596983-552",
@@ -2231,7 +3609,39 @@
       "license": "NOASSERTION",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-12"
+      "date_added": "2026-05-12",
+      "discussions": [
+        {
+          "title": "Trills and turns",
+          "url": "https://github.com/orgs/musescore/discussions/33443",
+          "created_at": "2026-05-16T19:11:29Z",
+          "author": "ErlingIv"
+        },
+        {
+          "title": "Merge Rests with one button",
+          "url": "https://github.com/orgs/musescore/discussions/33417",
+          "created_at": "2026-05-15T04:40:36Z",
+          "author": "VihaanGitHub"
+        },
+        {
+          "title": "Practice Mode with MIDI performance assessment",
+          "url": "https://github.com/orgs/musescore/discussions/33204",
+          "created_at": "2026-04-30T04:07:25Z",
+          "author": "dwerkjem"
+        },
+        {
+          "title": "Double click on an object opens associated palette",
+          "url": "https://github.com/orgs/musescore/discussions/33179",
+          "created_at": "2026-04-28T21:19:29Z",
+          "author": "tomsuta"
+        },
+        {
+          "title": "Windows on Arm support",
+          "url": "https://github.com/orgs/musescore/discussions/33145",
+          "created_at": "2026-04-26T23:44:26Z",
+          "author": "prayaas-a"
+        }
+      ]
     },
     {
       "id": "auto-1778598575-661",
@@ -2259,7 +3669,39 @@
       "license": "GPL-3.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-12"
+      "date_added": "2026-05-12",
+      "discussions": [
+        {
+          "title": "[Windows] - [nitpick] overall border width?",
+          "url": "https://github.com/bleachbit/bleachbit/discussions/2104",
+          "created_at": "2026-05-02T20:50:09Z",
+          "author": "aipa1oovik"
+        },
+        {
+          "title": "How to run bleachbit as root for a specific user (their home directory)?",
+          "url": "https://github.com/bleachbit/bleachbit/discussions/2072",
+          "created_at": "2026-03-28T22:03:24Z",
+          "author": "SpiderUnderUrBed"
+        },
+        {
+          "title": "5.10 beta error when starting console from CLI",
+          "url": "https://github.com/bleachbit/bleachbit/discussions/2055",
+          "created_at": "2026-03-13T05:57:26Z",
+          "author": "hme3"
+        },
+        {
+          "title": "which 5.1.0 beta file",
+          "url": "https://github.com/bleachbit/bleachbit/discussions/2053",
+          "created_at": "2026-03-12T21:32:23Z",
+          "author": "hme3"
+        },
+        {
+          "title": "BleachBit breaking windows component store + spotlight wallpaper",
+          "url": "https://github.com/bleachbit/bleachbit/discussions/2041",
+          "created_at": "2026-03-01T15:43:45Z",
+          "author": "bjones7296"
+        }
+      ]
     },
     {
       "id": "auto-1778598576-985",
@@ -2287,7 +3729,39 @@
       "license": "GPL-3.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-12"
+      "date_added": "2026-05-12",
+      "discussions": [
+        {
+          "title": "5.6.0 - feature freeze",
+          "url": "https://github.com/darktable-org/darktable/discussions/20941",
+          "created_at": "2026-05-05T13:52:33Z",
+          "author": "TurboGit"
+        },
+        {
+          "title": "Version 5.4.1",
+          "url": "https://github.com/darktable-org/darktable/discussions/20220",
+          "created_at": "2026-01-25T15:50:54Z",
+          "author": "TurboGit"
+        },
+        {
+          "title": "5.4 - strings freeze now (2025/12/01)",
+          "url": "https://github.com/darktable-org/darktable/discussions/19845",
+          "created_at": "2025-12-01T07:05:17Z",
+          "author": "TurboGit"
+        },
+        {
+          "title": "5.4 - feature freeze after the week-end (2025/11/17)",
+          "url": "https://github.com/darktable-org/darktable/discussions/19738",
+          "created_at": "2025-11-14T12:20:35Z",
+          "author": "TurboGit"
+        },
+        {
+          "title": "MacOS printing issue",
+          "url": "https://github.com/darktable-org/darktable/discussions/19714",
+          "created_at": "2025-11-11T10:45:17Z",
+          "author": "paleguen"
+        }
+      ]
     },
     {
       "id": "auto-1778598578-762",
@@ -2343,7 +3817,39 @@
       "license": "NOASSERTION",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-12"
+      "date_added": "2026-05-12",
+      "discussions": [
+        {
+          "title": "API Endpoints for new docs feature on Postman?",
+          "url": "https://github.com/nocodb/nocodb/discussions/13839",
+          "created_at": "2026-05-15T20:18:00Z",
+          "author": "ReessKennedy"
+        },
+        {
+          "title": "Nocodb Docs linking to another page?",
+          "url": "https://github.com/nocodb/nocodb/discussions/13821",
+          "created_at": "2026-05-14T02:39:31Z",
+          "author": "ReessKennedy"
+        },
+        {
+          "title": "Nocodb Docs public sharing?",
+          "url": "https://github.com/nocodb/nocodb/discussions/13818",
+          "created_at": "2026-05-13T16:42:34Z",
+          "author": "ReessKennedy"
+        },
+        {
+          "title": "Consistent select option colors across tables (base-level color palette)",
+          "url": "https://github.com/nocodb/nocodb/discussions/13790",
+          "created_at": "2026-05-08T22:28:27Z",
+          "author": "formerCIAjanitor"
+        },
+        {
+          "title": "Feature Reqeuest : Integrating Mermaid.js into NocoDB Document Page",
+          "url": "https://github.com/nocodb/nocodb/discussions/13766",
+          "created_at": "2026-05-05T12:14:04Z",
+          "author": "rupadana"
+        }
+      ]
     },
     {
       "id": "auto-1778602123-371",
@@ -2398,7 +3904,39 @@
       "license": "NOASSERTION",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-13"
+      "date_added": "2026-05-13",
+      "discussions": [
+        {
+          "title": "AMD GPU support on Linux",
+          "url": "https://github.com/HandBrake/HandBrake/discussions/7874",
+          "created_at": "2026-05-14T13:38:32Z",
+          "author": "smdstudios"
+        },
+        {
+          "title": ".AVI 'No Valid Source Found' error MacBook",
+          "url": "https://github.com/HandBrake/HandBrake/discussions/7868",
+          "created_at": "2026-05-11T09:39:00Z",
+          "author": "stevecjjones"
+        },
+        {
+          "title": "No valid sources or titles found",
+          "url": "https://github.com/HandBrake/HandBrake/discussions/7865",
+          "created_at": "2026-05-08T19:12:42Z",
+          "author": "rishapisces"
+        },
+        {
+          "title": "Is it possible to control the GUI encode queue from the CLI?",
+          "url": "https://github.com/HandBrake/HandBrake/discussions/7857",
+          "created_at": "2026-05-05T00:21:32Z",
+          "author": "tarminu"
+        },
+        {
+          "title": "queue finished with 1 errors detected",
+          "url": "https://github.com/HandBrake/HandBrake/discussions/7861",
+          "created_at": "2026-05-04T14:57:29Z",
+          "author": "cry4beats"
+        }
+      ]
     },
     {
       "id": "auto-1778666617-693",
@@ -2406,14 +3944,14 @@
       "slug": "appflowy",
       "category": "office-productivity",
       "github_url": "https://github.com/AppFlowy-IO/appflowy",
-      "stars": 70652,
+      "stars": 70653,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
         "2026-05-13": 70420,
         "2026-05-14": 70435,
         "2026-05-16": 70509,
-        "2026-05-17": 70652
+        "2026-05-17": 70653
       },
       "description_zh": "通过 AI 将项目、wiki 和团队结合在一起。 AppFlowy 是人工智能协作工作空间，您可以在不失去对数据控制的情况下实现更多目标。领先的开源 Notion 替代方案。",
       "description_en": "Bring projects, wikis, and teams together with AI. AppFlowy is the AI collaborative workspace where you achieve more without losing control of your data. The leading open source Notion alternative.",
@@ -2425,7 +3963,39 @@
       "license": "AGPL-3.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-13"
+      "date_added": "2026-05-13",
+      "discussions": [
+        {
+          "title": "Test",
+          "url": "https://github.com/AppFlowy-IO/AppFlowy/discussions/7743",
+          "created_at": "2025-04-14T13:19:23Z",
+          "author": "annieappflowy"
+        },
+        {
+          "title": "SELF-HOST users, your input is invaluable for improving our self-hosting solution",
+          "url": "https://github.com/AppFlowy-IO/AppFlowy/discussions/7013",
+          "created_at": "2024-12-19T03:49:20Z",
+          "author": "annieappflowy"
+        },
+        {
+          "title": "We’d love your feedback to shape AppFlowy’s direction in 2025",
+          "url": "https://github.com/AppFlowy-IO/AppFlowy/discussions/7012",
+          "created_at": "2024-12-19T03:48:33Z",
+          "author": "annieappflowy"
+        },
+        {
+          "title": "Introducing self-hosting AppFlowy with AppFlowy Cloud ☁️",
+          "url": "https://github.com/AppFlowy-IO/AppFlowy/discussions/4079",
+          "created_at": "2023-12-04T05:04:47Z",
+          "author": "annieappflowy"
+        },
+        {
+          "title": "drag block to reorder document",
+          "url": "https://github.com/AppFlowy-IO/AppFlowy/discussions/3997",
+          "created_at": "2023-11-24T03:28:47Z",
+          "author": "codingbyai"
+        }
+      ]
     },
     {
       "id": "auto-1778666619-321",
@@ -2433,14 +4003,14 @@
       "slug": "llama-cpp",
       "category": "ai-agent",
       "github_url": "https://github.com/ggerganov/llama.cpp",
-      "stars": 110574,
+      "stars": 110575,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
         "2026-05-13": 109872,
         "2026-05-14": 110036,
         "2026-05-16": 110390,
-        "2026-05-17": 110574
+        "2026-05-17": 110575
       },
       "description_zh": "C++ 实现的高性能 LLM 推理引擎，支持在消费级硬件上运行大模型。",
       "description_en": "LLM inference in C/C++ running on consumer hardware.",
@@ -2452,7 +4022,39 @@
       "license": "MIT",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-13"
+      "date_added": "2026-05-13",
+      "discussions": [
+        {
+          "title": "Is `--cache-ram` bugged?",
+          "url": "https://github.com/ggml-org/llama.cpp/discussions/23207",
+          "created_at": "2026-05-17T13:50:38Z",
+          "author": "fantasyz"
+        },
+        {
+          "title": "Running llama.cpp with Mali-G715 GPU on Pixel 9 Pro XL (Termux + Vulkan）",
+          "url": "https://github.com/ggml-org/llama.cpp/discussions/23193",
+          "created_at": "2026-05-17T07:44:06Z",
+          "author": "webshellXX"
+        },
+        {
+          "title": "Splitting mmproj accross GPUs?",
+          "url": "https://github.com/ggml-org/llama.cpp/discussions/23191",
+          "created_at": "2026-05-17T07:39:26Z",
+          "author": "shinishiho"
+        },
+        {
+          "title": "support orthrus: diffusion based speculative decoding",
+          "url": "https://github.com/ggml-org/llama.cpp/discussions/23186",
+          "created_at": "2026-05-17T04:30:14Z",
+          "author": "khimaros"
+        },
+        {
+          "title": "Timeline for NNAPI backend support on Google Tensor devices?",
+          "url": "https://github.com/ggml-org/llama.cpp/discussions/23182",
+          "created_at": "2026-05-17T02:53:34Z",
+          "author": "webshellXX"
+        }
+      ]
     },
     {
       "id": "auto-1778666620-605",
@@ -2555,7 +4157,39 @@
       "license": "GPL-3.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-16"
+      "date_added": "2026-05-16",
+      "discussions": [
+        {
+          "title": "Error Code SF9H:0L5C:VUB5",
+          "url": "https://github.com/cryptomator/cryptomator/discussions/4238",
+          "created_at": "2026-05-11T14:00:38Z",
+          "author": "MSofEU"
+        },
+        {
+          "title": "Error 6HCL:2GTN:615N",
+          "url": "https://github.com/cryptomator/cryptomator/discussions/4233",
+          "created_at": "2026-05-01T15:09:53Z",
+          "author": "Alfagiovanni56"
+        },
+        {
+          "title": "Error N05M:RI0E:RI0E",
+          "url": "https://github.com/cryptomator/cryptomator/discussions/4212",
+          "created_at": "2026-04-04T00:47:38Z",
+          "author": "IvanClaudett"
+        },
+        {
+          "title": "Error N05M:RI0E:RI0E",
+          "url": "https://github.com/cryptomator/cryptomator/discussions/4211",
+          "created_at": "2026-04-03T16:05:38Z",
+          "author": "ricky-rcr001"
+        },
+        {
+          "title": "Error 4VHF:Q9JM:SGVO",
+          "url": "https://github.com/cryptomator/cryptomator/discussions/4206",
+          "created_at": "2026-04-01T17:03:13Z",
+          "author": "Dreismann-stack"
+        }
+      ]
     },
     {
       "id": "auto-1778916888-204",
@@ -2588,12 +4222,12 @@
       "slug": "keepassxc",
       "category": "security-privacy",
       "github_url": "https://github.com/keepassxreboot/keepassxc",
-      "stars": 27185,
+      "stars": 27186,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
         "2026-05-16": 27164,
-        "2026-05-17": 27185
+        "2026-05-17": 27186
       },
       "description_zh": "KeePassXC 是 KeePass 的跨平台社区驱动端口。",
       "description_en": "KeePassXC is a cross-platform community-driven port of KeePass.",
@@ -2606,7 +4240,39 @@
       "license": "NOASSERTION",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-16"
+      "date_added": "2026-05-16",
+      "discussions": [
+        {
+          "title": "Syncing PWD Generator to lost password form",
+          "url": "https://github.com/keepassxreboot/keepassxc/discussions/13348",
+          "created_at": "2026-05-16T14:30:30Z",
+          "author": "danrossi"
+        },
+        {
+          "title": "Parameter option to hide epired entry from the search result",
+          "url": "https://github.com/keepassxreboot/keepassxc/discussions/13339",
+          "created_at": "2026-05-13T07:46:04Z",
+          "author": "msd3287"
+        },
+        {
+          "title": "[Debian 12] Will The Native Repo Version Be Updated For Passkeys?",
+          "url": "https://github.com/keepassxreboot/keepassxc/discussions/13326",
+          "created_at": "2026-05-08T12:36:28Z",
+          "author": "eliot-cole"
+        },
+        {
+          "title": "Request - Ctrl-Alt-2 - for copy password - ability to alter short cut to user selected",
+          "url": "https://github.com/keepassxreboot/keepassxc/discussions/13325",
+          "created_at": "2026-05-07T19:12:58Z",
+          "author": "psyciknz"
+        },
+        {
+          "title": "How to allow all passwords for browser integration?",
+          "url": "https://github.com/keepassxreboot/keepassxc/discussions/13319",
+          "created_at": "2026-05-06T09:33:53Z",
+          "author": "RoadRoller01"
+        }
+      ]
     },
     {
       "id": "auto-1778916891-858",
@@ -2631,7 +4297,39 @@
       "license": "AGPL-3.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-16"
+      "date_added": "2026-05-16",
+      "discussions": [
+        {
+          "title": "Unable to Express \"AND NOT\" Logic in Grafana JSON Filters",
+          "url": "https://github.com/grafana/grafana/discussions/79674",
+          "created_at": "2023-12-19T09:01:22Z",
+          "author": "medahalli"
+        },
+        {
+          "title": "Error: Field is required: version - when upload New revision to grafana.com Dashboards",
+          "url": "https://github.com/grafana/grafana/discussions/78995",
+          "created_at": "2023-12-03T17:09:23Z",
+          "author": "masterwishx"
+        },
+        {
+          "title": "Feature Request: Dashboard List: add description",
+          "url": "https://github.com/grafana/grafana/discussions/78726",
+          "created_at": "2023-11-28T10:32:38Z",
+          "author": "Cosmoledo"
+        },
+        {
+          "title": "Grafana v9.4.3 Table Panel Issue: Unable to perform operation on date column field",
+          "url": "https://github.com/grafana/grafana/discussions/78623",
+          "created_at": "2023-11-24T08:00:33Z",
+          "author": "lakshay2711"
+        },
+        {
+          "title": "Why were the patch versions for CVE-2022-35957, CVE-2022-21702, CVE-2022-21713 released so late?",
+          "url": "https://github.com/grafana/grafana/discussions/78195",
+          "created_at": "2023-11-15T13:14:52Z",
+          "author": "Silence-worker-02"
+        }
+      ]
     },
     {
       "id": "auto-1778938795-795",
@@ -2639,12 +4337,12 @@
       "slug": "dify",
       "category": "ai-agent",
       "github_url": "https://github.com/langgenius/dify",
-      "stars": 141658,
+      "stars": 141660,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
         "2026-05-16": 141576,
-        "2026-05-17": 141658
+        "2026-05-17": 141660
       },
       "description_zh": "开源的 LLM 应用开发平台，融合了后端即服务和 LLMOps 理念。",
       "description_en": "An open-source LLM app development platform.",
@@ -2656,7 +4354,39 @@
       "license": "NOASSERTION",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-16"
+      "date_added": "2026-05-16",
+      "discussions": [
+        {
+          "title": "tools disable",
+          "url": "https://github.com/langgenius/dify/discussions/36241",
+          "created_at": "2026-05-16T02:25:32Z",
+          "author": "kingWYZ"
+        },
+        {
+          "title": "Workflow finishes without reaching to the end + minor issues",
+          "url": "https://github.com/langgenius/dify/discussions/36229",
+          "created_at": "2026-05-15T16:23:17Z",
+          "author": "davodm"
+        },
+        {
+          "title": "Help: How to trust a self-signed cert of a llm endpoint for model provider connection?",
+          "url": "https://github.com/langgenius/dify/discussions/36184",
+          "created_at": "2026-05-14T12:52:34Z",
+          "author": "tyh-carl"
+        },
+        {
+          "title": "Is there a way to set the timeout for HTTP request node and customize tools？",
+          "url": "https://github.com/langgenius/dify/discussions/36181",
+          "created_at": "2026-05-14T11:56:31Z",
+          "author": "fataldemon"
+        },
+        {
+          "title": "An unexpected error occurred while rendering this component.",
+          "url": "https://github.com/langgenius/dify/discussions/36159",
+          "created_at": "2026-05-14T06:19:12Z",
+          "author": "kuim0226-stack"
+        }
+      ]
     },
     {
       "id": "auto-1778938796-772",
@@ -2664,12 +4394,12 @@
       "slug": "n8n",
       "category": "dev-tools",
       "github_url": "https://github.com/n8n-io/n8n",
-      "stars": 188309,
+      "stars": 188312,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
         "2026-05-16": 188094,
-        "2026-05-17": 188309
+        "2026-05-17": 188312
       },
       "description_zh": "开源自动化平台，可自托管连接超过 300+ 应用的 API。",
       "description_en": "Free and source-available fair-code licensed workflow automation.",
@@ -2706,7 +4436,39 @@
       "license": "LGPL-2.1",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-16"
+      "date_added": "2026-05-16",
+      "discussions": [
+        {
+          "title": "there is a freecad developer forum?",
+          "url": "https://github.com/FreeCAD/FreeCAD/discussions/30226",
+          "created_at": "2026-05-17T04:42:10Z",
+          "author": "muezabdalla"
+        },
+        {
+          "title": "selecting overlapped faces",
+          "url": "https://github.com/FreeCAD/FreeCAD/discussions/30128",
+          "created_at": "2026-05-13T08:49:43Z",
+          "author": "etiennelame"
+        },
+        {
+          "title": "Occt 8.0.0 available",
+          "url": "https://github.com/FreeCAD/FreeCAD/discussions/30016",
+          "created_at": "2026-05-10T09:35:45Z",
+          "author": "stefano2734"
+        },
+        {
+          "title": "Cpp formal calculus library",
+          "url": "https://github.com/FreeCAD/FreeCAD/discussions/29925",
+          "created_at": "2026-05-08T09:45:38Z",
+          "author": "FlachyJoe"
+        },
+        {
+          "title": "FreeCAD Libpack 1.20 version 3.40 to 1.2 devs available with actual 3rd party components",
+          "url": "https://github.com/FreeCAD/FreeCAD/discussions/29832",
+          "created_at": "2026-05-04T08:58:27Z",
+          "author": "stefano2734"
+        }
+      ]
     },
     {
       "id": "auto-1779007010-348",
@@ -2714,14 +4476,14 @@
       "slug": "mattermost",
       "category": "office-productivity",
       "github_url": "https://github.com/mattermost/mattermost",
-      "stars": 36726,
+      "stars": 36731,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
-        "2026-05-17": 36726
+        "2026-05-17": 36731
       },
-      "description_zh": "用于安全协作的开源平台。",
-      "description_en": "Open source platform for secure collaboration.",
+      "description_zh": "Mattermost 是一个开源平台，用于在整个软件开发生命周期中进行安全协作。",
+      "description_en": "Mattermost is an open source platform for secure collaboration across the entire software development lifecycle..",
       "alternative_to": "Slack / Teams",
       "tags": [
         "团队协作",
@@ -2738,11 +4500,11 @@
       "slug": "flowise",
       "category": "ai-agent",
       "github_url": "https://github.com/FlowiseAI/Flowise",
-      "stars": 52869,
+      "stars": 52877,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
-        "2026-05-17": 52869
+        "2026-05-17": 52877
       },
       "description_zh": "拖拽式 LLM 应用构建器，无需代码即可创建 AI 工作流。",
       "description_en": "Drag & drop UI to build customized LLM flow.",
@@ -2754,7 +4516,39 @@
       "license": "NOASSERTION",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-17"
+      "date_added": "2026-05-17",
+      "discussions": [
+        {
+          "title": "Asking for Guidance",
+          "url": "https://github.com/FlowiseAI/Flowise/discussions/6381",
+          "created_at": "2026-05-14T10:16:31Z",
+          "author": "Umesh042005"
+        },
+        {
+          "title": "AI-Powered Organizational Policy Assistant using Flowise RAG",
+          "url": "https://github.com/FlowiseAI/Flowise/discussions/6380",
+          "created_at": "2026-05-13T20:27:52Z",
+          "author": "shonibarej"
+        },
+        {
+          "title": "Built Claude Code investment analysis skills — options flow scanner + price alerts (open source)",
+          "url": "https://github.com/FlowiseAI/Flowise/discussions/6379",
+          "created_at": "2026-05-13T13:18:03Z",
+          "author": "tellmefrankie"
+        },
+        {
+          "title": "Idea: Add Xquik public X/Twitter data nodes",
+          "url": "https://github.com/FlowiseAI/Flowise/discussions/6374",
+          "created_at": "2026-05-13T00:07:34Z",
+          "author": "kriptoburak"
+        },
+        {
+          "title": "Question: would free API credits help test OpenAI-compatible providers?",
+          "url": "https://github.com/FlowiseAI/Flowise/discussions/6358",
+          "created_at": "2026-05-07T08:12:56Z",
+          "author": "haocn-ops"
+        }
+      ]
     },
     {
       "id": "auto-1779007013-123",
@@ -2762,14 +4556,14 @@
       "slug": "lmms",
       "category": "media-video",
       "github_url": "https://github.com/LMMS/lmms",
-      "stars": 9883,
+      "stars": 9882,
       "version": "",
       "last_updated": "2026-05-17",
       "stars_history": {
-        "2026-05-17": 9883
+        "2026-05-17": 9882
       },
-      "description_zh": "跨平台音乐制作软件。",
-      "description_en": "Cross-platform music production software.",
+      "description_zh": "LMMS 跨平台音乐制作软件网站⦁︎ 发布⦁︎ 开发者wiki ⦁︎ 用户手册⦁︎ 展示⦁︎ 共享平台 什么是LMMS？ LMMS 是一款专为音乐制作而设计的开源跨平台数字音频工作站。它包括先进的钢琴卷帘、节拍音序器、歌曲编辑器和用于创作、编曲和混合音乐的混音器。默认情况下，它附带 15 多个合成器插件，以及 VST2 和 SoundFont2 支持。具有用于编排旋律、样本的歌曲编辑器",
+      "description_en": "LMMS Cross-platform music production software Website ⦁︎ Releases ⦁︎ Developer wiki ⦁︎ User manual ⦁︎ Showcase ⦁︎ Sharing platform What is LMMS? LMMS is an open-source cross-platform digital audio workstation designed for music production. It includes an advanced Piano Roll, Beat Sequencer, Song Editor, and Mixer for composing, arranging, and mixing music. It comes with 15+ synthesizer plugins by default, along with VST2 and SoundFont2 support. Features Song-Editor for arranging melodies, sample",
       "alternative_to": "FL Studio",
       "tags": [
         "音乐制作",
@@ -2778,7 +4572,233 @@
       "license": "GPL-2.0",
       "download_url": "",
       "featured": false,
+      "date_added": "2026-05-17",
+      "discussions": [
+        {
+          "title": "LMMS Progress Report: April 2026",
+          "url": "https://github.com/LMMS/lmms/discussions/8373",
+          "created_at": "2026-05-07T23:26:20Z",
+          "author": "messmerd"
+        },
+        {
+          "title": "Noise Reduction feature from Audacity (Since it's open source as well)",
+          "url": "https://github.com/LMMS/lmms/discussions/8356",
+          "created_at": "2026-04-15T17:50:10Z",
+          "author": "maks7567"
+        },
+        {
+          "title": "LMMS Progress Report: March 2026",
+          "url": "https://github.com/LMMS/lmms/discussions/8353",
+          "created_at": "2026-04-07T05:23:47Z",
+          "author": "messmerd"
+        },
+        {
+          "title": "Fuzzing the File Parser",
+          "url": "https://github.com/LMMS/lmms/discussions/8307",
+          "created_at": "2026-03-16T14:57:49Z",
+          "author": "AshrafIbrahim03"
+        },
+        {
+          "title": "LMMS Progress Report: February 2026",
+          "url": "https://github.com/LMMS/lmms/discussions/8290",
+          "created_at": "2026-03-08T05:39:17Z",
+          "author": "messmerd"
+        }
+      ]
+    },
+    {
+      "id": "auto-1779030180-331",
+      "name": "excalidraw",
+      "slug": "excalidraw",
+      "category": "design-tools",
+      "github_url": "https://github.com/excalidraw/excalidraw",
+      "stars": 123404,
+      "version": "",
+      "last_updated": "2026-05-17",
+      "stars_history": {
+        "2026-05-17": 123404
+      },
+      "description_zh": "用于绘制手绘草图的虚拟白板。",
+      "description_en": "Virtual whiteboard for sketching hand-drawn like diagrams.",
+      "alternative_to": "Miro / Visio",
+      "tags": [
+        "白板",
+        "绘图"
+      ],
+      "license": "MIT",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-17",
+      "discussions": [
+        {
+          "title": "[Request?] Zoning or user-edependent edit rights.",
+          "url": "https://github.com/excalidraw/excalidraw/discussions/11259",
+          "created_at": "2026-04-29T17:04:47Z",
+          "author": "robinhood1596"
+        },
+        {
+          "title": "Unofficial Excalidraw Desktop",
+          "url": "https://github.com/excalidraw/excalidraw/discussions/11216",
+          "created_at": "2026-04-21T14:18:59Z",
+          "author": "gorillamoe"
+        },
+        {
+          "title": "Contributing",
+          "url": "https://github.com/excalidraw/excalidraw/discussions/11126",
+          "created_at": "2026-04-08T16:02:14Z",
+          "author": "ryelae"
+        },
+        {
+          "title": "ExcaliMath — open-source plugin that adds LaTeX equations, function graphs, and STEM shape libraries to Excalidraw",
+          "url": "https://github.com/excalidraw/excalidraw/discussions/11110",
+          "created_at": "2026-04-05T05:18:40Z",
+          "author": "tamerUAE"
+        },
+        {
+          "title": "Excalidraw Plus MCP Alpha Feedback: 39/39 Tests Passed, 4 Feature Requests",
+          "url": "https://github.com/excalidraw/excalidraw/discussions/11108",
+          "created_at": "2026-04-04T19:08:45Z",
+          "author": "mikehickey2"
+        }
+      ]
+    },
+    {
+      "id": "auto-1779030182-667",
+      "name": "server",
+      "slug": "server",
+      "category": "office-productivity",
+      "github_url": "https://github.com/nextcloud/server",
+      "stars": 35011,
+      "version": "",
+      "last_updated": "2026-05-17",
+      "stars_history": {
+        "2026-05-17": 35011
+      },
+      "description_zh": "所有数据的安全之家。",
+      "description_en": "A safe home for all your data.",
+      "alternative_to": "Google Drive / Dropbox",
+      "tags": [
+        "云存储",
+        "协作",
+        "自建"
+      ],
+      "license": "AGPL-3.0",
+      "download_url": "",
+      "featured": false,
       "date_added": "2026-05-17"
+    },
+    {
+      "id": "auto-1779030184-760",
+      "name": "clients",
+      "slug": "clients",
+      "category": "security-privacy",
+      "github_url": "https://github.com/bitwarden/clients",
+      "stars": 12844,
+      "version": "",
+      "last_updated": "2026-05-17",
+      "stars_history": {
+        "2026-05-17": 12844
+      },
+      "description_zh": "Bitwarden 客户端应用程序。",
+      "description_en": "Bitwarden client applications.",
+      "alternative_to": "1Password / LastPass",
+      "tags": [
+        "密码管理",
+        "安全",
+        "跨平台"
+      ],
+      "license": "NOASSERTION",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-17",
+      "discussions": [
+        {
+          "title": "Add \"Share via Send\" action to vault items (one-click, UI-only)",
+          "url": "https://github.com/orgs/bitwarden/discussions/20574",
+          "created_at": "2026-05-10T15:16:00Z",
+          "author": "babyhuey"
+        },
+        {
+          "title": "Proposal: create option to require both pin + biometric to unlock vault",
+          "url": "https://github.com/orgs/bitwarden/discussions/20566",
+          "created_at": "2026-05-08T21:25:11Z",
+          "author": "rmitura"
+        },
+        {
+          "title": "Proposal: API‑Driven Validation & Approval Workflow for XDR / SOAR Platforms",
+          "url": "https://github.com/orgs/bitwarden/discussions/20515",
+          "created_at": "2026-05-05T20:25:52Z",
+          "author": "jacob-kraniak"
+        },
+        {
+          "title": "Generator - Do not auto generate, it fills up history",
+          "url": "https://github.com/orgs/bitwarden/discussions/20376",
+          "created_at": "2026-04-25T02:57:13Z",
+          "author": "it-git-k"
+        },
+        {
+          "title": "\"Inactive Two-Step Login\" Report: include entries with registrable-domain fallback and no-documentation matches",
+          "url": "https://github.com/orgs/bitwarden/discussions/20258",
+          "created_at": "2026-04-19T23:47:57Z",
+          "author": "huchimama123"
+        }
+      ]
+    },
+    {
+      "id": "auto-1779030186-603",
+      "name": "pocketbase",
+      "slug": "pocketbase",
+      "category": "dev-tools",
+      "github_url": "https://github.com/pocketbase/pocketbase",
+      "stars": 58383,
+      "version": "",
+      "last_updated": "2026-05-17",
+      "stars_history": {
+        "2026-05-17": 58383
+      },
+      "description_zh": "在 1 个文件中开源实时后端。",
+      "description_en": "Open Source realtime backend in 1 file.",
+      "alternative_to": "Firebase / Supabase",
+      "tags": [
+        "后端",
+        "数据库"
+      ],
+      "license": "MIT",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-17",
+      "discussions": [
+        {
+          "title": "Instagram in-app browser rendering issues",
+          "url": "https://github.com/pocketbase/pocketbase/discussions/7692",
+          "created_at": "2026-05-16T13:13:14Z",
+          "author": "veliona"
+        },
+        {
+          "title": "[realtime connexion] Is it a race condition ?",
+          "url": "https://github.com/pocketbase/pocketbase/discussions/7684",
+          "created_at": "2026-05-07T20:05:18Z",
+          "author": "Spixz"
+        },
+        {
+          "title": "Pocketbase WASM in Cloudflare Workers",
+          "url": "https://github.com/pocketbase/pocketbase/discussions/7682",
+          "created_at": "2026-05-06T17:58:46Z",
+          "author": "theuargb"
+        },
+        {
+          "title": "How do you use the Duration interface?",
+          "url": "https://github.com/pocketbase/pocketbase/discussions/7680",
+          "created_at": "2026-05-05T19:44:58Z",
+          "author": "solo-nko"
+        },
+        {
+          "title": "OAuth2 Link get removed After Mail Verification",
+          "url": "https://github.com/pocketbase/pocketbase/discussions/7679",
+          "created_at": "2026-05-04T20:55:47Z",
+          "author": "LeCyreaxYT"
+        }
+      ]
     }
   ],
   "pending_projects": [
@@ -2865,18 +4885,6 @@
         "插画"
       ],
       "license": "GPL-3.0"
-    },
-    {
-      "github_url": "https://github.com/excalidraw/excalidraw",
-      "category": "design-tools",
-      "alternative_to": "Miro / Visio",
-      "description_zh": "手绘风格的白板绘图工具，轻量简洁支持协作。",
-      "description_en": "Virtual whiteboard for sketching hand-drawn like diagrams.",
-      "tags": [
-        "白板",
-        "绘图"
-      ],
-      "license": "MIT"
     },
     {
       "github_url": "https://github.com/jgraph/drawio",
@@ -3023,18 +5031,6 @@
       "license": "MIT"
     },
     {
-      "github_url": "https://github.com/pocketbase/pocketbase",
-      "category": "dev-tools",
-      "alternative_to": "Firebase / Supabase",
-      "description_zh": "单文件后端，集合了数据库、文件存储和用户认证。",
-      "description_en": "Open Source realtime backend in 1 file.",
-      "tags": [
-        "后端",
-        "数据库"
-      ],
-      "license": "MIT"
-    },
-    {
       "github_url": "https://github.com/directus/directus",
       "category": "dev-tools",
       "alternative_to": "Contentful",
@@ -3084,19 +5080,6 @@
       "license": "GPL-3.0"
     },
     {
-      "github_url": "https://github.com/bitwarden/clients",
-      "category": "security-privacy",
-      "alternative_to": "1Password / LastPass",
-      "description_zh": "开源密码管理器，全平台同步，安全性经过独立审计。",
-      "description_en": "Bitwarden client applications.",
-      "tags": [
-        "密码管理",
-        "安全",
-        "跨平台"
-      ],
-      "license": "GPL-3.0"
-    },
-    {
       "github_url": "https://github.com/obsproject/obs-studio",
       "category": "media-video",
       "alternative_to": "XSplit / Wirecast",
@@ -3108,19 +5091,6 @@
         "视频"
       ],
       "license": "GPL-2.0"
-    },
-    {
-      "github_url": "https://github.com/nextcloud/server",
-      "category": "office-productivity",
-      "alternative_to": "Google Drive / Dropbox",
-      "description_zh": "自建云存储和协作平台，功能全面，数据由你掌控。",
-      "description_en": "A safe home for all your data.",
-      "tags": [
-        "云存储",
-        "协作",
-        "自建"
-      ],
-      "license": "AGPL-3.0"
     },
     {
       "github_url": "https://github.com/inkscape/inkscape",
