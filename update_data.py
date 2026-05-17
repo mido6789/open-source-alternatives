@@ -5,7 +5,7 @@
 1. 更新 Stars/版本 + 自动翻译 + 时间线带简介
 2. 自动新增 3-5 个候选项目
 3. 增量生成语义化、SEO友好的静态HTML项目页面 + 静态首页
-4. 抓取社区讨论 (Discussions) 丰富内容
+4. 抓取社区讨论 (Discussions) 丰富内容，段落式展示利于搜索引擎抓取
 """
 import json, os, random, re, time, base64, hashlib
 from datetime import datetime, timedelta
@@ -186,6 +186,7 @@ def save_page_states(states):
         json.dump(states, f, ensure_ascii=False, indent=2)
 
 def generate_static_project_pages(data):
+    """生成语义化的静态项目页面（增量模式，讨论段落式展示）"""
     print("⏳ 正在生成项目静态页面 (增量模式)...")
     if not os.path.exists(PROJECTS_DIR):
         os.makedirs(PROJECTS_DIR)
@@ -205,6 +206,7 @@ def generate_static_project_pages(data):
         cat_name = category['name'] if category else proj['category']
         cat_icon = category['icon'] if category else ''
         
+        # 构建讨论板块HTML（段落式展示，搜索引擎可读取完整内容）
         discussions_html = ''
         if 'discussions' in proj and proj['discussions']:
             disc_items = []
@@ -213,12 +215,13 @@ def generate_static_project_pages(data):
                 author = d.get('author', '社区用户')
                 url = d.get('url', '#')
                 time_str = d.get('created_at', '')[:10]
-                disc_items.append(f'<li><a href="{url}" target="_blank">{title}</a> <span style="color: var(--text-secondary); font-size: 0.85rem;">(@{author}, {time_str})</span></li>')
+                # 段落式展示：标题作为链接，作者和日期作为描述文字
+                disc_items.append(f'<p>📌 <a href="{url}" target="_blank">{title}</a> — 由 {author} 发布于 {time_str}</p>')
             discussions_html = f"""
       <h2>💬 社区讨论</h2>
-      <ul>
+      <div class="discussions-list">
         {''.join(disc_items)}
-      </ul>"""
+      </div>"""
 
         html = f"""<!DOCTYPE html>
 <html lang="zh-CN">
@@ -363,6 +366,7 @@ def fetch_discussions(data):
     return data
 
 def generate_static_homepage(data):
+    """生成语义化的静态首页"""
     print("⏳ 正在生成静态首页...")
     base_url = data['site']['url'].rstrip('/')
     
