@@ -21,13 +21,15 @@ jobs:
           python-version: '3.11'
 
       - name: 运行更新脚本
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: python update_data.py
 
       - name: 提交并推送
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Actions Bot"
-          git add assets/js/data.json sitemap.xml projects/ index.html
+          git add assets/js/data.json sitemap.xml projects/ index.html assets/js/page_states.json
           if git diff --staged --quiet; then
             echo "📭 没有新更新"
           else
