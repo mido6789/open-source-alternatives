@@ -5,7 +5,8 @@
 1. 更新 Stars/版本 + 自动翻译 + 时间线带简介
 2. 自动新增 3-5 个候选项目
 3. 增量生成语义化、SEO友好的静态HTML项目页面 + 静态首页
-4. 抓取社区讨论 (Discussions) 丰富内容，段落式展示利于搜索引擎抓取
+4. 抓取社区讨论 (Discussions) 丰富内容，段落式展示
+5. 候选池自动补给 (低于10个时自动从GitHub搜索补充)
 """
 import json, os, random, re, time, base64, hashlib
 from datetime import datetime, timedelta
@@ -100,7 +101,86 @@ def update_existing_projects(data):
     print(f'✅ 已更新 {updated}/{len(data["projects"])} 个项目')
     return data
 
+def auto_refill_pending(data):
+    """当候选池少于10个时，自动从GitHub搜索补充"""
+    pending = data.get('pending_projects', [])
+    if len(pending) >= 10:
+        return data
+    
+    print("⏳ 候选池不足，自动搜索补充...")
+    headers = {'Accept': 'application/vnd.github.v3+json', 'User-Agent': 'Python'}
+    if GITHUB_TOKEN:
+        headers['Authorization'] = f'token {GITHUB_TOKEN}'
+    
+    # 搜索关键词
+    queries = [
+        "open source alternative to",
+        "free self-hosted tool",
+        "open source replacement for"
+    ]
+    
+    new_candidates = []
+    for query in queries:
+        try:
+            url = f"https://api.github.com/search/repositories?q={urllib.parse.quote(query)}&sort=stars&order=desc&per_page=10"
+            req = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                result = json.loads(resp.read().decode())
+                for item in result.get('items', []):
+                    repo_url = item['html_url']
+                    # 避免重复添加
+                    if any(c['github_url'] == repo_url for c in pending) or \
+                       any(c['github_url'] == repo_url for c in new_candidates):
+                        continue
+                    
+                    # 简单过滤：Stars > 50
+                    if item['stargazers_count'] < 50:
+                        continue
+                    
+                    # 尝试判断分类（简单映射）
+                    description = item.get('description', '') or ''
+                    category = 'dev-tools'
+                    if any(kw in description.lower() for kw in ['ai', 'machine learning', 'llm']):
+                        category = 'ai-agent'
+                    elif any(kw in description.lower() for kw in ['design', 'draw', 'image']):
+                        category = 'design-tools'
+                    elif any(kw in description.lower() for kw in ['video', 'audio', 'music']):
+                        category = 'media-video'
+                    elif any(kw in description.lower() for kw in ['password', 'security', 'privacy']):
+                        category = 'security-privacy'
+                    elif any(kw in description.lower() for kw in ['office', 'document', 'note']):
+                        category = 'office-productivity'
+                    elif any(kw in description.lower() for kw in ['system', 'utility', 'file']):
+                        category = 'system-utils'
+                    
+                    new_candidates.append({
+                        "github_url": repo_url,
+                        "category": category,
+                        "alternative_to": "商业软件",
+                        "description_zh": description[:100] if description else "开源项目",
+                        "description_en": description,
+                        "tags": [],
+                        "license": item.get('license', {}).get('spdx_id', '')
+                    })
+                    
+                    if len(new_candidates) >= 10:
+                        break
+            time.sleep(2)
+        except Exception as e:
+            print(f"搜索出错: {e}")
+            continue
+    
+    if new_candidates:
+        pending.extend(new_candidates)
+        data['pending_projects'] = pending
+        print(f"✅ 自动补充了 {len(new_candidates)} 个候选项目")
+    
+    return data
+
 def add_new_projects(data, count=3):
+    # 先检查并补充候选池
+    data = auto_refill_pending(data)
+    
     pending = data.get('pending_projects', [])
     if not pending: print('📭 候选池已空'); return data, []
     actual = min(count, len(pending))
@@ -186,7 +266,6 @@ def save_page_states(states):
         json.dump(states, f, ensure_ascii=False, indent=2)
 
 def generate_static_project_pages(data):
-    """生成语义化的静态项目页面（增量模式，讨论段落式展示）"""
     print("⏳ 正在生成项目静态页面 (增量模式)...")
     if not os.path.exists(PROJECTS_DIR):
         os.makedirs(PROJECTS_DIR)
@@ -206,7 +285,6 @@ def generate_static_project_pages(data):
         cat_name = category['name'] if category else proj['category']
         cat_icon = category['icon'] if category else ''
         
-        # 构建讨论板块HTML（段落式展示，搜索引擎可读取完整内容）
         discussions_html = ''
         if 'discussions' in proj and proj['discussions']:
             disc_items = []
@@ -215,7 +293,6 @@ def generate_static_project_pages(data):
                 author = d.get('author', '社区用户')
                 url = d.get('url', '#')
                 time_str = d.get('created_at', '')[:10]
-                # 段落式展示：标题作为链接，作者和日期作为描述文字
                 disc_items.append(f'<p>📌 <a href="{url}" target="_blank">{title}</a> — 由 {author} 发布于 {time_str}</p>')
             discussions_html = f"""
       <h2>💬 社区讨论</h2>
@@ -250,7 +327,7 @@ def generate_static_project_pages(data):
 <body>
   <nav class="navbar">
     <div class="navbar-inner">
-      <a href="/" class="logo"><img src="/logo.png" alt="开源替代" style="height:24px;width:24px;vertical-align:middle;margin-right:6px;"><span data-site-name>开源替代</span></a>
+      <a href="/" class="logo"><img src="/logo.png" alt="开源替代" style="height:24px;width:24px;vertical-align:middle;margin-right:6px;"> <span data-site-name>开源替代</span></a>
       <button class="hamburger" id="hamburgerBtn" aria-label="菜单">☰</button>
       <ul class="nav-links" id="navLinks">
         <li><a href="/category.html?id=ai-agent">AI & Agent</a></li>
@@ -366,7 +443,6 @@ def fetch_discussions(data):
     return data
 
 def generate_static_homepage(data):
-    """生成语义化的静态首页"""
     print("⏳ 正在生成静态首页...")
     base_url = data['site']['url'].rstrip('/')
     
@@ -452,7 +528,7 @@ def generate_static_homepage(data):
 <body>
   <nav class="navbar">
     <div class="navbar-inner">
-      <a href="/" class="logo"><img src="/logo.png" alt="开源替代" style="height:24px;width:24px;vertical-align:middle;margin-right:6px;"><span data-site-name>开源替代</span></a>
+      <a href="/" class="logo"><img src="/logo.png" alt="开源替代" style="height:24px;width:24px;vertical-align:middle;margin-right:6px;"> <span data-site-name>开源替代</span></a>
       <button class="hamburger" id="hamburgerBtn" aria-label="菜单">☰</button>
       <ul class="nav-links" id="navLinks">
         <li><a href="/category.html?id=ai-agent">AI & Agent</a></li>
