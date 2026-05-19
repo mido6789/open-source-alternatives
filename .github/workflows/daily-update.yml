@@ -23,6 +23,7 @@ jobs:
       - name: 运行更新脚本
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          BAIDU_PUSH_TOKEN: ${{ secrets.BAIDU_PUSH_TOKEN }}
         run: python update_data.py
 
       - name: 提交并推送
