@@ -236,7 +236,7 @@ def generate_static_project_pages(data):
   <meta property="og:type" content="article">
   <meta property="og:url" content="{base_url}/projects/{slug}.html">
   <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔄</text></svg>">
+  <link rel="icon" href="/logo.png" type="image/png">
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#6366f1">
   <script>
@@ -250,7 +250,7 @@ def generate_static_project_pages(data):
 <body>
   <nav class="navbar">
     <div class="navbar-inner">
-      <a href="/" class="logo">🔄 <span data-site-name>开源替代</span></a>
+      <a href="/" class="logo"><img src="/logo.png" alt="开源替代" style="height:24px;width:24px;vertical-align:middle;margin-right:6px;"><span data-site-name>开源替代</span></a>
       <button class="hamburger" id="hamburgerBtn" aria-label="菜单">☰</button>
       <ul class="nav-links" id="navLinks">
         <li><a href="/category.html?id=ai-agent">AI & Agent</a></li>
@@ -429,7 +429,7 @@ def generate_static_homepage(data):
   <meta property="og:type" content="website">
   <meta property="og:url" content="{base_url}/">
   <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔄</text></svg>">
+  <link rel="icon" href="/logo.png" type="image/png">
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#6366f1">
   <script type="application/ld+json">
@@ -452,7 +452,7 @@ def generate_static_homepage(data):
 <body>
   <nav class="navbar">
     <div class="navbar-inner">
-      <a href="/" class="logo">🔄 <span data-site-name>开源替代</span></a>
+      <a href="/" class="logo"><img src="/logo.png" alt="开源替代" style="height:24px;width:24px;vertical-align:middle;margin-right:6px;"><span data-site-name>开源替代</span></a>
       <button class="hamburger" id="hamburgerBtn" aria-label="菜单">☰</button>
       <ul class="nav-links" id="navLinks">
         <li><a href="/category.html?id=ai-agent">AI & Agent</a></li>
