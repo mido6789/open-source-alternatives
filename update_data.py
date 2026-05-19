@@ -104,7 +104,7 @@ def update_existing_projects(data):
 def auto_refill_pending(data):
     """当候选池少于10个时，自动从GitHub搜索补充"""
     pending = data.get('pending_projects', [])
-    if len(pending) >= 10:
+    if len(pending) >= 20:
         return data
     
     print("⏳ 候选池不足，自动搜索补充...")
@@ -163,7 +163,7 @@ def auto_refill_pending(data):
                         "license": item.get('license', {}).get('spdx_id', '')
                     })
                     
-                    if len(new_candidates) >= 10:
+                    if len(new_candidates) >= 20:
                         break
             time.sleep(2)
         except Exception as e:
