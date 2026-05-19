@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- 左侧箭头 -->
+  <path d="M45 20 L30 35 L45 50" 
+        stroke="#6366f1" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M30 35 L70 35" 
+        stroke="#6366f1" stroke-width="8" stroke-linecap="round" fill="none"/>
+  
+  <!-- 右侧箭头（反向） -->
+  <path d="M55 80 L70 65 L55 50" 
+        stroke="#06b6d4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M70 65 L30 65" 
+        stroke="#06b6d4" stroke-width="8" stroke-linecap="round" fill="none"/>
+  
+  <!-- 中间连接点 -->
+  <circle cx="50" cy="50" r="6" fill="#6366f1" opacity="0.8"/>
+</svg>
