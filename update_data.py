@@ -236,7 +236,7 @@ def generate_sitemap(data):
     for cat in data.get('categories', []):
         urls.append({'loc': f'{base_url}/category.html?id={cat["id"]}', 'priority': '0.7', 'changefreq': 'daily'})
     for proj in data.get('projects', []):
-        urls.append({'loc': f'{base_url}/projects/{proj["slug"]}.html', 'priority': '0.6', 'changefreq': 'weekly', 'lastmod': proj.get('last_updated', today)})
+        urls.append({'loc': f'{base_url}/projects/{proj["slug"]}.html', 'priority': '0.6', 'changefreq': 'daily', 'lastmod': proj.get('last_updated', today)})
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     for u in urls:
         xml += '  <url>\n'
