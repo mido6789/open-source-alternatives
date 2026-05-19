@@ -6,7 +6,8 @@
 2. 自动新增 3-5 个候选项目
 3. 增量生成语义化、SEO友好的静态HTML项目页面 + 静态首页
 4. 抓取社区讨论 (Discussions) 丰富内容，段落式展示
-5. 候选池自动补给 (低于10个时自动从GitHub搜索补充)
+5. 候选池自动补给 (低于20个时一次性追加20个新候选)
+6. 🆕 向百度主动推送新增URL，加速收录
 """
 import json, os, random, re, time, base64, hashlib
 from datetime import datetime, timedelta
@@ -19,6 +20,7 @@ SITEMAP_PATH = 'sitemap.xml'
 PROJECTS_DIR = 'projects'
 PAGE_STATES_PATH = 'assets/js/page_states.json'
 GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN', '')
+BAIDU_TOKEN = os.environ.get('BAIDU_PUSH_TOKEN', '')
 
 def strip_html(text):
     if not text: return text
@@ -102,17 +104,15 @@ def update_existing_projects(data):
     return data
 
 def auto_refill_pending(data):
-    """当候选池少于10个时，自动从GitHub搜索补充"""
     pending = data.get('pending_projects', [])
     if len(pending) >= 20:
         return data
     
-    print("⏳ 候选池不足，自动搜索补充...")
+    print("⏳ 候选池不足20个，自动搜索补充...")
     headers = {'Accept': 'application/vnd.github.v3+json', 'User-Agent': 'Python'}
     if GITHUB_TOKEN:
         headers['Authorization'] = f'token {GITHUB_TOKEN}'
     
-    # 搜索关键词
     queries = [
         "open source alternative to",
         "free self-hosted tool",
@@ -128,16 +128,13 @@ def auto_refill_pending(data):
                 result = json.loads(resp.read().decode())
                 for item in result.get('items', []):
                     repo_url = item['html_url']
-                    # 避免重复添加
                     if any(c['github_url'] == repo_url for c in pending) or \
                        any(c['github_url'] == repo_url for c in new_candidates):
                         continue
                     
-                    # 简单过滤：Stars > 50
                     if item['stargazers_count'] < 50:
                         continue
                     
-                    # 尝试判断分类（简单映射）
                     description = item.get('description', '') or ''
                     category = 'dev-tools'
                     if any(kw in description.lower() for kw in ['ai', 'machine learning', 'llm']):
@@ -173,12 +170,11 @@ def auto_refill_pending(data):
     if new_candidates:
         pending.extend(new_candidates)
         data['pending_projects'] = pending
-        print(f"✅ 自动补充了 {len(new_candidates)} 个候选项目")
+        print(f"✅ 一次性追加了 {len(new_candidates)} 个候选项目")
     
     return data
 
 def add_new_projects(data, count=3):
-    # 先检查并补充候选池
     data = auto_refill_pending(data)
     
     pending = data.get('pending_projects', [])
@@ -187,6 +183,8 @@ def add_new_projects(data, count=3):
     selected = random.sample(pending, actual)
     added, log_entries = 0, []
     today_str = datetime.now().strftime('%Y-%m-%d')
+    new_project_slugs = []
+    
     for item in selected:
         stars, version, lic, github_desc = get_repo_info(item['github_url'])
         if stars is None: continue
@@ -211,6 +209,7 @@ def add_new_projects(data, count=3):
         data['projects'].append(project)
         pending.remove(item)
         log_entries.append(f"{today_str} 🆕 新增：{name}（⭐ {stars:,}）| {short_desc}")
+        new_project_slugs.append(slug)
         added += 1
         print(f'  ➕ 新增: {name} (⭐ {stars})')
         time.sleep(1)
@@ -222,7 +221,27 @@ def add_new_projects(data, count=3):
             log_entries.append(f"{today_str} 📦 {proj['name']} 更新至 {proj['version']}（⭐ {proj['stars']:,}）| {short}")
     if 'update_log' not in data['site']: data['site']['update_log'] = []
     data['site']['update_log'] = (log_entries + data['site']['update_log'])[:30]
+    
+    # 🆕 主动向百度推送新增URL
+    if new_project_slugs and BAIDU_TOKEN:
+        push_to_baidu(data, new_project_slugs)
+    
     return data, added
+
+def push_to_baidu(data, new_slugs):
+    """向百度普通收录API推送新增URL"""
+    base_url = data['site']['url'].rstrip('/')
+    new_urls = [f"{base_url}/projects/{slug}.html" for slug in new_slugs]
+    
+    try:
+        api_url = f"http://data.zz.baidu.com/urls?site={base_url}&token={BAIDU_TOKEN}"
+        payload = "\n".join(new_urls).encode('utf-8')
+        req = urllib.request.Request(api_url, data=payload, headers={'Content-Type': 'text/plain'})
+        with urllib.request.urlopen(req, timeout=30) as response:
+            result = json.loads(response.read().decode('utf-8'))
+            print(f"✅ 已向百度推送 {len(new_urls)} 个新URL，成功: {result.get('success', 0)} 条")
+    except Exception as e:
+        print(f"⚠️ 百度推送失败: {e}")
 
 def generate_sitemap(data):
     base_url = data['site']['url'].rstrip('/')
