@@ -472,6 +472,7 @@ def generate_static_homepage(data):
     print("⏳ 正在生成静态首页...")
     base_url = data['site']['url'].rstrip('/')
     
+    # 精选推荐 Top 6
     top_projects = sorted(data['projects'], key=lambda p: p['stars'], reverse=True)[:6]
     projects_html = ''
     for proj in top_projects:
@@ -488,11 +489,13 @@ def generate_static_homepage(data):
         </div>
       </article>"""
     
+    # 分类卡片
     categories_html = ''
     for cat in data['categories']:
         count = len([p for p in data['projects'] if p['category'] == cat['id']])
         categories_html += f'<a href="/category.html?id={cat["id"]}" class="category-card"><span class="icon">{cat["icon"]}</span><span class="name">{cat["name"]}</span><span class="count">{count}个项目</span></a>\n'
     
+    # 最近更新日志
     update_logs = data['site'].get('update_log', [])[:10]
     timeline_html = ''
     for log in update_logs:
@@ -502,6 +505,48 @@ def generate_static_homepage(data):
     if not update_logs:
         timeline_html = '        <p style="color:var(--text-secondary);padding:20px;">即将更新...</p>'
     
+    # 本周热门（和 JS 里 getWeeklyHotProjects 逻辑一致）
+    today = datetime.now()
+    seven_days_ago = today - timedelta(days=7)
+    cutoff_str = seven_days_ago.strftime('%Y-%m-%d')
+    
+    hot_projects = []
+    for proj in data['projects']:
+        history = proj.get('stars_history', {})
+        oldest_in_range = proj['stars']
+        newest_in_range = proj['stars']
+        for date_str, stars in history.items():
+            if date_str >= cutoff_str:
+                oldest_in_range = min(oldest_in_range, stars)
+                newest_in_range = max(newest_in_range, stars)
+        growth = newest_in_range - oldest_in_range
+        if growth > 0:
+            hot_projects.append({**proj, 'weekly_growth': growth})
+    
+    hot_projects.sort(key=lambda p: p['weekly_growth'], reverse=True)
+    hot_projects = hot_projects[:8]
+    
+    weekly_hot_html = ''
+    if hot_projects:
+        for proj in hot_projects:
+            category = next((c for c in data['categories'] if c['id'] == proj['category']), None)
+            cat_name = category['name'] if category else proj['category']
+            weekly_hot_html += f"""
+      <article class="project-card hot-card">
+        {f'<span class="hot-badge">🔥 热门</span>' if proj['weekly_growth'] > 500 else ''}
+        <span class="category-tag">{cat_name}</span>
+        <h3><a href="/projects/{proj['slug']}.html">{proj['name']}</a></h3>
+        <p class="description">{proj.get('description_zh', '')[:120]}</p>
+        <div class="meta">
+          <span>⭐ {proj['stars']:,}</span>
+          <span class="growth-positive">📈 +{proj['weekly_growth']:,}</span>
+        </div>
+        <span class="alt-badge">替代: {proj.get('alternative_to', '')}</span>
+      </article>"""
+    else:
+        weekly_hot_html = '<p style="color:var(--text-secondary);padding:20px;">数据收集中，明天再来看看...</p>'
+    
+    # 最新收录 Top 6
     latest_projects = sorted(data['projects'], key=lambda p: p.get('date_added', ''), reverse=True)[:6]
     latest_html = ''
     for proj in latest_projects:
