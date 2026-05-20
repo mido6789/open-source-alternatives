@@ -49,6 +49,18 @@ def translate(text):
             time.sleep(2)
     return text
 
+def needs_translation(zh, en):
+    """判断中文简介是否需要重新翻译"""
+    if not zh or len(zh) < 20:
+        return True
+    if zh == en:
+        return True
+    # 如果中文简介中英文字母比例过高（超过50%），认为翻译失败
+    ascii_letters = sum(1 for c in zh if c.isascii() and c.isalpha())
+    if len(zh) > 0 and ascii_letters / len(zh) > 0.5:
+        return True
+    return False
+
 def get_repo_info(github_url):
     match = re.search(r'github\.com/([^/]+)/([^/]+?)(?:\.git)?$', github_url)
     if not match: return None, None, None, None
@@ -91,6 +103,7 @@ def update_existing_projects(data):
     today_str = datetime.now().strftime('%Y-%m-%d')
     cutoff = (datetime.now() - timedelta(days=14)).strftime('%Y-%m-%d')
     updated = 0
+    translated = 0
     for project in data['projects']:
         stars, version, lic, desc = get_repo_info(project['github_url'])
         if stars is not None:
@@ -100,10 +113,19 @@ def update_existing_projects(data):
             project['stars'] = stars; project['last_updated'] = today_str; updated += 1
         if version: project['version'] = version
         if lic and not project.get('license'): project['license'] = lic
-        if desc and (not project.get('description_zh') or len(project['description_zh']) < 30):
+        # 增强翻译检测：只要中文简介不合格，就重新翻译
+        zh = project.get('description_zh', '')
+        en = project.get('description_en', '') or desc or ''
+        if desc:
             project['description_en'] = desc
-            project['description_zh'] = translate(desc)
+        if needs_translation(zh, en) and en:
+            new_zh = translate(en)
+            if new_zh and new_zh != zh:
+                project['description_zh'] = new_zh
+                translated += 1
         time.sleep(1)
+    if translated > 0:
+        print(f'🌐 重新翻译了 {translated} 个项目的中文简介')
     print(f'✅ 已更新 {updated}/{len(data["projects"])} 个项目')
     return data
 
@@ -505,7 +527,7 @@ def generate_static_homepage(data):
     if not update_logs:
         timeline_html = '        <p style="color:var(--text-secondary);padding:20px;">即将更新...</p>'
     
-    # 本周热门（和 JS 里 getWeeklyHotProjects 逻辑一致）
+    # 本周热门
     today = datetime.now()
     seven_days_ago = today - timedelta(days=7)
     cutoff_str = seven_days_ago.strftime('%Y-%m-%d')
