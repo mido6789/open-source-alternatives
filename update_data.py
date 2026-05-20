@@ -175,6 +175,12 @@ def auto_refill_pending(data):
     return data
 
 def add_new_projects(data, count=3):
+    seen = set()
+    original_count = len(data["projects"])
+    data["projects"] = [p for p in data["projects"] if p.get("slug") not in seen and not seen.add(p.get("slug"))]
+    if len(data["projects"]) < original_count:
+        print(f"⚠️ 自动清理了 {original_count - len(data["projects"])} 个后台重复项目")
+
     data = auto_refill_pending(data)
     
     pending = data.get('pending_projects', [])
