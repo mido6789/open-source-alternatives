@@ -36,14 +36,18 @@ def strip_html(text):
 
 def translate(text):
     if not text or len(text) < 10: return text
-    try:
-        url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-CN&dt=t&q=" + urllib.parse.quote(text[:500])
-        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            result = json.loads(resp.read().decode())
-            return ''.join([s[0] for s in result[0] if s[0]])
-    except:
-        return text
+    for attempt in range(3):
+        try:
+            url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-CN&dt=t&q=" + urllib.parse.quote(text[:500])
+            req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                result = json.loads(resp.read().decode())
+                translated = ''.join([s[0] for s in result[0] if s[0]])
+                if translated and translated != text:
+                    return translated
+        except:
+            time.sleep(2)
+    return text
 
 def get_repo_info(github_url):
     match = re.search(r'github\.com/([^/]+)/([^/]+?)(?:\.git)?$', github_url)
@@ -175,7 +179,6 @@ def auto_refill_pending(data):
     return data
 
 def add_new_projects(data, count=3):
-    # 🆕 最终去重：确保数据源没有重复 slug
     seen = set()
     original_count = len(data['projects'])
     data['projects'] = [p for p in data['projects'] if p.get('slug') not in seen and not seen.add(p.get('slug'))]
@@ -229,17 +232,14 @@ def add_new_projects(data, count=3):
     if 'update_log' not in data['site']: data['site']['update_log'] = []
     data['site']['update_log'] = (log_entries + data['site']['update_log'])[:30]
     
-    # 🆕 主动向百度推送新增URL
     if new_project_slugs and BAIDU_TOKEN:
         push_to_baidu(data, new_project_slugs)
     
     return data, added
 
 def push_to_baidu(data, new_slugs):
-    """向百度普通收录API推送新增URL"""
     base_url = data['site']['url'].rstrip('/')
     new_urls = [f"{base_url}/projects/{slug}.html" for slug in new_slugs]
-    
     try:
         api_url = f"http://data.zz.baidu.com/urls?site={base_url}&token={BAIDU_TOKEN}"
         payload = "\n".join(new_urls).encode('utf-8')
@@ -594,7 +594,7 @@ def generate_static_homepage(data):
       <h2 class="section-title"><span class="hot-icon">🔥</span> 本周热门</h2>
       <p style="color:var(--text-secondary);margin-bottom:20px;font-size:0.9rem;">Star 增长最快的开源项目（7日内涨幅）</p>
       <div class="projects-grid" id="weeklyHot">
-        <p style="color:var(--text-secondary);padding:20px;">数据收集中，明天再来看看...</p>
+        {weekly_hot_html}
       </div>
     </section>
 
