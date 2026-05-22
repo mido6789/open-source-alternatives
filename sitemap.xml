@@ -548,12 +548,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/projects/hoppscotch.html</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://kyal.cn/projects/signtools.html</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>daily</changefreq>
@@ -561,6 +555,24 @@
   </url>
   <url>
     <loc>https://kyal.cn/projects/drawio.html</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kyal.cn/projects/respectaso.html</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kyal.cn/projects/cal-com.html</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kyal.cn/projects/sharex.html</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
