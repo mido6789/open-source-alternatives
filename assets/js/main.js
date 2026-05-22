@@ -1,7 +1,6 @@
 // ============================================
 // OpenSourceAlternatives.com - 主脚本
 // 功能：数据加载、页面渲染、搜索、主题切换
-// 版本：修复搜索重复 + 前端去重保护
 // ============================================
 
 const SITE_CONFIG = {
@@ -11,21 +10,12 @@ const SITE_CONFIG = {
 
 let siteData = null;
 
-// ========== 加载数据（含前端去重） ==========
+// ========== 加载数据 ==========
 async function loadData() {
   if (siteData) return siteData;
   try {
     const res = await fetch(SITE_CONFIG.dataUrl);
     siteData = await res.json();
-    // 前端去重：以防万一数据文件有重复 slug
-    if (siteData && siteData.projects) {
-      const seen = new Set();
-      siteData.projects = siteData.projects.filter(p => {
-        if (seen.has(p.slug)) return false;
-        seen.add(p.slug);
-        return true;
-      });
-    }
     return siteData;
   } catch (e) {
     console.error('数据加载失败:', e);
@@ -48,7 +38,7 @@ function escapeHtml(str) {
   return div.innerHTML;
 }
 
-// ========== 创建项目卡片（新窗口打开静态页面）==========
+// ========== 创建项目卡片（统一新窗口打开）==========
 function createProjectCard(project) {
   const category = siteData.categories.find(c => c.id === project.category);
   const catName = category ? category.name : project.category;
@@ -199,7 +189,7 @@ async function renderHomePage() {
   generateStructuredData(data);
 }
 
-// ========== 分类页 / 搜索页渲染（修复重复调用） ==========
+// ========== 分类页 / 搜索页渲染 ==========
 async function renderCategoryPage() {
   const data = await loadData();
   if (!data) return;
