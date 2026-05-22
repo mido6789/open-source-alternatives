@@ -2,12 +2,12 @@
 """
 每日自动更新脚本 (增强版)
 功能：
-1. 更新 Stars/版本 + 自动翻译 + 时间线带简介
+1. 更新 Stars/版本 + 自动翻译（增强清洗）+ 时间线带简介
 2. 自动新增 3-5 个候选项目
-3. 增量生成语义化、SEO友好的静态HTML项目页面 + 静态首页
+3. 增量生成语义化、SEO友好的静态HTML项目页面（含面包屑导航、标签）+ 静态首页
 4. 抓取社区讨论 (Discussions) 丰富内容，段落式展示
 5. 候选池自动补给 (低于20个时一次性追加20个新候选)
-6. 🆕 向百度主动推送新增URL，加速收录
+6. 向百度主动推送新增URL，加速收录
 """
 import json, os, random, re, time, base64, hashlib
 from datetime import datetime, timedelta
@@ -50,12 +50,10 @@ def translate(text):
     return text
 
 def needs_translation(zh, en):
-    """判断中文简介是否需要重新翻译"""
     if not zh or len(zh) < 20:
         return True
     if zh == en:
         return True
-    # 如果中文简介中英文字母比例过高（超过50%），认为翻译失败
     ascii_letters = sum(1 for c in zh if c.isascii() and c.isalpha())
     if len(zh) > 0 and ascii_letters / len(zh) > 0.5:
         return True
@@ -113,11 +111,12 @@ def update_existing_projects(data):
             project['stars'] = stars; project['last_updated'] = today_str; updated += 1
         if version: project['version'] = version
         if lic and not project.get('license'): project['license'] = lic
-        # 增强翻译检测：只要中文简介不合格，就重新翻译
         zh = project.get('description_zh', '')
         en = project.get('description_en', '') or desc or ''
         if desc:
             project['description_en'] = desc
+        if en:
+            en = strip_html(en)
         if needs_translation(zh, en) and en:
             new_zh = translate(en)
             if new_zh and new_zh != zh:
@@ -301,6 +300,8 @@ def get_project_fingerprint(proj):
     key_content = f"{proj['name']}|{proj['description_zh']}|{proj['description_en']}|{proj['stars']}|{proj.get('version','')}"
     if 'discussions' in proj:
         key_content += '|' + '|'.join([d['title'] for d in proj['discussions'][:5]])
+    if 'tags' in proj:
+        key_content += '|' + '|'.join(proj['tags'])
     return hashlib.md5(key_content.encode('utf-8')).hexdigest()
 
 def load_page_states():
@@ -332,6 +333,15 @@ def generate_static_project_pages(data):
         category = next((c for c in data['categories'] if c['id'] == proj['category']), None)
         cat_name = category['name'] if category else proj['category']
         cat_icon = category['icon'] if category else ''
+        
+        # 面包屑导航
+        breadcrumb_html = f'<nav class="breadcrumb"><a href="/">首页</a> &raquo; <a href="/category.html?id={proj["category"]}">{cat_name}</a> &raquo; {proj["name"]}</nav>'
+        
+        # 标签
+        tags_html = ''
+        if proj.get('tags'):
+            tag_links = [f'<a href="/category.html?search={t.strip()}" class="tag-link">{t.strip()}</a>' for t in proj['tags']]
+            tags_html = f'<div class="tags-list">{" ".join(tag_links)}</div>'
         
         discussions_html = ''
         if 'discussions' in proj and proj['discussions']:
@@ -378,6 +388,7 @@ def generate_static_project_pages(data):
       <a href="/" class="logo"><img src="/logo.png" alt="开源替代" style="height:24px;width:24px;vertical-align:middle;margin-right:6px;"> <span data-site-name>开源替代</span></a>
       <button class="hamburger" id="hamburgerBtn" aria-label="菜单">☰</button>
       <ul class="nav-links" id="navLinks">
+        <li><a href="/">首页</a></li>
         <li><a href="/category.html?id=ai-agent">AI & Agent</a></li>
         <li><a href="/category.html?id=design-tools">设计工具</a></li>
         <li><a href="/category.html?id=office-productivity">办公效率</a></li>
@@ -392,6 +403,8 @@ def generate_static_project_pages(data):
     </div>
   </nav>
   <main class="container">
+    {breadcrumb_html}
+    
     <header class="detail-header">
       <span class="category-tag">{cat_icon} {cat_name}</span>
       <h1>{proj['name']}</h1>
@@ -410,6 +423,7 @@ def generate_static_project_pages(data):
       <p>{proj.get('alternative_to', '')}</p>
       <h2>📝 项目原文介绍（英文）</h2>
       <p>{proj.get('description_en', 'No description available.')}</p>
+      {tags_html}
       {discussions_html}
       <section class="disclaimer-box">
         ⚠️ <strong>免责声明：</strong>本文内容整理自 GitHub 开源社区，旨在分享和介绍优秀的开源替代方案。
@@ -420,7 +434,7 @@ def generate_static_project_pages(data):
     <div class="footer-inner">
       <div class="footer-col"><h4>关于本站</h4><p style="font-size:0.85rem;color:var(--text-secondary);">发现并分享优秀的开源替代方案。</p></div>
       <div class="footer-col"><h4>快速链接</h4><a href="/">首页</a><a href="/about.html">关于我们</a><a href="/privacy.html">隐私政策</a></div>
-      <div class="footer-col"><h4>联系我们</h4><a href="mailto:mailtomidoo@gmail.com">📧 mailtomidoo@gmail.com</a></div>
+      <div class="footer-col"><h4>联系我们</h4><a href="mailto:info@kyal.cn">📧 info@kyal.cn</a></div>
     </div>
     <div class="footer-bottom"><p>© <span id="currentYear"></span> 开源替代 - 尊重开源，分享价值</p></div>
   </footer>
@@ -494,7 +508,6 @@ def generate_static_homepage(data):
     print("⏳ 正在生成静态首页...")
     base_url = data['site']['url'].rstrip('/')
     
-    # 精选推荐 Top 6
     top_projects = sorted(data['projects'], key=lambda p: p['stars'], reverse=True)[:6]
     projects_html = ''
     for proj in top_projects:
@@ -503,7 +516,7 @@ def generate_static_homepage(data):
         projects_html += f"""
       <article class="project-card">
         <span class="category-tag">{cat_name}</span>
-        <h3><a href="/projects/{proj['slug']}.html">{proj['name']}</a></h3>
+        <h3><a href="/projects/{proj['slug']}.html" target="_blank">{proj['name']}</a></h3>
         <p class="description">{proj.get('description_zh', '')[:120]}</p>
         <div class="meta">
           <span>⭐ {proj['stars']:,}</span>
@@ -511,13 +524,11 @@ def generate_static_homepage(data):
         </div>
       </article>"""
     
-    # 分类卡片
     categories_html = ''
     for cat in data['categories']:
         count = len([p for p in data['projects'] if p['category'] == cat['id']])
         categories_html += f'<a href="/category.html?id={cat["id"]}" class="category-card"><span class="icon">{cat["icon"]}</span><span class="name">{cat["name"]}</span><span class="count">{count}个项目</span></a>\n'
     
-    # 最近更新日志
     update_logs = data['site'].get('update_log', [])[:10]
     timeline_html = ''
     for log in update_logs:
@@ -527,7 +538,6 @@ def generate_static_homepage(data):
     if not update_logs:
         timeline_html = '        <p style="color:var(--text-secondary);padding:20px;">即将更新...</p>'
     
-    # 本周热门
     today = datetime.now()
     seven_days_ago = today - timedelta(days=7)
     cutoff_str = seven_days_ago.strftime('%Y-%m-%d')
@@ -557,7 +567,7 @@ def generate_static_homepage(data):
       <article class="project-card hot-card">
         {f'<span class="hot-badge">🔥 热门</span>' if proj['weekly_growth'] > 500 else ''}
         <span class="category-tag">{cat_name}</span>
-        <h3><a href="/projects/{proj['slug']}.html">{proj['name']}</a></h3>
+        <h3><a href="/projects/{proj['slug']}.html" target="_blank">{proj['name']}</a></h3>
         <p class="description">{proj.get('description_zh', '')[:120]}</p>
         <div class="meta">
           <span>⭐ {proj['stars']:,}</span>
@@ -568,7 +578,6 @@ def generate_static_homepage(data):
     else:
         weekly_hot_html = '<p style="color:var(--text-secondary);padding:20px;">数据收集中，明天再来看看...</p>'
     
-    # 最新收录 Top 6
     latest_projects = sorted(data['projects'], key=lambda p: p.get('date_added', ''), reverse=True)[:6]
     latest_html = ''
     for proj in latest_projects:
@@ -577,7 +586,7 @@ def generate_static_homepage(data):
         latest_html += f"""
       <article class="project-card">
         <span class="category-tag">{cat_name}</span>
-        <h3><a href="/projects/{proj['slug']}.html">{proj['name']}</a></h3>
+        <h3><a href="/projects/{proj['slug']}.html" target="_blank">{proj['name']}</a></h3>
         <p class="description">{proj.get('description_zh', '')[:120]}</p>
         <div class="meta">
           <span>⭐ {proj['stars']:,}</span>
@@ -624,6 +633,7 @@ def generate_static_homepage(data):
       <a href="/" class="logo"><img src="/logo.png" alt="开源替代" style="height:24px;width:24px;vertical-align:middle;margin-right:6px;"> <span data-site-name>开源替代</span></a>
       <button class="hamburger" id="hamburgerBtn" aria-label="菜单">☰</button>
       <ul class="nav-links" id="navLinks">
+        <li><a href="/">首页</a></li>
         <li><a href="/category.html?id=ai-agent">AI & Agent</a></li>
         <li><a href="/category.html?id=design-tools">设计工具</a></li>
         <li><a href="/category.html?id=office-productivity">办公效率</a></li>
@@ -708,7 +718,7 @@ def generate_static_homepage(data):
       </div>
       <div class="footer-col">
         <h4>联系我们</h4>
-        <a href="mailto:mailtomidoo@gmail.com">📧 mailtomidoo@gmail.com</a>
+        <a href="mailto:info@kyal.cn">📧 info@kyal.cn</a>
       </div>
     </div>
     <div class="footer-bottom">
