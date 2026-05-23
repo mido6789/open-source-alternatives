@@ -4,7 +4,7 @@
 功能：
 1. 更新 Stars/版本 + 自动翻译（增强清洗）+ 时间线带简介
 2. 自动新增 3-5 个候选项目
-3. 增量生成语义化、SEO友好的静态HTML项目页面（含面包屑导航、标签）+ 静态首页
+3. 增量生成语义化、SEO友好的静态HTML项目页面（含面包屑导航、彩色标签）+ 静态首页
 4. 抓取社区讨论 (Discussions) 丰富内容，段落式展示
 5. 候选池自动补给 (低于20个时一次性追加20个新候选)
 6. 向百度主动推送新增URL，加速收录
@@ -24,21 +24,14 @@ BAIDU_TOKEN = os.environ.get('BAIDU_PUSH_TOKEN', '')
 
 def strip_html(text):
     if not text: return text
-    # 移除 HTML 标签
     clean = re.sub(r'<[^>]+>', ' ', text)
-    # 移除 Markdown 图片和链接语法 (增强版，支持多种格式)
     clean = re.sub(r'\[!\[.*?\]\(.*?\)\]\(.*?\)', ' ', clean)
     clean = re.sub(r'!\[.*?\]\(.*?\)', ' ', clean)
     clean = re.sub(r'\[([^\]]*)\]\([^)]+\)', r'\1', clean)
-    # 移除 Markdown 标题标记
     clean = re.sub(r'^#{1,6}\s*', '', clean, flags=re.MULTILINE)
-    # 移除分隔线
     clean = re.sub(r'[-=*]{3,}', ' ', clean)
-    # 移除多余符号和星号
     clean = re.sub(r'[`*_~>|]', ' ', clean)
-    # 移除可能残留的 URL 和特殊字符
     clean = re.sub(r'https?://\S+', '', clean)
-    # 移除多余空白
     clean = re.sub(r'\s+', ' ', clean).strip()
     return clean
 
@@ -82,18 +75,15 @@ def get_repo_info(github_url):
         version = (d.get('latest_release') or {}).get('tag_name', '')
         lic = (d.get('license') or {}).get('spdx_id', '')
         desc = d.get('description', '')
-        # 如果描述太短，尝试从 README 获取更多内容
-        if not desc or len(desc) < 50:  # 提高阈值，让描述更完整
+        if not desc or len(desc) < 50:
             try:
                 readme_url = f'https://api.github.com/repos/{owner}/{repo}/readme'
                 readme_req = urllib.request.Request(readme_url, headers=headers)
                 with urllib.request.urlopen(readme_req, timeout=10) as rr:
                     readme_content = base64.b64decode(json.loads(rr.read().decode())['content']).decode('utf-8', errors='ignore')
-                    # 清洗后取前500字符
                     desc = strip_html(readme_content)[:500]
             except:
                 pass
-        # 最终确保描述是干净文本
         desc = strip_html(desc) if desc else desc
         return d.get('stargazers_count', 0), version, lic, desc
     except urllib.error.HTTPError as e:
@@ -122,13 +112,12 @@ def update_existing_projects(data):
             project['stars'] = stars; project['last_updated'] = today_str; updated += 1
         if version: project['version'] = version
         if lic and not project.get('license'): project['license'] = lic
-        # 增强翻译检测：只要中文简介不合格，就重新翻译
         zh = project.get('description_zh', '')
         en = project.get('description_en', '') or desc or ''
         if desc:
             project['description_en'] = desc
         if en:
-            en = strip_html(en)  # 翻译前再次确保英文是干净的
+            en = strip_html(en)
         if needs_translation(zh, en) and en:
             new_zh = translate(en)
             if new_zh and new_zh != zh:
@@ -334,6 +323,10 @@ def generate_static_project_pages(data):
     generated, skipped, new_states = 0, 0, {}
     old_states = load_page_states()
     
+    tag_colors = [
+        "#3b82f6", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4", "#f97316"
+    ]
+    
     for proj in data['projects']:
         slug = proj['slug']
         fingerprint = get_project_fingerprint(proj)
@@ -346,14 +339,19 @@ def generate_static_project_pages(data):
         cat_name = category['name'] if category else proj['category']
         cat_icon = category['icon'] if category else ''
         
-        # 面包屑导航
         breadcrumb_html = f'<nav class="breadcrumb"><a href="/">首页</a> &raquo; <a href="/category.html?id={proj["category"]}">{cat_name}</a> &raquo; {proj["name"]}</nav>'
         
-        # 标签
         tags_html = ''
         if proj.get('tags'):
-            tag_links = [f'<a href="/category.html?search={t.strip()}" class="tag-link">{t.strip()}</a>' for t in proj['tags']]
-            tags_html = f'<div class="tags-list">{" ".join(tag_links)}</div>'
+            max_tags = min(5, len(proj['tags']))
+            num_tags = random.randint(3, max_tags) if max_tags >= 3 else max_tags
+            selected_tags = random.sample(proj['tags'], num_tags)
+            
+            tag_links = []
+            for tag in selected_tags:
+                color = random.choice(tag_colors)
+                tag_links.append(f'<a href="/category.html?search={tag.strip()}" class="tag-link" style="background-color: {color}; color: white; padding: 4px 10px; border-radius: 12px; font-size: 0.8rem; text-decoration: none; margin-right: 6px;">{tag.strip()}</a>')
+            tags_html = f'<div class="tags-list" style="margin: 20px 0;">{" ".join(tag_links)}</div>'
         
         discussions_html = ''
         if 'discussions' in proj and proj['discussions']:
