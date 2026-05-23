@@ -6,6 +6,10 @@
     "contact_email": "mailtomidoo@gmail.com",
     "admin_password_hash": "",
     "update_log": [
+      "2026-05-23 🆕 新增：SignTools（⭐ 2,152）| ✒ A free, self-hosted platform to sideload iOS apps without a computer",
+      "2026-05-23 🆕 新增：kdenlive（⭐ 1）| KDE 非线性视频编辑器。",
+      "2026-05-23 🆕 新增：chatwoot（⭐ 29,655）| Open-source live-chat, email support, omni-channel desk. An alternative to Inter...",
+      "2026-05-23 🆕 新增：vito（⭐ 3,117）| Free and Self-Hosted  Server Management Tool",
       "2026-05-23 🆕 新增：ChatGPT-Next-Web（⭐ 88,067）| 精心设计的跨平台 ChatGPT Web UI。",
       "2026-05-23 🆕 新增：openscreen（⭐ 36,930）| Create stunning demos for free. Open-source, no subscriptions, no watermarks, an...",
       "2026-05-23 🆕 新增：open-webui（⭐ 138,288）| 美观的 Ollama 网页界面，类 ChatGPT 体验，支持多模型。",
@@ -31,11 +35,7 @@
       "2026-05-20 🆕 新增：coolify（⭐ 55,629）| An open-source, self-hostable PaaS alternative to Vercel, Heroku & Netlify that ...",
       "2026-05-20 🆕 新增：logseq（⭐ 42,983）| 隐私第一的开源知识库。",
       "2026-05-20 🆕 新增：Files（⭐ 43,564）| 构建适用于 Windows 的最佳文件管理器。",
-      "2026-05-20 🆕 新增：mindsdb（⭐ 39,191）| 由人工智能驱动的数据库，可让您查询和预测数据。",
-      "2026-05-20 🆕 新增：inkscape（⭐ 3,492）| 专业矢量图形编辑器。",
-      "2026-05-19 🆕 新增：jitsi-meet（⭐ 29,279）| Jitsi Meet - 安全、简单且可扩展的视频会议。",
-      "2026-05-19 🆕 新增：SillyTavern（⭐ 27,852）| 开源 AI 角色扮演前端，支持多种 LLM 后端，可自定义角色卡片。",
-      "2026-05-19 🆕 新增：photoprism（⭐ 39,684）| 适用于去中心化网络的人工智能照片应用程序。"
+      "2026-05-20 🆕 新增：mindsdb（⭐ 39,191）| 由人工智能驱动的数据库，可让您查询和预测数据。"
     ],
     "ads": {
       "sidebar_top": "",
@@ -246,7 +246,7 @@
       "slug": "langchain",
       "category": "ai-agent",
       "github_url": "https://github.com/langchain-ai/langchain",
-      "stars": 137431,
+      "stars": 137433,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -264,7 +264,7 @@
         "2026-05-20": 137212,
         "2026-05-21": 137277,
         "2026-05-22": 137376,
-        "2026-05-23": 137431
+        "2026-05-23": 137433
       },
       "description_zh": "LangChain 是当前最流行的 LLM 应用开发框架，支持 Python 和 JavaScript。它提供了链式调用、智能代理、记忆管理、向量检索等核心模块，让开发者可以快速构建基于 GPT、Claude、Llama 等大模型的应用。",
       "description_en": "The agent engineering platform. LangChain is a framework for building agents and LLM-powered applications. It helps you chain together interoperable components and third-party integrations to simplify AI application development — all while future-proofing decisions as the underlying technology evolves. [!TIP] Just getting started? Check out Deep Agents — a higher-level package built on LangChain for agents that have built-in capabilites for common usage patterns such as planning, subagents, file",
@@ -311,7 +311,7 @@
       "slug": "comfyui",
       "category": "ai-agent",
       "github_url": "https://github.com/comfyanonymous/ComfyUI",
-      "stars": 114095,
+      "stars": 114101,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -329,7 +329,7 @@
         "2026-05-20": 113691,
         "2026-05-21": 113819,
         "2026-05-22": 113981,
-        "2026-05-23": 114095
+        "2026-05-23": 114101
       },
       "description_zh": "ComfyUI 是一款基于节点的 Stable Diffusion 工作流工具，以灵活性和可复现性著称。用户可以通过拖拽和连接节点来构建复杂的图像生成流水线，精确控制每一步的处理过程。",
       "description_en": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
@@ -382,7 +382,7 @@
       "slug": "audacity",
       "category": "media-video",
       "github_url": "https://github.com/audacity/audacity",
-      "stars": 17013,
+      "stars": 17014,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -400,7 +400,7 @@
         "2026-05-20": 17002,
         "2026-05-21": 17006,
         "2026-05-22": 17010,
-        "2026-05-23": 17013
+        "2026-05-23": 17014
       },
       "description_zh": "Audacity 是最知名的开源音频编辑软件，已持续开发超过 20 年。它支持多轨录音和编辑，内置丰富的音效处理功能，支持导入导出多种格式，可安装第三方插件扩展功能。",
       "description_en": "Audacity Audacity is an easy-to-use, multi-track audio editor and recorder for Windows, macOS, GNU/Linux and other operating systems. More info can be found on This repository is currently undergoing major structural change. We're currently working on Audacity 4, which means an entirely new UI and also refactorings aplenty. As such, the master branch is currently not particularly friendly to new contributors. It is still possible to submit patches to Audacity 3.x; make sure you branch off audaci",
@@ -453,7 +453,7 @@
       "slug": "ollama",
       "category": "ai-agent",
       "github_url": "https://github.com/ollama/ollama",
-      "stars": 172074,
+      "stars": 172077,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -471,7 +471,7 @@
         "2026-05-20": 171807,
         "2026-05-21": 171862,
         "2026-05-22": 171999,
-        "2026-05-23": 172074
+        "2026-05-23": 172077
       },
       "description_zh": "Ollama 是一个让你在本地电脑上轻松运行大语言模型的开源工具。它支持 Llama 3、Mistral、Gemma、Qwen、DeepSeek 等众多主流开源模型，只需一条命令就能下载并启动模型服务。",
       "description_en": "Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
@@ -563,7 +563,7 @@
       "slug": "qbittorrent",
       "category": "system-utils",
       "github_url": "https://github.com/qbittorrent/qBittorrent",
-      "stars": 37629,
+      "stars": 37631,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -581,7 +581,7 @@
         "2026-05-20": 37575,
         "2026-05-21": 37597,
         "2026-05-22": 37615,
-        "2026-05-23": 37629
+        "2026-05-23": 37631
       },
       "description_zh": "轻量级开源 BT 下载工具，无广告无捆绑，界面简洁功能全面。支持磁力链接、RSS 订阅、远程控制等高级功能，是 uTorrent 的最佳开源替代品。",
       "description_en": "qBittorrent - A BitTorrent client in Qt Description: qBittorrent is a bittorrent client programmed in C++ / Qt that uses libtorrent (sometimes called libtorrent-rasterbar) by Arvid Norberg. It aims to be a good alternative to all other bittorrent clients out there. qBittorrent is fast, stable and provides unicode support as well as many features. The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribu",
@@ -953,7 +953,7 @@
       "slug": "obs-studio",
       "category": "media-video",
       "github_url": "https://github.com/obsproject/obs-studio",
-      "stars": 72614,
+      "stars": 72615,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -971,7 +971,7 @@
         "2026-05-20": 72548,
         "2026-05-21": 72574,
         "2026-05-22": 72594,
-        "2026-05-23": 72614
+        "2026-05-23": 72615
       },
       "description_zh": "OBS Studio - 用于直播和屏幕录制的免费开源软件",
       "description_en": "OBS Studio - Free and open source software for live streaming and screen recording",
@@ -986,6 +986,12 @@
       "featured": false,
       "date_added": "2026-05-07",
       "discussions": [
+        {
+          "title": "Add a togglable VIDEO SIZE display to the status bar",
+          "url": "https://github.com/obsproject/obs-studio/discussions/13461",
+          "created_at": "2026-05-23T06:19:00Z",
+          "author": "CCShakeCat"
+        },
         {
           "title": "ASIO, Vertical Canvas.",
           "url": "https://github.com/obsproject/obs-studio/discussions/13455",
@@ -1009,12 +1015,6 @@
           "url": "https://github.com/obsproject/obs-studio/discussions/13233",
           "created_at": "2026-03-20T10:19:46Z",
           "author": "alekssamos"
-        },
-        {
-          "title": "whoever made the recent changes to the visuals of audio dock, please help",
-          "url": "https://github.com/obsproject/obs-studio/discussions/13225",
-          "created_at": "2026-03-16T19:00:04Z",
-          "author": "SoumyaK4"
         }
       ]
     },
@@ -1138,7 +1138,7 @@
       "slug": "syncthing",
       "category": "system-utils",
       "github_url": "https://github.com/syncthing/syncthing",
-      "stars": 84326,
+      "stars": 84327,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -1156,7 +1156,7 @@
         "2026-05-20": 84232,
         "2026-05-21": 84259,
         "2026-05-22": 84298,
-        "2026-05-23": 84326
+        "2026-05-23": 84327
       },
       "description_zh": "Syncthing 是一款开源的 P2P 连续文件同步工具，无需中心服务器即可在多台电脑之间安全地同步文件，保护用户数据安全，是 Resilio Sync 和 Dropbox 的隐私优先替代方案。",
       "description_en": "[![Syncthing][14]][15] Goals Syncthing is a continuous file synchronization program . It synchronizes files between two or more computers. We strive to fulfill the goals below. The goals are listed in order of importance, the most important ones first. This is the summary version of the goal list - for more commentary, see the full [Goals document][13]. Syncthing should be: 1. Safe From Data Loss Protecting the user's data is paramount. We take every reasonable precaution to avoid corrupting the",
@@ -1246,7 +1246,7 @@
       "slug": "localsend",
       "category": "system-utils",
       "github_url": "https://github.com/localsend/localsend",
-      "stars": 81808,
+      "stars": 81815,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -1264,7 +1264,7 @@
         "2026-05-20": 81640,
         "2026-05-21": 81688,
         "2026-05-22": 81756,
-        "2026-05-23": 81808
+        "2026-05-23": 81815
       },
       "description_zh": "LocalSend 是一款开源的跨平台文件传输工具，支持在局域网内的多设备间快速共享文件和消息，无需互联网连接，是 AirDrop 的最佳开源替代方案。",
       "description_en": "An open-source cross-platform alternative to AirDrop",
@@ -1354,7 +1354,7 @@
       "slug": "analytics",
       "category": "dev-tools",
       "github_url": "https://github.com/plausible/analytics",
-      "stars": 26397,
+      "stars": 26401,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -1372,7 +1372,7 @@
         "2026-05-20": 26178,
         "2026-05-21": 26208,
         "2026-05-22": 26333,
-        "2026-05-23": 26397
+        "2026-05-23": 26401
       },
       "description_zh": "轻量开源网站统计，不追踪隐私，无需 Cookie 同意横幅。",
       "description_en": "Open source, privacy-first web analytics. Lightweight, cookie-free Google Analytics alternative. Self-hosted or cloud.",
@@ -1424,7 +1424,7 @@
       "slug": "logseq",
       "category": "office-productivity",
       "github_url": "https://github.com/logseq/logseq",
-      "stars": 43024,
+      "stars": 43025,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -1442,7 +1442,7 @@
         "2026-05-20": 42979,
         "2026-05-21": 42994,
         "2026-05-22": 43011,
-        "2026-05-23": 43024
+        "2026-05-23": 43025
       },
       "description_zh": "一个隐私第一的开源知识管理和协作平台。下载链接：路线图：ggEV",
       "description_en": "A privacy-first, open-source platform for knowledge management and collaboration. Download link: roadmap: ggEV",
@@ -1494,7 +1494,7 @@
       "slug": "metabase",
       "category": "dev-tools",
       "github_url": "https://github.com/metabase/metabase",
-      "stars": 47414,
+      "stars": 47415,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -1512,7 +1512,7 @@
         "2026-05-20": 47380,
         "2026-05-21": 47391,
         "2026-05-22": 47402,
-        "2026-05-23": 47414
+        "2026-05-23": 47415
       },
       "description_zh": "简单开源的数据查询与可视化平台，无需编写 SQL 即可分析。",
       "description_en": "The easy-to-use open source Business Intelligence and Embedded Analytics tool that lets everyone work with data :bar chart:",
@@ -1532,7 +1532,7 @@
       "slug": "llama-cpp",
       "category": "ai-agent",
       "github_url": "https://github.com/ggerganov/llama.cpp",
-      "stars": 112367,
+      "stars": 112376,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -1550,7 +1550,7 @@
         "2026-05-20": 111679,
         "2026-05-21": 112047,
         "2026-05-22": 112226,
-        "2026-05-23": 112367
+        "2026-05-23": 112376
       },
       "description_zh": "C++ 实现的高性能 LLM 推理引擎，支持在消费级硬件上运行大模型。",
       "description_en": "llama.cpp Manifesto / ggml / ops LLM inference in C/C++ Recent API changes - Changelog for libllama API - Changelog for llama-server REST API Hot topics - Hugging Face cache migration: models downloaded with -hf are now stored in the standard Hugging Face cache directory, enabling sharing with other HF tools. - guide : using the new WebUI of llama.cpp - guide : running gpt-oss with llama.cpp - [[FEEDBACK] Better packaging for llama.cpp to support downstream consumers 🤗]( - Support for the gpt-os",
@@ -1786,7 +1786,7 @@
       "slug": "cal-com",
       "category": "office-productivity",
       "github_url": "https://github.com/calcom/cal.com",
-      "stars": 44369,
+      "stars": 44372,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -1804,7 +1804,7 @@
         "2026-05-20": 43719,
         "2026-05-21": 43898,
         "2026-05-22": 44163,
-        "2026-05-23": 44369
+        "2026-05-23": 44372
       },
       "description_zh": "[!警告] 使用风险需您自担。 Cal.diy 是 Cal.com 的开源社区版本，适用于想要自行托管自己的 Cal.diy 实例的用户。强烈建议用于个人非生产用途。请仔细检查所有安装和配置步骤。自托管需要服务器管理、数据库管理和保护敏感数据的高级知识。仅当您对这些责任感到满意时才继续。 [!TIP] 对于任何商业",
       "description_en": "Scheduling infrastructure for absolutely everyone.",
@@ -1901,7 +1901,7 @@
       "slug": "freecad",
       "category": "design-tools",
       "github_url": "https://github.com/FreeCAD/FreeCAD",
-      "stars": 31072,
+      "stars": 31073,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -1919,7 +1919,7 @@
         "2026-05-20": 31025,
         "2026-05-21": 31048,
         "2026-05-22": 31060,
-        "2026-05-23": 31072
+        "2026-05-23": 31073
       },
       "description_zh": "FreeCAD 的官方源代码，一个免费的开源多平台 3D 参数化建模器。",
       "description_en": "Official source code of FreeCAD, a free and opensource multiplatform 3D parametric modeler.",
@@ -2419,7 +2419,7 @@
       "slug": "open-interpreter",
       "category": "ai-agent",
       "github_url": "https://github.com/OpenInterpreter/open-interpreter",
-      "stars": 63629,
+      "stars": 63630,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -2435,7 +2435,7 @@
         "2026-05-20": 63585,
         "2026-05-21": 63601,
         "2026-05-22": 63613,
-        "2026-05-23": 63629
+        "2026-05-23": 63630
       },
       "description_zh": "● Open Interpreter 尽早访问桌面应用程序 ‎ ‎ ‎ ‎ 文档 Open Interpreter 允许法学硕士在本地运行代码（Python、Javascript、Shell 等）。您可以在安装后运行 $terpreter，通过终端中类似 ChatGPT 的界面与 Open Interpreter 聊天。这为您的计算机的通用功能提供了一个自然语言界面： - 创建和编辑照片、视频、PDF 等。 - 控制 Chrome 浏览器执行研究 - 绘图、清理和分析",
       "description_en": "● Open Interpreter Get early access to the desktop app ‎ ‎ ‎ ‎ Documentation Open Interpreter lets LLMs run code (Python, Javascript, Shell, and more) locally. You can chat with Open Interpreter through a ChatGPT-like interface in your terminal by running $ interpreter after installing. This provides a natural-language interface to your computer's general-purpose capabilities: - Create and edit photos, videos, PDFs, etc. - Control a Chrome browser to perform research - Plot, clean, and analyze l",
@@ -2475,7 +2475,7 @@
       "slug": "pocketbase",
       "category": "dev-tools",
       "github_url": "https://github.com/pocketbase/pocketbase",
-      "stars": 58498,
+      "stars": 58501,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -2491,7 +2491,7 @@
         "2026-05-20": 58444,
         "2026-05-21": 58453,
         "2026-05-22": 58477,
-        "2026-05-23": 58498
+        "2026-05-23": 58501
       },
       "description_zh": "PocketBase 是一个开源 Go 后端，包括： - 具有实时订阅的嵌入式数据库 ( SQLite ) - 内置文件和用户管理 - 方便的管理仪表板 UI - 和简单的 REST-ish API 有关文档和示例，请访问 https://pocketbase.io/docs。 [!警告] 请记住，PocketBase 仍在积极开发中，因此在达到 v1.0.0 之前不能保证完全向后兼容性。 API SDK 客户端 与 API SDK 交互的最简单方式",
       "description_en": "PocketBase is an open source Go backend that includes: - embedded database ( SQLite ) with realtime subscriptions - built-in files and users management - convenient Admin dashboard UI - and simple REST-ish API For documentation and examples, please visit [!WARNING] Please keep in mind that PocketBase is still under active development and therefore full backward compatibility is not guaranteed before reaching v1.0.0. API SDK clients The easiest way to interact with the PocketBase Web APIs is to u",
@@ -2543,7 +2543,7 @@
       "slug": "excalidraw",
       "category": "design-tools",
       "github_url": "https://github.com/excalidraw/excalidraw",
-      "stars": 123873,
+      "stars": 123875,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -2559,7 +2559,7 @@
         "2026-05-20": 123689,
         "2026-05-21": 123750,
         "2026-05-22": 123816,
-        "2026-05-23": 123873
+        "2026-05-23": 123875
       },
       "description_zh": "Excalidraw 编辑器博客文档 Excalidraw+ 开源虚拟手绘风格白板。协作和端到端加密。创建漂亮的手绘图、线框图或任何您喜欢的内容。功能 Excalidraw 编辑器（npm 软件包）支持： - 💯 免费且开源。 - 🎨 无限的、基于画布的白板。 - ✍️手绘风格。 - 🌓 深色模式。 - 🏗️ 可定制。 - 📷 图像支持。 - 😀 形状库支持。 - 🌐 本地化",
       "description_en": "Virtual whiteboard for sketching hand-drawn like diagrams",
@@ -2611,7 +2611,7 @@
       "slug": "penpot",
       "category": "design-tools",
       "github_url": "https://github.com/penpot/penpot",
-      "stars": 48250,
+      "stars": 48251,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -2627,7 +2627,7 @@
         "2026-05-20": 47955,
         "2026-05-21": 48002,
         "2026-05-22": 48164,
-        "2026-05-23": 48250
+        "2026-05-23": 48251
       },
       "description_zh": "[uri 许可证]：https://www.mozilla.org/en-US/MPL/2.0 [uri 许可证图片]：https://img.shields.io/badge/MPL-2.0-blue.svg 网站 • 用户指南 • 学习中心 • 社区 Youtube • Peertube • Linkedin • Instagram • Mastodon • Bluesky • X Penpot 视频 Penpot 是面向大规模构建数字产品的团队的开源设计平台。 Penpot 的主要优势在于让您完全掌控自己的设计基础设施。它基于开源构建并专为自托管而设计，使团队能够共同协作",
       "description_en": "Penpot: The open-source design tool for design and code collaboration",
@@ -2679,7 +2679,7 @@
       "slug": "keepassxc",
       "category": "security-privacy",
       "github_url": "https://github.com/keepassxreboot/keepassxc",
-      "stars": 27296,
+      "stars": 27297,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -2695,7 +2695,7 @@
         "2026-05-20": 27250,
         "2026-05-21": 27269,
         "2026-05-22": 27290,
-        "2026-05-23": 27296
+        "2026-05-23": 27297
       },
       "description_zh": "KeePassXC 是 Windows 应用程序“KeePass Password Safe”的跨平台社区驱动端口。",
       "description_en": "KeePassXC is a cross-platform community-driven port of the Windows application “KeePass Password Safe”.",
@@ -2920,7 +2920,7 @@
       "slug": "dify",
       "category": "ai-agent",
       "github_url": "https://github.com/langgenius/dify",
-      "stars": 142299,
+      "stars": 142298,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -2935,7 +2935,7 @@
         "2026-05-20": 142028,
         "2026-05-21": 142139,
         "2026-05-22": 142250,
-        "2026-05-23": 142299
+        "2026-05-23": 142298
       },
       "description_zh": "开源的 LLM 应用开发平台，融合了后端即服务和 LLMOps 理念。",
       "description_en": "Production-ready platform for agentic workflow development.",
@@ -2987,7 +2987,7 @@
       "slug": "immich",
       "category": "media-video",
       "github_url": "https://github.com/immich-app/immich",
-      "stars": 101349,
+      "stars": 101351,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -3002,7 +3002,7 @@
         "2026-05-20": 101155,
         "2026-05-21": 101218,
         "2026-05-22": 101279,
-        "2026-05-23": 101349
+        "2026-05-23": 101351
       },
       "description_zh": "自建照片和视频管理方案，支持自动备份、AI 人脸识别等功能。",
       "description_en": "High performance self-hosted photo and video management solution.",
@@ -3257,7 +3257,7 @@
       "slug": "open-webui",
       "category": "ai-agent",
       "github_url": "https://github.com/open-webui/open-webui",
-      "stars": 138287,
+      "stars": 138290,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -3271,7 +3271,7 @@
         "2026-05-20": 137927,
         "2026-05-21": 138061,
         "2026-05-22": 138195,
-        "2026-05-23": 138287
+        "2026-05-23": 138290
       },
       "description_zh": "美观的 Ollama 网页界面，类 ChatGPT 体验，支持多模型。",
       "description_en": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
@@ -3454,7 +3454,7 @@
       "slug": "stirling-pdf",
       "category": "office-productivity",
       "github_url": "https://github.com/Stirling-Tools/Stirling-PDF",
-      "stars": 79137,
+      "stars": 79140,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -3467,7 +3467,7 @@
         "2026-05-20": 79011,
         "2026-05-21": 79063,
         "2026-05-22": 79091,
-        "2026-05-23": 79137
+        "2026-05-23": 79140
       },
       "description_zh": "全能私有化 PDF 工具箱，支持分割、合并、转换等数十种操作。",
       "description_en": "1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
@@ -3519,7 +3519,7 @@
       "slug": "bleachbit",
       "category": "system-utils",
       "github_url": "https://github.com/bleachbit/bleachbit",
-      "stars": 5356,
+      "stars": 5357,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -3533,7 +3533,7 @@
         "2026-05-20": 5324,
         "2026-05-21": 5339,
         "2026-05-22": 5347,
-        "2026-05-23": 5356
+        "2026-05-23": 5357
       },
       "description_zh": "BleachBit BleachBit 清理文件以释放磁盘空间并维护隐私。从源代码运行 要在不安装的情况下运行 BleachBit，请解压缩 tarball，然后运行以下命令： make -C po local # build conversions python3漂白位.py 然后，检查首选项。然后，选择一些选项，然后单击“预览”。查看文件，相应地切换选项，然后单击删除。有关命令行界面的信息，请运行： python3bleachbit.py --help 阅读有关从 s 运行的更多信息",
       "description_en": "BleachBit BleachBit cleans files to free disk space and to maintain privacy. Running from source To run BleachBit without installation, unpack the tarball and then run these commands: make -C po local # build translations python3 bleachbit.py Then, review the preferences. Then, select some options, and click Preview. Review the files, toggle options accordingly, and click Delete. For information regarding the command line interface, run: python3 bleachbit.py --help Read more about running from s",
@@ -3716,7 +3716,7 @@
       "slug": "appflowy",
       "category": "office-productivity",
       "github_url": "https://github.com/AppFlowy-IO/appflowy",
-      "stars": 71105,
+      "stars": 71107,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -3729,7 +3729,7 @@
         "2026-05-20": 70821,
         "2026-05-21": 70876,
         "2026-05-22": 71038,
-        "2026-05-23": 71105
+        "2026-05-23": 71107
       },
       "description_zh": "通过 AI 将项目、wiki 和团队结合在一起。 AppFlowy 是人工智能协作工作空间，您可以在不失去对数据控制的情况下实现更多目标。领先的开源 Notion 替代方案。",
       "description_en": "Bring projects, wikis, and teams together with AI. AppFlowy is the AI collaborative workspace where you achieve more without losing control of your data. The leading open source Notion alternative.",
@@ -3781,7 +3781,7 @@
       "slug": "n8n",
       "category": "dev-tools",
       "github_url": "https://github.com/n8n-io/n8n",
-      "stars": 189340,
+      "stars": 189343,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -3792,7 +3792,7 @@
         "2026-05-20": 188857,
         "2026-05-21": 188984,
         "2026-05-22": 189206,
-        "2026-05-23": 189340
+        "2026-05-23": 189343
       },
       "description_zh": "开源自动化平台，可自托管连接超过 300+ 应用的 API。",
       "description_en": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
@@ -3874,7 +3874,7 @@
       "slug": "zed",
       "category": "dev-tools",
       "github_url": "https://github.com/zed-industries/zed",
-      "stars": 83591,
+      "stars": 83593,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -3884,7 +3884,7 @@
         "2026-05-20": 83332,
         "2026-05-21": 83417,
         "2026-05-22": 83523,
-        "2026-05-23": 83591
+        "2026-05-23": 83593
       },
       "description_zh": "以思想的速度编写代码 – Zed 是一款高性能、多人代码编辑器，由 Atom 和 Tree-sitter 的创建者开发。",
       "description_en": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
@@ -4056,7 +4056,7 @@
       "slug": "sillytavern",
       "category": "ai-agent",
       "github_url": "https://github.com/SillyTavern/SillyTavern",
-      "stars": 28119,
+      "stars": 28121,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
@@ -4064,7 +4064,7 @@
         "2026-05-20": 27946,
         "2026-05-21": 28014,
         "2026-05-22": 28075,
-        "2026-05-23": 28119
+        "2026-05-23": 28121
       },
       "description_zh": "开源 AI 角色扮演前端，支持多种 LLM 后端，可自定义角色卡片。",
       "description_en": "![][cover] English German 中文 繁體中文 日本語 Русский 한국어 SillyTavern provides a single unified interface for many LLM APIs (KoboldAI/CPP, Horde, NovelAI, Ooba, Tabby, OpenAI, OpenRouter, Claude, Mistral and more), a mobile-friendly layout, Visual Novel Mode, Automatic1111 & ComfyUI API image generation integration, TTS, WorldInfo (lorebooks), customizable UI, auto-translate, more prompt options than you'd ever want or need, and endless growth potential via third-party extensions. We have a Documentatio",
@@ -4617,13 +4617,13 @@
       "slug": "certimate",
       "category": "dev-tools",
       "github_url": "https://github.com/certimate-go/certimate",
-      "stars": 8630,
+      "stars": 8632,
       "version": "",
       "last_updated": "2026-05-23",
       "stars_history": {
         "2026-05-21": 8625,
         "2026-05-22": 8628,
-        "2026-05-23": 8630
+        "2026-05-23": 8632
       },
       "description_zh": "开源免费的自托管 SSL 证书 ACME 工具，以可视化方式自动执行签发、部署、续订和监控的全周期。 开源免费的自托管SSL证书ACME工具，完全申请、部署、续期、监控全流程自动化可视化，支持主流主流云厂商。",
       "description_en": "An open-source and free self-hosted SSL certificates ACME tool, automates the full-cycle of issuance, deployment, renewal, and monitoring visually. 完全开源免费的自托管 SSL 证书 ACME 工具，申请、部署、续期、监控全流程自动化可视化，支持各大主流云厂商。",
@@ -4759,62 +4759,6 @@
       "date_added": "2026-05-22"
     },
     {
-      "id": "auto-1779515645-944",
-      "name": "ChatGPT-Next-Web",
-      "slug": "chatgpt-next-web",
-      "category": "ai-agent",
-      "github_url": "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web",
-      "stars": 88067,
-      "version": "",
-      "last_updated": "2026-05-23",
-      "stars_history": {
-        "2026-05-23": 88067
-      },
-      "description_zh": "精心设计的跨平台 ChatGPT Web UI。",
-      "description_en": "A well-designed cross-platform ChatGPT web UI.",
-      "alternative_to": "ChatGPT 客户端",
-      "tags": [
-        "ChatGPT",
-        "客户端"
-      ],
-      "license": "MIT",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-23",
-      "discussions": [
-        {
-          "title": "Claude Code skills for investment analysis — options flow scanner + alerts (open source)",
-          "url": "https://github.com/ChatGPTNextWeb/NextChat/discussions/6775",
-          "created_at": "2026-05-13T13:08:43Z",
-          "author": "tellmefrankie"
-        },
-        {
-          "title": "🤖 朱雀找人 - AI发布任务，真人执行，自动结算！欢迎AI Agent来测试",
-          "url": "https://github.com/ChatGPTNextWeb/NextChat/discussions/6770",
-          "created_at": "2026-05-05T19:45:03Z",
-          "author": "fangqiang331-gif"
-        },
-        {
-          "title": "【API 推荐】高性价比 AI API 中转站 marting.pro，支持近600种模型，完美兼容 NextChat",
-          "url": "https://github.com/ChatGPTNextWeb/NextChat/discussions/6729",
-          "created_at": "2026-03-26T12:31:35Z",
-          "author": "WrbMax"
-        },
-        {
-          "title": "Pissbook: connect your NextChat instance to an agent-only forum",
-          "url": "https://github.com/ChatGPTNextWeb/NextChat/discussions/6728",
-          "created_at": "2026-03-23T00:57:59Z",
-          "author": "ColinRobinsonSOL"
-        },
-        {
-          "title": "怎么没更新了",
-          "url": "https://github.com/ChatGPTNextWeb/NextChat/discussions/6713",
-          "created_at": "2026-02-23T10:42:38Z",
-          "author": "grace3132"
-        }
-      ]
-    },
-    {
       "id": "auto-1779515646-255",
       "name": "openscreen",
       "slug": "openscreen",
@@ -4826,7 +4770,7 @@
       "stars_history": {
         "2026-05-23": 36930
       },
-      "description_zh": "Create stunning demos for free. Open-source, no subscriptions, no watermarks, and free for commercia",
+      "description_zh": "免费创建令人惊叹的演示。开源、无订阅、无水印、免费用于商业用途。 Screen Studio 的替代品。",
       "description_en": "Create stunning demos for free. Open-source, no subscriptions, no watermarks, and free for commercial use. An alternative to Screen Studio.",
       "alternative_to": "商业软件",
       "tags": [],
@@ -4834,62 +4778,6 @@
       "download_url": "",
       "featured": false,
       "date_added": "2026-05-23"
-    },
-    {
-      "id": "auto-1779515647-538",
-      "name": "open-webui",
-      "slug": "open-webui",
-      "category": "ai-agent",
-      "github_url": "https://github.com/open-webui/open-webui",
-      "stars": 138288,
-      "version": "",
-      "last_updated": "2026-05-23",
-      "stars_history": {
-        "2026-05-23": 138288
-      },
-      "description_zh": "美观的 Ollama 网页界面，类 ChatGPT 体验，支持多模型。",
-      "description_en": "User-friendly WebUI for LLMs.",
-      "alternative_to": "ChatGPT 界面",
-      "tags": [
-        "ChatGPT",
-        "网页界面"
-      ],
-      "license": "NOASSERTION",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-23",
-      "discussions": [
-        {
-          "title": "Model only sees skill name/description",
-          "url": "https://github.com/open-webui/open-webui/discussions/25020",
-          "created_at": "2026-05-22T22:58:34Z",
-          "author": "cibellerodrigues"
-        },
-        {
-          "title": "Any way to specify a dedicated model for title generation?",
-          "url": "https://github.com/open-webui/open-webui/discussions/25017",
-          "created_at": "2026-05-22T20:28:50Z",
-          "author": "castielwaverly"
-        },
-        {
-          "title": "Grok Cache Miss increasing costs",
-          "url": "https://github.com/open-webui/open-webui/discussions/25016",
-          "created_at": "2026-05-22T18:55:07Z",
-          "author": "mysteryx93"
-        },
-        {
-          "title": "Feature Request: Restrict in-chat model switching to compatible backend connection groups (prevent cross-boundary data leakage)",
-          "url": "https://github.com/open-webui/open-webui/discussions/25012",
-          "created_at": "2026-05-22T13:37:37Z",
-          "author": "sdi-fritz"
-        },
-        {
-          "title": "Skill Sets with subfolder structure possible?",
-          "url": "https://github.com/open-webui/open-webui/discussions/25010",
-          "created_at": "2026-05-22T13:27:02Z",
-          "author": "Seviks"
-        }
-      ]
     },
     {
       "id": "auto-1779515649-417",
@@ -4903,8 +4791,8 @@
       "stars_history": {
         "2026-05-23": 3117
       },
-      "description_zh": "Free and Self-Hosted  Server Management Tool",
-      "description_en": "Free and Self-Hosted Server Management Tool",
+      "description_zh": "免费且自托管的服务器管理工​​具",
+      "description_en": "About Vito Vito is a self-hosted web application that helps you manage your servers and deploy your PHP applications into production servers without a hassle. Quick Start sh bash <(curl -Ls Features - Provisions and Manages the server - Easy database management, Supports Mysql and MariaDB - Deploy your PHP applications such as Laravel - Manage your server's firewall - Supports Custom and Letsencrypt SSL - Uses supervisor to handle queues - Manages server's services - Deploy your SSH Keys to the",
       "alternative_to": "商业软件",
       "tags": [],
       "license": "AGPL-3.0",
@@ -4956,7 +4844,7 @@
       "stars_history": {
         "2026-05-23": 34186
       },
-      "description_zh": "Open Source Alternative to Vercel, Netlify and Heroku.",
+      "description_zh": "Vercel、Netlify 和 Heroku 的开源替代品。",
       "description_en": "Open Source Alternative to Vercel, Netlify and Heroku.",
       "alternative_to": "商业软件",
       "tags": [],
@@ -4994,6 +4882,158 @@
           "url": "https://github.com/Dokploy/dokploy/discussions/4417",
           "created_at": "2026-05-16T22:35:27Z",
           "author": "shrouale"
+        }
+      ]
+    },
+    {
+      "id": "auto-1779517318-622",
+      "name": "SignTools",
+      "slug": "signtools",
+      "category": "dev-tools",
+      "github_url": "https://github.com/SignTools/SignTools",
+      "stars": 2152,
+      "version": "",
+      "last_updated": "2026-05-23",
+      "stars_history": {
+        "2026-05-23": 2152
+      },
+      "description_zh": "✒ A free, self-hosted platform to sideload iOS apps without a computer",
+      "description_en": "✒ A free, self-hosted platform to sideload iOS apps without a computer",
+      "alternative_to": "商业软件",
+      "tags": [],
+      "license": "AGPL-3.0",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-23"
+    },
+    {
+      "id": "auto-1779517320-340",
+      "name": "kdenlive",
+      "slug": "kdenlive",
+      "category": "media-video",
+      "github_url": "https://github.com/kdenlive/kdenlive",
+      "stars": 1,
+      "version": "",
+      "last_updated": "2026-05-23",
+      "stars_history": {
+        "2026-05-23": 1
+      },
+      "description_zh": "KDE 非线性视频编辑器。",
+      "description_en": "KDE Non-Linear Video Editor.",
+      "alternative_to": "Adobe Premiere Pro",
+      "tags": [
+        "视频编辑",
+        "剪辑",
+        "非线性编辑"
+      ],
+      "license": "GPL-2.0",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-23"
+    },
+    {
+      "id": "auto-1779517321-424",
+      "name": "chatwoot",
+      "slug": "chatwoot",
+      "category": "ai-agent",
+      "github_url": "https://github.com/chatwoot/chatwoot",
+      "stars": 29655,
+      "version": "",
+      "last_updated": "2026-05-23",
+      "stars_history": {
+        "2026-05-23": 29655
+      },
+      "description_zh": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesf",
+      "description_en": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬",
+      "alternative_to": "商业软件",
+      "tags": [],
+      "license": "NOASSERTION",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-23",
+      "discussions": [
+        {
+          "title": "v4.14.0",
+          "url": "https://github.com/orgs/chatwoot/discussions/14487",
+          "created_at": "2026-05-18T16:47:20Z",
+          "author": "sony-mathew"
+        },
+        {
+          "title": "Deleting chats",
+          "url": "https://github.com/orgs/chatwoot/discussions/14464",
+          "created_at": "2026-05-14T21:36:11Z",
+          "author": "evawad"
+        },
+        {
+          "title": "Combining website widget chat and whatssap inbox into one thread",
+          "url": "https://github.com/orgs/chatwoot/discussions/14463",
+          "created_at": "2026-05-14T21:35:15Z",
+          "author": "evawad"
+        },
+        {
+          "title": "Instagram integration",
+          "url": "https://github.com/orgs/chatwoot/discussions/14428",
+          "created_at": "2026-05-11T13:26:27Z",
+          "author": "marceloherrera-digisite"
+        },
+        {
+          "title": "RFC: Sales Pipelines (Kanban) module — seeking maintainer feedback before implementation",
+          "url": "https://github.com/orgs/chatwoot/discussions/14396",
+          "created_at": "2026-05-07T17:37:40Z",
+          "author": "propiter"
+        }
+      ]
+    },
+    {
+      "id": "auto-1779517323-677",
+      "name": "vito",
+      "slug": "vito",
+      "category": "dev-tools",
+      "github_url": "https://github.com/vitodeploy/vito",
+      "stars": 3117,
+      "version": "",
+      "last_updated": "2026-05-23",
+      "stars_history": {
+        "2026-05-23": 3117
+      },
+      "description_zh": "Free and Self-Hosted  Server Management Tool",
+      "description_en": "Free and Self-Hosted Server Management Tool",
+      "alternative_to": "商业软件",
+      "tags": [],
+      "license": "AGPL-3.0",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-23",
+      "discussions": [
+        {
+          "title": "Show user confirmation/warning of deleting a server from server provider as well",
+          "url": "https://github.com/vitodeploy/vito/discussions/1105",
+          "created_at": "2026-05-19T12:30:49Z",
+          "author": "aneeskhan47"
+        },
+        {
+          "title": "How to view logs of nginx, php etc?",
+          "url": "https://github.com/vitodeploy/vito/discussions/1102",
+          "created_at": "2026-05-18T17:52:27Z",
+          "author": "aneeskhan47"
+        },
+        {
+          "title": "Feature Request: Allow one isolated Linux user to host multiple sites on the same server",
+          "url": "https://github.com/vitodeploy/vito/discussions/1076",
+          "created_at": "2026-04-30T18:35:41Z",
+          "author": "afaiyaz006"
+        },
+        {
+          "title": "Remove custom server",
+          "url": "https://github.com/vitodeploy/vito/discussions/1072",
+          "created_at": "2026-04-19T09:02:49Z",
+          "author": "bblori"
+        },
+        {
+          "title": "Script on site removal",
+          "url": "https://github.com/vitodeploy/vito/discussions/1069",
+          "created_at": "2026-04-08T10:47:08Z",
+          "author": "corvusmile"
         }
       ]
     }
@@ -5083,19 +5123,6 @@
         "IDE"
       ],
       "license": "MIT"
-    },
-    {
-      "github_url": "https://github.com/kdenlive/kdenlive",
-      "category": "media-video",
-      "alternative_to": "Adobe Premiere Pro",
-      "description_zh": "功能丰富的开源视频编辑器，多轨道时间线和丰富的转场效果。",
-      "description_en": "KDE Non-Linear Video Editor.",
-      "tags": [
-        "视频编辑",
-        "剪辑",
-        "非线性编辑"
-      ],
-      "license": "GPL-2.0"
     },
     {
       "github_url": "https://github.com/pihole/pihole",
@@ -5189,6 +5216,150 @@
       "description_en": "🚀 Self-hosted AI automation platform. Deploy n8n, Ollama, Flowise, RAG, Supabase & 30+ tools with one command. Auto HTTPS. Free Zapier/Make alternative.",
       "tags": [],
       "license": "Apache-2.0"
+    },
+    {
+      "github_url": "https://github.com/hoppscotch/hoppscotch",
+      "category": "system-utils",
+      "alternative_to": "商业软件",
+      "description_zh": "Open-Source API Development Ecosystem • https://hoppscotch.io • Offline, On-Prem & Cloud • Web, Desk",
+      "description_en": "Open-Source API Development Ecosystem • https://hoppscotch.io • Offline, On-Prem & Cloud • Web, Desktop & CLI • Open-Source Alternative to Postman, Insomnia",
+      "tags": [],
+      "license": "MIT"
+    },
+    {
+      "github_url": "https://github.com/coollabsio/coolify",
+      "category": "dev-tools",
+      "alternative_to": "商业软件",
+      "description_zh": "An open-source, self-hostable PaaS alternative to Vercel, Heroku & Netlify that lets you easily depl",
+      "description_en": "An open-source, self-hostable PaaS alternative to Vercel, Heroku & Netlify that lets you easily deploy static sites, databases, full-stack applications and 280+ one-click services on your own servers.",
+      "tags": [],
+      "license": "Apache-2.0"
+    },
+    {
+      "github_url": "https://github.com/makeplane/plane",
+      "category": "dev-tools",
+      "alternative_to": "商业软件",
+      "description_zh": "🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management ",
+      "description_en": "🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management platform to manage tasks, sprints, docs, and triage.",
+      "tags": [],
+      "license": "AGPL-3.0"
+    },
+    {
+      "github_url": "https://github.com/siddharthvaddem/openscreen",
+      "category": "dev-tools",
+      "alternative_to": "商业软件",
+      "description_zh": "Create stunning demos for free. Open-source, no subscriptions, no watermarks, and free for commercia",
+      "description_en": "Create stunning demos for free. Open-source, no subscriptions, no watermarks, and free for commercial use. An alternative to Screen Studio. ",
+      "tags": [],
+      "license": "MIT"
+    },
+    {
+      "github_url": "https://github.com/umami-software/umami",
+      "category": "security-privacy",
+      "alternative_to": "商业软件",
+      "description_zh": "Umami is a modern, privacy-focused analytics platform. An open-source alternative to Google Analytic",
+      "description_en": "Umami is a modern, privacy-focused analytics platform. An open-source alternative to Google Analytics, Mixpanel and Amplitude.",
+      "tags": [],
+      "license": "MIT"
+    },
+    {
+      "github_url": "https://github.com/Dokploy/dokploy",
+      "category": "dev-tools",
+      "alternative_to": "商业软件",
+      "description_zh": "Open Source Alternative to Vercel, Netlify and Heroku.",
+      "description_en": "Open Source Alternative to Vercel, Netlify and Heroku.",
+      "tags": [],
+      "license": "NOASSERTION"
+    },
+    {
+      "github_url": "https://github.com/dgtlmoon/changedetection.io",
+      "category": "dev-tools",
+      "alternative_to": "商业软件",
+      "description_zh": "Best and simplest tool for website change detection, web page monitoring, and website change alerts.",
+      "description_en": "Best and simplest tool for website change detection, web page monitoring, and website change alerts. Perfect for tracking content changes, price drops, restock alerts, and website defacement monitoring—all for free or enjoy our SaaS plan!",
+      "tags": [],
+      "license": "Apache-2.0"
+    },
+    {
+      "github_url": "https://github.com/certimate-go/certimate",
+      "category": "dev-tools",
+      "alternative_to": "商业软件",
+      "description_zh": "An open-source and free self-hosted SSL certificates ACME tool, automates the full-cycle of issuance",
+      "description_en": "An open-source and free self-hosted SSL certificates ACME tool, automates the full-cycle of issuance, deployment, renewal, and monitoring visually. 完全开源免费的自托管 SSL 证书 ACME 工具，申请、部署、续期、监控全流程自动化可视化，支持各大主流云厂商。",
+      "tags": [],
+      "license": "MIT"
+    },
+    {
+      "github_url": "https://github.com/astuto/astuto",
+      "category": "dev-tools",
+      "alternative_to": "商业软件",
+      "description_zh": "A free, open source, self-hosted customer feedback tool 🦊",
+      "description_en": "A free, open source, self-hosted customer feedback tool 🦊",
+      "tags": [],
+      "license": "AGPL-3.0"
+    },
+    {
+      "github_url": "https://github.com/easysoft/zentaopms",
+      "category": "system-utils",
+      "alternative_to": "商业软件",
+      "description_zh": "Zentao is an agile(scrum) project management system/tool, Free Upgrade Forever!​",
+      "description_en": "Zentao is an agile(scrum) project management system/tool, Free Upgrade Forever!​",
+      "tags": [],
+      "license": "NOASSERTION"
+    },
+    {
+      "github_url": "https://github.com/respectlytics/respectaso",
+      "category": "dev-tools",
+      "alternative_to": "商业软件",
+      "description_zh": "Free, open-source ASO keyword research tool — self-hosted via Docker. No API keys, no accounts, no d",
+      "description_en": "Free, open-source ASO keyword research tool — self-hosted via Docker. No API keys, no accounts, no data leaves your machine.",
+      "tags": [],
+      "license": "AGPL-3.0"
+    },
+    {
+      "github_url": "https://github.com/Axym-Labs/LetoReader",
+      "category": "dev-tools",
+      "alternative_to": "商业软件",
+      "description_zh": "A free self-hostable speed reader. Highly customizable. Implements chunking (RSVP), pacing and highl",
+      "description_en": "A free self-hostable speed reader. Highly customizable. Implements chunking (RSVP), pacing and highlighting. Modern UI and local-storage only.",
+      "tags": [],
+      "license": "GPL-3.0"
+    },
+    {
+      "github_url": "https://github.com/pneumaticapp/pneumaticworkflow",
+      "category": "ai-agent",
+      "alternative_to": "商业软件",
+      "description_zh": "Free and source-available Apache 2.0 licensed lightweight workflow automation tool. ",
+      "description_en": "Free and source-available Apache 2.0 licensed lightweight workflow automation tool. ",
+      "tags": [],
+      "license": "Apache-2.0"
+    },
+    {
+      "github_url": "https://github.com/manticoresoftware/manticoresearch",
+      "category": "dev-tools",
+      "alternative_to": "商业软件",
+      "description_zh": "Easy to use open source fast database for search | Good alternative to Elasticsearch | Drop-in repla",
+      "description_en": "Easy to use open source fast database for search | Good alternative to Elasticsearch | Drop-in replacement for E in the ELK stack",
+      "tags": [],
+      "license": "GPL-3.0"
+    },
+    {
+      "github_url": "https://github.com/legendary-gl/legendary",
+      "category": "dev-tools",
+      "alternative_to": "商业软件",
+      "description_zh": "Legendary - A free and open-source replacement for the Epic Games Launcher",
+      "description_en": "Legendary - A free and open-source replacement for the Epic Games Launcher",
+      "tags": [],
+      "license": "GPL-3.0"
+    },
+    {
+      "github_url": "https://github.com/steipete/PSTCollectionView",
+      "category": "dev-tools",
+      "alternative_to": "商业软件",
+      "description_zh": "Open Source, 100% API compatible replacement of UICollectionView for iOS4.3+",
+      "description_en": "Open Source, 100% API compatible replacement of UICollectionView for iOS4.3+",
+      "tags": [],
+      "license": "MIT"
     }
   ]
 }
