@@ -4,10 +4,11 @@
 功能：
 1. 更新 Stars/版本 + 自动翻译（增强清洗）+ 时间线带简介
 2. 自动新增 3-5 个候选项目
-3. 增量生成语义化、SEO友好的静态HTML项目页面（含面包屑导航、彩色标签）+ 静态首页
-4. 抓取社区讨论 (Discussions) 丰富内容，段落式展示
-5. 候选池自动补给 (低于20个时一次性追加20个新候选)
-6. 向百度主动推送新增URL，加速收录
+3. 为缺少标签的项目自动补全标签
+4. 增量生成语义化、SEO友好的静态HTML项目页面（含面包屑导航、彩色标签）+ 静态首页
+5. 抓取社区讨论 (Discussions) 丰富内容，段落式展示
+6. 候选池自动补给 (低于20个时一次性追加20个新候选)
+7. 向百度主动推送新增URL，加速收录
 """
 import json, os, random, re, time, base64, hashlib
 from datetime import datetime, timedelta
@@ -103,6 +104,7 @@ def update_existing_projects(data):
     cutoff = (datetime.now() - timedelta(days=14)).strftime('%Y-%m-%d')
     updated = 0
     translated = 0
+    tags_filled = 0
     for project in data['projects']:
         stars, version, lic, desc = get_repo_info(project['github_url'])
         if stars is not None:
@@ -112,6 +114,7 @@ def update_existing_projects(data):
             project['stars'] = stars; project['last_updated'] = today_str; updated += 1
         if version: project['version'] = version
         if lic and not project.get('license'): project['license'] = lic
+
         zh = project.get('description_zh', '')
         en = project.get('description_en', '') or desc or ''
         if desc:
@@ -123,9 +126,36 @@ def update_existing_projects(data):
             if new_zh and new_zh != zh:
                 project['description_zh'] = new_zh
                 translated += 1
+
+        # 🆕 自动补全标签：如果没有标签，则生成3-5个默认标签
+        if not project.get('tags'):
+            default_tags = []
+            # 1. 分类名作为标签
+            cat = next((c for c in data['categories'] if c['id'] == project['category']), None)
+            if cat:
+                default_tags.append(cat['name'])
+            # 2. 替代软件的第一个名称作为标签
+            alt = project.get('alternative_to', '')
+            if alt and alt != '商业软件':
+                first_alt = alt.split('/')[0].strip().rstrip('等').strip()
+                if first_alt:
+                    default_tags.append(first_alt)
+            # 3. 补充通用标签，确保至少3个
+            fillers = ['开源', '免费', '替代', '工具', '自建']
+            for tag in fillers:
+                if len(default_tags) >= 4:
+                    break
+                if tag not in default_tags:
+                    default_tags.append(tag)
+            project['tags'] = default_tags[:5]
+            tags_filled += 1
+
         time.sleep(1)
+
     if translated > 0:
         print(f'🌐 重新翻译了 {translated} 个项目的中文简介')
+    if tags_filled > 0:
+        print(f'🏷️ 为 {tags_filled} 个项目补全了标签')
     print(f'✅ 已更新 {updated}/{len(data["projects"])} 个项目')
     return data
 
