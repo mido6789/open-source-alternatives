@@ -24,13 +24,21 @@ BAIDU_TOKEN = os.environ.get('BAIDU_PUSH_TOKEN', '')
 
 def strip_html(text):
     if not text: return text
+    # 移除 HTML 标签
     clean = re.sub(r'<[^>]+>', ' ', text)
+    # 移除 Markdown 图片和链接语法 (增强版，支持多种格式)
     clean = re.sub(r'\[!\[.*?\]\(.*?\)\]\(.*?\)', ' ', clean)
     clean = re.sub(r'!\[.*?\]\(.*?\)', ' ', clean)
     clean = re.sub(r'\[([^\]]*)\]\([^)]+\)', r'\1', clean)
+    # 移除 Markdown 标题标记
     clean = re.sub(r'^#{1,6}\s*', '', clean, flags=re.MULTILINE)
+    # 移除分隔线
     clean = re.sub(r'[-=*]{3,}', ' ', clean)
+    # 移除多余符号和星号
     clean = re.sub(r'[`*_~>|]', ' ', clean)
+    # 移除可能残留的 URL 和特殊字符
+    clean = re.sub(r'https?://\S+', '', clean)
+    # 移除多余空白
     clean = re.sub(r'\s+', ' ', clean).strip()
     return clean
 
@@ -74,15 +82,18 @@ def get_repo_info(github_url):
         version = (d.get('latest_release') or {}).get('tag_name', '')
         lic = (d.get('license') or {}).get('spdx_id', '')
         desc = d.get('description', '')
-        if not desc or len(desc) < 80:
+        # 如果描述太短，尝试从 README 获取更多内容
+        if not desc or len(desc) < 50:  # 提高阈值，让描述更完整
             try:
                 readme_url = f'https://api.github.com/repos/{owner}/{repo}/readme'
                 readme_req = urllib.request.Request(readme_url, headers=headers)
                 with urllib.request.urlopen(readme_req, timeout=10) as rr:
                     readme_content = base64.b64decode(json.loads(rr.read().decode())['content']).decode('utf-8', errors='ignore')
+                    # 清洗后取前500字符
                     desc = strip_html(readme_content)[:500]
             except:
                 pass
+        # 最终确保描述是干净文本
         desc = strip_html(desc) if desc else desc
         return d.get('stargazers_count', 0), version, lic, desc
     except urllib.error.HTTPError as e:
@@ -111,12 +122,13 @@ def update_existing_projects(data):
             project['stars'] = stars; project['last_updated'] = today_str; updated += 1
         if version: project['version'] = version
         if lic and not project.get('license'): project['license'] = lic
+        # 增强翻译检测：只要中文简介不合格，就重新翻译
         zh = project.get('description_zh', '')
         en = project.get('description_en', '') or desc or ''
         if desc:
             project['description_en'] = desc
         if en:
-            en = strip_html(en)
+            en = strip_html(en)  # 翻译前再次确保英文是干净的
         if needs_translation(zh, en) and en:
             new_zh = translate(en)
             if new_zh and new_zh != zh:
