@@ -570,3 +570,33 @@ body {
     display: none !important;
   }
 }
+/* ===== 面包屑导航样式 ===== */
+.breadcrumb {
+  margin-bottom: 20px;
+  padding: 10px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.breadcrumb a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+  color: var(--accent);
+}
+
+/* 暗黑模式下，让面包屑链接更醒目 */
+[data-theme="dark"] .breadcrumb a {
+  color: #38bdf8;  /* 亮天蓝色，对比度更高 */
+}
+
+[data-theme="dark"] .breadcrumb {
+  color: #cbd5e1;  /* 浅灰色，保证普通文字也清晰 */
+}
