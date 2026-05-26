@@ -2,7 +2,7 @@
 """
 每日自动更新脚本 (增强版)
 功能：
-1. 更新 Stars/版本 + 自动翻译（增强清洗）+ 自然语气点评 + 时间线带简介
+1. 更新 Stars/版本 + 自动翻译（增强清洗）+ 随机化自然语气点评 + 时间线带简介
 2. 自动新增 3-5 个候选项目
 3. 为缺少标签的项目自动补全标签
 4. 增量生成语义化、SEO友好的静态HTML项目页面（含面包屑导航、彩色标签）+ 静态首页
@@ -37,27 +37,50 @@ def strip_html(text):
     return clean
 
 def clean_for_translation(text):
-    """翻译前清洗：去emoji、去特殊符号"""
     if not text: return text
-    # 去掉emoji
     clean = re.sub(r'[🚀🔥🎨⚡🦊💻🌟✅⭐📌📋🔗🔄📖📝💬⚠️☰🌓🇺🇸🇨🇳]', '', text)
-    # 去掉连续的符号
     clean = re.sub(r'[•·]{1,}', '', clean)
     clean = re.sub(r'\s+', ' ', clean).strip()
     return clean
 
 def add_comment(zh_text, stars):
-    """根据Stars数添加自然语气点评"""
+    """根据Stars数添加随机化的自然语气点评"""
     if stars > 50000:
-        return zh_text + " 该项目在开源社区中拥有极高的知名度和活跃度，是同类替代方案中的领军者。"
+        comments = [
+            " 该项目在开源社区中拥有极高的知名度和活跃度，是同类替代方案中的领军者。",
+            " 凭借庞大的社区和持续的更新，该项目已成为这一领域的标杆级开源方案。",
+            " 作为 GitHub 上最受欢迎的项目之一，它的成熟度和生态远超同类替代品。",
+            " 无论从功能完整度还是社区规模来看，这都是该领域最值得信赖的开源选择。"
+        ]
     elif stars > 10000:
-        return zh_text + " 该项目在社区中拥有极高的人气，是同类替代方案中的佼佼者。"
+        comments = [
+            " 该项目在社区中拥有极高的人气，是同类替代方案中的佼佼者。",
+            " 凭借出色的功能和完善的文档，这个项目在同类替代品中脱颖而出。",
+            " 高 Star 数和活跃的社区证明了它的价值，是一个非常靠谱的开源替代。",
+            " 该项目已被大量用户验证，稳定性和功能性都值得肯定。"
+        ]
     elif stars > 1000:
-        return zh_text + " 该项目在社区中已获得一定认可，功能完善，值得关注和尝试。"
+        comments = [
+            " 该项目在社区中已获得一定认可，功能完善，值得关注和尝试。",
+            " 虽然 Star 数不算顶尖，但功能已相当成熟，是值得一试的开源替代品。",
+            " 在同类替代方案中，这个项目已建立起稳定的用户群体和良好的口碑。",
+            " 社区活跃度和更新频率都不错，是值得长期关注的开源项目。"
+        ]
     elif stars > 100:
-        return zh_text + " 该项目虽然目前关注度不高，但功能独特，未来发展值得期待。"
+        comments = [
+            " 该项目虽然目前关注度不高，但功能独特，未来发展值得期待。",
+            " 这是一个相对小众但功能定位清晰的开源替代方案，潜力可观。",
+            " 虽然 Star 数还不高，但项目的功能和方向都很有特色，值得持续关注。",
+            " 作为较新的开源替代品，它在特定场景下已展现出不错的实用性。"
+        ]
     else:
-        return zh_text + " 该项目是一个新兴的开源替代方案，具有独特的功能定位，值得一试。"
+        comments = [
+            " 该项目是一个新兴的开源替代方案，具有独特的功能定位，值得一试。",
+            " 这是一个刚刚起步的开源项目，虽然社区规模尚小，但创新性突出。",
+            " 作为新晋的开源替代品，它可能在功能和体验上带来新的思路。",
+            " 项目的功能定位清晰，虽然知名度不高，但对特定需求的用户可能有惊喜。"
+        ]
+    return zh_text + random.choice(comments)
 
 def translate(text):
     if not text or len(text) < 10: return text
@@ -174,7 +197,7 @@ def update_existing_projects(data):
         time.sleep(1)
 
     if translated > 0:
-        print(f'🌐 重新翻译了 {translated} 个项目的中文简介（含点评）')
+        print(f'🌐 重新翻译了 {translated} 个项目的中文简介（含随机化点评）')
     if tags_filled > 0:
         print(f'🏷️ 为 {tags_filled} 个项目补全了标签')
     print(f'✅ 已更新 {updated}/{len(data["projects"])} 个项目')
@@ -277,7 +300,6 @@ def add_new_projects(data, count=3):
         desc_en = strip_html(desc_en)
         desc_zh = item.get('description_zh', '')
         
-        # 🆕 增强翻译检查：只要中文简介包含太多英文，就重新翻译
         if (not desc_zh or len(desc_zh) < 20 or needs_translation(desc_zh, desc_en)) and desc_en:
             clean_en = clean_for_translation(desc_en)
             desc_zh = translate(clean_en)
