@@ -319,8 +319,9 @@ def add_new_projects(data, count=3):
     new_project_slugs = []
     
     for item in selected:
-        stars, version, lic, github_desc = get_repo_info(item['github_url'])
-        if stars is None: continue
+        result = get_repo_info(item['github_url'])
+        if result is None or result[0] is None: continue
+        stars, version, lic, github_desc, _owner, _repo = result
         name = item['github_url'].rstrip('/').split('/')[-1]
         slug = re.sub(r'[^a-z0-9-]', '-', name.lower()).strip('-')
         desc_en = item.get('description_en', '') or github_desc or ''
