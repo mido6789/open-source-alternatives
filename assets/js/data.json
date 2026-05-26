@@ -6,6 +6,7 @@
     "contact_email": "mailtomidoo@gmail.com",
     "admin_password_hash": "",
     "update_log": [
+      "2026-05-26 🆕 新增：manticoresearch（⭐ 11,807）| 易于使用的开源快速数据库用于搜索 Elasticsearch 的良好替代品 ELK 堆栈中 E 的直接替代品 该项目已被大量用户验证，稳定性和功能性都值得肯定。",
       "2026-05-26 🆕 新增：astuto（⭐ 2,355）| 免费、开源、自托管的客户反馈工具 该项目在社区中已获得一定认可，功能完善，值得关注和尝试。",
       "2026-05-26 🆕 新增：respectaso（⭐ 370）| 免费开源 ASO 关键词研究工具 — 通过 Docker 自托管。没有 API 密钥、没有帐户、没有数据离开您的机器。 这是一个相对小众但功能定位清晰的开源替代...",
       "2026-05-26 🆕 新增：certimate（⭐ 8,640）| 开源免费的自托管 SSL 证书 ACME 工具，以可视化方式自动执行签发、部署、续订和监控的全周期。 开源免费的自托管SSL证书ACME工具，完全申请、部署、续...",
@@ -34,8 +35,7 @@
       "2026-05-23 🆕 新增：kdenlive（⭐ 1）| KDE 非线性视频编辑器。",
       "2026-05-23 🆕 新增：chatwoot（⭐ 29,655）| Open-source live-chat, email support, omni-channel desk. An alternative to Inter...",
       "2026-05-23 🆕 新增：vito（⭐ 3,117）| Free and Self-Hosted  Server Management Tool",
-      "2026-05-23 🆕 新增：ChatGPT-Next-Web（⭐ 88,067）| 精心设计的跨平台 ChatGPT Web UI。",
-      "2026-05-23 🆕 新增：openscreen（⭐ 36,930）| Create stunning demos for free. Open-source, no subscriptions, no watermarks, an..."
+      "2026-05-23 🆕 新增：ChatGPT-Next-Web（⭐ 88,067）| 精心设计的跨平台 ChatGPT Web UI。"
     ],
     "ads": {
       "sidebar_top": "",
@@ -246,7 +246,7 @@
       "slug": "langchain",
       "category": "ai-agent",
       "github_url": "https://github.com/langchain-ai/langchain",
-      "stars": 137653,
+      "stars": 137654,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -264,7 +264,7 @@
         "2026-05-23": 137444,
         "2026-05-24": 137507,
         "2026-05-25": 137562,
-        "2026-05-26": 137653
+        "2026-05-26": 137654
       },
       "description_zh": "LangChain 是当前最流行的 LLM 应用开发框架，支持 Python 和 JavaScript。它提供了链式调用、智能代理、记忆管理、向量检索等核心模块，让开发者可以快速构建基于 GPT、Claude、Llama 等大模型的应用。",
       "description_en": "The agent engineering platform. LangChain is a framework for building agents and LLM-powered applications. It helps you chain together interoperable components and third-party integrations to simplify AI application development — all while future-proofing decisions as the underlying technology evolves. [!TIP] Just getting started? Check out Deep Agents — a higher-level package built on LangChain for agents that have built-in capabilites for common usage patterns such as planning, subagents, file",
@@ -453,7 +453,7 @@
       "slug": "ollama",
       "category": "ai-agent",
       "github_url": "https://github.com/ollama/ollama",
-      "stars": 172315,
+      "stars": 172316,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -471,7 +471,7 @@
         "2026-05-23": 172081,
         "2026-05-24": 172154,
         "2026-05-25": 172223,
-        "2026-05-26": 172315
+        "2026-05-26": 172316
       },
       "description_zh": "Ollama 是一个让你在本地电脑上轻松运行大语言模型的开源工具。它支持 Llama 3、Mistral、Gemma、Qwen、DeepSeek 等众多主流开源模型，只需一条命令就能下载并启动模型服务。",
       "description_en": "Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
@@ -775,7 +775,7 @@
       "slug": "directus",
       "category": "dev-tools",
       "github_url": "https://github.com/directus/directus",
-      "stars": 35847,
+      "stars": 35848,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -793,7 +793,7 @@
         "2026-05-23": 35837,
         "2026-05-24": 35848,
         "2026-05-25": 35853,
-        "2026-05-26": 35847
+        "2026-05-26": 35848
       },
       "description_zh": "适用于您所有项目的灵活后端🐰 将您的数据库转变为无头 CMS、管理面板或具有自定义 UI、即时 API、身份验证等的应用程序。",
       "description_en": "The flexible backend for all your projects 🐰 Turn your DB into a headless CMS, admin panels, or apps with a custom UI, instant APIs, auth & more.",
@@ -1138,7 +1138,7 @@
       "slug": "syncthing",
       "category": "system-utils",
       "github_url": "https://github.com/syncthing/syncthing",
-      "stars": 84534,
+      "stars": 84535,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -1156,7 +1156,7 @@
         "2026-05-23": 84330,
         "2026-05-24": 84356,
         "2026-05-25": 84436,
-        "2026-05-26": 84534
+        "2026-05-26": 84535
       },
       "description_zh": "Syncthing 是一款开源的 P2P 连续文件同步工具，无需中心服务器即可在多台电脑之间安全地同步文件，保护用户数据安全，是 Resilio Sync 和 Dropbox 的隐私优先替代方案。",
       "description_en": "[![Syncthing][14]][15] Goals Syncthing is a continuous file synchronization program . It synchronizes files between two or more computers. We strive to fulfill the goals below. The goals are listed in order of importance, the most important ones first. This is the summary version of the goal list - for more commentary, see the full [Goals document][13]. Syncthing should be: 1. Safe From Data Loss Protecting the user's data is paramount. We take every reasonable precaution to avoid corrupting the",
@@ -1532,7 +1532,7 @@
       "slug": "llama-cpp",
       "category": "ai-agent",
       "github_url": "https://github.com/ggerganov/llama.cpp",
-      "stars": 113037,
+      "stars": 113040,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -1550,7 +1550,7 @@
         "2026-05-23": 112394,
         "2026-05-24": 112566,
         "2026-05-25": 112780,
-        "2026-05-26": 113037
+        "2026-05-26": 113040
       },
       "description_zh": "C++ 实现的高性能 LLM 推理引擎，支持在消费级硬件上运行大模型。",
       "description_en": "llama.cpp Manifesto / ggml / ops LLM inference in C/C++ Recent API changes - Changelog for libllama API - Changelog for llama-server REST API Hot topics - Hugging Face cache migration: models downloaded with -hf are now stored in the standard Hugging Face cache directory, enabling sharing with other HF tools. - guide : using the new WebUI of llama.cpp - guide : running gpt-oss with llama.cpp - [[FEEDBACK] Better packaging for llama.cpp to support downstream consumers 🤗]( - Support for the gpt-os",
@@ -1716,7 +1716,7 @@
       "slug": "dbeaver",
       "category": "dev-tools",
       "github_url": "https://github.com/dbeaver/dbeaver",
-      "stars": 50214,
+      "stars": 50215,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -1734,7 +1734,7 @@
         "2026-05-23": 50172,
         "2026-05-24": 50183,
         "2026-05-25": 50195,
-        "2026-05-26": 50214
+        "2026-05-26": 50215
       },
       "description_zh": "万能开源数据库管理工具，支持所有主流关系型和非关系型数据库。",
       "description_en": "DBeaver Free multi-platform database tool for developers, SQL programmers, database administrators and analysts. Has a lot of features including schema editor, SQL editor, data editor, AI integration, ER diagrams, data export/import/migration, SQL execution plans, database administration tools, database dashboards, Spatial data viewer, proxy and SSH tunnelling, custom database drivers editor, etc. Out of the box supports more than 100 database drivers . Supports any database which has JDBC or OD",
@@ -2385,7 +2385,7 @@
       "slug": "inkscape",
       "category": "design-tools",
       "github_url": "https://github.com/inkscape/inkscape",
-      "stars": 3511,
+      "stars": 3512,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -2401,7 +2401,7 @@
         "2026-05-23": 3501,
         "2026-05-24": 3502,
         "2026-05-25": 3508,
-        "2026-05-26": 3511
+        "2026-05-26": 3512
       },
       "description_zh": "项目网站： - 代码库： - 自由绘制。 🖌",
       "description_en": "Project Website: - Code Repository: - Draw freely. 🖌",
@@ -2422,7 +2422,7 @@
       "slug": "open-interpreter",
       "category": "ai-agent",
       "github_url": "https://github.com/OpenInterpreter/open-interpreter",
-      "stars": 63671,
+      "stars": 63672,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -2439,7 +2439,7 @@
         "2026-05-23": 63632,
         "2026-05-24": 63646,
         "2026-05-25": 63650,
-        "2026-05-26": 63671
+        "2026-05-26": 63672
       },
       "description_zh": "● Open Interpreter 尽早访问桌面应用程序 ‎ ‎ ‎ ‎ 文档 Open Interpreter 允许法学硕士在本地运行代码（Python、Javascript、Shell 等）。您可以在安装后运行 $terpreter，通过终端中类似 ChatGPT 的界面与 Open Interpreter 聊天。这为您的计算机的通用功能提供了一个自然语言界面： - 创建和编辑照片、视频、PDF 等。 - 控制 Chrome 浏览器执行研究 - 绘图、清理和分析",
       "description_en": "● Open Interpreter Get early access to the desktop app ‎ ‎ ‎ ‎ Documentation Open Interpreter lets LLMs run code (Python, Javascript, Shell, and more) locally. You can chat with Open Interpreter through a ChatGPT-like interface in your terminal by running $ interpreter after installing. This provides a natural-language interface to your computer's general-purpose capabilities: - Create and edit photos, videos, PDFs, etc. - Control a Chrome browser to perform research - Plot, clean, and analyze l",
@@ -2554,7 +2554,7 @@
       "slug": "excalidraw",
       "category": "design-tools",
       "github_url": "https://github.com/excalidraw/excalidraw",
-      "stars": 124015,
+      "stars": 124016,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -2571,7 +2571,7 @@
         "2026-05-23": 123877,
         "2026-05-24": 123918,
         "2026-05-25": 123949,
-        "2026-05-26": 124015
+        "2026-05-26": 124016
       },
       "description_zh": "Excalidraw 编辑器博客文档 Excalidraw+ 开源虚拟手绘风格白板。协作和端到端加密。创建漂亮的手绘图、线框图或任何您喜欢的内容。功能 Excalidraw 编辑器（npm 软件包）支持： - 💯 免费且开源。 - 🎨 无限的、基于画布的白板。 - ✍️手绘风格。 - 🌓 深色模式。 - 🏗️ 可定制。 - 📷 图像支持。 - 😀 形状库支持。 - 🌐 本地化",
       "description_en": "Virtual whiteboard for sketching hand-drawn like diagrams",
@@ -2623,7 +2623,7 @@
       "slug": "penpot",
       "category": "design-tools",
       "github_url": "https://github.com/penpot/penpot",
-      "stars": 48431,
+      "stars": 48432,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -2640,7 +2640,7 @@
         "2026-05-23": 48260,
         "2026-05-24": 48310,
         "2026-05-25": 48376,
-        "2026-05-26": 48431
+        "2026-05-26": 48432
       },
       "description_zh": "[uri 许可证]：https://www.mozilla.org/en-US/MPL/2.0 [uri 许可证图片]：https://img.shields.io/badge/MPL-2.0-blue.svg 网站 • 用户指南 • 学习中心 • 社区 Youtube • Peertube • Linkedin • Instagram • Mastodon • Bluesky • X Penpot 视频 Penpot 是面向大规模构建数字产品的团队的开源设计平台。 Penpot 的主要优势在于让您完全掌控自己的设计基础设施。它基于开源构建并专为自托管而设计，使团队能够共同协作",
       "description_en": "Penpot: The open-source design tool for design and code collaboration",
@@ -2692,7 +2692,7 @@
       "slug": "keepassxc",
       "category": "security-privacy",
       "github_url": "https://github.com/keepassxreboot/keepassxc",
-      "stars": 27331,
+      "stars": 27333,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -2709,7 +2709,7 @@
         "2026-05-23": 27297,
         "2026-05-24": 27310,
         "2026-05-25": 27321,
-        "2026-05-26": 27331
+        "2026-05-26": 27333
       },
       "description_zh": "KeePassXC 是 Windows 应用程序“KeePass Password Safe”的跨平台社区驱动端口。",
       "description_en": "KeePassXC is a cross-platform community-driven port of the Windows application “KeePass Password Safe”.",
@@ -2938,7 +2938,7 @@
       "slug": "dify",
       "category": "ai-agent",
       "github_url": "https://github.com/langgenius/dify",
-      "stars": 142632,
+      "stars": 142633,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -2955,7 +2955,7 @@
         "2026-05-23": 142309,
         "2026-05-24": 142418,
         "2026-05-25": 142512,
-        "2026-05-26": 142632
+        "2026-05-26": 142633
       },
       "description_zh": "开源的 LLM 应用开发平台，融合了后端即服务和 LLMOps 理念。",
       "description_en": "Production-ready platform for agentic workflow development.",
@@ -3182,7 +3182,7 @@
       "slug": "flowise",
       "category": "ai-agent",
       "github_url": "https://github.com/FlowiseAI/Flowise",
-      "stars": 53074,
+      "stars": 53075,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -3199,7 +3199,7 @@
         "2026-05-23": 53013,
         "2026-05-24": 53040,
         "2026-05-25": 53050,
-        "2026-05-26": 53074
+        "2026-05-26": 53075
       },
       "description_zh": "拖拽式 LLM 应用构建器，无需代码即可创建 AI 工作流。",
       "description_en": "English 繁體中文 简体中文 日本語 한국어 Build AI Agents, Visually 📚 Table of Contents - ⚡ Quick Start - 🐳 Docker - 👨‍💻 Developers - 🌱 Env Variables - 📖 Documentation - 🌐 Self Host - ☁️ Flowise Cloud - 🙋 Support - 🙌 Contributing - 📄 License ⚡Quick Start Download and Install NodeJS = 20.0.0 1. Install Flowise bash npm install -g flowise 2. Start Flowise bash npx flowise start 3. Open 🐳 Docker Docker Compose 1. Clone the Flowise project 2. Go to docker folder at the root of the project 3. Copy .env.example file,",
@@ -3288,7 +3288,7 @@
       "slug": "open-webui",
       "category": "ai-agent",
       "github_url": "https://github.com/open-webui/open-webui",
-      "stars": 138639,
+      "stars": 138642,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -3305,7 +3305,7 @@
         "2026-05-23": 138305,
         "2026-05-24": 138406,
         "2026-05-25": 138503,
-        "2026-05-26": 138639
+        "2026-05-26": 138642
       },
       "description_zh": "美观的 Ollama 网页界面，类 ChatGPT 体验，支持多模型。",
       "description_en": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
@@ -3494,7 +3494,7 @@
       "slug": "stirling-pdf",
       "category": "office-productivity",
       "github_url": "https://github.com/Stirling-Tools/Stirling-PDF",
-      "stars": 79531,
+      "stars": 79532,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -3510,7 +3510,7 @@
         "2026-05-23": 79147,
         "2026-05-24": 79206,
         "2026-05-25": 79408,
-        "2026-05-26": 79531
+        "2026-05-26": 79532
       },
       "description_zh": "全能私有化 PDF 工具箱，支持分割、合并、转换等数十种操作。",
       "description_en": "1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
@@ -3650,7 +3650,7 @@
         "2026-05-25": 63124,
         "2026-05-26": 63136
       },
-      "description_zh": "NocoDB 是在线构建数据库最快、最简单的方法。网站 Discord 社区 Twitter Reddit 文档 查看其他语言 » 加入我们的社区 安装 Docker with SQLite bash docker run -d \\ --name noco \\ -v \"$(pwd)\"/nocodb:/usr/app/data/ \\ -p 8080:8080 \\ nocodb/nocodb:latest Docker with PG bash docker run -d \\ --name noco \\ -v “$(pwd)”/nocodb:/usr/app/data/ \\ -p 8080:8080 \\ -e NC DB=\"pg://host.docker.internal:5432?u=root&p=password&d=d1\" \\ -e NC AUTH JWT SECRET= 作为 GitHub 上最受欢迎的项目之一，它的成熟度和生态远超同类替代品。",
+      "description_zh": "NocoDB 是在线构建数据库最快、最简单的方法。网站 Discord 社区 Twitter Reddit 文档 查看其他语言 » 加入我们的社区 安装 Docker with SQLite bash docker run -d \\ --name noco \\ -v \"$(pwd)\"/nocodb:/usr/app/data/ \\ -p 8080:8080 \\ nocodb/nocodb:latest Docker with PG bash docker run -d \\ --name noco \\ -v “$(pwd)”/nocodb:/usr/app/data/ \\ -p 8080:8080 \\ -e NC DB=\"pg://host.docker.internal:5432?u=root&p=password&d=d1\" \\ -e NC AUTH JWT SECRET= 该项目在开源社区中拥有极高的知名度和活跃度，是同类替代方案中的领军者。",
       "description_en": "NocoDB is the fastest and easiest way to build databases online. Website • Discord • Community • Twitter • Reddit • Documentation See other languages » Join Our Community Installation Docker with SQLite bash docker run -d \\ --name noco \\ -v \"$(pwd)\"/nocodb:/usr/app/data/ \\ -p 8080:8080 \\ nocodb/nocodb:latest Docker with PG bash docker run -d \\ --name noco \\ -v \"$(pwd)\"/nocodb:/usr/app/data/ \\ -p 8080:8080 \\ -e NC DB=\"pg://host.docker.internal:5432?u=root&p=password&d=d1\" \\ -e NC AUTH JWT SECRET=",
       "alternative_to": "Airtable",
       "tags": [
@@ -3768,7 +3768,7 @@
       "slug": "appflowy",
       "category": "office-productivity",
       "github_url": "https://github.com/AppFlowy-IO/appflowy",
-      "stars": 71276,
+      "stars": 71277,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -3784,7 +3784,7 @@
         "2026-05-23": 71114,
         "2026-05-24": 71175,
         "2026-05-25": 71225,
-        "2026-05-26": 71276
+        "2026-05-26": 71277
       },
       "description_zh": "通过 AI 将项目、wiki 和团队结合在一起。 AppFlowy 是人工智能协作工作空间，您可以在不失去对数据控制的情况下实现更多目标。领先的开源 Notion 替代方案。",
       "description_en": "Bring projects, wikis, and teams together with AI. AppFlowy is the AI collaborative workspace where you achieve more without losing control of your data. The leading open source Notion alternative.",
@@ -3836,7 +3836,7 @@
       "slug": "n8n",
       "category": "dev-tools",
       "github_url": "https://github.com/n8n-io/n8n",
-      "stars": 189702,
+      "stars": 189705,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -3850,7 +3850,7 @@
         "2026-05-23": 189352,
         "2026-05-24": 189461,
         "2026-05-25": 189574,
-        "2026-05-26": 189702
+        "2026-05-26": 189705
       },
       "description_zh": "开源自动化平台，可自托管连接超过 300+ 应用的 API。",
       "description_en": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
@@ -3935,7 +3935,7 @@
       "slug": "zed",
       "category": "dev-tools",
       "github_url": "https://github.com/zed-industries/zed",
-      "stars": 83776,
+      "stars": 83777,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -3948,7 +3948,7 @@
         "2026-05-23": 83595,
         "2026-05-24": 83654,
         "2026-05-25": 83704,
-        "2026-05-26": 83776
+        "2026-05-26": 83777
       },
       "description_zh": "以思想的速度编写代码 – Zed 是一款高性能、多人代码编辑器，由 Atom 和 Tree-sitter 的创建者开发。",
       "description_en": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
@@ -4063,7 +4063,7 @@
       "slug": "umami",
       "category": "dev-tools",
       "github_url": "https://github.com/umami-software/umami",
-      "stars": 36836,
+      "stars": 36837,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -4074,7 +4074,7 @@
         "2026-05-23": 36795,
         "2026-05-24": 36811,
         "2026-05-25": 36817,
-        "2026-05-26": 36836
+        "2026-05-26": 36837
       },
       "description_zh": "Umami 是一个注重隐私的现代分析平台。 Google Analytics、Mixpanel 和 Amplitude 的开源替代品。",
       "description_en": "Umami is a modern, privacy-focused analytics platform. An open-source alternative to Google Analytics, Mixpanel and Amplitude.",
@@ -4126,7 +4126,7 @@
       "slug": "sillytavern",
       "category": "ai-agent",
       "github_url": "https://github.com/SillyTavern/SillyTavern",
-      "stars": 28321,
+      "stars": 28323,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -4137,7 +4137,7 @@
         "2026-05-23": 28128,
         "2026-05-24": 28194,
         "2026-05-25": 28246,
-        "2026-05-26": 28321
+        "2026-05-26": 28323
       },
       "description_zh": "开源 AI 角色扮演前端，支持多种 LLM 后端，可自定义角色卡片。",
       "description_en": "![][cover] English German 中文 繁體中文 日本語 Русский 한국어 SillyTavern provides a single unified interface for many LLM APIs (KoboldAI/CPP, Horde, NovelAI, Ooba, Tabby, OpenAI, OpenRouter, Claude, Mistral and more), a mobile-friendly layout, Visual Novel Mode, Automatic1111 & ComfyUI API image generation integration, TTS, WorldInfo (lorebooks), customizable UI, auto-translate, more prompt options than you'd ever want or need, and endless growth potential via third-party extensions. We have a Documentatio",
@@ -4189,7 +4189,7 @@
       "slug": "photoprism",
       "category": "media-video",
       "github_url": "https://github.com/photoprism/photoprism",
-      "stars": 39694,
+      "stars": 39695,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -4200,7 +4200,7 @@
         "2026-05-23": 39690,
         "2026-05-24": 39683,
         "2026-05-25": 39686,
-        "2026-05-26": 39694
+        "2026-05-26": 39695
       },
       "description_zh": "PhotoPrism：用图片浏览您的生活 PhotoPrism® 是一款适用于去中心化网络的人工智能照片应用程序。它利用最新技术自动标记和查找图片，而不会妨碍您。您可以在家中、私人服务器上或在云中运行它。为了获得第一印象，欢迎您体验我们的公开演示。请注意不要上传任何私人、非法或攻击性的图片。功能概述## 我们的使命是提供最多的用户和隐私",
       "description_en": "AI-Powered Photos App for the Decentralized Web 🌈💎✨",
@@ -4424,7 +4424,7 @@
       "slug": "coolify",
       "category": "dev-tools",
       "github_url": "https://github.com/coollabsio/coolify",
-      "stars": 55904,
+      "stars": 55907,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -4434,7 +4434,7 @@
         "2026-05-23": 55774,
         "2026-05-24": 55814,
         "2026-05-25": 55832,
-        "2026-05-26": 55904
+        "2026-05-26": 55907
       },
       "description_zh": "Vercel、Heroku 和 Netlify 的开源、自托管 PaaS 替代品，让您可以在自己的服务器上轻松部署静态站点、数据库、全栈应用程序和 280 多个一键式服务。",
       "description_en": "An open-source, self-hostable PaaS alternative to Vercel, Heroku & Netlify that lets you easily deploy static sites, databases, full-stack applications and 280+ one-click services on your own servers.",
@@ -4488,7 +4488,7 @@
       "slug": "paperless-ngx",
       "category": "office-productivity",
       "github_url": "https://github.com/paperless-ngx/paperless-ngx",
-      "stars": 41385,
+      "stars": 41391,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -4498,7 +4498,7 @@
         "2026-05-23": 40916,
         "2026-05-24": 40942,
         "2026-05-25": 41069,
-        "2026-05-26": 41385
+        "2026-05-26": 41391
       },
       "description_zh": "社区支持的强大文档管理系统：扫描、索引和归档您的所有文档",
       "description_en": "A community-supported supercharged document management system: scan, index and archive all your documents",
@@ -4937,14 +4937,14 @@
       "slug": "openscreen",
       "category": "dev-tools",
       "github_url": "https://github.com/siddharthvaddem/openscreen",
-      "stars": 37391,
+      "stars": 37393,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
         "2026-05-23": 36941,
         "2026-05-24": 37003,
         "2026-05-25": 37101,
-        "2026-05-26": 37391
+        "2026-05-26": 37393
       },
       "description_zh": "免费创建令人惊叹的演示。开源、无订阅、无水印、免费用于商业用途。 Screen Studio 的替代品。",
       "description_en": "Create stunning demos for free. Open-source, no subscriptions, no watermarks, and free for commercial use. An alternative to Screen Studio.",
@@ -5330,12 +5330,12 @@
       "slug": "open-design",
       "category": "design-tools",
       "github_url": "https://github.com/nexu-io/open-design",
-      "stars": 52213,
+      "stars": 52225,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
         "2026-05-25": 51385,
-        "2026-05-26": 52213
+        "2026-05-26": 52225
       },
       "description_zh": "Anthropic 的 Claude Design 的本地优先、开源替代方案。 19 项技能 ✨ 71 个品牌级设计系统 🖼 生成网络桌面移动原型幻灯片图像视频 HyperFrames 📦 沙盒预览 HTML/PDF/PPTX/MP4 导出 🤖 在 Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen / Copilot / Hermes / Kimi CLI 上运行。 该项目在开源社区中拥有极高的知名度和活跃度，是同类替代方案中的领军者。",
       "description_en": "🎨 Local-first, open-source Claude Design alternative. ⚡ 19 Skills · ✨ 71 brand-grade Design Systems 🖼 Generate web · desktop · mobile prototypes · slides · images · videos · HyperFrames 📦 Sandboxed preview · HTML/PDF/PPTX/MP4 export 🤖 Runs on Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen / Copilot / Hermes / Kimi CLI.",
@@ -5410,46 +5410,57 @@
       "date_added": "2026-05-26"
     },
     {
-      "id": "auto-1779765743-193",
-      "name": "astuto",
-      "slug": "astuto",
+      "id": "auto-1779766607-431",
+      "name": "manticoresearch",
+      "slug": "manticoresearch",
       "category": "dev-tools",
-      "github_url": "https://github.com/astuto/astuto",
-      "stars": 2355,
+      "github_url": "https://github.com/manticoresoftware/manticoresearch",
+      "stars": 11807,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
-        "2026-05-26": 2355
+        "2026-05-26": 11807
       },
-      "description_zh": "免费、开源、自托管的客户反馈工具 该项目在社区中已获得一定认可，功能完善，值得关注和尝试。",
-      "description_en": "A free, open source, self-hosted customer feedback tool 🦊",
+      "description_zh": "易于使用的开源快速数据库用于搜索 Elasticsearch 的良好替代品 ELK 堆栈中 E 的直接替代品 该项目已被大量用户验证，稳定性和功能性都值得肯定。",
+      "description_en": "Easy to use open source fast database for search Good alternative to Elasticsearch Drop-in replacement for E in the ELK stack",
       "alternative_to": "商业软件",
       "tags": [],
-      "license": "AGPL-3.0",
+      "license": "GPL-3.0",
       "download_url": "",
       "featured": false,
-      "date_added": "2026-05-26"
-    },
-    {
-      "id": "auto-1779765745-452",
-      "name": "respectaso",
-      "slug": "respectaso",
-      "category": "dev-tools",
-      "github_url": "https://github.com/respectlytics/respectaso",
-      "stars": 370,
-      "version": "",
-      "last_updated": "2026-05-26",
-      "stars_history": {
-        "2026-05-26": 370
-      },
-      "description_zh": "免费开源 ASO 关键词研究工具 — 通过 Docker 自托管。没有 API 密钥、没有帐户、没有数据离开您的机器。 这是一个相对小众但功能定位清晰的开源替代方案，潜力可观。",
-      "description_en": "Free, open-source ASO keyword research tool — self-hosted via Docker. No API keys, no accounts, no data leaves your machine.",
-      "alternative_to": "商业软件",
-      "tags": [],
-      "license": "AGPL-3.0",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-26"
+      "date_added": "2026-05-26",
+      "discussions": [
+        {
+          "title": "FreeBSD port available",
+          "url": "https://github.com/manticoresoftware/manticoresearch/discussions/4567",
+          "created_at": "2026-05-10T01:36:45Z",
+          "author": "ylabidi"
+        },
+        {
+          "title": "Reply CRUD queries",
+          "url": "https://github.com/manticoresoftware/manticoresearch/discussions/4538",
+          "created_at": "2026-04-30T05:16:44Z",
+          "author": "kino505"
+        },
+        {
+          "title": "How to prioritize \"Exact Word Match\" in a long alias field over \"Substring Match\" in the primary name?",
+          "url": "https://github.com/manticoresoftware/manticoresearch/discussions/4483",
+          "created_at": "2026-04-17T07:53:14Z",
+          "author": "xiaoge200"
+        },
+        {
+          "title": "Project stability?",
+          "url": "https://github.com/manticoresoftware/manticoresearch/discussions/4439",
+          "created_at": "2026-04-03T16:26:44Z",
+          "author": "karolyi"
+        },
+        {
+          "title": "highlight manual page: tags in examples are <strong> but database v14 returns <b>",
+          "url": "https://github.com/manticoresoftware/manticoresearch/discussions/3959",
+          "created_at": "2025-11-19T08:19:16Z",
+          "author": "gabriel-v"
+        }
+      ]
     }
   ],
   "pending_projects": [
@@ -5606,15 +5617,6 @@
       "description_en": "Free and source-available Apache 2.0 licensed lightweight workflow automation tool. ",
       "tags": [],
       "license": "Apache-2.0"
-    },
-    {
-      "github_url": "https://github.com/manticoresoftware/manticoresearch",
-      "category": "dev-tools",
-      "alternative_to": "商业软件",
-      "description_zh": "Easy to use open source fast database for search | Good alternative to Elasticsearch | Drop-in repla",
-      "description_en": "Easy to use open source fast database for search | Good alternative to Elasticsearch | Drop-in replacement for E in the ELK stack",
-      "tags": [],
-      "license": "GPL-3.0"
     },
     {
       "github_url": "https://github.com/hoppscotch/hoppscotch",
