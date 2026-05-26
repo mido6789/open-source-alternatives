@@ -614,19 +614,25 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/projects/umami.html</loc>
-    <lastmod>2026-05-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://kyal.cn/projects/pstcollectionview.html</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kyal.cn/projects/openscreen.html</loc>
+    <loc>https://kyal.cn/projects/immich.html</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kyal.cn/projects/zentaopms.html</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kyal.cn/projects/dokploy.html</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
