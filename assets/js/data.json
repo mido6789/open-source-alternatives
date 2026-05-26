@@ -6,6 +6,10 @@
     "contact_email": "mailtomidoo@gmail.com",
     "admin_password_hash": "",
     "update_log": [
+      "2026-05-26 🆕 新增：certimate（⭐ 8,640）| 开源免费的自托管 SSL 证书 ACME 工具，以可视化方式自动执行签发、部署、续订和监控的全周期。 开源免费的自托管SSL证书ACME工具，完全申请、部署、续...",
+      "2026-05-26 🆕 新增：chatwoot（⭐ 29,729）| 开源实时聊天、电子邮件支持、全渠道服务台。 Intercom、Zendesk、Salesforce Service Cloud 等的替代方案。 高 Star 数...",
+      "2026-05-26 🆕 新增：umami（⭐ 36,836）| Umami 是一个注重隐私的现代分析平台。 Google Analytics、Mixpanel 和 Amplitude 的开源替代品。 高 Star 数和活跃的...",
+      "2026-05-26 🆕 新增：jan（⭐ 42,668）| Jan 是 ChatGPT 的开源替代品，可在您的计算机上 100% 离线运行。 凭借出色的功能和完善的文档，这个项目在同类替代品中脱颖而出。",
       "2026-05-26 🆕 新增：immich（⭐ 101,863）| 自建照片和视频管理方案，支持自动备份、AI 人脸识别等功能。",
       "2026-05-26 🆕 新增：zentaopms（⭐ 1,612）| Zentao是一款敏捷（scrum）项目管理系统/工具，永久免费升级！​ 该项目在社区中已获得一定认可，功能完善，值得关注和尝试。",
       "2026-05-26 🆕 新增：dokploy（⭐ 34,236）| Vercel、Netlify 和 Heroku 的开源替代品。 该项目在社区中拥有极高的人气，是同类替代方案中的佼佼者。",
@@ -31,11 +35,7 @@
       "2026-05-23 🆕 新增：ChatGPT-Next-Web（⭐ 88,067）| 精心设计的跨平台 ChatGPT Web UI。",
       "2026-05-23 🆕 新增：openscreen（⭐ 36,930）| Create stunning demos for free. Open-source, no subscriptions, no watermarks, an...",
       "2026-05-23 🆕 新增：open-webui（⭐ 138,288）| 美观的 Ollama 网页界面，类 ChatGPT 体验，支持多模型。",
-      "2026-05-23 🆕 新增：vito（⭐ 3,117）| Free and Self-Hosted  Server Management Tool",
-      "2026-05-23 🆕 新增：dokploy（⭐ 34,186）| Open Source Alternative to Vercel, Netlify and Heroku.",
-      "2026-05-22 🆕 新增：respectaso（⭐ 365）| Free, open-source ASO keyword research tool — self-hosted via Docker. No API key...",
-      "2026-05-22 🆕 新增：cal.com（⭐ 44,164）| 开源 Calendly 替代方案。",
-      "2026-05-22 🆕 新增：ShareX（⭐ 37,639）| 屏幕捕获、文件共享和生产力工具。"
+      "2026-05-23 🆕 新增：vito（⭐ 3,117）| Free and Self-Hosted  Server Management Tool"
     ],
     "ads": {
       "sidebar_top": "",
@@ -246,7 +246,7 @@
       "slug": "langchain",
       "category": "ai-agent",
       "github_url": "https://github.com/langchain-ai/langchain",
-      "stars": 137648,
+      "stars": 137649,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -264,7 +264,7 @@
         "2026-05-23": 137444,
         "2026-05-24": 137507,
         "2026-05-25": 137562,
-        "2026-05-26": 137648
+        "2026-05-26": 137649
       },
       "description_zh": "LangChain 是当前最流行的 LLM 应用开发框架，支持 Python 和 JavaScript。它提供了链式调用、智能代理、记忆管理、向量检索等核心模块，让开发者可以快速构建基于 GPT、Claude、Llama 等大模型的应用。",
       "description_en": "The agent engineering platform. LangChain is a framework for building agents and LLM-powered applications. It helps you chain together interoperable components and third-party integrations to simplify AI application development — all while future-proofing decisions as the underlying technology evolves. [!TIP] Just getting started? Check out Deep Agents — a higher-level package built on LangChain for agents that have built-in capabilites for common usage patterns such as planning, subagents, file",
@@ -311,7 +311,7 @@
       "slug": "comfyui",
       "category": "ai-agent",
       "github_url": "https://github.com/comfyanonymous/ComfyUI",
-      "stars": 114465,
+      "stars": 114464,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -329,7 +329,7 @@
         "2026-05-23": 114117,
         "2026-05-24": 114252,
         "2026-05-25": 114335,
-        "2026-05-26": 114465
+        "2026-05-26": 114464
       },
       "description_zh": "ComfyUI 是一款基于节点的 Stable Diffusion 工作流工具，以灵活性和可复现性著称。用户可以通过拖拽和连接节点来构建复杂的图像生成流水线，精确控制每一步的处理过程。",
       "description_en": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
@@ -453,7 +453,7 @@
       "slug": "ollama",
       "category": "ai-agent",
       "github_url": "https://github.com/ollama/ollama",
-      "stars": 172313,
+      "stars": 172314,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -471,7 +471,7 @@
         "2026-05-23": 172081,
         "2026-05-24": 172154,
         "2026-05-25": 172223,
-        "2026-05-26": 172313
+        "2026-05-26": 172314
       },
       "description_zh": "Ollama 是一个让你在本地电脑上轻松运行大语言模型的开源工具。它支持 Llama 3、Mistral、Gemma、Qwen、DeepSeek 等众多主流开源模型，只需一条命令就能下载并启动模型服务。",
       "description_en": "Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
@@ -1062,7 +1062,7 @@
       "slug": "gitea",
       "category": "dev-tools",
       "github_url": "https://github.com/go-gitea/gitea",
-      "stars": 55916,
+      "stars": 55918,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -1080,7 +1080,7 @@
         "2026-05-23": 55858,
         "2026-05-24": 55876,
         "2026-05-25": 55891,
-        "2026-05-26": 55916
+        "2026-05-26": 55918
       },
       "description_zh": "喝杯茶吧！无痛自托管一体化软件开发服务，包括 Git 托管、代码审查、团队协作、包注册和 CI/CD",
       "description_en": "Git with a cup of tea! Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD",
@@ -1138,7 +1138,7 @@
       "slug": "syncthing",
       "category": "system-utils",
       "github_url": "https://github.com/syncthing/syncthing",
-      "stars": 84533,
+      "stars": 84534,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -1156,7 +1156,7 @@
         "2026-05-23": 84330,
         "2026-05-24": 84356,
         "2026-05-25": 84436,
-        "2026-05-26": 84533
+        "2026-05-26": 84534
       },
       "description_zh": "Syncthing 是一款开源的 P2P 连续文件同步工具，无需中心服务器即可在多台电脑之间安全地同步文件，保护用户数据安全，是 Resilio Sync 和 Dropbox 的隐私优先替代方案。",
       "description_en": "[![Syncthing][14]][15] Goals Syncthing is a continuous file synchronization program . It synchronizes files between two or more computers. We strive to fulfill the goals below. The goals are listed in order of importance, the most important ones first. This is the summary version of the goal list - for more commentary, see the full [Goals document][13]. Syncthing should be: 1. Safe From Data Loss Protecting the user's data is paramount. We take every reasonable precaution to avoid corrupting the",
@@ -2422,7 +2422,7 @@
       "slug": "open-interpreter",
       "category": "ai-agent",
       "github_url": "https://github.com/OpenInterpreter/open-interpreter",
-      "stars": 63670,
+      "stars": 63671,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -2439,7 +2439,7 @@
         "2026-05-23": 63632,
         "2026-05-24": 63646,
         "2026-05-25": 63650,
-        "2026-05-26": 63670
+        "2026-05-26": 63671
       },
       "description_zh": "● Open Interpreter 尽早访问桌面应用程序 ‎ ‎ ‎ ‎ 文档 Open Interpreter 允许法学硕士在本地运行代码（Python、Javascript、Shell 等）。您可以在安装后运行 $terpreter，通过终端中类似 ChatGPT 的界面与 Open Interpreter 聊天。这为您的计算机的通用功能提供了一个自然语言界面： - 创建和编辑照片、视频、PDF 等。 - 控制 Chrome 浏览器执行研究 - 绘图、清理和分析",
       "description_en": "● Open Interpreter Get early access to the desktop app ‎ ‎ ‎ ‎ Documentation Open Interpreter lets LLMs run code (Python, Javascript, Shell, and more) locally. You can chat with Open Interpreter through a ChatGPT-like interface in your terminal by running $ interpreter after installing. This provides a natural-language interface to your computer's general-purpose capabilities: - Create and edit photos, videos, PDFs, etc. - Control a Chrome browser to perform research - Plot, clean, and analyze l",
@@ -2762,7 +2762,7 @@
       "slug": "wazuh",
       "category": "security-privacy",
       "github_url": "https://github.com/wazuh/wazuh",
-      "stars": 15688,
+      "stars": 15689,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -2779,7 +2779,7 @@
         "2026-05-23": 15664,
         "2026-05-24": 15673,
         "2026-05-25": 15679,
-        "2026-05-26": 15688
+        "2026-05-26": 15689
       },
       "description_zh": "Wazuh - 开源安全平台。针对端点和云工作负载的统一 XDR 和 SIEM 保护。",
       "description_en": "Wazuh - The Open Source Security Platform. Unified XDR and SIEM protection for endpoints and cloud workloads.",
@@ -3007,7 +3007,7 @@
       "slug": "immich",
       "category": "media-video",
       "github_url": "https://github.com/immich-app/immich",
-      "stars": 101862,
+      "stars": 101863,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -3024,7 +3024,7 @@
         "2026-05-23": 101356,
         "2026-05-24": 101529,
         "2026-05-25": 101715,
-        "2026-05-26": 101862
+        "2026-05-26": 101863
       },
       "description_zh": "自建照片和视频管理方案，支持自动备份、AI 人脸识别等功能。",
       "description_en": "High performance self-hosted photo and video management solution.",
@@ -3288,7 +3288,7 @@
       "slug": "open-webui",
       "category": "ai-agent",
       "github_url": "https://github.com/open-webui/open-webui",
-      "stars": 138633,
+      "stars": 138634,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -3305,7 +3305,7 @@
         "2026-05-23": 138305,
         "2026-05-24": 138406,
         "2026-05-25": 138503,
-        "2026-05-26": 138633
+        "2026-05-26": 138634
       },
       "description_zh": "美观的 Ollama 网页界面，类 ChatGPT 体验，支持多模型。",
       "description_en": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
@@ -3650,7 +3650,7 @@
         "2026-05-25": 63124,
         "2026-05-26": 63136
       },
-      "description_zh": "NocoDB 是在线构建数据库最快、最简单的方法。网站 Discord 社区 Twitter Reddit 文档 查看其他语言 » 加入我们的社区 安装 Docker with SQLite bash docker run -d \\ --name noco \\ -v \"$(pwd)\"/nocodb:/usr/app/data/ \\ -p 8080:8080 \\ nocodb/nocodb:latest Docker with PG bash docker run -d \\ --name noco \\ -v “$(pwd)”/nocodb:/usr/app/data/ \\ -p 8080:8080 \\ -e NC DB=\"pg://host.docker.internal:5432?u=root&p=password&d=d1\" \\ -e NC AUTH JWT SECRET= 该项目在开源社区中拥有极高的知名度和活跃度，是同类替代方案中的领军者。",
+      "description_zh": "NocoDB 是在线构建数据库最快、最简单的方法。网站 Discord 社区 Twitter Reddit 文档 查看其他语言 » 加入我们的社区 安装 Docker with SQLite bash docker run -d \\ --name noco \\ -v \"$(pwd)\"/nocodb:/usr/app/data/ \\ -p 8080:8080 \\ nocodb/nocodb:latest Docker with PG bash docker run -d \\ --name noco \\ -v “$(pwd)”/nocodb:/usr/app/data/ \\ -p 8080:8080 \\ -e NC DB=\"pg://host.docker.internal:5432?u=root&p=password&d=d1\" \\ -e NC AUTH JWT SECRET= 作为 GitHub 上最受欢迎的项目之一，它的成熟度和生态远超同类替代品。",
       "description_en": "NocoDB is the fastest and easiest way to build databases online. Website • Discord • Community • Twitter • Reddit • Documentation See other languages » Join Our Community Installation Docker with SQLite bash docker run -d \\ --name noco \\ -v \"$(pwd)\"/nocodb:/usr/app/data/ \\ -p 8080:8080 \\ nocodb/nocodb:latest Docker with PG bash docker run -d \\ --name noco \\ -v \"$(pwd)\"/nocodb:/usr/app/data/ \\ -p 8080:8080 \\ -e NC DB=\"pg://host.docker.internal:5432?u=root&p=password&d=d1\" \\ -e NC AUTH JWT SECRET=",
       "alternative_to": "Airtable",
       "tags": [
@@ -3836,7 +3836,7 @@
       "slug": "n8n",
       "category": "dev-tools",
       "github_url": "https://github.com/n8n-io/n8n",
-      "stars": 189698,
+      "stars": 189700,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -3850,7 +3850,7 @@
         "2026-05-23": 189352,
         "2026-05-24": 189461,
         "2026-05-25": 189574,
-        "2026-05-26": 189698
+        "2026-05-26": 189700
       },
       "description_zh": "开源自动化平台，可自托管连接超过 300+ 应用的 API。",
       "description_en": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
@@ -4126,7 +4126,7 @@
       "slug": "sillytavern",
       "category": "ai-agent",
       "github_url": "https://github.com/SillyTavern/SillyTavern",
-      "stars": 28318,
+      "stars": 28319,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -4137,7 +4137,7 @@
         "2026-05-23": 28128,
         "2026-05-24": 28194,
         "2026-05-25": 28246,
-        "2026-05-26": 28318
+        "2026-05-26": 28319
       },
       "description_zh": "开源 AI 角色扮演前端，支持多种 LLM 后端，可自定义角色卡片。",
       "description_en": "![][cover] English German 中文 繁體中文 日本語 Русский 한국어 SillyTavern provides a single unified interface for many LLM APIs (KoboldAI/CPP, Horde, NovelAI, Ooba, Tabby, OpenAI, OpenRouter, Claude, Mistral and more), a mobile-friendly layout, Visual Novel Mode, Automatic1111 & ComfyUI API image generation integration, TTS, WorldInfo (lorebooks), customizable UI, auto-translate, more prompt options than you'd ever want or need, and endless growth potential via third-party extensions. We have a Documentatio",
@@ -4314,7 +4314,7 @@
       "slug": "plane",
       "category": "dev-tools",
       "github_url": "https://github.com/makeplane/plane",
-      "stars": 49726,
+      "stars": 49727,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -4324,7 +4324,7 @@
         "2026-05-23": 49586,
         "2026-05-24": 49620,
         "2026-05-25": 49675,
-        "2026-05-26": 49726
+        "2026-05-26": 49727
       },
       "description_zh": "🔥🔥🔥 开源 Jira、Linear、Monday 和 ClickUp 替代方案。 Plane 是一个现代项目管理平台，用于管理任务、冲刺、文档和分类。",
       "description_en": "🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management platform to manage tasks, sprints, docs, and triage.",
@@ -4424,7 +4424,7 @@
       "slug": "coolify",
       "category": "dev-tools",
       "github_url": "https://github.com/coollabsio/coolify",
-      "stars": 55902,
+      "stars": 55901,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -4434,7 +4434,7 @@
         "2026-05-23": 55774,
         "2026-05-24": 55814,
         "2026-05-25": 55832,
-        "2026-05-26": 55902
+        "2026-05-26": 55901
       },
       "description_zh": "Vercel、Heroku 和 Netlify 的开源、自托管 PaaS 替代品，让您可以在自己的服务器上轻松部署静态站点、数据库、全栈应用程序和 280 多个一键式服务。",
       "description_en": "An open-source, self-hostable PaaS alternative to Vercel, Heroku & Netlify that lets you easily deploy static sites, databases, full-stack applications and 280+ one-click services on your own servers.",
@@ -4488,7 +4488,7 @@
       "slug": "paperless-ngx",
       "category": "office-productivity",
       "github_url": "https://github.com/paperless-ngx/paperless-ngx",
-      "stars": 41376,
+      "stars": 41379,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
@@ -4498,7 +4498,7 @@
         "2026-05-23": 40916,
         "2026-05-24": 40942,
         "2026-05-25": 41069,
-        "2026-05-26": 41376
+        "2026-05-26": 41379
       },
       "description_zh": "社区支持的强大文档管理系统：扫描、索引和归档您的所有文档",
       "description_en": "A community-supported supercharged document management system: scan, index and archive all your documents",
@@ -5330,12 +5330,12 @@
       "slug": "open-design",
       "category": "design-tools",
       "github_url": "https://github.com/nexu-io/open-design",
-      "stars": 52193,
+      "stars": 52198,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
         "2026-05-25": 51385,
-        "2026-05-26": 52193
+        "2026-05-26": 52198
       },
       "description_zh": "Anthropic 的 Claude Design 的本地优先、开源替代方案。 19 项技能 ✨ 71 个品牌级设计系统 🖼 生成网络桌面移动原型幻灯片图像视频 HyperFrames 📦 沙盒预览 HTML/PDF/PPTX/MP4 导出 🤖 在 Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen / Copilot / Hermes / Kimi CLI 上运行。 该项目在开源社区中拥有极高的知名度和活跃度，是同类替代方案中的领军者。",
       "description_en": "🎨 Local-first, open-source Claude Design alternative. ⚡ 19 Skills · ✨ 71 brand-grade Design Systems 🖼 Generate web · desktop · mobile prototypes · slides · images · videos · HyperFrames 📦 Sandboxed preview · HTML/PDF/PPTX/MP4 export 🤖 Runs on Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen / Copilot / Hermes / Kimi CLI.",
@@ -5410,110 +5410,40 @@
       "date_added": "2026-05-26"
     },
     {
-      "id": "auto-1779764141-670",
-      "name": "immich",
-      "slug": "immich",
-      "category": "media-video",
-      "github_url": "https://github.com/immich-app/immich",
-      "stars": 101863,
-      "version": "",
-      "last_updated": "2026-05-26",
-      "stars_history": {
-        "2026-05-26": 101863
-      },
-      "description_zh": "自建照片和视频管理方案，支持自动备份、AI 人脸识别等功能。",
-      "description_en": "Self-hosted photo and video management solution.",
-      "alternative_to": "Google Photos / iCloud",
-      "tags": [
-        "照片管理",
-        "备份"
-      ],
-      "license": "AGPL-3.0",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-26",
-      "discussions": [
-        {
-          "title": "[Feature] Toggle on/off External Library from Duplicate Utility",
-          "url": "https://github.com/immich-app/immich/discussions/28616",
-          "created_at": "2026-05-25T18:54:03Z",
-          "author": "urbanrider"
-        },
-        {
-          "title": "Kubernetes - Jobs Pause themselves?",
-          "url": "https://github.com/immich-app/immich/discussions/28614",
-          "created_at": "2026-05-25T18:47:00Z",
-          "author": "jfmatth"
-        },
-        {
-          "title": "[Feature] Folders and Checkboxes for Albums View",
-          "url": "https://github.com/immich-app/immich/discussions/28613",
-          "created_at": "2026-05-25T17:30:04Z",
-          "author": "cloud1494"
-        },
-        {
-          "title": "[Feature] Exclude Face-Tagging before \"first met date\" of a person",
-          "url": "https://github.com/immich-app/immich/discussions/28612",
-          "created_at": "2026-05-25T16:22:50Z",
-          "author": "urbanrider"
-        },
-        {
-          "title": "[Feature] Multi-condition search",
-          "url": "https://github.com/immich-app/immich/discussions/28605",
-          "created_at": "2026-05-25T10:44:41Z",
-          "author": "SimJoSt"
-        }
-      ]
-    },
-    {
-      "id": "auto-1779764143-711",
-      "name": "zentaopms",
-      "slug": "zentaopms",
-      "category": "system-utils",
-      "github_url": "https://github.com/easysoft/zentaopms",
-      "stars": 1612,
-      "version": "",
-      "last_updated": "2026-05-26",
-      "stars_history": {
-        "2026-05-26": 1612
-      },
-      "description_zh": "Zentao是一款敏捷（scrum）项目管理系统/工具，永久免费升级！​ 该项目在社区中已获得一定认可，功能完善，值得关注和尝试。",
-      "description_en": "Zentao is an agile(scrum) project management system/tool, Free Upgrade Forever!​",
-      "alternative_to": "商业软件",
-      "tags": [],
-      "license": "NOASSERTION",
-      "download_url": "",
-      "featured": false,
-      "date_added": "2026-05-26",
-      "discussions": [
-        {
-          "title": "🚀 ZenTao MCP Server – Full Model Context Protocol Integration for ZenTao",
-          "url": "https://github.com/easysoft/zentaopms/discussions/177",
-          "created_at": "2026-01-03T23:56:44Z",
-          "author": "bivex"
-        },
-        {
-          "title": "Welcome to zentao Discussions!",
-          "url": "https://github.com/easysoft/zentaopms/discussions/146",
-          "created_at": "2024-07-10T01:11:34Z",
-          "author": "wwccss"
-        }
-      ]
-    },
-    {
-      "id": "auto-1779764145-791",
-      "name": "dokploy",
-      "slug": "dokploy",
+      "id": "auto-1779764452-609",
+      "name": "certimate",
+      "slug": "certimate",
       "category": "dev-tools",
-      "github_url": "https://github.com/Dokploy/dokploy",
-      "stars": 34236,
+      "github_url": "https://github.com/certimate-go/certimate",
+      "stars": 8640,
       "version": "",
       "last_updated": "2026-05-26",
       "stars_history": {
-        "2026-05-26": 34236
+        "2026-05-26": 8640
       },
-      "description_zh": "Vercel、Netlify 和 Heroku 的开源替代品。 该项目在社区中拥有极高的人气，是同类替代方案中的佼佼者。",
-      "description_en": "Open Source Alternative to Vercel, Netlify and Heroku.",
+      "description_zh": "开源免费的自托管 SSL 证书 ACME 工具，以可视化方式自动执行签发、部署、续订和监控的全周期。 开源免费的自托管SSL证书ACME工具，完全申请、部署、续期、监控全流程自动化可视化，支持主流主流云厂商。 社区活跃度和更新频率都不错，是值得长期关注的开源项目。",
+      "description_en": "An open-source and free self-hosted SSL certificates ACME tool, automates the full-cycle of issuance, deployment, renewal, and monitoring visually. 完全开源免费的自托管 SSL 证书 ACME 工具，申请、部署、续期、监控全流程自动化可视化，支持各大主流云厂商。",
+      "alternative_to": "商业软件",
+      "tags": [],
+      "license": "MIT",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-26"
+    },
+    {
+      "id": "auto-1779764453-920",
+      "name": "chatwoot",
+      "slug": "chatwoot",
+      "category": "ai-agent",
+      "github_url": "https://github.com/chatwoot/chatwoot",
+      "stars": 29729,
+      "version": "",
+      "last_updated": "2026-05-26",
+      "stars_history": {
+        "2026-05-26": 29729
+      },
+      "description_zh": "开源实时聊天、电子邮件支持、全渠道服务台。 Intercom、Zendesk、Salesforce Service Cloud 等的替代方案。 高 Star 数和活跃的社区证明了它的价值，是一个非常靠谱的开源替代。",
+      "description_en": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬",
       "alternative_to": "商业软件",
       "tags": [],
       "license": "NOASSERTION",
@@ -5522,34 +5452,140 @@
       "date_added": "2026-05-26",
       "discussions": [
         {
-          "title": "How to generate ssh keypairs in template.toml",
-          "url": "https://github.com/Dokploy/dokploy/discussions/4488",
-          "created_at": "2026-05-25T10:03:59Z",
-          "author": "eyueldk"
+          "title": "Display agent name at the top of the message (whatsapp cloud api)",
+          "url": "https://github.com/orgs/chatwoot/discussions/14558",
+          "created_at": "2026-05-24T13:15:44Z",
+          "author": "christianzegarra"
         },
         {
-          "title": "[Closed]",
-          "url": "https://github.com/Dokploy/dokploy/discussions/4464",
-          "created_at": "2026-05-22T18:01:35Z",
-          "author": "SHxKM"
+          "title": "v4.14.0",
+          "url": "https://github.com/orgs/chatwoot/discussions/14487",
+          "created_at": "2026-05-18T16:47:20Z",
+          "author": "sony-mathew"
         },
         {
-          "title": "Changing Database Password",
-          "url": "https://github.com/Dokploy/dokploy/discussions/4432",
-          "created_at": "2026-05-20T05:16:38Z",
-          "author": "robert0531"
+          "title": "Deleting chats",
+          "url": "https://github.com/orgs/chatwoot/discussions/14464",
+          "created_at": "2026-05-14T21:36:11Z",
+          "author": "evawad"
         },
         {
-          "title": "Is there a way to connect a GHE instance?",
-          "url": "https://github.com/Dokploy/dokploy/discussions/4427",
-          "created_at": "2026-05-19T11:49:01Z",
-          "author": "grinlemon"
+          "title": "Combining website widget chat and whatssap inbox into one thread",
+          "url": "https://github.com/orgs/chatwoot/discussions/14463",
+          "created_at": "2026-05-14T21:35:15Z",
+          "author": "evawad"
         },
         {
-          "title": "how can I use an IP for SSH to a remote server, and use another to expose my apps?",
-          "url": "https://github.com/Dokploy/dokploy/discussions/4419",
-          "created_at": "2026-05-17T14:06:53Z",
-          "author": "StellarRounin"
+          "title": "Instagram integration",
+          "url": "https://github.com/orgs/chatwoot/discussions/14428",
+          "created_at": "2026-05-11T13:26:27Z",
+          "author": "marceloherrera-digisite"
+        }
+      ]
+    },
+    {
+      "id": "auto-1779764455-813",
+      "name": "umami",
+      "slug": "umami",
+      "category": "security-privacy",
+      "github_url": "https://github.com/umami-software/umami",
+      "stars": 36836,
+      "version": "",
+      "last_updated": "2026-05-26",
+      "stars_history": {
+        "2026-05-26": 36836
+      },
+      "description_zh": "Umami 是一个注重隐私的现代分析平台。 Google Analytics、Mixpanel 和 Amplitude 的开源替代品。 高 Star 数和活跃的社区证明了它的价值，是一个非常靠谱的开源替代。",
+      "description_en": "Umami is a modern, privacy-focused analytics platform. An open-source alternative to Google Analytics, Mixpanel and Amplitude.",
+      "alternative_to": "商业软件",
+      "tags": [],
+      "license": "MIT",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-26",
+      "discussions": [
+        {
+          "title": "Create share urls with unchangeable filters or segment",
+          "url": "https://github.com/umami-software/umami/discussions/4290",
+          "created_at": "2026-05-21T20:09:39Z",
+          "author": "aking-cambium"
+        },
+        {
+          "title": "Data Purge Job — Are session_data and other tables needed for complete cleanup ?",
+          "url": "https://github.com/umami-software/umami/discussions/4275",
+          "created_at": "2026-05-13T10:46:10Z",
+          "author": "Geethika-sg"
+        },
+        {
+          "title": "Rant: It's impossible to migrate from MySQL to Postgre",
+          "url": "https://github.com/umami-software/umami/discussions/4235",
+          "created_at": "2026-05-05T18:04:02Z",
+          "author": "stuartcusackie"
+        },
+        {
+          "title": "Can I disable everything except views for the single page?",
+          "url": "https://github.com/umami-software/umami/discussions/4227",
+          "created_at": "2026-04-30T10:07:39Z",
+          "author": "jcubic"
+        },
+        {
+          "title": "User Session Before & After Login",
+          "url": "https://github.com/umami-software/umami/discussions/4221",
+          "created_at": "2026-04-28T10:00:40Z",
+          "author": "AmarTraya"
+        }
+      ]
+    },
+    {
+      "id": "auto-1779764456-433",
+      "name": "jan",
+      "slug": "jan",
+      "category": "dev-tools",
+      "github_url": "https://github.com/janhq/jan",
+      "stars": 42668,
+      "version": "",
+      "last_updated": "2026-05-26",
+      "stars_history": {
+        "2026-05-26": 42668
+      },
+      "description_zh": "Jan 是 ChatGPT 的开源替代品，可在您的计算机上 100% 离线运行。 凭借出色的功能和完善的文档，这个项目在同类替代品中脱颖而出。",
+      "description_en": "Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.",
+      "alternative_to": "商业软件",
+      "tags": [],
+      "license": "NOASSERTION",
+      "download_url": "",
+      "featured": false,
+      "date_added": "2026-05-26",
+      "discussions": [
+        {
+          "title": "Claude API relay with Prompt Cache for Open Interpreter — affordable for high-usage workflows",
+          "url": "https://github.com/orgs/janhq/discussions/8189",
+          "created_at": "2026-05-23T11:47:28Z",
+          "author": "lei83314"
+        },
+        {
+          "title": "AMD Strix Halo backend option?",
+          "url": "https://github.com/orgs/janhq/discussions/8159",
+          "created_at": "2026-05-19T11:55:23Z",
+          "author": "geraldblank"
+        },
+        {
+          "title": "P2PCP (P2P Compute Protocol)",
+          "url": "https://github.com/orgs/janhq/discussions/8105",
+          "created_at": "2026-04-30T02:56:15Z",
+          "author": "SkepticusMaximus"
+        },
+        {
+          "title": "Is the default chat model running locally?",
+          "url": "https://github.com/orgs/janhq/discussions/8086",
+          "created_at": "2026-04-25T06:49:20Z",
+          "author": "daffodilistic"
+        },
+        {
+          "title": "Nataris — P2P inference via Android phones, works as an OpenAI-compatible API",
+          "url": "https://github.com/orgs/janhq/discussions/8082",
+          "created_at": "2026-04-24T01:41:17Z",
+          "author": "Sharrmavishal"
         }
       ]
     }
@@ -5701,15 +5737,6 @@
       "license": "Apache-2.0"
     },
     {
-      "github_url": "https://github.com/certimate-go/certimate",
-      "category": "dev-tools",
-      "alternative_to": "商业软件",
-      "description_zh": "An open-source and free self-hosted SSL certificates ACME tool, automates the full-cycle of issuance",
-      "description_en": "An open-source and free self-hosted SSL certificates ACME tool, automates the full-cycle of issuance, deployment, renewal, and monitoring visually. 完全开源免费的自托管 SSL 证书 ACME 工具，申请、部署、续期、监控全流程自动化可视化，支持各大主流云厂商。",
-      "tags": [],
-      "license": "MIT"
-    },
-    {
       "github_url": "https://github.com/pneumaticapp/pneumaticworkflow",
       "category": "ai-agent",
       "alternative_to": "商业软件",
@@ -5746,15 +5773,6 @@
       "license": "AGPL-3.0"
     },
     {
-      "github_url": "https://github.com/janhq/jan",
-      "category": "dev-tools",
-      "alternative_to": "商业软件",
-      "description_zh": "Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.",
-      "description_en": "Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.",
-      "tags": [],
-      "license": "NOASSERTION"
-    },
-    {
       "github_url": "https://github.com/siddharthvaddem/openscreen",
       "category": "dev-tools",
       "alternative_to": "商业软件",
@@ -5762,24 +5780,6 @@
       "description_en": "Create stunning demos for free. Open-source, no subscriptions, no watermarks, and free for commercial use. An alternative to Screen Studio. ",
       "tags": [],
       "license": "MIT"
-    },
-    {
-      "github_url": "https://github.com/umami-software/umami",
-      "category": "security-privacy",
-      "alternative_to": "商业软件",
-      "description_zh": "Umami is a modern, privacy-focused analytics platform. An open-source alternative to Google Analytic",
-      "description_en": "Umami is a modern, privacy-focused analytics platform. An open-source alternative to Google Analytics, Mixpanel and Amplitude.",
-      "tags": [],
-      "license": "MIT"
-    },
-    {
-      "github_url": "https://github.com/chatwoot/chatwoot",
-      "category": "ai-agent",
-      "alternative_to": "商业软件",
-      "description_zh": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesf",
-      "description_en": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬",
-      "tags": [],
-      "license": "NOASSERTION"
     },
     {
       "github_url": "https://github.com/dgtlmoon/changedetection.io",
