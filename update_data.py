@@ -2,7 +2,7 @@
 """
 每日自动更新脚本 (增强版)
 功能：
-1. 更新 Stars/版本 + 自动翻译（增强清洗）+ 时间线带简介
+1. 更新 Stars/版本 + 自动翻译（增强清洗）+ 自然语气点评 + 时间线带简介
 2. 自动新增 3-5 个候选项目
 3. 为缺少标签的项目自动补全标签
 4. 增量生成语义化、SEO友好的静态HTML项目页面（含面包屑导航、彩色标签）+ 静态首页
@@ -35,6 +35,29 @@ def strip_html(text):
     clean = re.sub(r'https?://\S+', '', clean)
     clean = re.sub(r'\s+', ' ', clean).strip()
     return clean
+
+def clean_for_translation(text):
+    """翻译前清洗：去emoji、去特殊符号"""
+    if not text: return text
+    # 去掉emoji
+    clean = re.sub(r'[🚀🔥🎨⚡🦊💻🌟✅⭐📌📋🔗🔄📖📝💬⚠️☰🌓🇺🇸🇨🇳]', '', text)
+    # 去掉连续的符号
+    clean = re.sub(r'[•·]{1,}', '', clean)
+    clean = re.sub(r'\s+', ' ', clean).strip()
+    return clean
+
+def add_comment(zh_text, stars):
+    """根据Stars数添加自然语气点评"""
+    if stars > 50000:
+        return zh_text + " 该项目在开源社区中拥有极高的知名度和活跃度，是同类替代方案中的领军者。"
+    elif stars > 10000:
+        return zh_text + " 该项目在社区中拥有极高的人气，是同类替代方案中的佼佼者。"
+    elif stars > 1000:
+        return zh_text + " 该项目在社区中已获得一定认可，功能完善，值得关注和尝试。"
+    elif stars > 100:
+        return zh_text + " 该项目虽然目前关注度不高，但功能独特，未来发展值得期待。"
+    else:
+        return zh_text + " 该项目是一个新兴的开源替代方案，具有独特的功能定位，值得一试。"
 
 def translate(text):
     if not text or len(text) < 10: return text
@@ -122,25 +145,23 @@ def update_existing_projects(data):
         if en:
             en = strip_html(en)
         if needs_translation(zh, en) and en:
-            new_zh = translate(en)
+            clean_en = clean_for_translation(en)
+            new_zh = translate(clean_en)
             if new_zh and new_zh != zh:
+                new_zh = add_comment(new_zh, project['stars'])
                 project['description_zh'] = new_zh
                 translated += 1
 
-        # 🆕 自动补全标签：如果没有标签，则生成3-5个默认标签
         if not project.get('tags'):
             default_tags = []
-            # 1. 分类名作为标签
             cat = next((c for c in data['categories'] if c['id'] == project['category']), None)
             if cat:
                 default_tags.append(cat['name'])
-            # 2. 替代软件的第一个名称作为标签
             alt = project.get('alternative_to', '')
             if alt and alt != '商业软件':
                 first_alt = alt.split('/')[0].strip().rstrip('等').strip()
                 if first_alt:
                     default_tags.append(first_alt)
-            # 3. 补充通用标签，确保至少3个
             fillers = ['开源', '免费', '替代', '工具', '自建']
             for tag in fillers:
                 if len(default_tags) >= 4:
@@ -153,7 +174,7 @@ def update_existing_projects(data):
         time.sleep(1)
 
     if translated > 0:
-        print(f'🌐 重新翻译了 {translated} 个项目的中文简介')
+        print(f'🌐 重新翻译了 {translated} 个项目的中文简介（含点评）')
     if tags_filled > 0:
         print(f'🏷️ 为 {tags_filled} 个项目补全了标签')
     print(f'✅ 已更新 {updated}/{len(data["projects"])} 个项目')
@@ -255,8 +276,14 @@ def add_new_projects(data, count=3):
         desc_en = item.get('description_en', '') or github_desc or ''
         desc_en = strip_html(desc_en)
         desc_zh = item.get('description_zh', '')
-        if (not desc_zh or len(desc_zh) < 30) and desc_en:
-            desc_zh = translate(desc_en)
+        
+        # 🆕 增强翻译检查：只要中文简介包含太多英文，就重新翻译
+        if (not desc_zh or len(desc_zh) < 20 or needs_translation(desc_zh, desc_en)) and desc_en:
+            clean_en = clean_for_translation(desc_en)
+            desc_zh = translate(clean_en)
+            if desc_zh and desc_zh != desc_en:
+                desc_zh = add_comment(desc_zh, stars)
+        
         if not desc_zh:
             desc_zh = f'{name} 是一个优秀的开源项目。'
         short_desc = desc_zh[:80] + '...' if len(desc_zh) > 80 else desc_zh
