@@ -4,7 +4,7 @@
 功能：
 1. 更新 Stars/版本 + 自动翻译（增强清洗）+ 随机化自然语气点评 + 时间线带简介
 2. 自动新增 3-5 个候选项目
-3. 为缺少标签的项目自动补全标签
+3. 为缺少标签的项目自动从 GitHub Topics 补全彩色标签
 4. 增量生成语义化、SEO友好的静态HTML项目页面（含面包屑导航、彩色标签）+ 静态首页
 5. 抓取社区讨论 (Discussions) 丰富内容，段落式展示
 6. 候选池自动补给 (低于20个时一次性追加20个新候选)
@@ -44,7 +44,6 @@ def clean_for_translation(text):
     return clean
 
 def add_comment(zh_text, stars):
-    """根据Stars数添加随机化的自然语气点评"""
     if stars > 50000:
         comments = [
             " 该项目在开源社区中拥有极高的知名度和活跃度，是同类替代方案中的领军者。",
@@ -107,9 +106,24 @@ def needs_translation(zh, en):
         return True
     return False
 
+def fetch_github_topics(owner, repo):
+    """从 GitHub API 获取项目的 Topics 标签"""
+    url = f'https://api.github.com/repos/{owner}/{repo}/topics'
+    headers = {'Accept': 'application/vnd.github.mercy-preview+json', 'User-Agent': 'Python'}
+    if GITHUB_TOKEN:
+        headers['Authorization'] = f'token {GITHUB_TOKEN}'
+    
+    try:
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            data = json.loads(resp.read().decode())
+            return data.get('names', [])
+    except Exception as e:
+        return []
+
 def get_repo_info(github_url):
     match = re.search(r'github\.com/([^/]+)/([^/]+?)(?:\.git)?$', github_url)
-    if not match: return None, None, None, None
+    if not match: return None, None, None, None, None, None
     owner, repo = match.groups()
     url = f'https://api.github.com/repos/{owner}/{repo}'
     headers = {'Accept': 'application/vnd.github.v3+json', 'User-Agent': 'Python'}
@@ -132,12 +146,12 @@ def get_repo_info(github_url):
             except:
                 pass
         desc = strip_html(desc) if desc else desc
-        return d.get('stargazers_count', 0), version, lic, desc
+        return d.get('stargazers_count', 0), version, lic, desc, owner, repo
     except urllib.error.HTTPError as e:
         if e.code == 403: time.sleep(2)
-        return None, None, None, None
+        return None, None, None, None, None, None
     except:
-        return None, None, None, None
+        return None, None, None, None, None, None
 
 def load_data():
     with open(DATA_PATH, 'r', encoding='utf-8') as f: return json.load(f)
@@ -152,7 +166,12 @@ def update_existing_projects(data):
     translated = 0
     tags_filled = 0
     for project in data['projects']:
-        stars, version, lic, desc = get_repo_info(project['github_url'])
+        result = get_repo_info(project['github_url'])
+        if result is None or result[0] is None:
+            time.sleep(1)
+            continue
+        
+        stars, version, lic, desc, owner, repo = result
         if stars is not None:
             if 'stars_history' not in project: project['stars_history'] = {}
             project['stars_history'][today_str] = stars
@@ -176,6 +195,14 @@ def update_existing_projects(data):
                 translated += 1
 
         if not project.get('tags'):
+            if owner and repo:
+                github_topics = fetch_github_topics(owner, repo)
+                if github_topics:
+                    project['tags'] = github_topics[:5]
+                    tags_filled += 1
+                    time.sleep(1)
+                    continue
+            
             default_tags = []
             cat = next((c for c in data['categories'] if c['id'] == project['category']), None)
             if cat:
@@ -199,7 +226,7 @@ def update_existing_projects(data):
     if translated > 0:
         print(f'🌐 重新翻译了 {translated} 个项目的中文简介（含随机化点评）')
     if tags_filled > 0:
-        print(f'🏷️ 为 {tags_filled} 个项目补全了标签')
+        print(f'🏷️ 为 {tags_filled} 个项目智能补全了标签')
     print(f'✅ 已更新 {updated}/{len(data["projects"])} 个项目')
     return data
 
