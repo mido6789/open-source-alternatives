@@ -480,6 +480,7 @@ def generate_static_project_pages(data):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-adsense-account" content="ca-pub-1633024977905266">
   <title>{proj['name']} - 开源替代 {proj.get('alternative_to', '')} | 开源替代</title>
   <meta name="description" content="{proj.get('description_zh', '')[:150]}">
   <link rel="canonical" href="{base_url}/projects/{slug}.html">
@@ -716,6 +717,7 @@ def generate_static_homepage(data):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-adsense-account" content="ca-pub-1633024977905266">
   <title>开源替代 - 发现优秀的开源替代方案</title>
   <meta name="description" content="发现优秀的开源替代方案，告别高价付费软件。收录AI、设计工具、办公效率、开发工具等7大类{len(data['projects'])}个开源替代品。每日更新。">
   <link rel="canonical" href="{base_url}/">
